@@ -1,0 +1,375 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Feedback</title>
+    <meta charset="utf-8">
+    <meta name=”viewport” content=”width=device-width, initial-scale=1″>
+    <link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+     <link rel="stylesheet" href="{% static 'css/css/open-iconic-bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/css/animate.css' %}">
+
+    <link rel="stylesheet" href="{% static 'css/css/owl.carousel.min.css'%}">
+    <link rel="stylesheet" href="{% static 'css/css/owl.theme.default.min.css'%}">
+    <link rel="stylesheet" href="{% static 'css/css/magnific-popup.css' %}">
+
+    <link rel="stylesheet" href="{% static 'css/css/aos.css'%}">
+
+    <link rel="stylesheet" href="{% static 'css/css/ionicons.min.css'}">
+
+    <link rel="stylesheet" href="{% static 'css/css/flaticon.css'%}">
+    <link rel="stylesheet" href="{% static 'css/css/icomoon.css' %}">
+    <link rel="stylesheet" href="{% static 'css/css/style.css'%}">
+
+    <style type="text/css">
+    .img-container {
+      float: left;
+      width: 33.33%; /* three containers (use 25% for four, and 50% for two, etc) */
+      padding: 5px; /* if you want space between the images */
+    }
+    .clearfix::after {
+      content: "";
+      clear: both;
+      display: table;
+    }
+
+    .na {
+        width: 1000px;
+    }
+
+    .mySlides {
+      display: none;
+    }
+
+    .slideshow-container {
+  max-width: 100%;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.parallax {
+  /* The image used */
+  background-image: url('{% static 'images/i1.jpg' %}');
+  background-image: url('{% static 'images/i2.JPG' %}');
+  background-image: url('{% static 'images/i3.jpg' %}');
+  background-image: url('{% static 'images/i4.jpg' %}');
+  background-image: url('{% static 'images/i5.jpg' %}');
+  background-image: url('{% static 'images/i6.jpg' %}');
+  background-image: url('{% static 'images/i7.jpg' %}');
+  background-image: url('{% static 'images/i8.JPG' %}');
+  background-image: url('{% static 'images/i9.JPG' %}');
+  background-image: url('{% static 'images/i10.JPG' %}');
+  background-image: url('{% static 'images/i11.JPG' %}');
+
+  /* Full height */
+  height: 100%;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.par{
+  background-image: url('{% static 'images/csea2019.jpg' %}');
+
+  /* Full height */
+  height: 100%;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 20px 30px;
+  text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+  background-color: #111;
+}
+Active/Current Navigation Link
+Add an "active" class to the current link to let the user know which page he/she is on:
+
+HomeNewsContactAbout
+Example
+.active {
+  background-color: #4CAF50;
+}
+
+
+/* form css */
+
+
+.contact-form{
+    background: #fff;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    width: 100%;
+}
+.contact-form .form-control{
+    border-radius:1rem;
+}
+.contact-image{
+    text-align: center;
+}
+.contact-image img{
+    border-radius: 6rem;
+    width: 11%;
+    margin-top: -3%;
+    transform: rotate(29deg);
+}
+.contact-form form{
+    padding: 14%;
+}
+.contact-form form .row{
+    margin-bottom: -1%;
+}
+.contact-form h3{
+    margin-bottom: 8%;
+    margin-top: -10%;
+    text-align: center;
+    color: #0062cc;
+}
+.contact-form .btnContact {
+    width: 50%;
+    border: none;
+    border-radius: 1rem;
+    padding: 2.5%;
+    background: #dc3545;
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
+}
+.btnContactSubmit
+{
+
+    width: 50%;
+    border-radius: 1rem;
+    padding: 1.5%;
+    color: #fff;
+    background-color: #0062cc;
+    border: none;
+    cursor: pointer;
+}
+
+    </style>
+  </head>
+  <body >
+
+    <div>
+      
+      <div align="center"><img src="{% static 'images/logo.jpg' %}" width="220"><h1 style="font-size:40px;"><b>Computer Science and Engineering Association NITW</b></h1> </div>
+        <ul >
+        <li><a href="http://kapsaquarius.pythonanywhere.com/csea/home/">Home</a></li>
+        <li><a href="http://kapsaquarius.pythonanywhere.com/csea/gallery/">Gallery</a></li>
+        <li><a href="http://kapsaquarius.pythonanywhere.com/csea/events/">Events</a></li>
+        <li><a href="http://kapsaquarius.pythonanywhere.com/csea/team/">Team</a></li>
+        <li><a href="http://kapsaquarius.pythonanywhere.com/csea/alumni/">Alumni</a></li>
+        <li><a href="http://kapsaquarius.pythonanywhere.com/csea/feedback/">Leave Us Feedback</a></li>
+        <li><a href="http://kapsaquarius.pythonanywhere.com/csea/straight/">Straight Outta CSED</a></li>
+        <li><a href="http://kapsaquarius.pythonanywhere.com/csea/alumniconnect/">Alumni Connect</a></li>
+      </ul>
+    </div>
+
+
+    <div  style ="background-image: url(http://jmd.im/wp-content/uploads/2017/06/blacki_thumbnail.jpg);" >
+      
+          <div style ="background-image: url(http://jmd.im/wp-content/uploads/2017/06/blacki_thumbnail.jpg);" class="container contact-form">
+            <div class="contact-image">
+                <br>
+                <br>
+                <br>
+                <img src="https://image.ibb.co/kUagtU/rocket_contact.png" alt="rocket_contact"/>
+            </div>
+
+            {% block content %}
+            <form method="post">
+               {% csrf_token %}
+                <h3>Leave Us Some Feedback</h3>
+               
+               <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <input maxlength="100" type="text" name="event_name" class="form-control" placeholder="Event Name *" value="" />
+                        </div>
+                        <div class="form-group">
+                            <input maxlength="300", required=True type="text" name="cem" class="form-control" placeholder="Your College Email *" value="" />
+                        </div>
+                        <div class="form-group">
+                            <input placeholder="Send Feedback *" maxlength="600" type="submit" class="btnContact" />
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <textarea name="fback" value="" class="form-control" placeholder="Feedback *"  style="width: 100%; height: 150px;"></textarea>
+                        </div>
+                    </div>
+                </div>
+            </form>
+            {% endblock %}
+
+
+    </div>
+
+
+
+
+
+   
+   
+
+
+
+    
+
+  <div align="center">
+
+    <footer text-align="center" class="ftco-footer ftco-bg-dark ftco-section">
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col-md-6 col-lg-3">
+            <div class="ftco-footer-widget mb-5">
+              <h2 class="ftco-heading-2">Have Questions?</h2>
+              <div class="block-23 mb-3">
+                <ul text-align="center">
+                  <li><a href="#"><span class="text"> National Institute of Technology Campus, Hanamkonda, Telangana 506004, India</span></a></li>
+                  <li><a href="#"><span class="text">+91 9515360944</span></a></li>
+                  <li><a href="#"><span class="text">csea@student.nitw.ac.in</span></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div align-text="center" class="col-md-6 col-lg-3">
+            <div class="ftco-footer-widget mb-5 ml-md-4">
+              <h2 class="ftco-heading-2">Quick Links</h2>
+              <ul class="list-unstyled">
+                <li><a href="http://kapsaquarius.pythonanywhere.com/csea/home/"><span class="ion-ios-arrow-round-forward mr-2"></span>Home</a></li>
+                <li><a href="http://kapsaquarius.pythonanywhere.com/csea/gallery/"><span class="ion-ios-arrow-round-forward mr-2"></span>Gallery</a></li>
+                <li><a href="http://kapsaquarius.pythonanywhere.com/csea/events/"><span class="ion-ios-arrow-round-forward mr-2"></span>Events</a></li>
+                <li><a href="http://kapsaquarius.pythonanywhere.com/csea/team/"><span class="ion-ios-arrow-round-forward mr-2"></span>Team</a></li>
+                <li><a href="http://kapsaquarius.pythonanywhere.com/csea/alumni/"><span class="ion-ios-arrow-round-forward mr-2"></span>Alumni</a></li>
+                <li><a href="http://kapsaquarius.pythonanywhere.com/csea/feedback/"><span class="ion-ios-arrow-round-forward mr-2"></span>Feedback</a></li>
+                <li><a href="http://kapsaquarius.pythonanywhere.com/csea/straight/"><span class="ion-ios-arrow-round-forward mr-2"></span>Straight Outta CSED</a></li>
+                <li><a href="http://kapsaquarius.pythonanywhere.com/csea/alumniconnect/"><span class="ion-ios-arrow-round-forward mr-2"></span>Alumni Connect</a></li>
+            
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="ftco-footer-widget mb-5">
+              <h2 class="ftco-heading-2 mb-0">Connect With Us</h2>
+              <p></p>
+
+                <a href="https://www.facebook.com/cseanitw/"><img src="{% static 'images/fb.png' %}" width="50px"height="50px"></a>
+                &nbsp;
+                <a href="https://www.instagram.com/csea_nitw/?hl=en"><img src="{% static 'images/insta.png' %}" width="50px" height="50px"></a>
+
+            </div>
+
+          </div>
+
+
+        </div>
+
+     </footer>
+
+
+  </div>
+
+
+  </body>
+</html>

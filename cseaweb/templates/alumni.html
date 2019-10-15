@@ -1,0 +1,721 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>CSEA NITW</title>
+    <meta charset="utf-8">
+    <meta name=”viewport” content=”width=device-width, initial-scale=1″>
+    <link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
+
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="{% static 'css/css/open-iconic-bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/css/animate.css' %}">
+
+    <link rel="stylesheet" href="{% static 'css/css/owl.carousel.min.css'%}">
+    <link rel="stylesheet" href="{% static 'css/css/owl.theme.default.min.css'%}">
+    <link rel="stylesheet" href="{% static 'css/css/magnific-popup.css' %}">
+
+    <link rel="stylesheet" href="{% static 'css/css/aos.css'%}">
+
+    <link rel="stylesheet" href="{% static 'css/css/ionicons.min.css'}">
+
+    <link rel="stylesheet" href="{% static 'css/css/flaticon.css'%}">
+    <link rel="stylesheet" href="{% static 'css/css/icomoon.css' %}">
+    <link rel="stylesheet" href="{% static 'css/css/style.css'%}">
+    <script defer src="/your-path-to-fontawesome/js/all.js"></script>
+      <link href="{% static 'fab/css/all.css' %}" rel="stylesheet"> <!--load all styles -->
+
+      <!-- ... -->
+<link rel="stylesheet" id="font-awesome-css" href="//maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css?ver=4.9.4" type="text/css" media="all">
+<!-- ... -->
+<script defer="" src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+    <style type="text/css">
+  
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 20px 30px;
+  text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+  background-color: #111;
+}
+Active/Current Navigation Link
+Add an "active" class to the current link to let the user know which page he/she is on:
+
+HomeNewsContactAbout
+Example
+.active {
+  background-color: #4CAF50;
+}
+
+    {#    team#}
+        a > i{
+  padding-right:10px;
+}
+        .sec-title{
+    position:relative;
+    margin-bottom:60px;
+}
+
+.sec-title .title{
+    position: relative;
+    display: block;
+    font-size: 18px;
+    line-height: 24px;
+    color: #fdda33;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+
+.sec-title h2{
+    position:relative;
+    display: inline-block;
+    font-size:60px;
+    line-height:1em;
+    color:#212639;
+    font-weight:400;
+    padding-bottom: 30px;
+    z-index: 2;
+}
+
+
+.sec-title.active h2:before{
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
+  text-align: center;
+}
+
+.sec-title h2:after{
+    position: absolute;
+    left: 0;
+    bottom: 0px;
+    height: 3px;
+    width: 50px;
+    content: "";
+    background-color: #d1d2d6;
+}
+
+.sec-title.light h2{
+    color: #ffffff;
+}
+
+.sec-title.light h2:after{
+    opacity: .20;
+    background-color: #ffffff;
+}
+
+.sec-title.text-center h2:before,
+.sec-title.text-center h2:after{
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+}
+
+.sec-title.text-center h2:before{
+    opacity: .60;
+}
+
+.speakers-section{
+    position: relative;
+    background-repeat: repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 145px 0 90px;
+    {#overflow:hidden;#}
+}
+
+.speaker-block{
+    position: relative;
+    margin-bottom: 40px;
+}
+
+.speaker-block .inner-box{
+    position: relative;
+}
+
+.speaker-block .image-box{
+    position: relative;
+    padding: 20px;
+    background-color: rgba(255,255,255,.15);
+    overflow: hidden;
+}
+
+.speaker-block .image-box .image:after,
+.speaker-block .image-box:before{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 0;
+    width: 100%;
+    background-color: #ffffff;
+    content: "";
+    -webkit-transition: all 700ms ease;
+    -moz-transition: all 700ms ease;
+    -ms-transition: all 700ms ease;
+    -o-transition: all 700ms ease;
+    transition: all 700ms ease;
+}
+
+.speaker-block .inner-box:hover .image-box .image:after,
+.speaker-block .inner-box:hover .image-box:before{
+    height: 70%;
+}
+
+.speaker-block .image-box .image:after{
+    opacity: .40;
+    z-index: 1;
+    top: auto;
+    bottom: 0;
+    background-color: black;
+}
+
+.speaker-block .image-box .image{
+    position: relative;
+    margin-bottom: 0;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.speaker-block .image-box .image img{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.speaker-block .social-links{
+    position: absolute;
+    left: 0;
+    bottom: -140px;
+    padding: 2px;
+    width: 100%;
+    z-index: 9;
+    -webkit-transition: all 700ms ease;
+    -moz-transition: all 700ms ease;
+    -ms-transition: all 700ms ease;
+    -o-transition: all 700ms ease;
+    transition: all 700ms ease;
+}
+
+.speaker-block .social-links ul{
+    position: relative;
+    padding: 20px 20px;
+    text-align: center;
+    background-color: black;
+            rgba(253, 218, 51, 0.85);
+}
+
+.speaker-block .social-links li{
+    position: relative;
+    display: inline-block;
+    margin: 0 2.5px;
+}
+
+.speaker-block .social-links li a{
+    position: relative;
+    display: block;
+    font-size: 18px;
+    line-height: 10px;
+    font-weight: 400;
+    padding: 10px;
+    color: #ffffff;
+    -webkit-transition: all 300ms ease;
+    -moz-transition: all 300ms ease;
+    -ms-transition: all 300ms ease;
+    -o-transition: all 300ms ease;
+    transition: all 300ms ease;
+}
+
+.speaker-block .social-links li a:hover{
+    color: #fac201;
+}
+
+.speaker-block .inner-box:hover .social-links{
+    bottom: 0;
+}
+
+.speaker-block .caption-box{
+    position: relative;
+    padding-top: 30px;
+}
+
+.speaker-block .caption-box .name .name1 {
+    position: relative;
+    display: block;
+    font-size: 30px;
+    line-height: 1em;
+    color: #ffffff;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+.speaker-block .caption-box .name a{
+    color: #ffffff;
+    display: inline-block;
+    -webkit-transition: all 300ms ease;
+    -moz-transition: all 300ms ease;
+    -ms-transition: all 300ms ease;
+    -o-transition: all 300ms ease;
+    transition: all 300ms ease;
+  text-align: center;
+}
+
+.speaker-block .caption-box a:hover{
+    color: #fdda33;
+}
+
+.speaker-block .caption-box .name{
+  text-align: center;
+    font-size: 20px;
+}
+
+.designation{
+    position: relative;
+    display: block;
+    font-size: 15x;
+    line-height: 26px;
+    color: #ffffff;
+    font-weight: 400;
+    opacity: .70;
+  text-align: center;
+}
+        ul {
+            margin: 0;
+            padding: 2px;
+            list-style: none;
+        }
+        img {
+    max-width: 100%;
+    height: auto;
+}
+
+/*  add*/
+div {
+  margin: auto;
+}
+    </style>
+  </head>
+  <body >
+
+
+ <div align="center"><img src="{% static 'images/logo.jpg' %}" width="220"><h1 style="font-size:40px;"><b>Computer Science and Engineering Association NITW</b></h1> </div>
+    <ul >
+    <li><a href="http://kapsaquarius.pythonanywhere.com/csea/home/">Home</a></li>
+    <li><a href="http://kapsaquarius.pythonanywhere.com/csea/gallery/">Gallery</a></li>
+    <li><a href="http://kapsaquarius.pythonanywhere.com/csea/events/">Events</a></li>
+    <li><a href="http://kapsaquarius.pythonanywhere.com/csea/team/">Team</a></li>
+    <li><a href="http://kapsaquarius.pythonanywhere.com/csea/alumni/">Alumni</a></li>
+    <li><a href="http://kapsaquarius.pythonanywhere.com/csea/feedback/">Leave Us Feedback</a></li>
+    <li><a href="http://kapsaquarius.pythonanywhere.com/csea/straight/">Straight Outta CSED</a></li>
+    <li><a href="http://kapsaquarius.pythonanywhere.com/csea/alumniconnect/">Alumni Connect</a></li>
+
+  </ul>
+
+
+
+
+{#individual#}
+    <div class="speakers-section" style ="background-image: url(http://jmd.im/wp-content/uploads/2017/06/blacki_thumbnail.jpg);">
+        <div class="parallax-scene parallax-scene-2 anim-icons">
+            <span data-depth="0.40" class="parallax-layer icon icon-circle-5"></span>
+            <span data-depth="0.99" class="parallax-layer icon icon-circle-5"></span>
+        </div>
+
+        <div class="container">
+            <div class="sec-title light text-center">
+                <h2 >Our Alumni</h2>
+
+                <span class="title">These are some of our respected CSEA alumni who are now working in top notch companies now</span>
+
+
+<div class="container">
+
+          <br>
+          <br>
+          <h2 style="color:orange">Batch of 2019</h2>
+          <br>
+          <br>
+           <div class="row">
+
+
+
+                <div class="speaker-block col-lg-3 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay="400ms">
+                    <div class="inner-box">
+                        <div class="image-box">
+                            <figure class="image"><img src="{% static 'images/alumni/sahitiYerramilli.JPG' %}" alt="">
+                                <div class="social-links">
+                                    <ul>
+                                       <li><a href="https://www.facebook.com/yeramilli.sahiti"><span class="fab fa-facebook-f"></span></a></li>
+                                        <li><a href="http://Instagram.com/yerramilli_sahiti"><span class="fab fa-instagram"></span></a></li>
+                                        <li><a href="https://www.linkedin.com/in/sahiti-yerramilli-24b679143"><span class="fab fa-linkedin-in"></span></a></li>
+                                       <li><a href="https://github.com/sahitiy"><span class="fab fa-github"></span></a></li>
+                                    </ul>
+                                </div>
+                            </figure>
+                        </div>
+                        <div class="caption-box">
+                            <h4 class="name"><a href="#">Sahiti Yerramilli </a></h4>
+                            
+                        </div>
+                    </div>
+                </div>
+
+                <div class="speaker-block col-lg-3 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay="400ms">
+                    <div class="inner-box">
+                        <div class="image-box">
+                            <figure class="image"><img style="-webkit-transform: rotate(360deg);"src="{% static 'images/alumni/shibamBasu.JPG' %}" alt="">
+                                <div class="social-links">
+                                    <ul>
+                                       <li><a href="https://www.facebook.com/shibam.basu.5"><span class="fab fa-facebook-f"></span></a></li>
+                                        <li><a href="https://www.instagram.com/basushibam/"><span class="fab fa-instagram"></span></a></li>
+                                        <li><a href="https://www.linkedin.com/in/shibam-basu-92220b143/"><span class="fab fa-linkedin-in"></span></a></li>
+                                       <li><a href="#"><span class="fab fa-github"></span></a></li>
+                                    </ul>
+                                </div>
+                            </figure>
+                        </div>
+                        <div class="caption-box">
+                            <h4 class="name"><a href="#">Shibam Basu </a></h4>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="speaker-block col-lg-3 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay="400ms">
+                    <div class="inner-box">
+                        <div class="image-box">
+                            <figure class="image"><img src="{% static 'images/alumni/shoumorupM.JPG' %}" alt="">
+                                <div class="social-links">
+                                    <ul>
+                                       <li><a href="https://www.facebook.com/shoumorup.mukhopadhyay"><span class="fab fa-facebook-f"></span></a></li>
+                                        <li><a href="https://www.instagram.com/shoumorup_here/"><span class="fab fa-instagram"></span></a></li>
+                                        <li><a href="https://www.linkedin.com/in/shoumorup-mukhopadhyay/"><span class="fab fa-linkedin-in"></span></a></li>
+                                       <li><a href="https://github.com/Shoumorup"><span class="fab fa-github"></span></a></li>
+                                    </ul>
+                                </div>
+                            </figure>
+                        </div>
+                        <div class="caption-box">
+                            <h4 class="name"><a href="#">Shoumorup M</a></h4>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="speaker-block col-lg-3 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay="400ms">
+                    <div class="inner-box">
+                        <div class="image-box">
+                            <figure class="image"><img src="{% static 'images/alumni/rajatJha.JPG' %}" alt="">
+                                <div class="social-links">
+                                    <ul>
+                                       <li><a href="https://www.facebook.com/rajat.resurrected"><span class="fab fa-facebook-f"></span></a></li>
+                                        <li><a href="https://instagram.com/_jha_rajat?igshid=eyc9bojw7cau"><span class="fab fa-instagram"></span></a></li>
+                                        <li><a href="https://www.linkedin.com/in/rajat-jha-754587110"><span class="fab fa-linkedin-in"></span></a></li>
+                                       <li><a href="#"><span class="fab fa-github"></span></a></li>
+                                    </ul>
+                                </div>
+                            </figure>
+                        </div>
+                        <div class="caption-box">
+                            <h4 class="name"><a href="#">Rajat Raj Jha</a></h4>
+                  
+                        </div>
+                    </div>
+                </div>
+                
+
+
+            <div class="speaker-block col-lg-3 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay="400ms">
+                    <div class="inner-box">
+                        <div class="image-box">
+                            <figure class="image"><img src="{% static 'images/alumni/vikrantPuppala.JPG' %}" alt="">
+                                <div class="social-links">
+                                    <ul>
+                                       <li><a href="https://www.facebook.com/vikrantpuppala"><span class="fab fa-facebook-f"></span></a></li>
+                                        <li><a href="https://www.instagram.com/vikrantpuppala/"><span class="fab fa-instagram"></span></a></li>
+                                        <li><a href="#"><span class="fab fa-linkedin-in"></span></a></li>
+                                       <li><a href="#"><span class="fab fa-github"></span></a></li>
+                                    </ul>
+                                </div>
+                            </figure>
+                        </div>
+                        <div class="caption-box">
+                            <h4 class="name"><a href="#">Vikrant Puppala</a></h4>
+                        </div>
+                    </div>
+            </div>
+
+
+            <div class="speaker-block col-lg-3 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay="400ms">
+                    <div class="inner-box">
+                        <div class="image-box">
+                            <figure class="image"><img src="{% static 'images/alumni/nileshSinha.JPG' %}" alt="">
+                                <div class="social-links">
+                                    <ul>
+                                       <li><a href="https://m.facebook.com/nilesh.sinha.583"><span class="fab fa-facebook-f"></span></a></li>
+                                        <li><a href="#"><span class="fab fa-instagram"></span></a></li>
+                                        <li><a href="https://www.linkedin.com/in/nilesh-sinha-0a8ab983#image-modal"><span class="fab fa-linkedin-in"></span></a></li>
+                                       <li><a href="#"><span class="fab fa-github"></span></a></li>
+                                    </ul>
+                                </div>
+                            </figure>
+                        </div>
+                        <div class="caption-box">
+                            <h4 class="name"><a href="#">Nilesh Sinha </a></h4>
+                        </div>
+                    </div>
+                </div>
+
+              <div class="speaker-block col-lg-3 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay="400ms">
+                    <div class="inner-box">
+                        <div class="image-box">
+                            <figure class="image"><img src="{% static 'images/alumni/ashutoshSaumitra.JPG' %}" alt="">
+                                <div class="social-links">
+                                    <ul>
+                                       <li><a href="https://www.facebook.com/ashutosh.saumitra"><span class="fab fa-facebook-f"></span></a></li>
+                                        <li><a href="https://www.instagram.com/a_4_ashu/?hl=en"><span class="fab fa-instagram"></span></a></li>
+                                        <li><a href="https://www.linkedin.com/in/ashutosh-saumitra-69a1a7106/"><span class="fab fa-linkedin-in"></span></a></li>
+                                       <li><a href="https://github.com/Ashu-4u"><span class="fab fa-github"></span></a></li>
+                                    </ul>
+                                </div>
+                            </figure>
+                        </div>
+                        <div class="caption-box">
+                            <h4 class="name"><a href="#">Ashutosh Saumitra </a></h4>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+      </div>
+
+
+       
+
+</div>
+
+
+
+<div class="container">
+
+          <br>
+          <br>
+          <h2 style="color:orange">Batch of 2018</h2>
+          <br>
+          <br>
+           <div class="row">
+
+
+
+                <div class="speaker-block col-lg-3 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay="400ms">
+                    <div class="inner-box">
+                        <div class="image-box">
+                            <figure class="image"><img src="{% static 'images/alumni/yaminiKashyap.JPG' %}" alt="">
+                                <div class="social-links">
+                                    <ul>
+                                       <li><a href="https://www.facebook.com/yamini.kashyap.1"><span class="fab fa-facebook-f"></span></a></li>
+                                        <li><a href="https://www.instagram.com/yam_yap/"><span class="fab fa-instagram"></span></a></li>
+                                        <li><a href="http://linkedin.com/in/yamini-kashyap-41438165"><span class="fab fa-linkedin-in"></span></a></li>
+                                       <li><a href="#"><span class="fab fa-github"></span></a></li>
+                                    </ul>
+                                </div>
+                            </figure>
+                        </div>
+                        <div class="caption-box">
+                            <h4 class="name"><a href="#">Yamini Kashyap </a></h4>
+                            
+                        </div>
+                    </div>
+                </div>
+
+                <div class="speaker-block col-lg-3 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay="400ms">
+                    <div class="inner-box">
+                        <div class="image-box">
+                            <figure class="image"><img src="{% static 'images/alumni/anshulGoyal.JPG' %}" alt="">
+                                <div class="social-links">
+                                    <ul>
+                                       <li><a href="https://www.facebook.com/anshul.goyal.5855"><span class="fab fa-facebook-f"></span></a></li>
+                                        <li><a href="https://instagram.com/anshul.goyal7?igshid=6dzk6wwaaet6"><span class="fab fa-instagram"></span></a></li>
+                                        <li><a href="https://www.linkedin.com/in/anshul-goyal-b0585b125"><span class="fab fa-linkedin-in"></span></a></li>
+                                       <li><a href="https://github.com/Anshul-Goyal"><span class="fab fa-github"></span></a></li>
+                                    </ul>
+                                </div>
+                            </figure>
+                        </div>
+                        <div class="caption-box">
+                            <h4 class="name"><a href="#">Anshul Goyal </a></h4>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="speaker-block col-lg-3 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay="400ms">
+                    <div class="inner-box">
+                        <div class="image-box">
+                            <figure class="image"><img src="{% static 'images/alumni/nadeemGauhar.JPG' %}" alt="">
+                                <div class="social-links">
+                                    <ul>
+                                       <li><a href="https://www.facebook.com/profile.php?id=100006759589441"><span class="fab fa-facebook-f"></span></a></li>
+                                        <li><a href="https://www.instagram.com/ndm_gauhar/"><span class="fab fa-instagram"></span></a></li>
+                                        <li><a href="https://www.linkedin.com/in/nadeem-gauhar-9a3474b3/"><span class="fab fa-linkedin-in"></span></a></li>
+                                       <li><a href="https://github.com/nadeemgauhar"><span class="fab fa-github"></span></a></li>
+                                    </ul>
+                                </div>
+                            </figure>
+                        </div>
+                        <div class="caption-box">
+                            <h4 class="name"><a href="#">Nadeem Gauhar</a></h4>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="speaker-block col-lg-3 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay="400ms">
+                    <div class="inner-box">
+                        <div class="image-box">
+                            <figure class="image"><img src="{% static 'images/alumni/arkoprabhoDutta.JPG' %}" alt="">
+                                <div class="social-links">
+                                    <ul>
+                                       <li><a href="#"><span class="fab fa-facebook-f"></span></a></li>
+                                        <li><a href="#"><span class="fab fa-instagram"></span></a></li>
+                                        <li><a href="#"><span class="fab fa-linkedin-in"></span></a></li>
+                                       <li><a href="#"><span class="fab fa-github"></span></a></li>
+                                    </ul>
+                                </div>
+                            </figure>
+                        </div>
+                        <div class="caption-box">
+                            <h4 class="name"><a href="#">Arkoprabho Dutta</a></h4>
+                  
+                        </div>
+                    </div>
+                </div>
+                <div class="speaker-block col-lg-3 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay="400ms">
+                    <div class="inner-box">
+                        <div class="image-box">
+                            <figure class="image"><img src="{% static 'images/alumni/priyamKhandelwal.JPG' %}" alt="">
+                                <div class="social-links">
+                                    <ul>
+                                       <li><a href="https://www.facebook.com/priyamkhandelwal"><span class="fab fa-facebook-f"></span></a></li>
+                                        <li><a href="https://instagram.com/priyam_khandelwal96?igshid=2rpwoz1e5qbo"><span class="fab fa-instagram"></span></a></li>
+                                        <li><a href="https://www.linkedin.com/in/priyamkhandelwal"><span class="fab fa-linkedin-in"></span></a></li>
+                                       <li><a href="https://github.com/priyamkhandelwal"><span class="fab fa-github"></span></a></li>
+                                    </ul>
+                                </div>
+                            </figure>
+                        </div>
+                        <div class="caption-box">
+                            <h4 class="name"><a href="#">Priyam Khandelwal</a></h4>
+                        </div>
+                    </div>
+                </div>
+
+
+            <div class="speaker-block col-lg-3 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay="400ms">
+                    <div class="inner-box">
+                        <div class="image-box">
+                            <figure class="image"><img  src="{% static 'images/alumni/abhishekKasera.JPG' %}" alt="">
+                                <div class="social-links">
+                                    <ul>
+                                       <li><a href="https://www.facebook.com/abhikasera"><span class="fab fa-facebook-f"></span></a></li>
+                                        <li><a href="https://www.instagram.com/abhikasera/"><span class="fab fa-instagram"></span></a></li>
+                                        <li><a href="https://www.linkedin.com/in/abhishek-kasera-155658107"><span class="fab fa-linkedin-in"></span></a></li>
+                                       <li><a href="https://github.com/abkasera"><span class="fab fa-github"></span></a></li>
+                                    </ul>
+                                </div>
+                            </figure>
+                        </div>
+                        <div class="caption-box">
+                            <h4 class="name"><a href="#">Abhishek Kasera</a></h4>
+                        </div>
+                    </div>
+            </div>
+
+      </div>
+
+
+       
+
+</div>
+
+
+
+
+  <div align="center">
+
+    <footer text-align="center" class="ftco-footer ftco-bg-dark ftco-section">
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col-md-6 col-lg-3">
+            <div class="ftco-footer-widget mb-5">
+              <h2 class="ftco-heading-2">Have Questions?</h2>
+              <div class="block-23 mb-3">
+                <ul text-align="center">
+                  <li><a href="#"><span class="text"> National Institute of Technology Campus, Hanamkonda, Telangana 506004, India</span></a></li>
+                  <li><a href="#"><span class="text">+91 9515360944</span></a></li>
+                  <li><a href="#"><span class="text">csea@student.nitw.ac.in</span></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div align-text="center" class="col-md-6 col-lg-3">
+            <div class="ftco-footer-widget mb-5 ml-md-4">
+              <h2 class="ftco-heading-2">Quick Links</h2>
+              <ul class="list-unstyled">
+                <li><a href="http://kapsaquarius.pythonanywhere.com/csea/home/"><span class="ion-ios-arrow-round-forward mr-2"></span>Home</a></li>
+                <li><a href="http://kapsaquarius.pythonanywhere.com/csea/gallery/"><span class="ion-ios-arrow-round-forward mr-2"></span>Gallery</a></li>
+                <li><a href="http://kapsaquarius.pythonanywhere.com/csea/events/"><span class="ion-ios-arrow-round-forward mr-2"></span>Events</a></li>
+                <li><a href="http://kapsaquarius.pythonanywhere.com/csea/team/"><span class="ion-ios-arrow-round-forward mr-2"></span>Team</a></li>
+                <li><a href="http://kapsaquarius.pythonanywhere.com/csea/alumni/"><span class="ion-ios-arrow-round-forward mr-2"></span>Alumni</a></li>
+                <li><a href="http://kapsaquarius.pythonanywhere.com/csea/feedback/"><span class="ion-ios-arrow-round-forward mr-2"></span>Feedback</a></li>
+                <li><a href="http://kapsaquarius.pythonanywhere.com/csea/straight/"><span class="ion-ios-arrow-round-forward mr-2"></span>Straight Outta CSED</a></li>
+                <li><a href="http://kapsaquarius.pythonanywhere.com/csea/alumniconnect/"><span class="ion-ios-arrow-round-forward mr-2"></span>Alumni Connect</a></li>
+            
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="ftco-footer-widget mb-5">
+              <h2 class="ftco-heading-2 mb-0">Connect With Us</h2>
+              <p></p>
+
+                <a href="https://www.facebook.com/cseanitw/"><img src="{% static 'images/fb.png' %}" width="50px"height="50px"></a>
+                &nbsp;
+                <a href="https://www.instagram.com/csea_nitw/?hl=en"><img src="{% static 'images/insta.png' %}" width="50px" height="50px"></a>
+
+            </div>
+
+          </div>
+
+
+        </div>
+
+     </footer>
+
+
+  </div>
+  </body>
+</html>

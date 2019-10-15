@@ -1,0 +1,339 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Timeline of Events</title>
+ <link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
+
+     <link rel="stylesheet" href="{% static 'css/css/open-iconic-bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/css/animate.css' %}">
+
+    <link rel="stylesheet" href="{% static 'css/css/owl.carousel.min.css'%}">
+    <link rel="stylesheet" href="{% static 'css/css/owl.theme.default.min.css'%}">
+    <link rel="stylesheet" href="{% static 'css/css/magnific-popup.css' %}">
+
+    <link rel="stylesheet" href="{% static 'css/css/aos.css'%}">
+
+    <link rel="stylesheet" href="{% static 'css/css/ionicons.min.css'}">
+
+    <link rel="stylesheet" href="{% static 'css/css/flaticon.css'%}">
+    <link rel="stylesheet" href="{% static 'css/css/icomoon.css' %}">
+    <link rel="stylesheet" href="{% static 'css/css/style.css'%}">
+
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100i,300,400,500,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Allura" rel="stylesheet"><link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css'>
+    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css'>
+<link rel="stylesheet" href="{% static 'style.css' %}">
+  <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
+<script src='https://cdn.jsdelivr.net/scrollreveal.js/3.3.1/scrollreveal.min.js'></script>
+<script  src="{% static 'script.js' %}"></script>
+
+<style type="text/css">
+  
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #323232;
+
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 20px 30px;
+  text-decoration: none;
+  background-color: #323232;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+  background-color: #111;
+  color:    #FF4500;
+  text-decoration:none;
+}
+Active/Current Navigation Link
+Add an "active" class to the current link to let the user know which page he/she is on:
+
+HomeNewsContactAbout
+Example
+.active {
+  background-color: #4CAF50;
+}
+</style>
+</head>
+<body style="font-family:Poppins">
+  <div align="center">
+    <img src="{% static 'images/logo.jpg' %}" width="220"><h1 style="font-size:40px;"><b style = " text-transform: capitalize;">Computer Science and Engineering Association NITW</b></h1> 
+  </div>
+  <ul>
+    <li><a href="http://kapsaquarius.pythonanywhere.com/csea/home/">Home</a></li>
+    <li><a href="http://kapsaquarius.pythonanywhere.com/csea/gallery/">Gallery</a></li>
+    <li><a href="http://kapsaquarius.pythonanywhere.com/csea/events/">Events</a></li>
+    <li><a href="http://kapsaquarius.pythonanywhere.com/csea/team/">Team</a></li>
+    <li><a href="http://kapsaquarius.pythonanywhere.com/csea/alumni/">Alumni</a></li>
+    <li><a href="http://kapsaquarius.pythonanywhere.com/csea/feedback/">Leave Us Feedback</a></li>
+    <li><a href="http://kapsaquarius.pythonanywhere.com/csea/straight/">Straight Outta CSED</a></li>
+    <li><a href="http://kapsaquarius.pythonanywhere.com/csea/alumniconnect/">Alumni Connect</a></li>
+  </ul>
+
+
+   <div class="ftco-footer ftco-bg-dark ftco-section" align="center">
+    <h1 style="color:white;"><b>Timeline</b></h1>
+    </div>
+
+<section style ="background-image: url(http://jmd.im/wp-content/uploads/2017/06/blacki_thumbnail.jpg);" class="timeline">
+
+  <div class="container">
+    <div class="timeline-item">
+      <div class="timeline-img"></div>
+
+      <div class="timeline-content js--fadeInLeft">
+        <div>
+        <img src="https://picsum.photos/1000/800/?random" height= "240px"width="100%">
+        </div>
+        <h2>Valar Doubtulis</h2>
+        <div class="date">8 Sept 2019</div>
+        <blockquote>The purpose of this event is to teach those topics in PSCP where the first year students might face difficulty in understanding and also to break the ice between seniors and the freshers. The event not only focussed on clearing doubts but also teaching new topics which might be helpful in inculcating an interest in coding.</blockquote>
+       
+      </div>
+    </div> 
+
+
+    <div class="timeline-item">
+      <div class="timeline-img"></div>
+
+      <div class="timeline-content js--fadeInRight">
+        <div>
+        <img src="https://picsum.photos/1000/800/?random" height= "240px" width="100%">
+        </div>
+        <h2>DSA Session</h2>
+        <div class="date">8 Sept 2019</div>
+        <blockquote>Be it projects or interviews, Data Structures are one of the core essentials for a CSE student. It is the one subject which haunts every student and to make things easier, CSEA came up with the event on DS Learning. All concepts of Data Structures were discussed from the scratch for better understanding. The sessions were open to all branches.</blockquote>
+       
+      </div>
+    </div>
+
+    
+
+    <div class="timeline-item">
+
+      <div class="timeline-img"></div>
+
+      <div class="timeline-content js--fadeInLeft">
+        <div>
+        <img src="https://picsum.photos/1000/800/?random" height= "240px" width="100%">
+        </div>
+        <h2>CSEA Freshers’</h2>
+        <div class="date">12 Sept 2019</div>
+        <blockquote>An event exclusively for B.Tech and MCA freshers to break the ice between seniors and juniors, and to know their future peers well and enjoy an evening of fun.</blockquote>
+      </div>
+    </div>   
+
+    <div class="timeline-item">
+
+      <div class="timeline-img"></div>
+
+      <div class="timeline-content js--fadeInRight">
+        <div>
+        <img src="https://picsum.photos/1000/800/?random" height= "240px" width="100%">
+        </div>
+        <h2>Devathon</h2>
+        <div class="date">14 Sept 2019</div>
+        <blockquote>CSEA and WSDC, organized DEVATHON 2019 on 14th September from 7pm onwards, a first-of-a-kind hackathon in NITW where people from all years of study formed groups and worked on fun ideas over a period of 24 hours- enabling students to learn from each other, and apply the knowledge to make something cool.</blockquote>
+       
+      </div>
+    </div>
+
+    <div class="timeline-item">
+
+      <div class="timeline-img"></div>
+
+      <div class="timeline-content js--fadeInLeft">
+        <div>
+        <img src="https://picsum.photos/1000/800/?random" height= "240px" width="100%">
+        </div>
+        <h2>Meme Making</h2>
+        <div class="date">2 Oct 2019</div>
+        <blockquote>Setting and keeping up with trends is what we do at CSEA and the 2.0 edition of MEME MAKING bears testimony to that. The event not only received hilarious responses but was also one was of the most successful online event of all times. The judges were our online audience and the winning entry was adjudged based on the most number of reacts. </blockquote>
+       
+      </div>
+    </div>
+       
+    <div class="timeline-item">
+
+      <div class="timeline-img"></div>
+
+      <div class="timeline-content js--fadeInRight">
+        <div>
+        <img src="https://picsum.photos/1000/800/?random" height= "240px" width="100%">
+        </div>
+        <h2>404 Resolved</h2>
+        <div class="date">4 Oct 2019</div>
+        <blockquote>We will be featuring modules of web development, machine learning, basic coding and competitive programming, and blockchains. The list doesn't stop there! We will also be showcasing the different opportunities ranging from research to GSOC. </blockquote>
+       
+      </div>
+    </div>  
+
+    <div class="timeline-item">
+
+      <div class="timeline-img"></div>
+
+      <div class="timeline-content js--fadeInLeft">
+        <div>
+        <img src="https://picsum.photos/1000/800/?random" height= "240px" width="100%">
+        </div>
+        <div class="date">7 Oct 2019</div>
+        <h2>T-shirt Designing</h2>
+        <blockquote>CSEA launched the "T-Shirt Design Contest" in search of some designing talent among students. The number of responses received were quite huge, making it difficult for the judges to choose the best design. </blockquote>
+      </div>
+    </div>   
+
+    <div class="timeline-item">
+
+      <div class="timeline-img"></div>
+
+      <div class="timeline-content js--fadeInRight">
+        <div>
+        <img src="https://picsum.photos/1000/800/?random" height= "240px" width="100%">
+        </div>
+        <div class="date">10 Oct 2019</div>
+        <h2>Codeathon 1.0</h2>
+        <blockquote>Just like reading and writing, coding has become a life-time skill to be acquired in today’s world. In order to inculcate the competitive coding culture in the campus, we bring to you Codeathon, a series of online competitive programming contests where the participants were given 5-6 questions to be programmed and submitted within 3 hours.</blockquote>
+      </div>
+    </div>  
+
+    <div class="timeline-item">
+
+      <div class="timeline-img"></div>
+
+      <div class="timeline-content js--fadeInLeft">
+         <div>
+        <img src="https://picsum.photos/1000/800/?random" height= "240px" width="100%">
+        </div>
+        <div class="date">18 Oct 2019</div>
+
+        <h2>Know Your Branch</h2>
+        <blockquote>The event will deal with brief insights on the different avenues CSE, as a branch, has to offer including internships, placements, study tips and research opportunities. The students will be told about various prestigious programmes that happen globally including ACM-ICPC, GSoC, etc.</blockquote>
+      
+      </div>
+    </div> 
+
+    <div class="timeline-item">
+
+      <div class="timeline-img"></div>
+
+      <div class="timeline-content js--fadeInRight">
+        <div>
+        <img src="https://picsum.photos/1000/800/?random" height= "240px" width="100%">
+        </div>
+        <div class="date">19 Oct 2019</div>
+        <h2>Internship Tales</h2>
+        <blockquote>An initiative to help the current 3rd year students, in answering their queries about the respective internships which they would be undertaking in the summer of 2020. Respective Final Year students who had just completed their internships come forward to satiate the curious minds.
+        </blockquote>
+        
+      </div>
+    </div> 
+
+    <div class="timeline-item">
+
+      <div class="timeline-img"></div>
+
+      <div class="timeline-content js--fadeInLeft">
+        <div>
+        <img src="https://picsum.photos/1000/800/?random" height="230px" width="100%">
+        </div>
+        <div class="date">22 Oct 2019</div>
+        <h2>Talk on Foreign & Research Internships</h2>
+        <blockquote>An event to make the students aware about the opportunities in research and foreign internships. The students will be formed about all the programmes that they can be a part, for each year.</blockquote>
+        
+      </div>
+    </div>
+
+    <div class="timeline-item">
+
+      <div class="timeline-img"></div>
+
+      <div class="timeline-content js--fadeInRight">
+        <div>
+        <img src="https://picsum.photos/1000/800/?random" height="230px" width="100%">
+        </div>
+        <div class="date">26 Oct 2019</div>
+        <h2>Valar Doubtulis</h2>
+        <blockquote>The purpose of this event is to teach those topics in PSCP where the first year students might face difficulty in understanding and also to break the ice between seniors and the freshers. The event not only focussed on clearing doubts but also teaching new topics which might be helpful in inculcating an interest in coding.</blockquote>
+      
+      </div>
+    </div>    
+
+
+
+  </div>
+</section>
+
+
+<div align="center">
+
+    <footer text-align="center" class="ftco-footer ftco-bg-dark ftco-section">
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col-md-6 col-lg-3">
+            <div class="ftco-footer-widget mb-5">
+              <h2 class="ftco-heading-2">Have Questions?</h2>
+              <div class="block-23 mb-3">
+                <ul text-align="center">
+                  <li><a href="#"><span class="text"> National Institute of Technology Campus, Hanamkonda, Telangana 506004, India</span></a></li>
+                  <li><a href="#"><span class="text">+91 9515360944</span></a></li>
+                  <li><a href="#"><span class="text">csea@student.nitw.ac.in</span></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div align-text="center" class="col-md-6 col-lg-3">
+            <div class="ftco-footer-widget mb-5 ml-md-4">
+              <h2 class="ftco-heading-2">Quick Links</h2>
+              <ul class="list-unstyled">
+                <li><a href="http://kapsaquarius.pythonanywhere.com/csea/home/"><span class="ion-ios-arrow-round-forward mr-2"></span>Home</a></li>
+                <li><a href="http://kapsaquarius.pythonanywhere.com/csea/gallery/"><span class="ion-ios-arrow-round-forward mr-2"></span>Gallery</a></li>
+                <li><a href="http://kapsaquarius.pythonanywhere.com/csea/events/"><span class="ion-ios-arrow-round-forward mr-2"></span>Events</a></li>
+                <li><a href="http://kapsaquarius.pythonanywhere.com/csea/team/"><span class="ion-ios-arrow-round-forward mr-2"></span>Team</a></li>
+                <li><a href="http://kapsaquarius.pythonanywhere.com/csea/alumni/"><span class="ion-ios-arrow-round-forward mr-2"></span>Alumni</a></li>
+                <li><a href="http://kapsaquarius.pythonanywhere.com/csea/feedback/"><span class="ion-ios-arrow-round-forward mr-2"></span>Feedback</a></li>
+                <li><a href="http://kapsaquarius.pythonanywhere.com/csea/straight/"><span class="ion-ios-arrow-round-forward mr-2"></span>Straight Outta CSED</a></li>
+                <li><a href="http://kapsaquarius.pythonanywhere.com/csea/alumniconnect/"><span class="ion-ios-arrow-round-forward mr-2"></span>Alumni Connect</a></li>
+            
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="ftco-footer-widget mb-5">
+              <h2 class="ftco-heading-2 mb-0">Connect With Us</h2>
+              <p></p>
+
+                <a href="https://www.facebook.com/cseanitw/"><img src="{% static 'images/fb.png' %}" width="50px"height="50px"></a>
+                &nbsp;
+                <a href="https://www.instagram.com/csea_nitw/?hl=en"><img src="{% static 'images/insta.png' %}" width="50px" height="50px"></a>
+
+            </div>
+
+          </div>
+
+
+        </div>
+
+     </footer>
+
+
+  </div>
+
+
+
+</body>
+</html>
