@@ -25,7 +25,7 @@ SECRET_KEY = 'hqtt)uj9ln_z8ftx8ogmf@hl^c+q@^=mgos5wlp*d@a^k%27^c'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['divasjindal.pythonanywhere.com']
+ALLOWED_HOSTS = ['divasjindal.pythonanywhere.com','127.0.0.1']
 
 
 # Application definition
@@ -123,7 +123,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.2/howto/static-files/
 
 STATIC_URL = '/static/'
-
+STATIC_ROOT = '/home/divasjindal/csea_website/cseaweb/static'
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_USE_TLS = True
 EMAIL_HOST_USER = 'kapilrathod1234@gmail.com'
