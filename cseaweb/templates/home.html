@@ -23,6 +23,7 @@
     <link rel="stylesheet" href="{% static 'css/css/style.css'%}">
 
     <style type="text/css">
+
     .img-container {
       float: left;
       width: 33.33%; /* three containers (use 25% for four, and 50% for two, etc) */
@@ -186,12 +187,76 @@ Example
 .active {
   background-color: #4CAF50;
 }
+
+
+
+footer{
+  {#margin-top:100px;#}
+    background-color:;
+    font-family: "Segoe UI",Arial,sans-serif;
+   width: 100%;
+    height: 500px;
+    color: white;
+  }
+
+
+  }
+  @media only screen and (max-width: 425px){
+    footer{
+      height: 600px;
+    }
+    #gap a{
+        padding: 5px;
+    }
+
+}
+#myBtn {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: black; /* Set a background color */
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  border-radius: 10px; /* Rounded corners */
+  font-size: 18px; /* Increase font size */
+}
+
+#myBtn:hover {
+  background-color: #555; /* Add a dark-grey background on hover */
+}
+
+
 </style>
+       <script type="text/javascript">
+      var map;
+      function initMap() {
+        map = new google.maps.Map(document.getElementById('map'), {
+          center: {lat: -34.397, lng: 150.644},
+          zoom: 8
+        });
+      }
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCrLh9li0x8X9KDC91OqFVyIDB8jnaOMlA&callback=initMap"
+    async defer></script>
+
 </head>
-<body>
+<body >
+{#<div align="center">#}
+{#    <div class="row">#}
+{##}
+{#    <div class="col-sm-6 col-xs-3" >#}
+{#        <img src="{% static 'images/nitwlogo.png' %}" width="240"></div>#}
+{#        <div class="col-sm-6 col-xs-3" >             <img src="{% static 'images/logo.jpg' %}" width="240"></div></div>#}
+
 <div align="center">
+
       <img src="{% static 'images/logo.jpg' %}" width="240">
-      <h1><b>Computer Science and Engineering Association NITW</b></h1>
+      <h1><b>Computer Science and Engineering Association, NITW</b></h1>
     </div>
 
 <div class="wrapper" style ="background-image: url(http://jmd.im/wp-content/uploads/2017/06/blacki_thumbnail.jpg);">
@@ -323,72 +388,74 @@ Example
       <img src="{% static 'images/i6.jpg' %}" style="width:100%" height="350px">
       </div>
      </div>
-
-
-     <p></p>
-     <p></p>
-
-
-
-
   <div align="center">
 
     <footer text-align="center" class="ftco-footer ftco-bg-dark ftco-section">
-      <div class="container">
-        <div class="row mb-5">
-          <div class="col-md-6 col-lg-3">
-            <div class="ftco-footer-widget mb-5">
-              <h2 class="ftco-heading-2">Have Questions?</h2>
-              <div class="block-23 mb-3">
-                <ul text-align="center">
-                  <li><a href="#"><span class="text"> National Institute of Technology Campus, Hanamkonda, Telangana 506004, India</span></a></li>
-                  <li><a href="#"><span class="text">+91 9515360944</span></a></li>
-                  <li><a href="#"><span class="text">csea@student.nitw.ac.in</span></a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
+      <div class="container" class="col-md-5">
+        <div class="row mb-2 ">
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3794.880316715465!2d79.52921395041203!3d17.98430438766325!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a334fbbec4fcd8b%3A0xc5f5d66e005e92dc!2sDepartment%20of%20Computer%20Science%20%26%20Engineering!5e0!3m2!1sen!2sin!4v1571860298351!5m2!1sen!2sin" width="500" height="300" frameborder="0" style="border:2px;" allowfullscreen="" ></iframe>
 
-          <div align-text="center" class="col-md-6 col-lg-3">
-            <div class="ftco-footer-widget mb-5 ml-md-4">
-              <h2 class="ftco-heading-2">Quick Links</h2>
-              <ul class="list-unstyled">
-                <li><a href="http://kapsaquarius.pythonanywhere.com/csea/home/"><span class="ion-ios-arrow-round-forward mr-2"></span>Home</a></li>
-                <li><a href="http://kapsaquarius.pythonanywhere.com/csea/gallery/"><span class="ion-ios-arrow-round-forward mr-2"></span>Gallery</a></li>
-                <li><a href="http://kapsaquarius.pythonanywhere.com/csea/events/"><span class="ion-ios-arrow-round-forward mr-2"></span>Events</a></li>
-                <li><a href="http://kapsaquarius.pythonanywhere.com/csea/team/"><span class="ion-ios-arrow-round-forward mr-2"></span>Team</a></li>
-                <li><a href="http://kapsaquarius.pythonanywhere.com/csea/alumni/"><span class="ion-ios-arrow-round-forward mr-2"></span>Alumni</a></li>
-                <li><a href="http://kapsaquarius.pythonanywhere.com/csea/feedback/"><span class="ion-ios-arrow-round-forward mr-2"></span>Feedback</a></li>
-                <li><a href="http://kapsaquarius.pythonanywhere.com/csea/straight/"><span class="ion-ios-arrow-round-forward mr-2"></span>Straight Outta CSED</a></li>
-                <li><a href="http://kapsaquarius.pythonanywhere.com/csea/alumniconnect/"><span class="ion-ios-arrow-round-forward mr-2"></span>Alumni Connect</a></li>
-            
-              </ul>
+        <div class="col-md-5 col-lg-2">
             </div>
-          </div>
-          <div class="col-md-6 col-lg-3">
-            <div class="ftco-footer-widget mb-5">
-              <h2 class="ftco-heading-2 mb-0">Connect With Us</h2>
-              <p></p>
 
+{#          </div>#}
+            <div class="col-md-2 col-lg-4">
+            <div class="ftco-footer-widget ">
+              <h2 class="ftco-heading-2 mb-0">Stay Connected With Us</h2>
+{#              <p></p>#}
+                <ul class="list-inline social-buttons">
+
+                        <li class="list-inline-item">
+                          <a  href="mailto:csea@student.nitw.ac.in"><img src="{% static 'images/email.png' %}" width="50ox" height="50px margin-left "></a>
+
+                        </li>
+                        <li class="list-inline-item">
                 <a href="https://www.facebook.com/cseanitw/"><img src="{% static 'images/fb.png' %}" width="50px"height="50px"></a>
-                &nbsp;
+                        </li>
+                        <li class="list-inline-item">
                 <a href="https://www.instagram.com/csea_nitw/?hl=en"><img src="{% static 'images/insta.png' %}" width="50px" height="50px"></a>
+        </li>
+                      </ul>
+                &nbsp;
 
             </div>
 
           </div>
-
-
-        </div>
-
-     </footer>
-
-
-
-
-
-
+          </div>
+      </div>
+        <br><br>
+    <div align="centre">
+            <span class="copyright">
+      &copy; Copyright. All rights reserved. Design by <a href="https://www.facebook.com/cseanitw/">CSEA, NIT Warangal</a>
+    </span></div>
+        <button onclick="topFunction()" id="myBtn" title="Go to top"><i class=" fa fa-angle-double-up"></i> </button>
+            </footer>
   </div>
+
+
+<script>
+    //Get the button:
+mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
+</script>
+
+
 
 
   </body>
