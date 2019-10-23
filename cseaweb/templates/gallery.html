@@ -24,6 +24,9 @@
     <link rel="stylesheet" href="{% static 'css/css/style.css'%}">
 
     <style type="text/css">
+        .active {
+  background-color: #717171;
+}
     .img-container {
       float: left;
       width: 33.33%; /* three containers (use 25% for four, and 50% for two, etc) */
@@ -110,8 +113,8 @@ Example
 
     <ul >
 
-    <li><a class="active" href="http://divasjindal.pythonanywhere.com/csea/home/">Home</a></li>
-    <li><a href="http://divasjindal.pythonanywhere.com/csea/gallery/">Gallery</a></li>
+    <li><a href="http://divasjindal.pythonanywhere.com/csea/home/">Home</a></li>
+    <li><a class="active" href="http://divasjindal.pythonanywhere.com/csea/gallery/">Gallery</a></li>
     <li><a href="http:///divasjindal.pythonanywhere.com/csea/events/">Events</a></li>
     <li><a href="http:///divasjindal.pythonanywhere.com/csea/team/">Team</a></li>
     <li><a href="http:///divasjindal.pythonanywhere.com/csea/alumni/">Alumni</a></li>
@@ -192,7 +195,7 @@ Example
       <img src="{% static 'images/i6.jpg' %}" style="width:100%" height="350px">
       </div>
      </div>
-  
+
 
     <div style ="background-image: url(http://jmd.im/wp-content/uploads/2017/06/blacki_thumbnail.jpg);" align="center" class="clearfix">
     <br>
