@@ -124,7 +124,7 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 STATIC_ROOT = '/home/divasjindal/csea_website/cseaweb/static'
-EMAIL_HOST = 'smtp.student.nitw.ac.in'
+EMAIL_HOST = 'mail.student.nitw.ac.in'
 EMAIL_USE_TLS = True
 EMAIL_HOST_USER = 'csea@student.nitw.ac.in'
 EMAIL_HOST_PASSWORD = 'Anuradha98'
