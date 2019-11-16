@@ -20,7 +20,7 @@ def feedback1(request):
 			sender = form.cleaned_data['cem']
 			e_name = form.cleaned_data['event_name']
 			fb = form.cleaned_data['fback']
-			recipients = ['kapilrathod1234@gmail.com']
+			recipients = ['csea@student.nitw.ac.in']
 			subject = "Feedback on " + e_name
 			message = fb
 			send_mail(subject, message, sender, recipients) # sends to specified email
