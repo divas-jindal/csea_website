@@ -19,7 +19,7 @@ from django.conf.urls import url,include
 from django.contrib.staticfiles.urls import staticfiles_urlpatterns
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-    url(r'^csea/', include('cseaweb.urls')),
+    url(r'', include('cseaweb.urls')),
     
 ]
 
