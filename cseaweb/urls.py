@@ -1,6 +1,8 @@
 from django.conf.urls import url,include
+from django.views.generic.base import RedirectView
 from . import views
 urlpatterns = [
+    url(r'^$', RedirectView.as_view(url='/home/')),
     url(r'^home/', views.home),
     url(r'^events/', views.events),
     url(r'^gallery/', views.gallery),
