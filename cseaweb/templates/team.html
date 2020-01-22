@@ -126,7 +126,7 @@ Example
     position: relative;
     background-repeat: repeat;
     background-position: center;
-    background-size: cover;
+    {#background-size: repa#}
     padding: 145px 0 90px;
     {#overflow:hidden;#}
 }
@@ -317,36 +317,45 @@ div {
 #myBtn:hover {
   background-color: #555; /* Add a dark-grey background on hover */
 }
+ </style>
 
-    </style>
+            <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/all.js" integrity="sha384-xymdQtn1n3lH2wcu0qhcdaOpQwyoarkgLVxC/wZ5q7h9gHtxICrpcaSUfygqZGOe" crossorigin="anonymous"></script>
+{#      <link rel="stylesheet" href="{% static 'css/footer.css'%}">#}
+       <link rel="stylesheet" href="{% static 'css/header.css'%}">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
   </head>
-  <body >
+  <body style="font-family:Poppins">
 
-{#team#}
+<nav style="margin-bottom: 50px; background-color: #333" class="navbar sticky-top navbar-expand-xl navbar-dark " >
+    <a href="/home/" class="navbar-brand"> <img src="{% static 'images/csealogo.png' %}" height="30px" width="100px" hspace="50px"></a>
+    <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarMenu">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarMenu" >
+        <ul class="navbar-nav ml-auto" style="background-color: #333">
+            <li class="nav-item"><a href="/gallery/">Gallery</a></li>
+            <li class="nav-item"><a href="/events/">Events</a></li>
+            <li class="nav-item" ><a class="active"href="/team/">Team</a></li>
+            <li class="nav-item" ><a href="/alumni/">Alumni</a></li>
+{#            <li class="nav-item"><a href="/feedback/">Feedback</a></li>#}
+            <li class="nav-item"><a href="/straightoutta/">Straight Outta CSED</a></li>
+            <li class="nav-item"><a  href="/alumniconnect/">Alumni Connect</a></li>
+        </ul>
+    </div>
+</nav>
 
-   <div align="center">
+<div align="center" class="fluid-container">
 
-       <img src="{% static 'images/nitwlogo.png' %}" width="400"> <img src="{% static 'images/logo.jpg' %}" width="240">
+      <img src="{% static 'images/nitwlogo.png' %}" width="400"> <img src="{% static 'images/logo.jpg' %}" width="240">
       <h1><b>Computer Science and Engineering Association, NITW</b></h1>
     </div>
 
-<div class="wrapper" style ="background-image: url(http://jmd.im/wp-content/uploads/2017/06/blacki_thumbnail.jpg);">
 
-    <ul >
-
-    <li><a href="/home/">Home</a></li>
-    <li><a href="/gallery/">Gallery</a></li>
-    <li><a href="/events/">Events</a></li>
-    <li><a class="active"  href="/team/">Team</a></li>
-    <li><a href="/alumni/">Alumni</a></li>
-    <li><a href="/feedback/">Feedback</a></li>
-    <li><a href="/straightoutta/">Straight Outta CSED</a></li>
-    <li><a href="/alumniconnect/">Alumni Connect</a></li>
-
-  </ul>
-
-
-
+<div class="wrapper" style ="margin-top:"10%" background-image: url(http://jmd.im/wp-content/uploads/2017/06/blacki_thumbnail.jpg);">
 {#individual#}
     <div class="speakers-section" style ="background-image: url(http://jmd.im/wp-content/uploads/2017/06/blacki_thumbnail.jpg);">
         <div class="parallax-scene parallax-scene-2 anim-icons">
@@ -1160,6 +1169,87 @@ https://www.facebook.com/rahul.parihar.5817300"><span class="fab fa-facebook-f">
             </div>
      </div>
     </div>
+                <div class="row">
+            <div class="speaker-block col-lg-3 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay="400ms">
+                    <div class="inner-box">
+                        <div class="image-box">
+                            <figure class="image"><img src="{% static 'images/team/nikunj.jpg' %}" alt="">
+                                <div class="social-links">
+                                    <ul>
+                                       <li><a href="https://www.facebook.com/nikunj.verma.79"><span class="fab fa-facebook-f"></span></a></li>
+                                        <li><a href="#"><span class="fab fa-instagram"></span></a></li>
+                                        <li><a href="https://www.linkedin.com/in/nikunj-verma-a40a20a7"><span class="fab fa-linkedin-in"></span></a></li>
+                                       <li><a href="https://www.github.com/vermanikunj353/nik"><span class="fab fa-github"></span></a></li>
+                                    </ul>
+                                </div>
+                            </figure>
+                        </div>
+                        <div class="caption-box">
+                            <h4 class="name"><a href="#">Nikunj Verma</a></h4>
+                            <span class="designation">Mr. MCA</span>
+                        </div>
+                    </div>
+            </div>
+            <div class="speaker-block col-lg-3 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay="400ms">
+                    <div class="inner-box">
+                        <div class="image-box">
+                            <figure class="image"><img src="{% static 'images/team/monikatak.jpg' %}" alt="">
+                                <div class="social-links">
+                                    <ul>
+                                       <li><a href="https://m.facebook.com/monika.tak.3762?ref=bookmarks"><span class="fab fa-facebook-f"></span></a></li>
+                                        <li><a href="#"><span class="fab fa-instagram"></span></a></li>
+                                        <li><a href="#"><span class="fab fa-linkedin-in"></span></a></li>
+                                       <li><a href="#"><span class="fab fa-github"></span></a></li>
+                                    </ul>
+                                </div>
+                            </figure>
+                        </div>
+                        <div class="caption-box">
+                            <h4 class="name"><a href="#">Monika Tak</a></h4>
+                            <span class="designation">Ms. MCA</span>
+                        </div>
+                    </div>
+            </div>
+            <div class="speaker-block col-lg-3 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay="400ms">
+                    <div class="inner-box">
+                        <div class="image-box">
+                            <figure class="image"><img src="{% static 'images/team/ahana.jpeg' %}" alt="">
+                                <div class="social-links">
+                                    <ul>
+                                       <li><a href="http://facebook.com/ahana.panja.73"><span class="fab fa-facebook-f"></span></a></li>
+                                        <li><a href="http://Instagram.com/ahana2oo1"><span class="fab fa-instagram"></span></a></li>
+                                        <li><a href="#"><span class="fab fa-linkedin-in"></span></a></li>
+                                       <li><a href="#"><span class="fab fa-github"></span></a></li>
+                                    </ul>
+                                </div>
+                            </figure>
+                        </div>
+                        <div class="caption-box">
+                            <h4 class="name"><a href="#">Ahana Panja</a></h4>
+                            <span class="designation">Ms. CSE</span>
+                        </div>
+                    </div>
+            </div>
+            <div class="speaker-block col-lg-3 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay="400ms">
+                    <div class="inner-box">
+                        <div class="image-box">
+                            <figure class="image"><img src="{% static 'images/team/priyanshu.jpeg' %}" alt="">
+                                <div class="social-links">
+                                    <ul>
+                                       <li><a href="#"><span class="fab fa-facebook-f"></span></a></li>
+                                        <li><a href="#"><span class="fab fa-instagram"></span></a></li>
+                                        <li><a href="#"><span class="fab fa-linkedin-in"></span></a></li>
+                                       <li><a href="#"><span class="fab fa-github"></span></a></li>
+                                    </ul>
+                                </div>
+                            </figure>
+                        </div>
+                        <div class="caption-box">
+                            <h4 class="name"><a href="#">Priyanshu Shukla</a></h4>
+                            <span class="designation">Mr. CSE</span>
+                        </div>
+                    </div>
+            </div>
     </section>
             </div>
 </div>

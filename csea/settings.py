@@ -124,9 +124,9 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 STATIC_ROOT = '/home/divasjindal/csea_website/cseaweb/static'
-EMAIL_HOST = 'mail.student.nitw.ac.in'
+EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_USE_TLS = True
-EMAIL_HOST_USER = 'csea@student.nitw.ac.in'
-EMAIL_HOST_PASSWORD = 'Anuradha98'
+EMAIL_HOST_USER = 'kapilrathod1234@gmail.com'
+EMAIL_HOST_PASSWORD = 'aquarius29/1/19991234'
 EMAIL_PORT = 587
 ACCOUNT_EMAIL_VERIFICATION = 'none'

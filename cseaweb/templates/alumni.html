@@ -49,6 +49,7 @@ li {
 }
 
 li a {
+    font-size: 18px;
   display: block;
   color: white;
   text-align: center;
@@ -58,7 +59,9 @@ li a {
 
 /* Change the link color to #111 (black) on hover */
 li a:hover {
+    color: #fd5f00;
   background-color: #111;
+    text-decoration: none;
 }
 Active/Current Navigation Link
 Add an "active" class to the current link to let the user know which page he/she is on:
@@ -357,31 +360,42 @@ div {
 }
 
     </style>
+            <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/all.js" integrity="sha384-xymdQtn1n3lH2wcu0qhcdaOpQwyoarkgLVxC/wZ5q7h9gHtxICrpcaSUfygqZGOe" crossorigin="anonymous"></script>
+{#      <link rel="stylesheet" href="{% static 'css/footer.css'%}">#}
+       <link rel="stylesheet" href="{% static 'css/header.css'%}">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
   </head>
-  <body >
+  <body style="font-family:Poppins" >
 
-<div align="center">
+<nav style="margin-bottom: 50px; background-color: #333" class="navbar sticky-top navbar-expand-xl navbar-dark " >
+    <a href="/home/" class="navbar-brand"> <img src="{% static 'images/csealogo.png' %}" height="30px" width="100px" hspace="50px"></a>
+    <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarMenu">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarMenu" >
+        <ul class="navbar-nav ml-auto" style="background-color: #333">
+            <li class="nav-item"><a href="/gallery/">Gallery</a></li>
+            <li class="nav-item"><a href="/events/">Events</a></li>
+            <li class="nav-item"><a href="/team/">Team</a></li>
+            <li class="nav-item" ><a class="active" href="/alumni/">Alumni</a></li>
+{#            <li class="nav-item"><a href="/feedback/">Feedback</a></li>#}
+            <li class="nav-item"><a href="/straightoutta/">Straight Outta CSED</a></li>
+            <li class="nav-item"><a href="/alumniconnect/">Alumni Connect</a></li>
+        </ul>
+    </div>
+</nav>
 
-       <img src="{% static 'images/nitwlogo.png' %}" width="400"> <img src="{% static 'images/logo.jpg' %}" width="240">
+<div align="center" class="fluid-container">
+
+      <img src="{% static 'images/nitwlogo.png' %}" width="400"> <img src="{% static 'images/logo.jpg' %}" width="240">
       <h1><b>Computer Science and Engineering Association, NITW</b></h1>
     </div>
 
-<div class="wrapper" style ="background-image: url(http://jmd.im/wp-content/uploads/2017/06/blacki_thumbnail.jpg);">
 
-    <ul >
-
-    <li><a  href="/home/">Home</a></li>
-    <li><a href="/gallery/">Gallery</a></li>
-    <li><a href="/events/">Events</a></li>
-    <li><a href="/team/">Team</a></li>
-    <li><a class="active" href="/alumni/">Alumni</a></li>
-    <li><a href="/feedback/">Feedback</a></li>
-    <li><a href="/straightoutta/">Straight Outta CSED</a></li>
-    <li><a href="/alumniconnect/">Alumni Connect</a></li>
-
-  </ul>
-
-</div>
 
 
 {#individual#}

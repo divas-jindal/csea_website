@@ -155,6 +155,42 @@
   to {opacity: 1}
 }
 
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+
+}
+
+li {
+  float: left;
+}
+
+li a {
+   font-size: 18px;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 20px 30px;
+  text-decoration: none;
+}
+
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+    color: #fd5f00;
+  background-color: #111;
+    text-decoration: none;
+}
+Active/Current Navigation Link
+Add an "active" class to the current link to let the user know which page he/she is on:
+HomeNewsContactAbout
+Example
+.active {
+  background-color: #4CAF50;
+}
 
 
 
@@ -213,18 +249,19 @@ footer{
     async defer></script>
       <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/all.js" integrity="sha384-xymdQtn1n3lH2wcu0qhcdaOpQwyoarkgLVxC/wZ5q7h9gHtxICrpcaSUfygqZGOe" crossorigin="anonymous"></script>
       <link rel="stylesheet" href="{% static 'css/footer.css'%}">
-       <link rel="stylesheet" href="{% static 'css/header.css'%}">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
 </head>
 <body >
-
-
+{#<div align="center">#}
+{#    <div class="row">#}
+{##}
+{#    <div class="col-sm-6 col-xs-3" >#}
+{#        <img src="{% static 'images/nitwlogo.png' %}" width="240"></div>#}
+{#        <div class="col-sm-6 col-xs-3" >             <img src="{% static 'images/logo.jpg' %}" width="240"></div></div>#}
 <nav style="margin-bottom: 50px; background-color: #333" class="navbar sticky-top navbar-expand-xl navbar-dark " >
-    <a href="/home/" class="navbar-brand"> <img src="{% static 'images/csealogo.png' %}" height="30px" width="100px" hspace="50px"></a>
+    <a href="home/" class="navbar-brand"> <img src="{% static 'images/csealogo.png' %}" height="30px" width="100px" hspace="50px"></a>
     <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarMenu">
         <span class="navbar-toggler-icon"></span>
     </button>
@@ -234,220 +271,97 @@ footer{
             <li class="nav-item"><a href="/events/">Events</a></li>
             <li class="nav-item"><a href="/team/">Team</a></li>
             <li class="nav-item"><a href="/alumni/">Alumni</a></li>
-{#            <li class="nav-item"><a href="/feedback/">Feedback</a></li>#}
+            <li class="nav-item"><a href="/feedback/">Feedback</a></li>
             <li class="nav-item"><a href="/straightoutta/">Straight Outta CSED</a></li>
             <li class="nav-item"><a href="/alumniconnect/">Alumni Connect</a></li>
         </ul>
     </div>
 </nav>
+    {%  block content %}
+    {%  endblock %}
 
-<div align="center" class="fluid-container">
 
-      <img src="{% static 'images/nitwlogo.png' %}" width="400"> <img src="{% static 'images/logo.jpg' %}" width="240">
-      <h1><b>Computer Science and Engineering Association, NITW</b></h1>
-    </div>
 
-
-
-
-
-     <div class="slideshow-container">
-
-          <div class="mySlides fade">
-            <img src="{% static 'images/i19.jpg' %}" style="width:100%">
-
-            </div>
-
-          <div class="mySlides fade">
-
-            <img src="{% static 'images/i2.JPG' %}" style="width:100%">
-
-          </div>
-
-
-
-           <div class="mySlides fade">
-            <img src="{% static 'images/i4.jpg' %}" style="width:100%">
-
-            </div>
-
-          <div class="mySlides fade">
-
-            <img src="{% static 'images/v1.jpeg' %}" style="width:100%">
-
-          </div>
-
-          <div class="mySlides fade">
-
-            <img src="{% static 'images/i6.jpg' %}" style="width:100%">
-          </div>
-
-
-          <!-- Next and previous buttons -->
-          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-          <a class="next" onclick="plusSlides(1)">&#10095;</a>
-        </div>
-        <br>
-
-        <div style ="background-image: url(http://jmd.im/wp-content/uploads/2017/06/blacki_thumbnail.jpg);">
-
-          <div style="text-align:center">
-          <span class="dot" onclick="currentSlide(1)"></span>
-          <span class="dot" onclick="currentSlide(2)"></span>
-          <span class="dot" onclick="currentSlide(3)"></span>
-          <span class="dot" onclick="currentSlide(4)"></span>
-          <span class="dot" onclick="currentSlide(5)"></span>
-          <span class="dot" onclick="currentSlide(6)"></span>
-        </div>
-      </div>
-
-
-
-        </div>
-
-
-
-
-    <script type="text/javascript">
-
-      var slideIndex = 0;
-      showSlides();
-
-      function showSlides() {
-        var i;
-        var slides = document.getElementsByClassName("mySlides");
-        for (i = 0; i < slides.length; i++) {
-          slides[i].style.display = "none";
-        }
-        slideIndex++;
-        if (slideIndex > slides.length) {slideIndex = 1}
-        slides[slideIndex-1].style.display = "block";
-        setTimeout(showSlides, 4000); // Change image every 2 seconds
-      }
-    </script>
-
-
-    <div align="center" class="ftco-footer ftco-bg-dark ftco-section"align="center" >
-        <p><h3 style="color:white;"><b>We are a group of enthusiastic students from the Department of Computer Science and Engineering NIT Warangal and who work timelessly to deliver the pure essence of Computer Science to everyone in our vicinity</b></h3></p>
-    </div>
-
-
-    <div class="par">
-      <img width="100%" height="600px" src="{% static 'images/csea2019.jpg' %}">
-    </div>
-
-
-
-    <div align="center" class="ftco-footer ftco-bg-dark ftco-section"align="center" >
-      <h3 style="color:white;"><b>Snaps of Some of Our Events</b></h3>
-    </div>
-
-
-    <div style ="background-image: url(http://jmd.im/wp-content/uploads/2017/06/blacki_thumbnail.jpg);" class="clearfix" >
-      <div class="img-container" >
-      <img src="{% static 'images/i1.jpg' %}" style="width:100%" height="350px">
-      </div>
-      <div class="img-container" >
-      <img src="{% static 'images/i2.JPG' %}" style="width:100%" height="350px">
-      </div>
-      <div class="img-container">
-      <img src="{% static 'images/i3.jpg' %}" style="width:100%" height="350px">
-      </div>
-      <div class="img-container">
-      <img src="{% static 'images/i4.jpg' %}" style="width:100%" height="350px">
-      </div>
-      <div class="img-container">
-      <img src="{% static 'images/i5.jpg' %}" style="width:100%" height="350px">
-      </div>
-      <div class="img-container">
-      <img src="{% static 'images/i6.jpg' %}" style="width:100%" height="350px">
-      </div>
-     </div>
-
-
-
-
-
-
-<section id="contact" class=" border-top-color2">
-
-			<div class="ftco-footer ftco-bg-dark ftco-section fluid-container text-center">
-
-				<div class="row">
-
-					<div class="col-sm-6 col-md-5 text-right scrollimation fade-up d1">
-
-						<h1 class="big-text" style="color: #666666">Contact Us</h1>
-
-						<iframe class="map-con" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3794.880316715465!2d79.52921395041203!3d17.98430438766325!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a334fbbec4fcd8b%3A0xc5f5d66e005e92dc!2sDepartment%20of%20Computer%20Science%20%26%20Engineering!5e0!3m2!1sen!2sin!4v1571860298351!5m2!1sen!2sin" frameborder="0" style="border:2px;" allowfullscreen="" ></iframe>
-
-
-					</div>
-
-					<!--=== Contact Form ===-->
-
-					<form id="contact-form" class="col-sm-6 col-md-offset-1 scrollimation fade-left d3" action="contact.php" method="post" novalidate>
-
-						<div class="form-group">
-						  <label class="control-label" for="contact-name">Name</label>
-						  <div class="controls" align="center">
-							<input id="contact-name" name="contactName" placeholder="Your name" class="form-control requiredField" data-new-placeholder="Your name" type="text" data-error-empty="Please enter your name">
-							<i class="fa fa-user " style="align-items: center"></i>
-						  </div>
-						</div><!-- End name input -->
-
-						<div class="form-group">
-						  <label class="control-label" for="contact-mail">Email</label>
-						  <div class=" controls">
-							<input id="contact-mail" name="email" placeholder="Your email" class="form-control requiredField" data-new-placeholder="Your email" type="email" data-error-empty="Please enter your email" data-error-invalid="Invalid email address">
-							<i class="fa fa-envelope " ></i>
-						  </div>
-						</div><!-- End email input -->
-
-						<div class="form-group">
-						  <label class="control-label" for="contact-message">Message</label>
-							<div class="controls">
-								<textarea id="contact-message" name="comments"  placeholder="Your message" class="form-control requiredField" data-new-placeholder="Your message" rows="6" data-error-empty="Please enter your message"></textarea>
-								<i class="fa fa-comment"></i>
-							</div>
-						</div><!-- End textarea -->
-
-						<p><button name="submit" type="submit" class="btn btn-color2 btn-block" data-error-message="Error!" data-sending-message="Sending..." data-ok-message="Message Sent"><i class="fa fa-paper-plane"></i>Send Message</button></p>
-						<input type="hidden" name="submitted" id="submitted" value="true" />
-
-					</form><!-- End contact-form -->
-
-				</div>
-
-			</div>
-
-		</section>
-
-{#             {% block content %}#}
-{#            <form method="post">#}
-{#               {% csrf_token %}#}
-{#                <h3>Leave Us Some Feedback</h3>#}
 {##}
-{#               <div class="row">#}
-{#                    <div class="col-md-6">#}
+{#<section id="contact" class=" border-top-color2">#}
+{##}
+{#			<div class="ftco-footer ftco-bg-dark ftco-section fluid-container text-center">#}
+{##}
+{#				<div class="row">#}
+{##}
+{#					<div class="col-sm-6 col-md-5 text-right scrollimation fade-up d1">#}
+{##}
+{#						<h1 class="big-text" style="color: #666666">Contact Us</h1>#}
+{##}
+{#						<iframe class="map-con" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3794.880316715465!2d79.52921395041203!3d17.98430438766325!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a334fbbec4fcd8b%3A0xc5f5d66e005e92dc!2sDepartment%20of%20Computer%20Science%20%26%20Engineering!5e0!3m2!1sen!2sin!4v1571860298351!5m2!1sen!2sin" frameborder="0" style="border:2px;" allowfullscreen="" ></iframe>#}
+{##}
+{##}
+{#					</div>#}
+{##}
+{#					<!--=== Contact Form ===-->#}
+{#                    {% block content %}#}
+{#					<form class="col-sm-6 col-md-offset-1 scrollimation fade-left d3" method="post" >#}
+{#                        {% csrf_token %}#}
+{#						<div class="form-group">#}
+{#						  <label class="control-label" for="contact-name">Name</label>#}
+						{#  <div class="controls" align="center">#}
+{#							  <input maxlength="100" type="text" name="event_name" class="form-control requiredField" placeholder="Your Name *" value="" />#}
+{#                        <i class="fa fa-user " style="align-items: center"></i>#}
+{##}
+{#						</div><!-- End name input -->#}
+{##}
+{#						<div class="form-group">#}
+{#						  <label class="control-label" for="contact-mail">Email</label>#}
+						  {#  <div class=" controls">#}
+{#							<input maxlength="300", required=True type="text" name="cem" class="form-control requiredField" placeholder="Your Email *" value="" />#}
+{#                       	<i class="fa fa-envelope " ></i>#}
+{##}
+{#						</div><!-- End email input -->#}
+{##}
+{#						<div class="form-group">#}
+{#						  <label class="control-label" for="contact-message">Message</label>#}
+							{#  <div class="controls">#}
+{#								<textarea name="fback" value="" class="form-control" placeholder="Feedback *"  style="width: 100%; height: 1000px;" rows="6" data-error-empty="Please enter your message"></textarea>#}
+{#								<i class="fa fa-comment"></i>#}
+{##}
+{#						</div><!-- End textarea -->#}
 {#                        <div class="form-group">#}
-{#                            <input maxlength="100" type="text" name="event_name" class="form-control" placeholder="Event Name *" value="" />#}
+{#						/<p><button name="submit" type="submit" class="btn btn-color2 btn-block" data-error-message="Error!" data-sending-message="Sending..." data-ok-message="Message Sent"><i class="fa fa-paper-plane"></i>Send Message</button></p>#}
+{#						<input placeholder="Send Feedback *" maxlength="1000" type="submit" class="btnContact" />#}
 {#                        </div>#}
-{#                        <div class="form-group">#}
-{#                            <input maxlength="300", required=True type="text" name="cem" class="form-control" placeholder="Your College Email *" value="" />#}
-{#                        </div>#}
-{#                        <div class="form-group">#}
-{#                            <input placeholder="Send Feedback *" maxlength="600" type="submit" class="btnContact" />#}
-{#                        </div>#}
-{#                    </div>#}
-{#                    <div class="col-md-6">#}
-{#                        <div class="form-group">#}
-{#                            <textarea name="fback" value="" class="form-control" placeholder="Feedback *"  style="width: 100%; height: 150px;"></textarea>#}
-{#                        </div>#}
-{#                    </div>#}
-{#                </div>#}
-{#            </form>#}
-{#            {% endblock %}#}
+{#					</form><!-- End contact-form -->#}
+{#                {% endblock %}#}
+{#				</div>#}
+{##}
+{#			</div>#}
+{##}
+{#		</section>#}
+
+             {% block content %}
+            <form method="post">
+               {% csrf_token %}
+                <h3>Leave Us Some Feedback</h3>
+
+               <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <input maxlength="100" type="text" name="event_name" class="form-control" placeholder="Event Name *" value="" />
+                        </div>
+                        <div class="form-group">
+                            <input maxlength="300", required=True type="text" name="cem" class="form-control" placeholder="Your College Email *" value="" />
+                        </div>
+                        <div class="form-group">
+                            <input placeholder="Send Feedback *" maxlength="600" type="submit" class="btnContact" />
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <textarea name="fback" value="" class="form-control" placeholder="Feedback *"  style="width: 100%; height: 150px;"></textarea>
+                        </div>
+                    </div>
+                </div>
+            </form>
+            {% endblock %}
 
  <footer text-align="center" class=" ftco-footer ftco-bg-dark ftco-section" >
         <div class="rounded-social-buttons">
@@ -490,6 +404,8 @@ function topFunction() {
 </script>
 
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
   </body>
 </html>

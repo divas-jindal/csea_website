@@ -14,13 +14,16 @@ def team(request):
 def alumni(request):
 	return render(request,'alumni.html')
 def feedback1(request):
+	print("cp0")
 	if request.method == 'POST':
 		form = feedbackform(request.POST)
+		print("cp1")
 		if form.is_valid():
+			print("cp2")
 			sender = form.cleaned_data['cem']
 			e_name = form.cleaned_data['event_name']
 			fb = form.cleaned_data['fback']
-			recipients = ['csea@student.nitw.ac.in']
+			recipients = ['kapilrathod1234@gmail.com']
 			subject = "Feedback on " + e_name
 			message = fb
 			send_mail(subject, message, sender, recipients) # sends to specified email
@@ -29,6 +32,7 @@ def feedback1(request):
 			f.eventname = e_name
 			f.fback = fb
 			f.save()
+			print("hey")
 
 	return render(request,'feedback.html')
 
