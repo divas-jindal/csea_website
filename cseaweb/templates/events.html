@@ -1,13 +1,14 @@
 {% load static %}
 <!DOCTYPE html>
-<html lang="en" >
-<head>
-  <meta charset="UTF-8">
-  <title>Timeline of Events</title>
-    <meta name=”viewport” content=”width=device-width, initial-scale=1″>
- <link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
+<html lang="en">
 
-     <link rel="stylesheet" href="{% static 'css/css/open-iconic-bootstrap.min.css' %}">
+<head>
+    <meta charset="UTF-8">
+    <title>Timeline of Events</title>
+    <meta name=”viewport” content=”width=device-width, initial-scale=1″>
+    <link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="{% static 'css/css/open-iconic-bootstrap.min.css' %}">
     <link rel="stylesheet" href="{% static 'css/css/animate.css' %}">
 
     <link rel="stylesheet" href="{% static 'css/css/owl.carousel.min.css'%}">
@@ -21,624 +22,700 @@
     <link rel="stylesheet" href="{% static 'css/css/flaticon.css'%}">
     <link rel="stylesheet" href="{% static 'css/css/icomoon.css' %}">
     <link rel="stylesheet" href="{% static 'css/css/style.css'%}">
-          <link href="{% static 'fab/css/all.css' %}" rel="stylesheet"> <!--load all styles -->
+    <link href="{% static 'fab/css/all.css' %}" rel="stylesheet">
+    <!--load all styles -->
 
-      <!-- ... -->
-<link rel="stylesheet" id="font-awesome-css" href="//maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css?ver=4.9.4" type="text/css" media="all">
+    <!-- ... -->
+    <link rel="stylesheet" id="font-awesome-css" href="//maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css?ver=4.9.4" type="text/css" media="all">
 
-  <link href="https://fonts.googleapis.com/css?family=Roboto:100i,300,400,500,700" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Allura" rel="stylesheet"><link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css'>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100i,300,400,500,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Allura" rel="stylesheet">
     <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css'>
-<link rel="stylesheet" href="{% static 'style.css' %}">
-  <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
-<script src='https://cdn.jsdelivr.net/scrollreveal.js/3.3.1/scrollreveal.min.js'></script>
-<script  src="{% static 'script.js' %}"></script>
+    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css'>
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+    <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
+    <script src='https://cdn.jsdelivr.net/scrollreveal.js/3.3.1/scrollreveal.min.js'></script>
+    <script src="{% static 'script.js' %}"></script>
 
-<style type="text/css">
-    .date{
-    font-size:20px}
-.active {
-  background-color: #717171;
-}
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #323232;
-
-}
-
-li {
-  float: left;
-}
-
-li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 20px 30px;
-  text-decoration: none;
-  background-color: #323232;
-}
-
-/* Change the link color to #111 (black) on hover */
-li a:hover {
-  background-color: #111;
-  color:    #FF4500;
-  text-decoration:none;
-}
-Active/Current Navigation Link
-Add an "active" class to the current link to let the user know which page he/she is on:
-
-HomeNewsContactAbout
-Example
-.active {
-  background-color: #4CAF50;
-}
-    footer{
-  {#margin-top:100px;#}
-    background-color:;
-    font-family: "Segoe UI",Arial,sans-serif;
-   width: 100%;
-    height: 500px;
-    color: white;
-  }
-
-
-  }
-  @media only screen and (max-width: 425px){
-    footer{
-      height: 600px;
+    <style type="text/css">
+    .date {
+            font-size: 20px
+        }
+        
+        .active {
+            background-color: #717171;
+        }
+        
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #323232;
+        }
+        
+        li {
+            float: left;
+        }
+        
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 20px 30px;
+            text-decoration: none;
+            background-color: #323232;
+        }
+        /* Change the link color to #111 (black) on hover */
+        
+        li a:hover {
+            background-color: #111;
+            color: #FF4500;
+            text-decoration: none;
+        }
+        
+        Active/Current Navigation Link Add an "active" class to the current link to let the user know which page he/she is on: HomeNewsContactAbout Example .active {
+            background-color: #4CAF50;
+        }
+        
+        footer {
+            {
+                #margin-top: 100px;
+                #
+            }
+            background-color:;
+            font-family: "Segoe UI",
+            Arial,
+            sans-serif;
+            width: 100%;
+            height: 500px;
+            color: white;
+        }
     }
-    #gap a{
-        padding: 5px;
+    @media only screen and (max-width: 425px) {
+        footer {
+            height: 600px;
+        }
+        
+        #gap a {
+            padding: 5px;
+        }
     }
-
-}
-#myBtn {
-  display: none; /* Hidden by default */
-  position: fixed; /* Fixed/sticky position */
-  bottom: 20px; /* Place the button at the bottom of the page */
-  right: 30px; /* Place the button 30px from the right */
-  z-index: 99; /* Make sure it does not overlap */
-  border: none; /* Remove borders */
-  outline: none; /* Remove outline */
-  background-color: black; /* Set a background color */
-  color: white; /* Text color */
-  cursor: pointer; /* Add a mouse pointer on hover */
-  padding: 15px; /* Some padding */
-  border-radius: 10px; /* Rounded corners */
-  font-size: 18px; /* Increase font size */
-}
-
-#myBtn:hover {
-  background-color: #555; /* Add a dark-grey background on hover */
-}
-
+    #myBtn {
+        display: none;
+        /* Hidden by default */
+        
+        position: fixed;
+        /* Fixed/sticky position */
+        
+        bottom: 20px;
+        /* Place the button at the bottom of the page */
+        
+        right: 30px;
+        /* Place the button 30px from the right */
+        
+        z-index: 99;
+        /* Make sure it does not overlap */
+        
+        border: none;
+        /* Remove borders */
+        
+        outline: none;
+        /* Remove outline */
+        
+        background-color: black;
+        /* Set a background color */
+        
+        color: white;
+        /* Text color */
+        
+        cursor: pointer;
+        /* Add a mouse pointer on hover */
+        
+        padding: 15px;
+        /* Some padding */
+        
+        border-radius: 10px;
+        /* Rounded corners */
+        
+        font-size: 18px;
+        /* Increase font size */
+    }
+    #myBtn:hover {
+        background-color: #555;
+        /* Add a dark-grey background on hover */
+    }
     </style>
-            <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/all.js" integrity="sha384-xymdQtn1n3lH2wcu0qhcdaOpQwyoarkgLVxC/wZ5q7h9gHtxICrpcaSUfygqZGOe" crossorigin="anonymous"></script>
-{#      <link rel="stylesheet" href="{% static 'css/footer.css'%}">#}
-       <link rel="stylesheet" href="{% static 'css/header.css'%}">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/all.js" integrity="sha384-xymdQtn1n3lH2wcu0qhcdaOpQwyoarkgLVxC/wZ5q7h9gHtxICrpcaSUfygqZGOe" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="{% static 'css/footer.css'%}">
+    <link rel="stylesheet" href="{% static 'css/header.css'%}">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="{% static 'css/footer.css'%}">
+</head>
 
-  </head>
-  <body style="font-family:Poppins" >
+<body style="font-family:Poppins">
 
-<nav style="margin-bottom: 50px ; background-color: #333; padding-top: 1%; padding-bottom: 1% " class="navbar sticky-top navbar-expand-xl navbar-dark " >
-    <a href="/home/" class="navbar-brand"> <img src="{% static 'images/csealogo.png' %}" height="30px" width="100px" hspace="50px"></a>
-    <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarMenu">
+    <nav style="margin-bottom: 50px ; background-color: #333; padding-top: 1%; padding-bottom: 1% " class="navbar sticky-top navbar-expand-xl navbar-dark ">
+        <a href="/home/" class="navbar-brand"> <img src="{% static 'images/csealogo.png' %}" height="30px" width="100px" hspace="50px"></a>
+        <button class="navbar-toggler " data-toggle="collapse" data-target="#navbarMenu">
         <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse" id="navbarMenu" >
-        <ul class="navbar-nav ml-auto" style="background-color: #333">
-            <li class="nav-item"><a href="/gallery/">Gallery</a></li>
-            <li class="nav-item"><a class="active"href="/events/">Events</a></li>
-            <li class="nav-item"><a href="/team/">Team</a></li>
-            <li class="nav-item" ><a  href="/alumni/">Alumni</a></li>
-{#            <li class="nav-item"><a href="/feedback/">Feedback</a></li>#}
-            <li class="nav-item"><a href="/straightoutta/">Straight Outta CSED</a></li>
-            <li class="nav-item"><a href="/alumniconnect/">Alumni Connect</a></li>
-        </ul>
-    </div>
-</nav>
-
-<div align="center" class="fluid-container">
-
-      <img src="{% static 'images/nitwlogo.png' %}" width="400"> <img src="{% static 'images/logo.jpg' %}" width="240">
-      <h1><b>Computer Science and Engineering Association, NITW</b></h1>
-    </div>
-
-
-
-   <div class="ftco-footer ftco-bg-dark ftco-section" align="center">
-    <h1 style="color:white;"><b>Timeline</b></h1>
-    </div>
-
-<section style ="background-image: url(http://jmd.im/wp-content/uploads/2017/06/blacki_thumbnail.jpg);" class="timeline">
-
-  <div class="container">
-
-{#     <div class="timeline-item">#}
-{##}
-{#     <div class="timeline-img"></div>#}
-{##}
-{#     <div class="timeline-content js--fadeInRight">#}
-{#       <div>#}
-{#       <img src="{% static 'images/events/umang.jpg' %}" height="230px" width="100%">#}
-{#       </div>#}
-{#       <div class="date">26 Oct 2019</div>#}
-{#       <h2>Umang</h2>#}
-{#       <blockquote>To celebrate the innocence of childhood and bring lights in everyone's lives this Diwali, CSEA NIT Warangal conducted Umang- "Bringing smiles on young faces"- an initiative to spend time with young school children of ATHIDI ASHRAMAM and share with them the joys that computers bring and showed them technologies they might have never thought of.</blockquote>#}
-{##}
-{#     </div>#}
-{#    </div>#}
-
-       <div class="timeline-item">
-
-        <div class="timeline-img"></div>
-
-        <div class="timeline-content js--fadeInLeft">
-          <div>
-          <img src="{% static 'images/events/Mock.jpg' %}" height="230px" width="100%">
-          </div>
-          <div class="date">Coming Soon</div>
-          <h2>Mock Internships</h2>
-          <blockquote>With the intern season arriving soon, the race for the companies has already begun.
-As we know, "Slow and steady wins the race". CSEA is here to aid your slow and steady progress with the ultimate Mock Internship agenda!
-Exclusively for the *First year MCA and Second year B.Tech* out there, we bring to you the perfect prep plan!</blockquote>
-
+        <div class="collapse navbar-collapse justify-content-end" id="navbarMenu">
+            <ul class="navbar-nav ml-auto" style="background-color: #333">
+                <li class="nav-item"><a href="/gallery/">Gallery</a></li>
+                <li class="nav-item"><a class="active" href="/events/">Events</a></li>
+                <li class="nav-item"><a href="/team/">Team</a></li>
+                <li class="nav-item"><a href="/alumni/">Alumni</a></li>
+                <!-- {#
+                <li class="nav-item"><a href="/feedback/">Feedback</a></li>#} -->
+                <li class="nav-item"><a href="/straightoutta/">Straight Outta CSED</a></li>
+                <li class="nav-item"><a href="/alumniconnect/">Alumni Connect</a></li>
+            </ul>
         </div>
-      </div>
+    </nav>
 
-         <div class="timeline-item">
+    <div align="center" class="fluid-container">
 
-          <div class="timeline-img"></div>
-
-          <div class="timeline-content js--fadeInRight">
-            <div>
-            <img src="{% static 'images/events/LearningWeek.jpg' %}" height="230px" width="100%">
-            </div>
-            <div class="date">19 Feb 2020-26 Feb 2020</div>
-            <h2>Week Of Learning</h2>
-            <blockquote>Learn the most in-demand tech skills,one week at a time. Week of Learning is a combination of online and offline learning where you will learn the basics of web development and build your own first project</blockquote>
-          </div>
-        </div>
-
-    <div class="timeline-item">
-
-     <div class="timeline-img"></div>
-
-     <div class="timeline-content js--fadeInLeft">
-       <div>
-       <img src="{% static 'images/events/CodeWars.jpg' %}" height="230px" width="100%">
-       </div>
-       <div class="date">17 Jan 2020</div>
-       <h2>Code Wars</h2>
-       <blockquote>Hey fellow coders!CSEA, NITW, in association with ACM Chapter, NITW brings to you the first Intra-NITW contest "Code Wars 1.0" for coders across all years.This is also the qualification round for entry of second and third years in ACM Chapter, NITW. The top rankers in the contest will be going to the next rounds for the recruitment.
-</blockquote>
-     </div>
-   </div>
-
-
-    <div class="timeline-item">
-
-     <div class="timeline-img"></div>
-
-     <div class="timeline-content js--fadeInRight">
-       <div>
-       <img src="{% static 'images/events/YouthFest.jpg' %}" height="230px" width="100%">
-       </div>
-       <div class="date">6 Jan 2020-10 Jan 2020</div>
-       <h2>YouthFest</h2>
-       <blockquote>Boost your enthusiasm as CSEA is back again with a bunch of power-packed events during the Youth Fest 2020.
-If you believe you have the potential to debug the codes, or are a quizzing pro, surely this time is for you.
-Here we present you the timeline of events.</blockquote>
-     </div>
-   </div>
-
-   <div class="timeline-item">
-
-    <div class="timeline-img"></div>
-
-    <div class="timeline-content js--fadeInLeft">
-      <div>
-      <img src="{% static 'images/events/CFM.jpg' %}" height="230px" width="100%">
-      </div>
-      <div class="date">6 Jan 2020</div>
-      <h2>Call For Makerspace</h2>
-      <blockquote>
-   To provide students with a platform for this, CSEA- in association with IG- presents the 'Call for Makers' campaign- an opportunity to share common interests outside academics, and see what you all can achieve with your ideas.
-   Due to a large number of requests, we have decided to add the following fields to our Call for Makers campaign:
-   1. Machine Learning
-   2. Game Development
-   3. Cyber Security
-   4. Robotics</blockquote>
-    </div>
-   </div>
-
-   <div class="timeline-item">
-
-    <div class="timeline-img"></div>
-
-    <div class="timeline-content js--fadeInRight">
-      <div>
-      <img src="{% static 'images/events/ACM.jpg' %}" height="230px" width="100%">
-      </div>
-      <div class="date">5 Jan 2020</div>
-      <h2>ACM Session</h2>
-      <blockquote>ACM Student Chapter,NITW in association with CSEA,NITW is organizing its third session to givethe fellow programmersmore insignts on CP. This session covers the topics-Bit Manipulation,Modular Arithmetic and Sieve related Algorithms</blockquote>
-    </div>
-   </div>
-
-
-   <div class="timeline-item">
-
-    <div class="timeline-img"></div>
-
-    <div class="timeline-content js--fadeInLeft">
-      <div>
-      <img src="{% static 'images/events/DSLearn.jpg' %}" height="230px" width="100%">
-      </div>
-      <div class="date">5 Jan 2020</div>
-      <h2>DS Learning Session</h2>
-      <blockquote>CSEA NITW is back again with its classic Data Structures Sessions where we focus on clearing doubts and misconceptions in DSA and it is through this event where we highlight the importance of DS in bagging those coveted internships in top notch tech companies by teaching those interview worthy concepts right from scratch!</blockquote>
-    </div>
-   </div>
-
-  <div class="timeline-item">
-
-   <div class="timeline-img"></div>
-
-   <div class="timeline-content js--fadeInRight">
-     <div>
-     <img src="{% static 'images/events/Crio.jpg' %}" height="230px" width="100%">
-     </div>
-     <div class="date">4 Jan 2020-5 Jan 2020</div>
-     <h2>Crio.io Workshop</h2>
-     <blockquote>We at CSEA and Crio.Do are thrilled to introduce a one-of-a-kind online workshop, on 4th and 5th January, where you can experience what it takes to build real products features in a work-like environment, and learn key programming & software engineering concepts along the way.</blockquote>
-   </div>
- </div>
-
- <div class="timeline-item">
-
-  <div class="timeline-img"></div>
-
-  <div class="timeline-content js--fadeInLeft">
-    <div>
-    <img src="{% static 'images/events/Resume.jpg' %}" height="230px" width="100%">
-    </div>
-    <div class="date">3 Jan 2020</div>
-    <h2>Resume Building Workshop</h2>
-    <blockquote>CSEA, as part of the "Interview Preparation Series" brings to you "RESUME BUILDING SESSION" where you will learn the nitty gritty of making professional resumes.</blockquote>
-  </div>
- </div>
-
-<div class="timeline-item">
-
- <div class="timeline-img"></div>
-
- <div class="timeline-content js--fadeInRight">
-   <div>
-   <img src="{% static 'images/events/QuizMass.jpg' %}" height="230px" width="100%">
-   </div>
-   <div class="date">20 Dec 2019-30 Dec 2019</div>
-   <h2>Merry QuizMass</h2>
-   <blockquote>Hey Guys!! Finally we are here with our first question ofthe day of the series 'Merry QuizMass'. Use your geeky minds to solvethe problem and win exciting prizes.</blockquote>
- </div>
-</div>
-
-<div class="timeline-item">
-
- <div class="timeline-img"></div>
-
- <div class="timeline-content js--fadeInLeft">
-   <div>
-   <img src="{% static 'images/events/Trinitarian.jpg' %}" height="230px" width="100%">
-   </div>
-   <div class="date">21 Dec 2019</div>
-   <h2>Trinitarian Cup</h2>
-   <blockquote>The Golden Trio, The Holy Trinity or The Three Musketeers, the best experiences come with the fantastic number 3.An event more exciting than it sounds, ACM, NIT SURATHKAL, SPIDER, NIT TRICHY and CSEA, NIT WARANGAL in collaboration, present a coding competition like no other, The TriNITarian Coding Cup.</blockquote>
- </div>
-</div>
-
-<div class="timeline-item">
-
- <div class="timeline-img"></div>
-
- <div class="timeline-content js--fadeInRight">
-   <div>
-   <img src="{% static 'images/events/InternTalk.jpg' %}" height="230px" width="100%">
-   </div>
-   <div class="date">7 Dec 2019</div>
-   <h2>Intern Talk</h2>
-   <blockquote>CSEA is soon coming up with an Intern talk exclusively for B.Tech 2nd-year circuit branch peeps. The talk is intended to guide you all for the Internship preparation phase and tell you how to use your time productively in Winter Vacations and 4th semester for the best output.</blockquote>
- </div>
-</div>
-    <div class="timeline-item">
-
-     <div class="timeline-img"></div>
-
-     <div class="timeline-content js--fadeInLeft">
-       <div>
-       <img src="{% static 'images/events/4pi.jpg' %}" height="230px" width="100%">
-       </div>
-       <div class="date">01 Nov 2019-03 Nov 2019</div>
-       <h2>4pi</h2>
-       <blockquote>CSEA presents the most entertaining, fun and challenging event of this Technozion- "4 π", an event based on the famous online contest "Cicada 3301", but with a NITW twist.Solve our cryptic clues and get a chance to win exciting prizes.Doesn't that make you excited!!!</blockquote>
-
-     </div>
-   </div>
-
-     <div class="timeline-item">
-
-      <div class="timeline-img"></div>
-
-      <div class="timeline-content js--fadeInRight">
-        <div>
-        <img src="{% static 'images/events/valar.jpg' %}" height="230px" width="100%">
-        </div>
-        <div class="date">26 Oct 2019</div>
-        <h2>Valar Doubtulis</h2>
-        <blockquote>The purpose of this event is to teach those topics in PSCP where the first year students might face difficulty in understanding and also to break the ice between seniors and the freshers. The event not only focussed on clearing doubts but also teaching new topics which might be helpful in inculcating an interest in coding.</blockquote>
-
-      </div>
-    </div>
-
-      <div class="timeline-item">
-
-      <div class="timeline-img"></div>
-
-      <div class="timeline-content js--fadeInLeft">
-         <div>
-        <img src="{% static 'images/events/kyb1.jpg' %}" height= "240px" width="100%">
-        </div>
-        <div class="date">23 Oct 2019</div>
-
-        <h2>Know Your Branch</h2>
-        <blockquote>The event will deal with brief insights on the different avenues CSE, as a branch, has to offer including internships, placements, study tips and research opportunities. The students will be told about various prestigious programmes that happen globally including ACM-ICPC, GSoC, etc.</blockquote>
-
-      </div>
-    </div>
-
-    <div class="timeline-item">
-
-      <div class="timeline-img"></div>
-
-      <div class="timeline-content js--fadeInRight">
-        <div>
-        <img src="{% static 'images/events/research.jpg' %}" height="230px" width="100%">
-        </div>
-        <div class="date">22 Oct 2019</div>
-        <h2>Talk on Foreign & Research Internships</h2>
-        <blockquote>An event to make the students aware about the opportunities in research and foreign internships. The students will be formed about all the programmes that they can be a part, for each year.</blockquote>
-
-      </div>
-    </div>
-
-    <div class="timeline-item">
-
-      <div class="timeline-img"></div>
-
-      <div class="timeline-content js--fadeInLeft">
-        <div>
-        <img src="{% static 'images/events/techkirti.jpg' %}" height="230px" width="100%">
-        </div>
-        <div class="date">19 & 20 Oct 2019</div>
-        <h2>Workshops</h2>
-        <blockquote>CSEA, in association with Techkriti, the annual Technical Festival of IIT Kanpur, organized  "Technocruise"- a set of technical workshops designed to inculcate students with two skills that are much in demand in the industry- Data Analytics and Android development.
-With leading experts in the field associated with Techkriti taking the workshops, students took back lots of knowledge from them.</blockquote>
-
-      </div>
-    </div>
-     <div class="timeline-item">
-
-      <div class="timeline-img"></div>
-
-      <div class="timeline-content js--fadeInRight">
-        <div>
-        <img src="{% static 'images/events/internships.jpg' %}" height= "240px" width="100%">
-        </div>
-        <div class="date">19 Oct 2019</div>
-        <h2>Internship Tales</h2>
-        <blockquote>An initiative to help the current 3rd year students, in answering their queries about the respective internships which they would be undertaking in the summer of 2020. Respective Final Year students who had just completed their internships come forward to satiate the curious minds.
-        </blockquote>
-
-      </div>
+        <img src="{% static 'images/nitwlogo.png' %}" width="400"> <img src="{% static 'images/logo.jpg' %}" width="240">
+        <h1><b>Computer Science and Engineering Association, NITW</b></h1>
     </div>
 
 
-    <div class="timeline-item">
 
-      <div class="timeline-img"></div>
-
-      <div class="timeline-content js--fadeInLeft">
-        <div>
-        <img src="{% static 'images/events/codeathon.jpg' %}" height= "240px" width="100%">
-        </div>
-        <div class="date">10 Oct 2019</div>
-        <h2>Codeathon 1.0</h2>
-        <blockquote>Just like reading and writing, coding has become a life-time skill to be acquired in today’s world. In order to inculcate the competitive coding culture in the campus, we bring to you Codeathon, a series of online competitive programming contests where the participants were given 5-6 questions to be programmed and submitted within 3 hours.</blockquote>
-      </div>
+    <div class="ftco-footer ftco-bg-dark ftco-section" align="center">
+        <h1 style="color:white;"><b>Timeline</b></h1>
     </div>
 
-     <div class="timeline-item">
+    <section style="background-image: url(http://jmd.im/wp-content/uploads/2017/06/blacki_thumbnail.jpg); margin-bottom: -50px;" class="timeline">
 
-      <div class="timeline-img"></div>
+        <div class="container">
 
-      <div class="timeline-content js--fadeInRight">
-        <div>
-        <img src="{% static 'images/events/tshirt.jpg' %}" height= "240px" width="100%">
-        </div>
-        <div class="date">7 Oct 2019</div>
-        <h2>T-shirt Designing</h2>
-        <blockquote>CSEA launched the "T-Shirt Design Contest" in search of some designing talent among students. The number of responses received were quite huge, making it difficult for the judges to choose the best design. </blockquote>
-      </div>
-    </div>
+            <!-- {#
+            <div class="timeline-item">#} {##} {#
+                <div class="timeline-img"></div>#} {##} {#
+                <div class="timeline-content js--fadeInRight">#} {#
+                    <div>#} {# <img src="{% static 'images/events/umang.jpg' %}" height="230px" width="100%">#} {# </div>#} {#
+                    <div class="date">26 Oct 2019</div>#} {#
+                    <h2>Umang</h2>#} {#
+                    <blockquote>To celebrate the innocence of childhood and bring lights in everyone's lives this Diwali, CSEA NIT Warangal conducted Umang- "Bringing smiles on young faces"- an initiative to spend time with young school children of ATHIDI ASHRAMAM
+                        and share with them the joys that computers bring and showed them technologies they might have never thought of.</blockquote>#} {##} {# </div>#} {# </div>#} -->
 
-       <div class="timeline-item">
+            <div class="timeline-item">
 
-      <div class="timeline-img"></div>
+                <div class="timeline-img"></div>
 
-      <div class="timeline-content js--fadeInLeft">
-        <div>
-        <img src="{% static 'images/events/404resolved.jpg' %}" height= "240px" width="100%">
-        </div>
-        <h2>404 Resolved</h2>
-        <div class="date">4 Oct 2019</div>
-        <blockquote>We will be featuring modules of web development, machine learning, basic coding and competitive programming, and blockchains. The list doesn't stop there! We will also be showcasing the different opportunities ranging from research to GSOC. </blockquote>
+                <div class="timeline-content js--fadeInLeft">
+                    <div>
+                        <img src="{% static 'images/events/Mock.jpg' %}" height="230px" width="100%">
+                    </div>
+                    <div class="date">Coming Soon</div>
+                    <h2>Mock Internships</h2>
+                    <blockquote>With the intern season arriving soon, the race for the companies has already begun. As we know, "Slow and steady wins the race". CSEA is here to aid your slow and steady progress with the ultimate Mock Internship agenda! Exclusively
+                        for the *First year MCA and Second year B.Tech* out there, we bring to you the perfect prep plan!</blockquote>
 
-      </div>
-    </div>
-
-
-    <div class="timeline-item">
-
-      <div class="timeline-img"></div>
-
-      <div class="timeline-content js--fadeInRight">
-        <div>
-        <img src="{% static 'images/events/meme.jpg' %}" height= "240px" width="100%">
-        </div>
-        <h2>Meme Making</h2>
-        <div class="date">2 Oct 2019</div>
-        <blockquote>Setting and keeping up with trends is what we do at CSEA and the 2.0 edition of MEME MAKING bears testimony to that. The event not only received hilarious responses but was also one was of the most successful online event of all times. The judges were our online audience and the winning entry was adjudged based on the most number of reacts. </blockquote>
-
-      </div>
-    </div>
-
-
-       <div class="timeline-item">
-
-      <div class="timeline-img"></div>
-
-      <div class="timeline-content js--fadeInLeft">
-        <div>
-        <img src="{% static 'images/events/devathon.jpg' %}" height= "240px" width="100%">
-        </div>
-        <h2>Devathon</h2>
-        <div class="date">14 Sept 2019</div>
-        <blockquote>CSEA and WSDC, organized DEVATHON 2019 on 14th September from 7pm onwards, a first-of-a-kind hackathon in NITW where people from all years of study formed groups and worked on fun ideas over a period of 24 hours- enabling students to learn from each other, and apply the knowledge to make something cool.</blockquote>
-
-      </div>
-    </div>
-
-       <div class="timeline-item">
-
-      <div class="timeline-img"></div>
-
-      <div class="timeline-content js--fadeInRight">
-        <div>
-        <img src="{% static 'images/events/freshers.jpg' %}" height= "240px" width="100%">
-        </div>
-        <h2>CSEA Freshers’</h2>
-        <div class="date">12 Sept 2019</div>
-        <blockquote>An event exclusively for B.Tech and MCA freshers to break the ice between seniors and juniors, and to know their future peers well and enjoy an evening of fun.</blockquote>
-      </div>
-    </div>
-
-
-    <div class="timeline-item">
-      <div class="timeline-img"></div>
-
-      <div class="timeline-content js--fadeInLeft">
-        <div>
-        <img src="{% static 'images/events/dsession.jpg' %}" height= "240px" width="100%">
-        </div>
-        <h2>DSA Session</h2>
-        <div class="date">8 Sept 2019</div>
-        <blockquote>Be it projects or interviews, Data Structures are one of the core essentials for a CSE student. It is the one subject which haunts every student and to make things easier, CSEA came up with the event on DS Learning. All concepts of Data Structures were discussed from the scratch for better understanding. The sessions were open to all branches.</blockquote>
-
-      </div>
-    </div>
-
-
-    <div class="timeline-item">
-      <div class="timeline-img"></div>
-
-      <div class="timeline-content js--fadeInRight">
-        <div>
-        <img src="{% static 'images/events/valar.jpg' %}" height= "240px"width="100%">
-        </div>
-        <h2>Valar Doubtulis</h2>
-        <div class="date">8 Sept 2019</div>
-        <blockquote>The purpose of this event is to teach those topics in PSCP where the first year students might face difficulty in understanding and also to break the ice between seniors and the freshers. The event not only focussed on clearing doubts but also teaching new topics which might be helpful in inculcating an interest in coding.</blockquote>
-
-      </div>
-    </div>
-
-  </div>
-</section>
-
-  <div align="center">
-
-    <footer text-align="center" class="ftco-footer ftco-bg-dark ftco-section">
-      <div class="container" class="col-md-5">
-        <div class="row mb-2 ">
-<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3794.880316715465!2d79.52921395041203!3d17.98430438766325!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a334fbbec4fcd8b%3A0xc5f5d66e005e92dc!2sDepartment%20of%20Computer%20Science%20%26%20Engineering!5e0!3m2!1sen!2sin!4v1571860298351!5m2!1sen!2sin" width="500" height="300" frameborder="0" style="border:2px;" allowfullscreen="" ></iframe>
-
-        <div class="col-md-5 col-lg-2">
+                </div>
             </div>
 
-{#          </div>#}
-            <div class="col-md-2 col-lg-4">
-            <div class="ftco-footer-widget ">
-              <h2 class="ftco-heading-2 mb-0">Stay Connected With Us</h2>
-{#              <p></p>#}
-                <ul class="list-inline social-buttons">
+            <div class="timeline-item">
 
-                        <li class="list-inline-item">
-                          <a  href="mailto:csea@student.nitw.ac.in"><img src="{% static 'images/email.png' %}" width="50ox" height="50px margin-left "></a>
+                <div class="timeline-img"></div>
 
-                        </li>
-                        <li class="list-inline-item">
-                <a href="https://www.facebook.com/cseanitw/"><img src="{% static 'images/fb.png' %}" width="50px"height="50px"></a>
-                        </li>
-                        <li class="list-inline-item">
-                <a href="https://www.instagram.com/csea_nitw/?hl=en"><img src="{% static 'images/insta.png' %}" width="50px" height="50px"></a>
-        </li>
-                      </ul>
-                &nbsp;
+                <div class="timeline-content js--fadeInRight">
+                    <div>
+                        <img src="{% static 'images/events/LearningWeek.jpg' %}" height="230px" width="100%">
+                    </div>
+                    <div class="date">19 Feb 2020-26 Feb 2020</div>
+                    <h2>Week Of Learning</h2>
+                    <blockquote>Learn the most in-demand tech skills,one week at a time. Week of Learning is a combination of online and offline learning where you will learn the basics of web development and build your own first project</blockquote>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+
+                <div class="timeline-img"></div>
+
+                <div class="timeline-content js--fadeInLeft">
+                    <div>
+                        <img src="{% static 'images/events/CodeWars.jpg' %}" height="230px" width="100%">
+                    </div>
+                    <div class="date">17 Jan 2020</div>
+                    <h2>Code Wars</h2>
+                    <blockquote>Hey fellow coders!CSEA, NITW, in association with ACM Chapter, NITW brings to you the first Intra-NITW contest "Code Wars 1.0" for coders across all years.This is also the qualification round for entry of second and third years in
+                        ACM Chapter, NITW. The top rankers in the contest will be going to the next rounds for the recruitment.
+                    </blockquote>
+                </div>
+            </div>
+
+
+            <div class="timeline-item">
+
+                <div class="timeline-img"></div>
+
+                <div class="timeline-content js--fadeInRight">
+                    <div>
+                        <img src="{% static 'images/events/YouthFest.jpg' %}" height="230px" width="100%">
+                    </div>
+                    <div class="date">6 Jan 2020-10 Jan 2020</div>
+                    <h2>YouthFest</h2>
+                    <blockquote>Boost your enthusiasm as CSEA is back again with a bunch of power-packed events during the Youth Fest 2020. If you believe you have the potential to debug the codes, or are a quizzing pro, surely this time is for you. Here we present
+                        you the timeline of events.</blockquote>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+
+                <div class="timeline-img"></div>
+
+                <div class="timeline-content js--fadeInLeft">
+                    <div>
+                        <img src="{% static 'images/events/CFM.jpg' %}" height="230px" width="100%">
+                    </div>
+                    <div class="date">6 Jan 2020</div>
+                    <h2>Call For Makerspace</h2>
+                    <blockquote>
+                        To provide students with a platform for this, CSEA- in association with IG- presents the 'Call for Makers' campaign- an opportunity to share common interests outside academics, and see what you all can achieve with your ideas. Due to a large number of
+                        requests, we have decided to add the following fields to our Call for Makers campaign: 1. Machine Learning 2. Game Development 3. Cyber Security 4. Robotics</blockquote>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+
+                <div class="timeline-img"></div>
+
+                <div class="timeline-content js--fadeInRight">
+                    <div>
+                        <img src="{% static 'images/events/ACM.jpg' %}" height="230px" width="100%">
+                    </div>
+                    <div class="date">5 Jan 2020</div>
+                    <h2>ACM Session</h2>
+                    <blockquote>ACM Student Chapter,NITW in association with CSEA,NITW is organizing its third session to givethe fellow programmersmore insignts on CP. This session covers the topics-Bit Manipulation,Modular Arithmetic and Sieve related Algorithms</blockquote>
+                </div>
+            </div>
+
+
+            <div class="timeline-item">
+
+                <div class="timeline-img"></div>
+
+                <div class="timeline-content js--fadeInLeft">
+                    <div>
+                        <img src="{% static 'images/events/DSLearn.jpg' %}" height="230px" width="100%">
+                    </div>
+                    <div class="date">5 Jan 2020</div>
+                    <h2>DS Learning Session</h2>
+                    <blockquote>CSEA NITW is back again with its classic Data Structures Sessions where we focus on clearing doubts and misconceptions in DSA and it is through this event where we highlight the importance of DS in bagging those coveted internships
+                        in top notch tech companies by teaching those interview worthy concepts right from scratch!</blockquote>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+
+                <div class="timeline-img"></div>
+
+                <div class="timeline-content js--fadeInRight">
+                    <div>
+                        <img src="{% static 'images/events/Crio.jpg' %}" height="230px" width="100%">
+                    </div>
+                    <div class="date">4 Jan 2020-5 Jan 2020</div>
+                    <h2>Crio.io Workshop</h2>
+                    <blockquote>We at CSEA and Crio.Do are thrilled to introduce a one-of-a-kind online workshop, on 4th and 5th January, where you can experience what it takes to build real products features in a work-like environment, and learn key programming
+                        & software engineering concepts along the way.</blockquote>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+
+                <div class="timeline-img"></div>
+
+                <div class="timeline-content js--fadeInLeft">
+                    <div>
+                        <img src="{% static 'images/events/Resume.jpg' %}" height="230px" width="100%">
+                    </div>
+                    <div class="date">3 Jan 2020</div>
+                    <h2>Resume Building Workshop</h2>
+                    <blockquote>CSEA, as part of the "Interview Preparation Series" brings to you "RESUME BUILDING SESSION" where you will learn the nitty gritty of making professional resumes.</blockquote>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+
+                <div class="timeline-img"></div>
+
+                <div class="timeline-content js--fadeInRight">
+                    <div>
+                        <img src="{% static 'images/events/QuizMass.jpg' %}" height="230px" width="100%">
+                    </div>
+                    <div class="date">20 Dec 2019-30 Dec 2019</div>
+                    <h2>Merry QuizMass</h2>
+                    <blockquote>Hey Guys!! Finally we are here with our first question ofthe day of the series 'Merry QuizMass'. Use your geeky minds to solvethe problem and win exciting prizes.</blockquote>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+
+                <div class="timeline-img"></div>
+
+                <div class="timeline-content js--fadeInLeft">
+                    <div>
+                        <img src="{% static 'images/events/Trinitarian.jpg' %}" height="230px" width="100%">
+                    </div>
+                    <div class="date">21 Dec 2019</div>
+                    <h2>Trinitarian Cup</h2>
+                    <blockquote>The Golden Trio, The Holy Trinity or The Three Musketeers, the best experiences come with the fantastic number 3.An event more exciting than it sounds, ACM, NIT SURATHKAL, SPIDER, NIT TRICHY and CSEA, NIT WARANGAL in collaboration,
+                        present a coding competition like no other, The TriNITarian Coding Cup.</blockquote>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+
+                <div class="timeline-img"></div>
+
+                <div class="timeline-content js--fadeInRight">
+                    <div>
+                        <img src="{% static 'images/events/InternTalk.jpg' %}" height="230px" width="100%">
+                    </div>
+                    <div class="date">7 Dec 2019</div>
+                    <h2>Intern Talk</h2>
+                    <blockquote>CSEA is soon coming up with an Intern talk exclusively for B.Tech 2nd-year circuit branch peeps. The talk is intended to guide you all for the Internship preparation phase and tell you how to use your time productively in Winter Vacations
+                        and 4th semester for the best output.</blockquote>
+                </div>
+            </div>
+            <div class="timeline-item">
+
+                <div class="timeline-img"></div>
+
+                <div class="timeline-content js--fadeInLeft">
+                    <div>
+                        <img src="{% static 'images/events/4pi.jpg' %}" height="230px" width="100%">
+                    </div>
+                    <div class="date">01 Nov 2019-03 Nov 2019</div>
+                    <h2>4pi</h2>
+                    <blockquote>CSEA presents the most entertaining, fun and challenging event of this Technozion- "4 π", an event based on the famous online contest "Cicada 3301", but with a NITW twist.Solve our cryptic clues and get a chance to win exciting prizes.Doesn't
+                        that make you excited!!!</blockquote>
+
+                </div>
+            </div>
+
+            <div class="timeline-item">
+
+                <div class="timeline-img"></div>
+
+                <div class="timeline-content js--fadeInRight">
+                    <div>
+                        <img src="{% static 'images/events/valar.jpg' %}" height="230px" width="100%">
+                    </div>
+                    <div class="date">26 Oct 2019</div>
+                    <h2>Valar Doubtulis</h2>
+                    <blockquote>The purpose of this event is to teach those topics in PSCP where the first year students might face difficulty in understanding and also to break the ice between seniors and the freshers. The event not only focussed on clearing doubts
+                        but also teaching new topics which might be helpful in inculcating an interest in coding.</blockquote>
+
+                </div>
+            </div>
+
+            <div class="timeline-item">
+
+                <div class="timeline-img"></div>
+
+                <div class="timeline-content js--fadeInLeft">
+                    <div>
+                        <img src="{% static 'images/events/kyb1.jpg' %}" height="240px" width="100%">
+                    </div>
+                    <div class="date">23 Oct 2019</div>
+
+                    <h2>Know Your Branch</h2>
+                    <blockquote>The event will deal with brief insights on the different avenues CSE, as a branch, has to offer including internships, placements, study tips and research opportunities. The students will be told about various prestigious programmes
+                        that happen globally including ACM-ICPC, GSoC, etc.</blockquote>
+
+                </div>
+            </div>
+
+            <div class="timeline-item">
+
+                <div class="timeline-img"></div>
+
+                <div class="timeline-content js--fadeInRight">
+                    <div>
+                        <img src="{% static 'images/events/research.jpg' %}" height="230px" width="100%">
+                    </div>
+                    <div class="date">22 Oct 2019</div>
+                    <h2>Talk on Foreign & Research Internships</h2>
+                    <blockquote>An event to make the students aware about the opportunities in research and foreign internships. The students will be formed about all the programmes that they can be a part, for each year.</blockquote>
+
+                </div>
+            </div>
+
+            <div class="timeline-item">
+
+                <div class="timeline-img"></div>
+
+                <div class="timeline-content js--fadeInLeft">
+                    <div>
+                        <img src="{% static 'images/events/techkirti.jpg' %}" height="230px" width="100%">
+                    </div>
+                    <div class="date">19 & 20 Oct 2019</div>
+                    <h2>Workshops</h2>
+                    <blockquote>CSEA, in association with Techkriti, the annual Technical Festival of IIT Kanpur, organized "Technocruise"- a set of technical workshops designed to inculcate students with two skills that are much in demand in the industry- Data Analytics
+                        and Android development. With leading experts in the field associated with Techkriti taking the workshops, students took back lots of knowledge from them.</blockquote>
+
+                </div>
+            </div>
+            <div class="timeline-item">
+
+                <div class="timeline-img"></div>
+
+                <div class="timeline-content js--fadeInRight">
+                    <div>
+                        <img src="{% static 'images/events/internships.jpg' %}" height="240px" width="100%">
+                    </div>
+                    <div class="date">19 Oct 2019</div>
+                    <h2>Internship Tales</h2>
+                    <blockquote>An initiative to help the current 3rd year students, in answering their queries about the respective internships which they would be undertaking in the summer of 2020. Respective Final Year students who had just completed their internships
+                        come forward to satiate the curious minds.
+                    </blockquote>
+
+                </div>
+            </div>
+
+
+            <div class="timeline-item">
+
+                <div class="timeline-img"></div>
+
+                <div class="timeline-content js--fadeInLeft">
+                    <div>
+                        <img src="{% static 'images/events/codeathon.jpg' %}" height="240px" width="100%">
+                    </div>
+                    <div class="date">10 Oct 2019</div>
+                    <h2>Codeathon 1.0</h2>
+                    <blockquote>Just like reading and writing, coding has become a life-time skill to be acquired in today’s world. In order to inculcate the competitive coding culture in the campus, we bring to you Codeathon, a series of online competitive programming
+                        contests where the participants were given 5-6 questions to be programmed and submitted within 3 hours.</blockquote>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+
+                <div class="timeline-img"></div>
+
+                <div class="timeline-content js--fadeInRight">
+                    <div>
+                        <img src="{% static 'images/events/tshirt.jpg' %}" height="240px" width="100%">
+                    </div>
+                    <div class="date">7 Oct 2019</div>
+                    <h2>T-shirt Designing</h2>
+                    <blockquote>CSEA launched the "T-Shirt Design Contest" in search of some designing talent among students. The number of responses received were quite huge, making it difficult for the judges to choose the best design. </blockquote>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+
+                <div class="timeline-img"></div>
+
+                <div class="timeline-content js--fadeInLeft">
+                    <div>
+                        <img src="{% static 'images/events/404resolved.jpg' %}" height="240px" width="100%">
+                    </div>
+                    <h2>404 Resolved</h2>
+                    <div class="date">4 Oct 2019</div>
+                    <blockquote>We will be featuring modules of web development, machine learning, basic coding and competitive programming, and blockchains. The list doesn't stop there! We will also be showcasing the different opportunities ranging from research
+                        to GSOC. </blockquote>
+
+                </div>
+            </div>
+
+
+            <div class="timeline-item">
+
+                <div class="timeline-img"></div>
+
+                <div class="timeline-content js--fadeInRight">
+                    <div>
+                        <img src="{% static 'images/events/meme.jpg' %}" height="240px" width="100%">
+                    </div>
+                    <h2>Meme Making</h2>
+                    <div class="date">2 Oct 2019</div>
+                    <blockquote>Setting and keeping up with trends is what we do at CSEA and the 2.0 edition of MEME MAKING bears testimony to that. The event not only received hilarious responses but was also one was of the most successful online event of all times.
+                        The judges were our online audience and the winning entry was adjudged based on the most number of reacts. </blockquote>
+
+                </div>
+            </div>
+
+
+            <div class="timeline-item">
+
+                <div class="timeline-img"></div>
+
+                <div class="timeline-content js--fadeInLeft">
+                    <div>
+                        <img src="{% static 'images/events/devathon.jpg' %}" height="240px" width="100%">
+                    </div>
+                    <h2>Devathon</h2>
+                    <div class="date">14 Sept 2019</div>
+                    <blockquote>CSEA and WSDC, organized DEVATHON 2019 on 14th September from 7pm onwards, a first-of-a-kind hackathon in NITW where people from all years of study formed groups and worked on fun ideas over a period of 24 hours- enabling students
+                        to learn from each other, and apply the knowledge to make something cool.</blockquote>
+
+                </div>
+            </div>
+
+            <div class="timeline-item">
+
+                <div class="timeline-img"></div>
+
+                <div class="timeline-content js--fadeInRight">
+                    <div>
+                        <img src="{% static 'images/events/freshers.jpg' %}" height="240px" width="100%">
+                    </div>
+                    <h2>CSEA Freshers’</h2>
+                    <div class="date">12 Sept 2019</div>
+                    <blockquote>An event exclusively for B.Tech and MCA freshers to break the ice between seniors and juniors, and to know their future peers well and enjoy an evening of fun.</blockquote>
+                </div>
+            </div>
+
+
+            <div class="timeline-item">
+                <div class="timeline-img"></div>
+
+                <div class="timeline-content js--fadeInLeft">
+                    <div>
+                        <img src="{% static 'images/events/dsession.jpg' %}" height="240px" width="100%">
+                    </div>
+                    <h2>DSA Session</h2>
+                    <div class="date">8 Sept 2019</div>
+                    <blockquote>Be it projects or interviews, Data Structures are one of the core essentials for a CSE student. It is the one subject which haunts every student and to make things easier, CSEA came up with the event on DS Learning. All concepts of
+                        Data Structures were discussed from the scratch for better understanding. The sessions were open to all branches.</blockquote>
+
+                </div>
+            </div>
+
+
+            <div class="timeline-item">
+                <div class="timeline-img"></div>
+
+                <div class="timeline-content js--fadeInRight">
+                    <div>
+                        <img src="{% static 'images/events/valar.jpg' %}" height="240px" width="100%">
+                    </div>
+                    <h2>Valar Doubtulis</h2>
+                    <div class="date">8 Sept 2019</div>
+                    <blockquote>The purpose of this event is to teach those topics in PSCP where the first year students might face difficulty in understanding and also to break the ice between seniors and the freshers. The event not only focussed on clearing doubts
+                        but also teaching new topics which might be helpful in inculcating an interest in coding.</blockquote>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <section id="contact" class=" border-top-color2" style=" margin-top:-10% ">
+
+        <div class="ftco-footer ftco-bg-dark ftco-section fluid-container text-center">
+
+            <div class="row">
+
+                <div class="col-sm-6 col-md-5 text-right scrollimation fade-up d1">
+
+                    <h1 class="big-text" style="color: #666666">Contact Us</h1>
+
+                    <iframe class="map-con" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3794.880316715465!2d79.52921395041203!3d17.98430438766325!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a334fbbec4fcd8b%3A0xc5f5d66e005e92dc!2sDepartment%20of%20Computer%20Science%20%26%20Engineering!5e0!3m2!1sen!2sin!4v1571860298351!5m2!1sen!2sin"
+                        frameborder="0" style="border:2px;" allowfullscreen=""></iframe>
+
+
+                </div>
+
+                <!--=== Contact Form ===-->
+
+                <form style="padding-right: 10%;" id="contact-form" class="col-sm-6 col-md-offset-1 scrollimation fade-left d3" action="contact.php" method="post" novalidate>
+
+                    <div class="form-group">
+                        <label class="control-label" for="contact-name">Name</label>
+                        <div class="controls" text-align="center">
+                            <input id="contact-name" name="contactName" placeholder="Your name" class="form-control requiredField" data-new-placeholder="Your name" type="text" data-error-empty="Please enter your name">
+                            <i class="fa fa-user " style="align-items: center; margin-top: 2%; color: grey"></i>
+                        </div>
+                    </div>
+                    <!-- End name input -->
+
+                    <div class="form-group">
+                        <label class="control-label" for="contact-mail">Email</label>
+                        <div class=" controls">
+                            <input id="contact-mail" name="email" placeholder="Your email" class="form-control requiredField" data-new-placeholder="Your email" type="email" data-error-empty="Please enter your email" data-error-invalid="Invalid email address">
+                            <i class="fa fa-envelope " style="align-items: center; margin-top: 2%; color: grey"></i>
+                        </div>
+                    </div>
+                    <!-- End email input -->
+
+                    <div class="form-group">
+                        <label class="control-label" for="contact-message">Message</label>
+                        <div class="controls">
+                            <textarea id="contact-message" name="comments" placeholder="Your message" class="form-control requiredField" data-new-placeholder="Your message" rows="6" data-error-empty="Please enter your message"></textarea>
+                            <i class="fa fa-comment" style="align-items: center; margin-top: 2%; color:grey"></i>
+                        </div>
+                    </div>
+                    <!-- End textarea -->
+
+                    <p><button name="submit" type="submit" class="btn btn-color2 btn-block" data-error-message="Error!" data-sending-message="Sending..." data-ok-message="Message Sent"><i class="fa fa-paper-plane"></i>Send Message</button></p>
+                    <input type="hidden" name="submitted" id="submitted" value="true">
+
+                </form>
+                <!-- End contact-form -->
 
             </div>
 
-          </div>
-          </div>
-      </div>
-        <br><br>
-    <div align="centre">
+        </div>
+
+    </section>
+
+    <footer text-align="center" class=" ftco-footer ftco-bg-dark ftco-section" style="margin-top: -8%;">
+
+        <!-- <footer text-align="center" class=" ftco-footer ftco-bg-dark ftco-section"> -->
+        <div class="rounded-social-buttons">
+
+            <!-- <h2 class="ftco-heading-2 mb-0" style="color: white">Stay Connected With Us</h2>#} -->
+            <a class="social-button facebook" href="https://www.facebook.com/cseanitw/" target="_blank"><i class="fab fa-facebook-f" style="font-size: 50px"></i></a>
+            <a class="social-button envelope" href="mailto:csea@student.nitw.ac.in" target="_blank"><i class="fas fa-envelope" style="font-size: 50px"></i></a>
+            <a class="social-button linkedin" href="https://www.linkedin.com/company/csea-nitw/" target="_blank"><i class="fab fa-linkedin" style="font-size: 50px"></i></a>
+            <a class="social-button instagram" href="https://www.instagram.com/csea_nitw/?hl=en" target="_blank"><i class="fab fa-instagram" style="font-size: 50px"></i></a>
+        </div>
+        <div style="text-align:center">
             <span class="copyright">
-      &copy; Copyright. All rights reserved. Design by <a href="https://www.facebook.com/cseanitw/">CSEA, NIT Warangal</a>
-    </span></div>
+            &copy; Copyright. All rights reserved. Design by <a href="https://www.facebook.com/cseanitw/">CSEA, NIT Warangal</a>
+            </span>
+        </div>
         <button onclick="topFunction()" id="myBtn" title="Go to top"><i class=" fa fa-angle-double-up"></i> </button>
-            </footer>
-  </div>
+    </footer>
 
 
-<script>
-    //Get the button:
-mybutton = document.getElementById("myBtn");
 
-// When the user scrolls down 20px from the top of the document, show the button
-window.onscroll = function() {scrollFunction()};
+    <script>
+        //Get the button:
+        mybutton = document.getElementById("myBtn");
 
-function scrollFunction() {
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    mybutton.style.display = "block";
-  } else {
-    mybutton.style.display = "none";
-  }
-}
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() {
+            scrollFunction()
+        };
 
-// When the user clicks on the button, scroll to the top of the document
-function topFunction() {
-  document.body.scrollTop = 0; // For Safari
-  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
-}
-</script>
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0; // For Safari
+            document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+        }
+    </script>
+
+
 
 </body>
+
 </html>

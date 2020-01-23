@@ -1,9 +1,10 @@
 {% load static %}
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <title>CSEA NITW</title>
-<!--     <link rel = "icon" href ="{% static 'images/logo.jpg' %}" type = "image/x-icon">  -->
+    <!--     <link rel = "icon" href ="{% static 'images/logo.jpg' %}" type = "image/x-icon">  -->
     <meta charset="utf-8">
     <meta name=”viewport” content=”width=device-width, initial-scale=1″>
     <link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
@@ -24,472 +25,504 @@
     <link rel="stylesheet" href="{% static 'css/css/style.css'%}">
 
     <style type="text/css">
-
     .img-container {
-      float: left;
-      width: 33.33%; /* three containers (use 25% for four, and 50% for two, etc) */
-      padding: 5px; /* if you want space between the images */
+            float: left;
+            width: 33.33%;
+            /* three containers (use 25% for four, and 50% for two, etc) */
+            padding: 5px;
+            /* if you want space between the images */
+        }
+        
+        .clearfix::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+        
+        .na {
+            width: 1000px;
+        }
+        
+        .mySlides {
+            display: none;
+        }
+        
+        .slideshow-container {
+            max-width: 100%;
+            position: relative;
+            margin: auto;
+        }
+        /* Hide the images by default */
+        
+        .mySlides {
+            display: none;
+        }
+        /* Next & previous buttons */
+        
+        .prev,
+        .next {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            width: auto;
+            margin-top: -22px;
+            padding: 16px;
+            color: white;
+            font-weight: bold;
+            font-size: 18px;
+            transition: 0.6s ease;
+            border-radius: 0 3px 3px 0;
+            user-select: none;
+        }
+        
+        .parallax {
+            /* The image used */
+            background-image: url('{% static 'images/i1.jpg' %}');
+            background-image: url('{% static 'images/i2.JPG' %}');
+            background-image: url('{% static 'images/i3.jpg' %}');
+            background-image: url('{% static 'images/i4.jpg' %}');
+            background-image: url('{% static 'images/i5.jpg' %}');
+            background-image: url('{% static 'images/i6.jpg' %}');
+            background-image: url('{% static 'images/i7.jpg' %}');
+            background-image: url('{% static 'images/i8.JPG' %}');
+            background-image: url('{% static 'images/i9.JPG' %}');
+            background-image: url('{% static 'images/i10.JPG' %}');
+            background-image: url('{% static 'images/i11.JPG' %}');
+            /* Full height */
+            height: 100%;
+            /* Create the parallax scrolling effect */
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        
+        .par {
+            background-image: url('{% static 'images/csea2019.jpg' %}');
+            /* Full height */
+            height: 100%;
+            /* Create the parallax scrolling effect */
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        /* Position the "next button" to the right */
+        
+        .next {
+            right: 0;
+            border-radius: 3px 0 0 3px;
+        }
+        /* On hover, add a black background color with a little bit see-through */
+        
+        .prev:hover,
+        .next:hover {
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+        
+        .dot {
+            cursor: pointer;
+            height: 15px;
+            width: 15px;
+            margin: 0 2px;
+            background-color: #bbb;
+            border-radius: 50%;
+            display: inline-block;
+            transition: background-color 0.6s ease;
+        }
+        
+        .active,
+        .dot:hover {
+            background-color: #717171;
+        }
+        /* Fading animation */
+        
+        .fade {
+            -webkit-animation-name: fade;
+            -webkit-animation-duration: 4s;
+            animation-name: fade;
+            animation-duration: 4s;
+        }
+        
+        @-webkit-keyframes fade {
+            from {
+                opacity: .4
+            }
+            to {
+                opacity: 1
+            }
+        }
+        
+        @keyframes fade {
+            from {
+                opacity: .4
+            }
+            to {
+                opacity: 1
+            }
+        }
+        
+        footer {
+            {
+                #margin-top: 100px;
+                #
+            }
+            background-color:;
+            font-family: "Segoe UI",
+            Arial,
+            sans-serif;
+            width: 100%;
+            height: 250px;
+            color: white;
+        }
     }
-    .clearfix::after {
-      content: "";
-      clear: both;
-      display: table;
+    @media only screen and (max-width: 425px) {
+        footer {
+            height: 300px;
+        }
+        
+        #gap a {
+            padding: 5px;
+        }
     }
-
-    .na {
-        width: 1000px;
+    #myBtn {
+        display: none;
+        /* Hidden by default */
+        
+        position: fixed;
+        /* Fixed/sticky position */
+        
+        bottom: 20px;
+        /* Place the button at the bottom of the page */
+        
+        right: 30px;
+        /* Place the button 30px from the right */
+        
+        z-index: 99;
+        /* Make sure it does not overlap */
+        
+        border: none;
+        /* Remove borders */
+        
+        outline: none;
+        /* Remove outline */
+        
+        background-color: black;
+        /* Set a background color */
+        
+        color: white;
+        /* Text color */
+        
+        cursor: pointer;
+        /* Add a mouse pointer on hover */
+        
+        padding: 15px;
+        /* Some padding */
+        
+        border-radius: 10px;
+        /* Rounded corners */
+        
+        font-size: 18px;
+        /* Increase font size */
     }
-
-    .mySlides {
-      display: none;
+    #myBtn:hover {
+        background-color: #555;
+        /* Add a dark-grey background on hover */
     }
+    </style>
+    <script type="text/javascript">
+        var map;
 
-    .slideshow-container {
-  max-width: 100%;
-  position: relative;
-  margin: auto;
-}
-
-/* Hide the images by default */
-.mySlides {
-  display: none;
-}
-
-/* Next & previous buttons */
-.prev, .next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  margin-top: -22px;
-  padding: 16px;
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-}
-
-.parallax {
-  /* The image used */
-  background-image: url('{% static 'images/i1.jpg' %}');
-  background-image: url('{% static 'images/i2.JPG' %}');
-  background-image: url('{% static 'images/i3.jpg' %}');
-  background-image: url('{% static 'images/i4.jpg' %}');
-  background-image: url('{% static 'images/i5.jpg' %}');
-  background-image: url('{% static 'images/i6.jpg' %}');
-  background-image: url('{% static 'images/i7.jpg' %}');
-  background-image: url('{% static 'images/i8.JPG' %}');
-  background-image: url('{% static 'images/i9.JPG' %}');
-  background-image: url('{% static 'images/i10.JPG' %}');
-  background-image: url('{% static 'images/i11.JPG' %}');
-
-  /* Full height */
-  height: 100%;
-
-  /* Create the parallax scrolling effect */
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.par{
-  background-image: url('{% static 'images/csea2019.jpg' %}');
-
-  /* Full height */
-  height: 100%;
-
-  /* Create the parallax scrolling effect */
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-
-}
-
-
-/* Position the "next button" to the right */
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
-}
-
-
-.dot {
-  cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-}
-
-.active, .dot:hover {
-  background-color: #717171;
-}
-
-/* Fading animation */
-.fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 4s;
-  animation-name: fade;
-  animation-duration: 4s;
-}
-
-@-webkit-keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
-}
-
-@keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
-}
-
-
-
-
-footer{
-  {#margin-top:100px;#}
-    background-color:;
-    font-family: "Segoe UI",Arial,sans-serif;
-   width: 100%;
-    height: 250px;
-    color: white;
-  }
-
-
-  }
-  @media only screen and (max-width: 425px){
-    footer{
-      height: 600px;
-    }
-    #gap a{
-        padding: 5px;
-    }
-
-}
-#myBtn {
-  display: none; /* Hidden by default */
-  position: fixed; /* Fixed/sticky position */
-  bottom: 20px; /* Place the button at the bottom of the page */
-  right: 30px; /* Place the button 30px from the right */
-  z-index: 99; /* Make sure it does not overlap */
-  border: none; /* Remove borders */
-  outline: none; /* Remove outline */
-  background-color: black; /* Set a background color */
-  color: white; /* Text color */
-  cursor: pointer; /* Add a mouse pointer on hover */
-  padding: 15px; /* Some padding */
-  border-radius: 10px; /* Rounded corners */
-  font-size: 18px; /* Increase font size */
-}
-
-#myBtn:hover {
-  background-color: #555; /* Add a dark-grey background on hover */
-}
-
-
-</style>
-       <script type="text/javascript">
-      var map;
-      function initMap() {
-        map = new google.maps.Map(document.getElementById('map'), {
-          center: {lat: -34.397, lng: 150.644},
-          zoom: 8
-        });
-      }
+        function initMap() {
+            map = new google.maps.Map(document.getElementById('map'), {
+                center: {
+                    lat: -34.397,
+                    lng: 150.644
+                },
+                zoom: 8
+            });
+        }
     </script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCrLh9li0x8X9KDC91OqFVyIDB8jnaOMlA&callback=initMap"
-    async defer></script>
-      <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/all.js" integrity="sha384-xymdQtn1n3lH2wcu0qhcdaOpQwyoarkgLVxC/wZ5q7h9gHtxICrpcaSUfygqZGOe" crossorigin="anonymous"></script>
-      <link rel="stylesheet" href="{% static 'css/footer.css'%}">
-       <link rel="stylesheet" href="{% static 'css/header.css'%}">
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCrLh9li0x8X9KDC91OqFVyIDB8jnaOMlA&callback=initMap" async defer></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/all.js" integrity="sha384-xymdQtn1n3lH2wcu0qhcdaOpQwyoarkgLVxC/wZ5q7h9gHtxICrpcaSUfygqZGOe" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="{% static 'css/footer.css'%}">
+    <link rel="stylesheet" href="{% static 'css/header.css'%}">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
 </head>
-<body >
+
+<body>
 
 
-<nav style="margin-bottom: 50px; background-color: #333" class="navbar sticky-top navbar-expand-xl navbar-dark " >
-    <a href="/home/" class="navbar-brand"> <img src="{% static 'images/csealogo.png' %}" height="30px" width="100px" hspace="50px"></a>
-    <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarMenu">
+    <nav style="margin-bottom: 50px; background-color: #333" class="navbar sticky-top navbar-expand-xl navbar-dark ">
+        <a href="/home/" class="navbar-brand"> <img src="{% static 'images/csealogo.png' %}" height="30px" width="100px" hspace="50px"></a>
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarMenu">
         <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse" id="navbarMenu" >
-        <ul class="navbar-nav ml-auto" style="background-color: #333">
-            <li class="nav-item"><a href="/gallery/">Gallery</a></li>
-            <li class="nav-item"><a href="/events/">Events</a></li>
-            <li class="nav-item"><a href="/team/">Team</a></li>
-            <li class="nav-item"><a href="/alumni/">Alumni</a></li>
-{#            <li class="nav-item"><a href="/feedback/">Feedback</a></li>#}
-            <li class="nav-item"><a href="/straightoutta/">Straight Outta CSED</a></li>
-            <li class="nav-item"><a href="/alumniconnect/">Alumni Connect</a></li>
-        </ul>
+        <div class="collapse navbar-collapse" id="navbarMenu">
+            <ul class="navbar-nav ml-auto" style="background-color: #333">
+                <li class="nav-item"><a href="/gallery/">Gallery</a></li>
+                <li class="nav-item"><a href="/events/">Events</a></li>
+                <li class="nav-item"><a href="/team/">Team</a></li>
+                <li class="nav-item"><a href="/alumni/">Alumni</a></li>
+
+                <!-- <li class="nav-item"><a href="/feedback/">Feedback</a></li> -->
+                <li class="nav-item"><a href="/straightoutta/">Straight Outta CSED</a></li>
+                <li class="nav-item"><a href="/alumniconnect/">Alumni Connect</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div align="center" class="fluid-container">
+
+        <img src="{% static 'images/nitwlogo.png' %}" width="400"> <img src="{% static 'images/logo.jpg' %}" width="240">
+        <h1><b>Computer Science and Engineering Association, NITW</b></h1>
     </div>
-</nav>
-
-<div align="center" class="fluid-container">
-
-      <img src="{% static 'images/nitwlogo.png' %}" width="400"> <img src="{% static 'images/logo.jpg' %}" width="240">
-      <h1><b>Computer Science and Engineering Association, NITW</b></h1>
-    </div>
 
 
 
 
 
-     <div class="slideshow-container">
+    <div class="slideshow-container">
 
-          <div class="mySlides fade">
+        <div class="mySlides fade">
             <img src="{% static 'images/i19.jpg' %}" style="width:100%">
 
-            </div>
+        </div>
 
-          <div class="mySlides fade">
+        <div class="mySlides fade">
 
             <img src="{% static 'images/i2.JPG' %}" style="width:100%">
 
-          </div>
+        </div>
 
 
 
-           <div class="mySlides fade">
+        <div class="mySlides fade">
             <img src="{% static 'images/i4.jpg' %}" style="width:100%">
 
-            </div>
+        </div>
 
-          <div class="mySlides fade">
+        <div class="mySlides fade">
 
             <img src="{% static 'images/v1.jpeg' %}" style="width:100%">
 
-          </div>
+        </div>
 
-          <div class="mySlides fade">
+        <div class="mySlides fade">
 
             <img src="{% static 'images/i6.jpg' %}" style="width:100%">
-          </div>
-
-
-          <!-- Next and previous buttons -->
-          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-          <a class="next" onclick="plusSlides(1)">&#10095;</a>
         </div>
-        <br>
 
-        <div style ="background-image: url(http://jmd.im/wp-content/uploads/2017/06/blacki_thumbnail.jpg);">
 
-          <div style="text-align:center">
-          <span class="dot" onclick="currentSlide(1)"></span>
-          <span class="dot" onclick="currentSlide(2)"></span>
-          <span class="dot" onclick="currentSlide(3)"></span>
-          <span class="dot" onclick="currentSlide(4)"></span>
-          <span class="dot" onclick="currentSlide(5)"></span>
-          <span class="dot" onclick="currentSlide(6)"></span>
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <br>
+
+    <div style="background-image: url(http://jmd.im/wp-content/uploads/2017/06/blacki_thumbnail.jpg);">
+
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+            <span class="dot" onclick="currentSlide(5)"></span>
+            <span class="dot" onclick="currentSlide(6)"></span>
         </div>
-      </div>
+    </div>
 
 
 
-        </div>
+    </div>
 
 
 
 
     <script type="text/javascript">
+        var slideIndex = 0;
+        showSlides();
 
-      var slideIndex = 0;
-      showSlides();
-
-      function showSlides() {
-        var i;
-        var slides = document.getElementsByClassName("mySlides");
-        for (i = 0; i < slides.length; i++) {
-          slides[i].style.display = "none";
+        function showSlides() {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {
+                slideIndex = 1
+            }
+            slides[slideIndex - 1].style.display = "block";
+            setTimeout(showSlides, 4000); // Change image every 2 seconds
         }
-        slideIndex++;
-        if (slideIndex > slides.length) {slideIndex = 1}
-        slides[slideIndex-1].style.display = "block";
-        setTimeout(showSlides, 4000); // Change image every 2 seconds
-      }
     </script>
 
 
-    <div align="center" class="ftco-footer ftco-bg-dark ftco-section"align="center" >
-        <p><h3 style="color:white;"><b>We are a group of enthusiastic students from the Department of Computer Science and Engineering NIT Warangal and who work timelessly to deliver the pure essence of Computer Science to everyone in our vicinity</b></h3></p>
+    <div align="center" class="ftco-footer ftco-bg-dark ftco-section" align="center">
+        <p>
+            <h3 style="color:white;"><b>We are a group of enthusiastic students from the Department of Computer Science and Engineering NIT Warangal and who work timelessly to deliver the pure essence of Computer Science to everyone in our vicinity</b></h3>
+        </p>
     </div>
 
 
     <div class="par">
-      <img width="100%" height="600px" src="{% static 'images/csea2019.jpg' %}">
+        <img width="100%" height="600px" src="{% static 'images/csea2019.jpg' %}">
     </div>
 
 
 
-    <div align="center" class="ftco-footer ftco-bg-dark ftco-section"align="center" >
-      <h3 style="color:white;"><b>Snaps of Some of Our Events</b></h3>
+    <div align="center" class="ftco-footer ftco-bg-dark ftco-section" align="center">
+        <h3 style="color:white;"><b>Snaps of Some of Our Events</b></h3>
     </div>
 
 
-    <div style ="background-image: url(http://jmd.im/wp-content/uploads/2017/06/blacki_thumbnail.jpg);" class="clearfix" >
-      <div class="img-container" >
-      <img src="{% static 'images/i1.jpg' %}" style="width:100%" height="350px">
-      </div>
-      <div class="img-container" >
-      <img src="{% static 'images/i2.JPG' %}" style="width:100%" height="350px">
-      </div>
-      <div class="img-container">
-      <img src="{% static 'images/i3.jpg' %}" style="width:100%" height="350px">
-      </div>
-      <div class="img-container">
-      <img src="{% static 'images/i4.jpg' %}" style="width:100%" height="350px">
-      </div>
-      <div class="img-container">
-      <img src="{% static 'images/i5.jpg' %}" style="width:100%" height="350px">
-      </div>
-      <div class="img-container">
-      <img src="{% static 'images/i6.jpg' %}" style="width:100%" height="350px">
-      </div>
-     </div>
-
-
-
-
-
-
-<section id="contact" class=" border-top-color2">
-
-			<div class="ftco-footer ftco-bg-dark ftco-section fluid-container text-center">
-
-				<div class="row">
-
-					<div class="col-sm-6 col-md-5 text-right scrollimation fade-up d1">
-
-						<h1 class="big-text" style="color: #666666">Contact Us</h1>
-
-						<iframe class="map-con" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3794.880316715465!2d79.52921395041203!3d17.98430438766325!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a334fbbec4fcd8b%3A0xc5f5d66e005e92dc!2sDepartment%20of%20Computer%20Science%20%26%20Engineering!5e0!3m2!1sen!2sin!4v1571860298351!5m2!1sen!2sin" frameborder="0" style="border:2px;" allowfullscreen="" ></iframe>
-
-
-					</div>
-
-					<!--=== Contact Form ===-->
-
-					<form id="contact-form" class="col-sm-6 col-md-offset-1 scrollimation fade-left d3" action="contact.php" method="post" novalidate>
-
-						<div class="form-group">
-						  <label class="control-label" for="contact-name">Name</label>
-						  <div class="controls" align="center">
-							<input id="contact-name" name="contactName" placeholder="Your name" class="form-control requiredField" data-new-placeholder="Your name" type="text" data-error-empty="Please enter your name">
-							<i class="fa fa-user " style="align-items: center"></i>
-						  </div>
-						</div><!-- End name input -->
-
-						<div class="form-group">
-						  <label class="control-label" for="contact-mail">Email</label>
-						  <div class=" controls">
-							<input id="contact-mail" name="email" placeholder="Your email" class="form-control requiredField" data-new-placeholder="Your email" type="email" data-error-empty="Please enter your email" data-error-invalid="Invalid email address">
-							<i class="fa fa-envelope " ></i>
-						  </div>
-						</div><!-- End email input -->
-
-						<div class="form-group">
-						  <label class="control-label" for="contact-message">Message</label>
-							<div class="controls">
-								<textarea id="contact-message" name="comments"  placeholder="Your message" class="form-control requiredField" data-new-placeholder="Your message" rows="6" data-error-empty="Please enter your message"></textarea>
-								<i class="fa fa-comment"></i>
-							</div>
-						</div><!-- End textarea -->
-
-						<p><button name="submit" type="submit" class="btn btn-color2 btn-block" data-error-message="Error!" data-sending-message="Sending..." data-ok-message="Message Sent"><i class="fa fa-paper-plane"></i>Send Message</button></p>
-						<input type="hidden" name="submitted" id="submitted" value="true" />
-
-					</form><!-- End contact-form -->
-
-				</div>
-
-			</div>
-
-		</section>
-
-{#             {% block content %}#}
-{#            <form method="post">#}
-{#               {% csrf_token %}#}
-{#                <h3>Leave Us Some Feedback</h3>#}
-{##}
-{#               <div class="row">#}
-{#                    <div class="col-md-6">#}
-{#                        <div class="form-group">#}
-{#                            <input maxlength="100" type="text" name="event_name" class="form-control" placeholder="Event Name *" value="" />#}
-{#                        </div>#}
-{#                        <div class="form-group">#}
-{#                            <input maxlength="300", required=True type="text" name="cem" class="form-control" placeholder="Your College Email *" value="" />#}
-{#                        </div>#}
-{#                        <div class="form-group">#}
-{#                            <input placeholder="Send Feedback *" maxlength="600" type="submit" class="btnContact" />#}
-{#                        </div>#}
-{#                    </div>#}
-{#                    <div class="col-md-6">#}
-{#                        <div class="form-group">#}
-{#                            <textarea name="fback" value="" class="form-control" placeholder="Feedback *"  style="width: 100%; height: 150px;"></textarea>#}
-{#                        </div>#}
-{#                    </div>#}
-{#                </div>#}
-{#            </form>#}
-{#            {% endblock %}#}
-
- <footer text-align="center" class=" ftco-footer ftco-bg-dark ftco-section" >
-        <div class="rounded-social-buttons">
-{#                    <h2 class="ftco-heading-2 mb-0" style="color: white">Stay Connected With Us</h2>#}
-                    <a class="social-button facebook" href="https://www.facebook.com/cseanitw/" target="_blank"><i class="fab fa-facebook-f"></i></a>
-                    <a class="social-button envelope" href="mailto:csea@student.nitw.ac.in" target="_blank"><i class="fas fa-envelope"></i></a>
-                    <a class="social-button linkedin" href="https://www.linkedin.com/company/csea-nitw/" target="_blank"><i class="fab fa-linkedin"></i></a>
-                    <a class="social-button instagram" href="https://www.instagram.com/csea_nitw/?hl=en" target="_blank"><i class="fab fa-instagram"></i></a>
+    <div style="background-image: url(http://jmd.im/wp-content/uploads/2017/06/blacki_thumbnail.jpg);" class="clearfix">
+        <div class="img-container">
+            <img src="{% static 'images/i1.jpg' %}" style="width:100%" height="350px">
         </div>
-     <div style="text-align:center">
-            <span class="copyright" >
+        <div class="img-container">
+            <img src="{% static 'images/i2.JPG' %}" style="width:100%" height="350px">
+        </div>
+        <div class="img-container">
+            <img src="{% static 'images/i3.jpg' %}" style="width:100%" height="350px">
+        </div>
+        <div class="img-container">
+            <img src="{% static 'images/i4.jpg' %}" style="width:100%" height="350px">
+        </div>
+        <div class="img-container">
+            <img src="{% static 'images/i5.jpg' %}" style="width:100%" height="350px">
+        </div>
+        <div class="img-container">
+            <img src="{% static 'images/i6.jpg' %}" style="width:100%" height="350px">
+        </div>
+    </div>
+
+
+
+
+
+
+    <section id="contact" class=" border-top-color2">
+
+        <div class="ftco-footer ftco-bg-dark ftco-section fluid-container text-center">
+
+            <div class="row">
+
+                <div class="col-sm-6 col-md-5 text-right scrollimation fade-up d1">
+
+                    <h1 class="big-text" style="color: #666666">Contact Us</h1>
+
+                    <iframe class="map-con" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3794.880316715465!2d79.52921395041203!3d17.98430438766325!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a334fbbec4fcd8b%3A0xc5f5d66e005e92dc!2sDepartment%20of%20Computer%20Science%20%26%20Engineering!5e0!3m2!1sen!2sin!4v1571860298351!5m2!1sen!2sin"
+                        frameborder="0" style="border:2px;" allowfullscreen=""></iframe>
+
+
+                </div>
+
+                <!--=== Contact Form ===-->
+
+                <form id="contact-form" class="col-sm-6 col-md-offset-1 scrollimation fade-left d3" action="contact.php" method="post" novalidate>
+
+                    <div class="form-group">
+                        <label class="control-label" for="contact-name">Name</label>
+                        <div class="controls" align="center">
+                            <input id="contact-name" name="contactName" placeholder="Your name" class="form-control requiredField" data-new-placeholder="Your name" type="text" data-error-empty="Please enter your name">
+                            <i class="fa fa-user " style="align-items: center; margin-top: 2%; color: grey"></i>
+                        </div>
+                    </div>
+                    <!-- End name input -->
+
+                    <div class="form-group">
+                        <label class="control-label" for="contact-mail">Email</label>
+                        <div class=" controls">
+                            <input id="contact-mail" name="email" placeholder="Your email" class="form-control requiredField" data-new-placeholder="Your email" type="email" data-error-empty="Please enter your email" data-error-invalid="Invalid email address">
+                            <i class="fa fa-envelope " style="align-items: center; margin-top: 2%; color: grey"></i>
+                        </div>
+                    </div>
+                    <!-- End email input -->
+
+                    <div class="form-group">
+                        <label class="control-label" for="contact-message">Message</label>
+                        <div class="controls">
+                            <textarea id="contact-message" name="comments" placeholder="Your message" class="form-control requiredField" data-new-placeholder="Your message" rows="6" data-error-empty="Please enter your message"></textarea>
+                            <i class="fa fa-comment" style="align-items: center; margin-top: 2%; color: grey"></i>
+                        </div>
+                    </div>
+                    <!-- End textarea -->
+
+                    <p><button name="submit" type="submit" class="btn btn-color2 btn-block" data-error-message="Error!" data-sending-message="Sending..." data-ok-message="Message Sent"><i class="fa fa-paper-plane"></i>Send Message</button></p>
+                    <input type="hidden" name="submitted" id="submitted" value="true">
+
+                </form>
+                <!-- End contact-form -->
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- {# {% block content %}#} {#
+    <form method="post">#} {# {% csrf_token %}#} {#
+        <h3>Leave Us Some Feedback</h3>#} {##} {#
+        <div class="row">#} {#
+            <div class="col-md-6">#} {#
+                <div class="form-group">#} {# <input maxlength="100" type="text" name="event_name" class="form-control" placeholder="Event Name *" value="" />#} {# </div>#} {#
+                <div class="form-group">#} {# <input maxlength="300" , required=True type="text" name="cem" class="form-control" placeholder="Your College Email *" value="" />#} {# </div>#} {#
+                <div class="form-group">#} {# <input placeholder="Send Feedback *" maxlength="600" type="submit" class="btnContact" />#} {# </div>#} {# </div>#} {#
+            <div class="col-md-6">#} {#
+                <div class="form-group">#} {# <textarea name="fback" value="" class="form-control" placeholder="Feedback *" style="width: 100%; height: 150px;"></textarea>#} {# </div>#} {# </div>#} {# </div>#} {# </form>#} {# {% endblock %}#} -->
+
+    <footer text-align="center" class=" ftco-footer ftco-bg-dark ftco-section">
+        <div class="rounded-social-buttons">
+            <!-- {#
+            <h2 class="ftco-heading-2 mb-0" style="color: white">Stay Connected With Us</h2>#} -->
+            <a class="social-button facebook" href="https://www.facebook.com/cseanitw/" target="_blank"><i class="fab fa-facebook-f" style="font-size: 50px"></i></a>
+            <a class="social-button envelope" href="mailto:csea@student.nitw.ac.in" target="_blank"><i class="fas fa-envelope" style="font-size: 50px"></i></a>
+            <a class="social-button linkedin" href="https://www.linkedin.com/company/csea-nitw/" target="_blank"><i class="fab fa-linkedin" style="font-size: 50px"></i></a>
+            <a class="social-button instagram" href="https://www.instagram.com/csea_nitw/?hl=en" target="_blank"><i class="fab fa-instagram" style="font-size: 50px"></i></a>
+
+        </div>
+        <div style="text-align:center">
+            <span class="copyright">
             &copy; Copyright. All rights reserved. Design by <a href="https://www.facebook.com/cseanitw/">CSEA, NIT Warangal</a>
             </span>
-     </div>
+        </div>
         <button onclick="topFunction()" id="myBtn" title="Go to top"><i class=" fa fa-angle-double-up"></i> </button>
-            </footer>
-  </div>
-
-
-<script>
-    //Get the button:
-mybutton = document.getElementById("myBtn");
-
-// When the user scrolls down 20px from the top of the document, show the button
-window.onscroll = function() {scrollFunction()};
-
-function scrollFunction() {
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    mybutton.style.display = "block";
-  } else {
-    mybutton.style.display = "none";
-  }
-}
-
-// When the user clicks on the button, scroll to the top of the document
-function topFunction() {
-  document.body.scrollTop = 0; // For Safari
-  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
-}
-</script>
+    </footer>
 
 
 
-  </body>
+    <script>
+        //Get the button:
+        mybutton = document.getElementById("myBtn");
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() {
+            scrollFunction()
+        };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0; // For Safari
+            document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+        }
+    </script>
+
+
+
+</body>
+
 </html>

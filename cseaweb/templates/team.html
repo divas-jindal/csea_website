@@ -1,15 +1,16 @@
 {% load static %}
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <title>Team</title>
     <meta charset="utf-8">
     <meta name=”viewport” content=”width=device-width, initial-scale=1″>
 
     <link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
 
-      <meta name="viewport" content="width=device-width, initial-scale=1">
- <link rel="stylesheet" href="{% static 'css/css/open-iconic-bootstrap.min.css' %}">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="{% static 'css/css/open-iconic-bootstrap.min.css' %}">
     <link rel="stylesheet" href="{% static 'css/css/animate.css' %}">
 
     <link rel="stylesheet" href="{% static 'css/css/owl.carousel.min.css'%}">
@@ -23,1303 +24,1409 @@
     <link rel="stylesheet" href="{% static 'css/css/flaticon.css'%}">
     <link rel="stylesheet" href="{% static 'css/css/icomoon.css' %}">
     <link rel="stylesheet" href="{% static 'css/css/style.css'%}">
-<script defer src="/your-path-to-fontawesome/js/all.js"></script>
-      <link href="{% static 'fab/css/all.css' %}" rel="stylesheet"> <!--load all styles -->
+    <script defer src="/your-path-to-fontawesome/js/all.js"></script>
+    <link href="{% static 'fab/css/all.css' %}" rel="stylesheet">
+    <!--load all styles -->
 
-      <!-- ... -->
-<link rel="stylesheet" id="font-awesome-css" href="//maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css?ver=4.9.4" type="text/css" media="all">
-<!-- ... -->
-<script defer="" src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+    <!-- ... -->
+    <link rel="stylesheet" id="font-awesome-css" href="//maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css?ver=4.9.4" type="text/css" media="all">
+    <!-- ... -->
+    <script defer="" src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
     <style type="text/css">
-        .active {
-  background-color: #717171;
-}
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #333;
-}
-li {
-  float: left;
-}
-li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 20px 30px;
-  text-decoration: none;
-}
-/* Change the link color to #111 (black) on hover */
-li a:hover {
-  background-color: #111;
-}
-Active/Current Navigation Link
-Add an "active" class to the current link to let the user know which page he/she is on:
-HomeNewsContactAbout
-Example
-.active {
-  background-color: #4CAF50;
-}
-    {#    team#}
-        a > i{
-  padding-right:10px;
-}
-        .sec-title{
-    position:relative;
-    margin-bottom:60px;
-}
-.sec-title .title{
-    position: relative;
-    display: block;
-    font-size: 18px;
-    line-height: 24px;
-    color: #fdda33;
-    font-weight: 500;
-    margin-bottom: 30px;
-}
-.sec-title h2{
-    position:relative;
-    display: inline-block;
-    font-size:60px;
-    line-height:1em;
-    color:#212639;
-    font-weight:400;
-    padding-bottom: 30px;
-    z-index: 2;
-}
-.sec-title.active h2:before{
-    -webkit-transform: scale(1);
-    -moz-transform: scale(1);
-    -ms-transform: scale(1);
-    -o-transform: scale(1);
-    transform: scale(1);
-  text-align: center;
-}
-.sec-title h2:after{
-    position: absolute;
-    left: 0;
-    bottom: 0px;
-    height: 3px;
-    width: 50px;
-    content: "";
-    background-color: #d1d2d6;
-}
-.sec-title.light h2{
-    color: #ffffff;
-}
-.sec-title.light h2:after{
-    opacity: .20;
-    background-color: #ffffff;
-}
-.sec-title.text-center h2:before,
-.sec-title.text-center h2:after{
-    right: 0;
-    left: 0;
-    margin: 0 auto;
-}
-.sec-title.text-center h2:before{
-    opacity: .60;
-}
-.speakers-section{
-    position: relative;
-    background-repeat: repeat;
-    background-position: center;
-    {#background-size: repa#}
-    padding: 145px 0 90px;
-    {#overflow:hidden;#}
-}
-.speaker-block{
-    position: relative;
-    margin-bottom: 40px;
-}
-.speaker-block .inner-box{
-    position: relative;
-}
-.speaker-block .image-box{
-    position: relative;
-    padding: 20px;
-    background-color: rgba(255,255,255,.15);
-    overflow: hidden;
-}
-.speaker-block .image-box .image:after,
-.speaker-block .image-box:before{
-    position: absolute;
-    left: 0;
-    top: 0;
-    height: 0;
-    width: 100%;
-    background-color: #ffffff;
-    content: "";
-    -webkit-transition: all 700ms ease;
-    -moz-transition: all 700ms ease;
-    -ms-transition: all 700ms ease;
-    -o-transition: all 700ms ease;
-    transition: all 700ms ease;
-}
-.speaker-block .inner-box:hover .image-box .image:after,
-.speaker-block .inner-box:hover .image-box:before{
-    height: 70%;
-}
-.speaker-block .image-box .image:after{
-    opacity: .40;
-    z-index: 1;
-    top: auto;
-    bottom: 0;
-    background-color:  black;
-}
-.speaker-block .image-box .image{
-    position: relative;
-    margin-bottom: 0;
-    z-index: 1;
-    overflow: hidden;
-}
-.speaker-block .image-box .image img{
-    display: block;
-    width: 100%;
-    height: auto;
-}
-.speaker-block .social-links{
-    position: absolute;
-    left: 0;
-    bottom: -140px;
-    padding: 2px;
-    width: 100%;
-    z-index: 9;
-    -webkit-transition: all 700ms ease;
-    -moz-transition: all 700ms ease;
-    -ms-transition: all 700ms ease;
-    -o-transition: all 700ms ease;
-    transition: all 700ms ease;
-}
-.speaker-block .social-links ul{
-    position: relative;
-    padding: 20px 20px;
-    text-align: center;
-    background-color: black
-            rgba(253, 218, 51, 0.85);
-}
-.speaker-block .social-links li{
-    position: relative;
-    display: inline-block;
-    margin: 0 1px;
-}
-.speaker-block .social-links li a{
-    position: relative;
-    display: block;
-    font-size: 18px;
-    line-height: 10px;
-    font-weight: 400;
-    padding: 10px;
-    color: #ffffff;
-    -webkit-transition: all 300ms ease;
-    -moz-transition: all 300ms ease;
-    -ms-transition: all 300ms ease;
-    -o-transition: all 300ms ease;
-    transition: all 300ms ease;
-}
-.speaker-block .social-links li a:hover{
-    color: #fac201;
-}
-.speaker-block .inner-box:hover .social-links{
-    bottom: 0;
-}
-.speaker-block .caption-box{
-    position: relative;
-    padding-top: 30px;
-}
-.speaker-block .caption-box .name .name1 {
-    position: relative;
-    display: block;
-    font-size: 30px;
-    line-height: 1em;
-    color: #ffffff;
-    font-weight: 400;
-    margin-bottom: 10px;
-}
-.speaker-block .caption-box .name a{
-    color: #ffffff;
-    display: inline-block;
-    -webkit-transition: all 300ms ease;
-    -moz-transition: all 300ms ease;
-    -ms-transition: all 300ms ease;
-    -o-transition: all 300ms ease;
-    transition: all 300ms ease;
-  text-align: center;
-}
-.speaker-block .caption-box a:hover{
-    color: #fdda33;
-}
-.speaker-block .caption-box .name{
-  text-align: center;
-    font-size: 20px;
-}
-.designation{
-    position: relative;
-    display: block;
-    font-size: 15x;
-    line-height: 26px;
-    color: #ffffff;
-    font-weight: 400;
-    opacity: .70;
-  text-align: center;
-}
+    .active {
+            background-color: #717171;
+        }
+        
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+        }
+        
+        li {
+            float: left;
+        }
+        
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 20px 30px;
+            text-decoration: none;
+        }
+        /* Change the link color to #111 (black) on hover */
+        
+        li a:hover {
+            background-color: #111;
+        }
+        
+        Active/Current Navigation Link Add an "active" class to the current link to let the user know which page he/she is on: HomeNewsContactAbout Example .active {
+            background-color: #4CAF50;
+        }
+        
+        {
+            # team#
+        }
+        
+        a>i {
+            padding-right: 10px;
+        }
+        
+        .sec-title {
+            position: relative;
+            margin-bottom: 60px;
+        }
+        
+        .sec-title .title {
+            position: relative;
+            display: block;
+            font-size: 18px;
+            line-height: 24px;
+            color: #fdda33;
+            font-weight: 500;
+            margin-bottom: 30px;
+        }
+        
+        .sec-title h2 {
+            position: relative;
+            display: inline-block;
+            font-size: 60px;
+            line-height: 1em;
+            color: #212639;
+            font-weight: 400;
+            padding-bottom: 30px;
+            z-index: 2;
+        }
+        
+        .sec-title.active h2:before {
+            -webkit-transform: scale(1);
+            -moz-transform: scale(1);
+            -ms-transform: scale(1);
+            -o-transform: scale(1);
+            transform: scale(1);
+            text-align: center;
+        }
+        
+        .sec-title h2:after {
+            position: absolute;
+            left: 0;
+            bottom: 0px;
+            height: 3px;
+            width: 50px;
+            content: "";
+            background-color: #d1d2d6;
+        }
+        
+        .sec-title.light h2 {
+            color: #ffffff;
+        }
+        
+        .sec-title.light h2:after {
+            opacity: .20;
+            background-color: #ffffff;
+        }
+        
+        .sec-title.text-center h2:before,
+        .sec-title.text-center h2:after {
+            right: 0;
+            left: 0;
+            margin: 0 auto;
+        }
+        
+        .sec-title.text-center h2:before {
+            opacity: .60;
+        }
+        
+        .speakers-section {
+            position: relative;
+            background-repeat: repeat;
+            background-position: center;
+            {
+                #background-size: repa#
+            }
+            padding: 145px 0 90px;
+            {
+                #overflow: hidden;
+                #
+            }
+        }
+        
+        .speaker-block {
+            position: relative;
+            margin-bottom: 40px;
+        }
+        
+        .speaker-block .inner-box {
+            position: relative;
+        }
+        
+        .speaker-block .image-box {
+            position: relative;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, .15);
+            overflow: hidden;
+        }
+        
+        .speaker-block .image-box .image:after,
+        .speaker-block .image-box:before {
+            position: absolute;
+            left: 0;
+            top: 0;
+            height: 0;
+            width: 100%;
+            background-color: #ffffff;
+            content: "";
+            -webkit-transition: all 700ms ease;
+            -moz-transition: all 700ms ease;
+            -ms-transition: all 700ms ease;
+            -o-transition: all 700ms ease;
+            transition: all 700ms ease;
+        }
+        
+        .speaker-block .inner-box:hover .image-box .image:after,
+        .speaker-block .inner-box:hover .image-box:before {
+            height: 70%;
+        }
+        
+        .speaker-block .image-box .image:after {
+            opacity: .40;
+            z-index: 1;
+            top: auto;
+            bottom: 0;
+            background-color: black;
+        }
+        
+        .speaker-block .image-box .image {
+            position: relative;
+            margin-bottom: 0;
+            z-index: 1;
+            overflow: hidden;
+        }
+        
+        .speaker-block .image-box .image img {
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+        
+        .speaker-block .social-links {
+            position: absolute;
+            left: 0;
+            bottom: -140px;
+            padding: 2px;
+            width: 100%;
+            z-index: 9;
+            -webkit-transition: all 700ms ease;
+            -moz-transition: all 700ms ease;
+            -ms-transition: all 700ms ease;
+            -o-transition: all 700ms ease;
+            transition: all 700ms ease;
+        }
+        
+        .speaker-block .social-links ul {
+            position: relative;
+            padding: 20px 20px;
+            text-align: center;
+            background-color: black rgba(253, 218, 51, 0.85);
+        }
+        
+        .speaker-block .social-links li {
+            position: relative;
+            display: inline-block;
+            margin: 0 1px;
+        }
+        
+        .speaker-block .social-links li a {
+            position: relative;
+            display: block;
+            font-size: 18px;
+            line-height: 10px;
+            font-weight: 400;
+            padding: 10px;
+            color: #ffffff;
+            -webkit-transition: all 300ms ease;
+            -moz-transition: all 300ms ease;
+            -ms-transition: all 300ms ease;
+            -o-transition: all 300ms ease;
+            transition: all 300ms ease;
+        }
+        
+        .speaker-block .social-links li a:hover {
+            color: #fac201;
+        }
+        
+        .speaker-block .inner-box:hover .social-links {
+            bottom: 0;
+        }
+        
+        .speaker-block .caption-box {
+            position: relative;
+            padding-top: 30px;
+        }
+        
+        .speaker-block .caption-box .name .name1 {
+            position: relative;
+            display: block;
+            font-size: 30px;
+            line-height: 1em;
+            color: #ffffff;
+            font-weight: 400;
+            margin-bottom: 10px;
+        }
+        
+        .speaker-block .caption-box .name a {
+            color: #ffffff;
+            display: inline-block;
+            -webkit-transition: all 300ms ease;
+            -moz-transition: all 300ms ease;
+            -ms-transition: all 300ms ease;
+            -o-transition: all 300ms ease;
+            transition: all 300ms ease;
+            text-align: center;
+        }
+        
+        .speaker-block .caption-box a:hover {
+            color: #fdda33;
+        }
+        
+        .speaker-block .caption-box .name {
+            text-align: center;
+            font-size: 20px;
+        }
+        
+        .designation {
+            position: relative;
+            display: block;
+            font-size: 15x;
+            line-height: 26px;
+            color: #ffffff;
+            font-weight: 400;
+            opacity: .70;
+            text-align: center;
+        }
+        
         ul {
             margin: 0;
             padding: 2px;
             list-style: none;
         }
+        
         img {
-    max-width: 100%;
-    height: auto;
-}
-/*  add*/
-div {
-  margin: auto;
-}
-        footer{
-  {#margin-top:100px;#}
-    background-color:;
-    font-family: "Segoe UI",Arial,sans-serif;
-   width: 100%;
-    height: 500px;
-    color: white;
-  }
-
-
-  }
-  @media only screen and (max-width: 425px){
-    footer{
-      height: 600px;
+            max-width: 100%;
+            height: auto;
+        }
+        /*  add*/
+        
+        div {
+            margin: auto;
+        }
+        
+        footer {
+            {
+                #margin-top: 100px;
+                #
+            }
+            background-color:;
+            font-family: "Segoe UI",
+            Arial,
+            sans-serif;
+            width: 100%;
+            height: 500px;
+            color: white;
+        }
     }
-    #gap a{
-        padding: 5px;
+    @media only screen and (max-width: 425px) {
+        footer {
+            height: 600px;
+        }
+        
+        #gap a {
+            padding: 5px;
+        }
     }
+    #myBtn {
+        display: none;
+        /* Hidden by default */
+        
+        position: fixed;
+        /* Fixed/sticky position */
+        
+        bottom: 20px;
+        /* Place the button at the bottom of the page */
+        
+        right: 30px;
+        /* Place the button 30px from the right */
+        
+        z-index: 99;
+        /* Make sure it does not overlap */
+        
+        border: none;
+        /* Remove borders */
+        
+        outline: none;
+        /* Remove outline */
+        
+        background-color: black;
+        /* Set a background color */
+        
+        color: white;
+        /* Text color */
+        
+        cursor: pointer;
+        /* Add a mouse pointer on hover */
+        
+        padding: 15px;
+        /* Some padding */
+        
+        border-radius: 10px;
+        /* Rounded corners */
+        
+        font-size: 18px;
+        /* Increase font size */
+    }
+    #myBtn:hover {
+        background-color: #555;
+        /* Add a dark-grey background on hover */
+    }
+    </style>
 
-}
-#myBtn {
-  display: none; /* Hidden by default */
-  position: fixed; /* Fixed/sticky position */
-  bottom: 20px; /* Place the button at the bottom of the page */
-  right: 30px; /* Place the button 30px from the right */
-  z-index: 99; /* Make sure it does not overlap */
-  border: none; /* Remove borders */
-  outline: none; /* Remove outline */
-  background-color: black; /* Set a background color */
-  color: white; /* Text color */
-  cursor: pointer; /* Add a mouse pointer on hover */
-  padding: 15px; /* Some padding */
-  border-radius: 10px; /* Rounded corners */
-  font-size: 18px; /* Increase font size */
-}
-
-#myBtn:hover {
-  background-color: #555; /* Add a dark-grey background on hover */
-}
- </style>
-
-            <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/all.js" integrity="sha384-xymdQtn1n3lH2wcu0qhcdaOpQwyoarkgLVxC/wZ5q7h9gHtxICrpcaSUfygqZGOe" crossorigin="anonymous"></script>
-{#      <link rel="stylesheet" href="{% static 'css/footer.css'%}">#}
-       <link rel="stylesheet" href="{% static 'css/header.css'%}">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/all.js" integrity="sha384-xymdQtn1n3lH2wcu0qhcdaOpQwyoarkgLVxC/wZ5q7h9gHtxICrpcaSUfygqZGOe" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="{% static 'css/footer.css'%}">
+    <link rel="stylesheet" href="{% static 'css/header.css'%}">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
-  </head>
-  <body style="font-family:Poppins">
+</head>
 
-<nav style="margin-bottom: 50px; background-color: #333" class="navbar sticky-top navbar-expand-xl navbar-dark " >
-    <a href="/home/" class="navbar-brand"> <img src="{% static 'images/csealogo.png' %}" height="30px" width="100px" hspace="50px"></a>
-    <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarMenu">
+<body style="font-family:Poppins">
+
+    <nav style="margin-bottom: 50px; background-color: #333" class="navbar sticky-top navbar-expand-xl navbar-dark ">
+        <a href="/home/" class="navbar-brand"> <img src="{% static 'images/csealogo.png' %}" height="30px" width="100px" hspace="50px"></a>
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarMenu">
         <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse" id="navbarMenu" >
-        <ul class="navbar-nav ml-auto" style="background-color: #333">
-            <li class="nav-item"><a href="/gallery/">Gallery</a></li>
-            <li class="nav-item"><a href="/events/">Events</a></li>
-            <li class="nav-item" ><a class="active"href="/team/">Team</a></li>
-            <li class="nav-item" ><a href="/alumni/">Alumni</a></li>
-{#            <li class="nav-item"><a href="/feedback/">Feedback</a></li>#}
-            <li class="nav-item"><a href="/straightoutta/">Straight Outta CSED</a></li>
-            <li class="nav-item"><a  href="/alumniconnect/">Alumni Connect</a></li>
-        </ul>
-    </div>
-</nav>
-
-<div align="center" class="fluid-container">
-
-      <img src="{% static 'images/nitwlogo.png' %}" width="400"> <img src="{% static 'images/logo.jpg' %}" width="240">
-      <h1><b>Computer Science and Engineering Association, NITW</b></h1>
-    </div>
-
-
-<div class="wrapper" style ="margin-top:"10%" background-image: url(http://jmd.im/wp-content/uploads/2017/06/blacki_thumbnail.jpg);">
-{#individual#}
-    <div class="speakers-section" style ="background-image: url(http://jmd.im/wp-content/uploads/2017/06/blacki_thumbnail.jpg);">
-        <div class="parallax-scene parallax-scene-2 anim-icons">
-            <span data-depth="0.40" class="parallax-layer icon icon-circle-5"></span>
-            <span data-depth="0.99" class="parallax-layer icon icon-circle-5"></span>
+        <div class="collapse navbar-collapse" id="navbarMenu">
+            <ul class="navbar-nav ml-auto" style="background-color: #333">
+                <li class="nav-item"><a href="/gallery/">Gallery</a></li>
+                <li class="nav-item"><a href="/events/">Events</a></li>
+                <li class="nav-item"><a class="active" href="/team/">Team</a></li>
+                <li class="nav-item"><a href="/alumni/">Alumni</a></li>
+                <!-- {#            <li class="nav-item"><a href="/feedback/">Feedback</a></li>#} -->
+                <li class="nav-item"><a href="/straightoutta/">Straight Outta CSED</a></li>
+                <li class="nav-item"><a href="/alumniconnect/">Alumni Connect</a></li>
+            </ul>
         </div>
+    </nav>
 
-        <div class="container">
-            <div class="sec-title light text-center">
-                <h2>Our Team</h2>
+    <div align="center" class="fluid-container">
 
-                <span class="title">We are a group of dedicated,enthusiastic students who work timelessly to deliver the essence of Computer Science to everyone in our vicinity.</span>
+        <img src="{% static 'images/nitwlogo.png' %}" width="400"> <img src="{% static 'images/logo.jpg' %}" width="240">
+        <h1><b>Computer Science and Engineering Association, NITW</b></h1>
+    </div>
 
-{#                edit#}
 
-{#    <div class="slideshow-container">#}
+    <div class="wrapper" " background-image: url(http://jmd.im/wp-content/uploads/2017/06/blacki_thumbnail.jpg); ">
+        <!-- {#individual#} -->
+        <div class="speakers-section " style="background-image: url(http://jmd.im/wp-content/uploads/2017/06/blacki_thumbnail.jpg); ">
+            <div class="parallax-scene parallax-scene-2 anim-icons ">
+                <span data-depth="0.40 " class="parallax-layer icon icon-circle-5 "></span>
+                <span data-depth="0.99 " class="parallax-layer icon icon-circle-5 "></span>
+            </div>
+
+            <div class="container ">
+                <div class="sec-title light text-center ">
+                    <h2 style="margin-top: 10% ">Our Team</h2>
+
+                    <span class=" title ">We are a group of dedicated,enthusiastic students who work timelessly to deliver the essence of Computer Science to everyone in our vicinity.</span>
+
+                    <!-- {#                edit#}
+
+{#    <div class="slideshow-container ">#}
 {##}
-{#            <div class="mySlides fade">#}
-{#            <img src="{% static 'images/csea2018.jpg' %}" style="width:100%">#}
+{#            <div class="mySlides fade ">#}
+{#            <img src="{% static 'images/csea2018.jpg' %} " style="width:100% ">#}
 {##}
 {#            </div>#}
 {##}
-{#          <div class="mySlides fade">#}
+{#          <div class="mySlides fade ">#}
 {##}
-{#            <img src="{% static 'images/csea2019.jpg' %}" style="width:100%">#}
+{#            <img src="{% static 'images/csea2019.jpg' %} " style="width:100% ">#}
 {##}
 {#          </div>#}
 {##}
-{#          <!-- Next and previous buttons -->#}
-{#          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>#}
-{#          <a class="next" onclick="plusSlides(1)">&#10095;</a>#}
-{#      </div>#}
-{##}
-{#      <br>#}
-{##}
-{#        <!-- The dots/circles -->#}
-{#        <div style="text-align:center">#}
-{#          <span class="dot" onclick="currentSlide(1)"></span>#}
-{#          <span class="dot" onclick="currentSlide(2)"></span>#}
-{#        </div>#}
-{#      </div>#}
-{##}
-{##}
-{#    <script type="text/javascript">#}
-{##}
-{#      var slideIndex = 0;#}
-{#      showSlides();#}
-{##}
-{#      function showSlides() {#}
-{#        var i;#}
-{#        var slides = document.getElementsByClassName("mySlides");#}
-{#        for (i = 0; i < slides.length; i++) {#}
-{#          slides[i].style.display = "none";#}
-{#        }#}
-{#        slideIndex++;#}
-{#        if (slideIndex > slides.length) {slideIndex = 1}#}
-{#        slides[slideIndex-1].style.display = "block";#}
-{#        setTimeout(showSlides, 3000);#}
-{#      }#}
-{#    </script>#}
-{#    <p></p>#}
-{##}
-{#            </div>#}
-<div tyle ="background-image: url(http://jmd.im/wp-content/uploads/2017/06/blacki_thumbnail.jpg);" class="container">
-                <div class="speaker-block col-lg-3 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay="400ms">
-                    <div class="inner-box">
-                        <div class="image-box">
-                            <figure class="image"><img src="{% static 'images/team/Y Komal.jpg' %}" alt="">
-                                <div class="social-links">
-                                    <ul>
-                                       <li><a href="https://m.facebook.com/Komal9724"><span class="fab fa-facebook-f"></span></a></li>
-                                        <li><a href="https://www.instagram.com/y.komal.1309"><span class="fab fa-instagram"></span></a></li>
-                                        <li><a href="https://www.linkedin.com/in/y-komal-6b4492134"><span class="fab fa-linkedin-in"></span></a></li>
-                                       <li><a href="https://github.com/ykomal"><span class="fab fa-github"></span></a></li>
-                                    </ul>
+{#          Next and previous buttons#} {# <a class="prev " onclick="plusSlides(-1) ">&#10094;</a>#} {# <a class="next " onclick="plusSlides(1) ">&#10095;</a>#} {# </div>#} {##} {# <br>#} {##} {#
+                The dots/circles#} {#
+                <div style="text-align:center ">#} {# <span class="dot " onclick="currentSlide(1) "></span>#} {# <span class="dot " onclick="currentSlide(2) "></span>#} {# </div>#} {# </div>#} {##} {##} {#
+            <script type="text/javascript ">
+                #} {##} {#
+                    var slideIndex = 0;#
+                } {#
+                    showSlides();#
+                } {##} {#
+                    function showSlides() {#} {#
+                        var i;#
+                    } {#
+                        var slides = document.getElementsByClassName("mySlides ");#
+                    } {#
+                        for (i = 0; i < slides.length; i++) {#} {#
+                            slides[i].style.display = "none ";#
+                        } {#}#
+                    } {#
+                        slideIndex++;#
+                    } {#
+                        if (slideIndex > slides.length) {
+                            slideIndex = 1
+                        }#
+                    } {#
+                        slides[slideIndex - 1].style.display = "block ";#
+                    } {#
+                        setTimeout(showSlides, 3000);#
+                    } {#}#
+                } {#
+            </script>#} {#
+            <p></p>#} {##} {# </div>#} -->
+                    <div tyle="background-image: url(http://jmd.im/wp-content/uploads/2017/06/blacki_thumbnail.jpg); " class="container ">
+                        <div class="speaker-block col-lg-3 col-md-6 col-sm-12 wow fadeInUp " data-wow-delay="400ms ">
+                            <div class="inner-box ">
+                                <div class="image-box ">
+                                    <figure class="image "><img src="{% static 'images/team/Y Komal.jpg' %} " alt=" ">
+                                        <div class="social-links ">
+                                            <ul>
+                                                <li><a href="https://m.facebook.com/Komal9724 "><span class="fab fa-facebook-f "></span></a></li>
+                                                <li><a href="https://www.instagram.com/y.komal.1309 "><span class="fab fa-instagram "></span></a></li>
+                                                <li><a href="https://www.linkedin.com/in/y-komal-6b4492134 "><span class="fab fa-linkedin-in "></span></a></li>
+                                                <li><a href="https://github.com/ykomal "><span class="fab fa-github "></span></a></li>
+                                            </ul>
+                                        </div>
+                                    </figure>
                                 </div>
-                            </figure>
+                                <div class="caption-box ">
+                                    <h4 class="name "><a href="# ">Y Komal </a></h4>
+                                    <span class="designation ">General Secretary</span>
+                                </div>
+                            </div>
                         </div>
-                        <div class="caption-box">
-                            <h4 class="name"><a href="#">Y Komal </a></h4>
-                            <span class="designation">General Secretary</span>
+                        <div class="row ">
+                            <div class="speaker-block col-lg-3 col-md-6 col-sm-12 wow fadeInUp " data-wow-delay="400ms ">
+                                <div class="inner-box ">
+                                    <div class="image-box ">
+                                        <figure class="image "><img src="{% static 'images/team/Shivani Agrawal.jpg' %} " alt=" ">
+                                            <div class="social-links ">
+                                                <ul>
+                                                    <li><a href="https://www.facebook.com/shivani.agrawal.5621149 "><span class="fab fa-facebook-f "></span></a></li>
+                                                    <li><a href="https://www.instagram.com/shivani__agr/ "><span class="fab fa-instagram "></span></a></li>
+                                                    <li><a href="https://www.linkedin.com/in/agshi "><span class="fab fa-linkedin-in "></span></a></li>
+                                                    <li><a href="https://github.com/shivaniagr97 "><span class="fab fa-github "></span></a></li>
+                                                </ul>
+                                            </div>
+                                        </figure>
+                                    </div>
+                                    <div class="caption-box ">
+                                        <h4 class="name "><a href="# ">Shivani Agrawal </a></h4>
+                                        <span class="designation ">Additional Secretary</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="speaker-block col-lg-3 col-md-6 col-sm-12 wow fadeInUp " data-wow-delay="400ms ">
+                                <div class="inner-box ">
+                                    <div class="image-box ">
+                                        <figure class="image "><img src="{% static 'images/team/RahulParihar.jpeg' %} " alt=" ">
+                                            <div class="social-links ">
+                                                <ul>
+                                                    <li><a href="https://www.facebook.com/rahul.parihar.5817300 "><span class="fab fa-facebook-f "></span></a></li>
+                                                    <li><a href="https://www.instagram.com/_rahul_parihar/?hl=en "><span class="fab fa-instagram "></span></a></li>
+                                                    <li><a href="https://www.linkedin.com/in/rahul-parihar-b0a19a135/ "><span class="fab fa-linkedin-in "></span></a></li>
+                                                    <li><a href="https://github.com/pariharrahul1998/ "><span class="fab fa-github "></span></a></li>
+                                                </ul>
+                                            </div>
+                                        </figure>
+                                    </div>
+                                    <div class="caption-box ">
+                                        <h4 class="name "><a href="# ">Rahul Parihar</a></h4>
+                                        <span class="designation ">Additional Secretary</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="speaker-block col-lg-3 col-md-6 col-sm-12 wow fadeInUp " data-wow-delay="400ms ">
+                                <div class="inner-box ">
+                                    <div class="image-box ">
+                                        <figure class="image "><img src="{% static 'images/team/Himanshu Khandelwal.jpg' %} " alt=" ">
+                                            <div class="social-links ">
+                                                <ul>
+                                                    <li><a href="https://www.facebook.com/himkha.100 "><span class="fab fa-facebook-f "></span></a></li>
+                                                    <li><a href="https://www.instagram.com/himkha_100/ "><span class="fab fa-instagram "></span></a></li>
+                                                    <li><a href="https://www.linkedin.com/in/himanshu-khandelwal-1b7517135/ "><span class="fab fa-linkedin-in "></span></a></li>
+                                                    <li><a href="https://github.com/himanshu-100 "><span class="fab fa-github "></span></a></li>
+                                                </ul>
+                                            </div>
+                                        </figure>
+                                    </div>
+                                    <div class="caption-box ">
+                                        <h4 class="name "><a href="# ">Himanshu Khandelwal</a></h4>
+                                        <span class="designation ">Additional Secretary</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="speaker-block col-lg-3 col-md-6 col-sm-12 wow fadeInUp " data-wow-delay="400ms ">
+                                <div class="inner-box ">
+                                    <div class="image-box ">
+                                        <figure class="image "><img src="{% static 'images/team/Nabagata Saha .jpeg' %} " alt=" ">
+                                            <div class="social-links ">
+                                                <ul>
+                                                    <li><a href="fb.com/nsaha234 "><span class="fab fa-facebook-f "></span></a></li>
+                                                    <li><a href="instagram.com/nabbbaaaa "><span class="fab fa-instagram "></span></a></li>
+                                                    <li><a href="https://www.linkedin.com/in/nabagata-saha "><span class="fab fa-linkedin-in "></span></a></li>
+                                                    <li><a href="https://github.com/Nabagata "><span class="fab fa-github "></span></a></li>
+                                                </ul>
+                                            </div>
+                                        </figure>
+                                    </div>
+                                    <div class="caption-box ">
+                                        <h4 class="name "><a href="# ">Nabagata Saha</a></h4>
+                                        <span class="designation ">Additional Secretary</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="speaker-block col-lg-3 col-md-6 col-sm-12 wow fadeInUp " data-wow-delay="400ms ">
+                                <div class="inner-box ">
+                                    <div class="image-box ">
+                                        <figure class="image "><img src="{% static 'images/team/Monika.jpg' %} " alt=" ">
+                                            <div class="social-links ">
+                                                <ul>
+                                                    <li><a href="https://m.facebook.com/monika.pandey.902819 https://www.facebook.com/rahul.parihar.5817300 "><span class="fab fa-facebook-f "></span></a></li>
+                                                    <li><a href=" "><span class="fab fa-instagram "></span></a></li>
+                                                    <li><a href="https://www.linkedin.com/in/monika-pandey-10468a146 "><span class="fab fa-linkedin-in "></span></a></li>
+                                                    <li><a href="https://github.com/monp97 "><span class="fab fa-github "></span></a></li>
+                                                </ul>
+                                            </div>
+                                        </figure>
+                                    </div>
+                                    <div class="caption-box ">
+                                        <h4 class="name "><a href="# ">Monika Pandey</a></h4>
+                                        <span class="designation ">Additional Secretary</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="speaker-block col-lg-3 col-md-6 col-sm-12 wow fadeInUp " data-wow-delay="400ms ">
+                                <div class="inner-box ">
+                                    <div class="image-box ">
+                                        <figure class="image "><img src="{% static 'images/team/Saurabh Bodhe.jpeg' %} " alt=" ">
+                                            <div class="social-links ">
+                                                <ul>
+                                                    <li><a href="# "><span class="fab fa-facebook-f "></span></a></li>
+                                                    <li><a href="# "><span class="fab fa-instagram "></span></a></li>
+                                                    <li><a href="# "><span class="fab fa-linkedin-in "></span></a></li>
+                                                    <li><a href="# "><span class="fab fa-github "></span></a></li>
+                                                </ul>
+                                            </div>
+                                        </figure>
+                                    </div>
+                                    <div class="caption-box ">
+                                        <h4 class="name "><a href="# ">Saurabh Bodhe</a></h4>
+                                        <span class="designation ">Additional Secretary</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="speaker-block col-lg-3 col-md-6 col-sm-12 wow fadeInUp " data-wow-delay="400ms ">
+                                <div class="inner-box ">
+                                    <div class="image-box ">
+                                        <figure class="image "><img src="{% static 'images/team/AabhaasDasgupta.jpeg' %} " alt=" ">
+                                            <div class="social-links ">
+                                                <ul>
+                                                    <li><a href="https://www.facebook.com/ritabratad "><span class="fab fa-facebook-f "></span></a></li>
+                                                    <li><a href="https://www.instagram.com/lord_adg/ "><span class="fab fa-instagram "></span></a></li>
+                                                    <li><a href="https://www.linkedin.com/in/aabhaas-dasgupta-85704113b?originalSubdomain=in "><span class="fab fa-linkedin-in "></span></a></li>
+                                                    <li><a href="https://github.com/ritabratad "><span class="fab fa-github "></span></a></li>
+                                                </ul>
+                                            </div>
+                                        </figure>
+                                    </div>
+                                    <div class="caption-box ">
+                                        <h4 class="name "><a href="# ">Aabhaas Dasgupta</a></h4>
+                                        <span class="designation ">Additional Secretary</span>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
+                        <div class="row ">
+                            <div class="speaker-block col-lg-3 col-md-6 col-sm-12 wow fadeInUp " data-wow-delay="400ms ">
+                                <div class="inner-box ">
+                                    <div class="image-box ">
+                                        <figure class="image "><img src="{% static 'images/team/Ashita Agrawal.jpg' %} " alt=" ">
+                                            <div class="social-links ">
+                                                <ul>
+                                                    <li><a href="https://www.facebook.com/ashuhere803 "><span class="fab fa-facebook-f "></span></a></li>
+                                                    <li><a href="https://www.instagram.com/ashita_agrwl/ "><span class="fab fa-instagram "></span></a></li>
+                                                    <li><a href="https://www.linkedin.com/in/ashita-agrawal-8517b8185/ "><span class="fab fa-linkedin-in "></span></a></li>
+                                                    <li><a href="# "><span class="fab fa-github "></span></a></li>
+                                                </ul>
+                                            </div>
+                                        </figure>
+                                    </div>
+                                    <div class="caption-box ">
+                                        <h4 class="name "><a href="# ">Ashita Agrawal</a></h4>
+                                        <span class="designation ">Joint Secretary</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="speaker-block col-lg-3 col-md-6 col-sm-12 wow fadeInUp " data-wow-delay="400ms ">
+                                <div class="inner-box ">
+                                    <div class="image-box ">
+                                        <figure class="image "><img src="{% static 'images/team/Divas.jpg' %} " alt=" ">
+                                            <div class="social-links ">
+                                                <ul>
+                                                    <li><a href="https://m.facebook.com/jindaldivas "><span class="fab fa-facebook-f "></span></a></li>
+                                                    <li><a href="https://www.instagram.com/divas_jindal/ "><span class="fab fa-instagram "></span></a></li>
+                                                    <li><a href="https://www.linkedin.com/in/divasjindal/ "><span class="fab fa-linkedin-in "></span></a></li>
+                                                    <li><a href="https://github.com/divas-jindal/ "><span class="fab fa-github "></span></a></li>
+                                                </ul>
+                                            </div>
+                                        </figure>
+                                    </div>
+                                    <div class="caption-box ">
+                                        <h4 class="name "><a href="# ">Divas Jindal</a></h4>
+                                        <span class="designation ">Joint Secretary</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="speaker-block col-lg-3 col-md-6 col-sm-12 wow fadeInUp " data-wow-delay="400ms ">
+                                <div class="inner-box ">
+                                    <div class="image-box ">
+                                        <figure class="image "><img src="{% static 'images/team/Shrijnika Agrawal.jpg' %} " alt=" ">
+                                            <div class="social-links ">
+                                                <ul>
+                                                    <li><a href="https://www.facebook.com/shrijnika.agrawal.5 "><span class="fab fa-facebook-f "></span></a></li>
+                                                    <li><a href="https://instagram.com/not_shrijnika?igshid=e50bvulv4qju "><span class="fab fa-instagram "></span></a></li>
+                                                    <li><a href="# "><span class="fab fa-linkedin-in "></span></a></li>
+                                                    <li><a href="# "><span class="fab fa-github "></span></a></li>
+                                                </ul>
+                                            </div>
+                                        </figure>
+                                    </div>
+                                    <div class="caption-box ">
+                                        <h4 class="name "><a href="# ">Shrijnika Agrawal</a></h4>
+                                        <span class="designation ">Joint Secretary</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="speaker-block col-lg-3 col-md-6 col-sm-12 wow fadeInUp " data-wow-delay="400ms ">
+                                <div class="inner-box ">
+                                    <div class="image-box ">
+                                        <figure class="image "><img src="{% static 'images/team/Anisha.jpeg' %} " alt=" ">
+                                            <div class="social-links ">
+                                                <ul>
+                                                    <li><a href="https://www.facebook.com/profile.php?id=100010419646343 "><span class="fab fa-facebook-f "></span></a></li>
+                                                    <li><a href="https://instagram.com/anishaaaa.j?igshid=1fuyv3co62rbr "><span class="fab fa-instagram "></span></a></li>
+                                                    <li><a href="https://www.linkedin.com/in/anisha-jain-04337b187 "><span class="fab fa-linkedin-in "></span></a></li>
+                                                    <li><a href="https://github.com/anishajain22 "><span class="fab fa-github "></span></a></li>
+                                                </ul>
+                                            </div>
+                                        </figure>
+                                    </div>
+                                    <div class="caption-box ">
+                                        <h4 class="name "><a href="# ">Anisha</a></h4>
+                                        <span class="designation ">Joint Secretary</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="speaker-block col-lg-3 col-md-6 col-sm-12 wow fadeInUp " data-wow-delay="400ms ">
+                                <div class="inner-box ">
+                                    <div class="image-box ">
+                                        <figure class="image "><img src="{% static 'images/team/Pratik Prakash.jpg' %} " alt=" ">
+                                            <div class="social-links ">
+                                                <ul>
+                                                    <li><a href="https://m.facebook.com/pratik1235 "><span class="fab fa-facebook-f "></span></a></li>
+                                                    <li><a href="https://www.instagram.com/pratik_1235/ "><span class="fab fa-instagram "></span></a></li>
+                                                    <li><a href="https://www.linkedin.com/in/pratik-prakash-249024191 "><span class="fab fa-linkedin-in "></span></a></li>
+                                                    <li><a href="https://github.com/pratik1235 "><span class="fab fa-github "></span></a></li>
+                                                </ul>
+                                            </div>
+                                        </figure>
+                                    </div>
+                                    <div class="caption-box ">
+                                        <h4 class="name "><a href="# ">Pratik Prakash</a></h4>
+                                        <span class="designation ">Joint Secretary</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="speaker-block col-lg-3 col-md-6 col-sm-12 wow fadeInUp " data-wow-delay="400ms ">
+                                <div class="inner-box ">
+                                    <div class="image-box ">
+                                        <figure class="image "><img src="{% static 'images/team/Paras Jain.jpg' %} " alt=" ">
+                                            <div class="social-links ">
+                                                <ul>
+                                                    <li><a href="fb.com/parasjaincs "><span class="fab fa-facebook-f "></span></a></li>
+                                                    <li><a href="paras.ja.in "><span class="fab fa-instagram "></span></a></li>
+                                                    <li><a href="https://www.linkedin.com/in/parasjaincs "><span class="fab fa-linkedin-in "></span></a></li>
+                                                    <li><a href="http://github.com/parasjain1 "><span class="fab fa-github "></span></a></li>
+                                                </ul>
+                                            </div>
+                                        </figure>
+                                    </div>
+                                    <div class="caption-box ">
+                                        <h4 class="name "><a href="# ">Paras Jain</a></h4>
+                                        <span class="designation ">Joint Secretary</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="speaker-block col-lg-3 col-md-6 col-sm-12 wow fadeInUp " data-wow-delay="400ms ">
+                                <div class="inner-box ">
+                                    <div class="image-box ">
+                                        <figure class="image "><img src="{% static 'images/team/Shruti Bansal.jpg' %} " alt=" ">
+                                            <div class="social-links ">
+                                                <ul>
+                                                    <li><a href="https://www.facebook.com/shruti.bansal.374549 "><span class="fab fa-facebook-f "></span></a></li>
+                                                    <li><a href="https://www.instagram.com/shruti_1789/?hl=en "><span class="fab fa-instagram "></span></a></li>
+                                                    <li><a href="https://www.linkedin.com/in/bansal1789/ "><span class="fab fa-linkedin-in "></span></a></li>
+                                                    <li><a href="https://github.com/bansal1789 "><span class="fab fa-github "></span></a></li>
+                                                </ul>
+                                            </div>
+                                        </figure>
+                                    </div>
+                                    <div class="caption-box ">
+                                        <h4 class="name "><a href="# ">Shruti Bansal</a></h4>
+                                        <span class="designation ">Joint Secretary</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="speaker-block col-lg-3 col-md-6 col-sm-12 wow fadeInUp " data-wow-delay="400ms ">
+                                <div class="inner-box ">
+                                    <div class="image-box ">
+                                        <figure class="image "><img src="{% static 'images/team/Rishav Jain.jpg' %} " alt=" ">
+                                            <div class="social-links ">
+                                                <ul>
+                                                    <li><a href="https://www.facebook.com/rishav.jain.7902 "><span class="fab fa-facebook-f "></span></a></li>
+                                                    <li><a href="https://www.instagram.com/rishav__jn/ "><span class="fab fa-instagram "></span></a></li>
+                                                    <li><a href="https://www.linkedin.com/in/rishav4336/ "><span class="fab fa-linkedin-in "></span></a></li>
+                                                    <li><a href=" https://github.com/rishav4336 "><span class="fab fa-github "></span></a></li>
+                                                </ul>
+                                            </div>
+                                        </figure>
+                                    </div>
+                                    <div class="caption-box ">
+                                        <h4 class="name "><a href="# ">Rishav Jain</a></h4>
+                                        <span class="designation ">Joint Secretary</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="speaker-block col-lg-3 col-md-6 col-sm-12 wow fadeInUp " data-wow-delay="400ms ">
+                                <div class="inner-box ">
+                                    <div class="image-box ">
+                                        <figure class="image "><img src="{% static 'images/team/Shashank Verma.png' %} " alt=" ">
+                                            <div class="social-links ">
+                                                <ul>
+                                                    <li><a href="https://www.facebook.com/vshashank23 "><span class="fab fa-facebook-f "></span></a></li>
+                                                    <li><a href="https://www.instagram.com/___tsuki__/ "><span class="fab fa-instagram "></span></a></li>
+                                                    <li><a href="https://www.linkedin.com/in/shashank-verma-97a15b162 "><span class="fab fa-linkedin-in "></span></a></li>
+                                                    <li><a href="https://github.com/vshashank7 "><span class="fab fa-github "></span></a></li>
+                                                </ul>
+                                            </div>
+                                        </figure>
+                                    </div>
+                                    <div class="caption-box ">
+                                        <h4 class="name "><a href="# ">Shashank Verma</a></h4>
+                                        <span class="designation ">Joint Secretary</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="speaker-block col-lg-3 col-md-6 col-sm-12 wow fadeInUp " data-wow-delay="400ms ">
+                                <div class="inner-box ">
+                                    <div class="image-box ">
+                                        <figure class="image "><img src="{% static 'images/team/Nitisha.jpg' %} " alt=" ">
+                                            <div class="social-links ">
+                                                <ul>
+                                                    <li><a href="# "><span class="fab fa-facebook-f "></span></a></li>
+                                                    <li><a href="# "><span class="fab fa-instagram "></span></a></li>
+                                                    <li><a href="# "><span class="fab fa-linkedin-in "></span></a></li>
+                                                    <li><a href="# "><span class="fab fa-github "></span></a></li>
+                                                </ul>
+                                            </div>
+                                        </figure>
+                                    </div>
+                                    <div class="caption-box ">
+                                        <h4 class="name "><a href="# ">Nitisha Singhwal</a></h4>
+                                        <span class="designation ">Joint Secretary</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row ">
+                            <div class="speaker-block col-lg-3 col-md-6 col-sm-12 wow fadeInUp " data-wow-delay="400ms ">
+                                <div class="inner-box ">
+                                    <div class="image-box ">
+                                        <figure class="image "><img src="{% static 'images/team/Kapil Rathod.jpg' %} " alt=" ">
+                                            <div class="social-links ">
+                                                <ul>
+                                                    <li><a href=" https://www.facebook.com/kapil.rathod.372 "><span class="fab fa-facebook-f "></span></a></li>
+                                                    <li><a href="https://www.instagram.com/kapsaquarius "><span class="fab fa-instagram "></span></a></li>
+                                                    <li><a href="https://www.linkedin.com/in/kapil-rathod-a261b217b "><span class="fab fa-linkedin-in "></span></a></li>
+                                                    <li><a href="https://github.com/kapsaquarius "><span class="fab fa-github "></span></a></li>
+                                                </ul>
+                                            </div>
+                                        </figure>
+                                    </div>
+                                    <div class="caption-box ">
+                                        <h4 class="name "><a href="# ">Kapil Rathod</a></h4>
+                                        <span class="designation ">Executive Member</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="speaker-block col-lg-3 col-md-6 col-sm-12 wow fadeInUp " data-wow-delay="400ms ">
+                                <div class="inner-box ">
+                                    <div class="image-box ">
+                                        <figure class="image "><img src="{% static 'images/team/Ashwin Ganesan.JPG' %} " alt=" ">
+                                            <div class="social-links ">
+                                                <ul>
+                                                    <li><a href="https://www.facebook.com/asheldorwin "><span class="fab fa-facebook-f "></span></a></li>
+                                                    <li><a href="https://www.instagram.com/asheldorwin "><span class="fab fa-instagram "></span></a></li>
+                                                    <li><a href="https://www.linkedin.com/in/ashwin-ganesan-67238485/ "><span class="fab fa-linkedin-in "></span></a></li>
+                                                    <li><a href="# "><span class="fab fa-github "></span></a></li>
+                                                </ul>
+                                            </div>
+                                        </figure>
+                                    </div>
+                                    <div class="caption-box ">
+                                        <h4 class="name "><a href="# ">Ashwin Ganesan</a></h4>
+                                        <span class="designation ">Executive Member</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="speaker-block col-lg-3 col-md-6 col-sm-12 wow fadeInUp " data-wow-delay="400ms ">
+                                <div class="inner-box ">
+                                    <div class="image-box ">
+                                        <figure class="image "><img src="{% static 'images/team/Nikhil Reddy.jpg'%} " alt=" ">
+                                            <div class="social-links ">
+                                                <ul>
+                                                    <li><a href="https://m.facebook.com/reddynikhilp?ref=bookmarks "><span class="fab fa-facebook-f "></span></a></li>
+                                                    <li><a href="https://www.instagram.com/nikhil_reddy_pottanigari/ "><span class="fab fa-instagram "></span></a></li>
+                                                    <li><a href="# "><span class="fab fa-linkedin-in "></span></a></li>
+                                                    <li><a href="# "><span class="fab fa-github "></span></a></li>
+                                                </ul>
+                                            </div>
+                                        </figure>
+                                    </div>
+                                    <div class="caption-box ">
+                                        <h4 class="name "><a href="# ">Nikhil Reddy</a></h4>
+                                        <span class="designation ">Executive Member</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="speaker-block col-lg-3 col-md-6 col-sm-12 wow fadeInUp " data-wow-delay="400ms ">
+                                <div class="inner-box ">
+                                    <div class="image-box ">
+                                        <figure class="image "><img src="{% static 'images/team/Anmol Sahu.jpg'%} " alt=" ">
+                                            <div class="social-links ">
+                                                <ul>
+                                                    <li><a href="https://m.facebook.com/anmol.sahu.1694 "><span class="fab fa-facebook-f "></span></a></li>
+                                                    <li><a href="https://instagram.com/anmol_sahu09?igshid=18bl80xchtqva "><span class="fab fa-instagram "></span></a></li>
+                                                    <li><a href="https://www.linkedin.com/in/anmol-sahu "><span class="fab fa-linkedin-in "></span></a></li>
+                                                    <li><a href="https://github.com/Anmol-Sahu "><span class="fab fa-github "></span></a></li>
+                                                </ul>
+                                            </div>
+                                        </figure>
+                                    </div>
+                                    <div class="caption-box ">
+                                        <h4 class="name "><a href="# ">Anmol Sahu</a></h4>
+                                        <span class="designation ">Executive Member</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="speaker-block col-lg-3 col-md-6 col-sm-12 wow fadeInUp " data-wow-delay="400ms ">
+                                <div class="inner-box ">
+                                    <div class="image-box ">
+                                        <figure class="image "><img src="{% static 'images/team/Surya Ramanand Sharma.jpg'%} " alt=" ">
+                                            <div class="social-links ">
+                                                <ul>
+                                                    <li><a href="https://www.facebook.com/profile.php?id=100027448222663 "><span class="fab fa-facebook-f "></span></a></li>
+                                                    <li><a href="https://www.instagram.com/surya_9900/?hl=en "><span class="fab fa-instagram "></span></a></li>
+                                                    <li><a href="# "><span class="fab fa-linkedin-in "></span></a></li>
+                                                    <li><a href="# "><span class="fab fa-github "></span></a></li>
+                                                </ul>
+                                            </div>
+                                        </figure>
+                                    </div>
+                                    <div class="caption-box ">
+                                        <h4 class="name "><a href="# ">Surya Sharma</a></h4>
+                                        <span class="designation ">Executive Member</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="speaker-block col-lg-3 col-md-6 col-sm-12 wow fadeInUp " data-wow-delay="400ms ">
+                                <div class="inner-box ">
+                                    <div class="image-box ">
+                                        <figure class="image "><img src="{% static 'images/team/Prapti.jpg'%} " alt=" ">
+                                            <div class="social-links ">
+                                                <ul>
+                                                    <li><a href="https://www.facebook.com/prapti.maheshwari.90 "><span class="fab fa-facebook-f "></span></a></li>
+                                                    <li><a href="https://www.instagram.com/prapssss29?r=nametag "><span class="fab fa-instagram "></span></a></li>
+                                                    <li><a href="https://www.linkedin.com/in/prapti-maheshwari-b008ba194 "><span class="fab fa-linkedin-in "></span></a></li>
+                                                    <li><a href="https://github.com/praptim "><span class="fab fa-github "></span></a></li>
+                                                </ul>
+                                            </div>
+                                        </figure>
+                                    </div>
+                                    <div class="caption-box ">
+                                        <h4 class="name "><a href="# ">Prapti Maheshwari</a></h4>
+                                        <span class="designation ">Executive Member</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="speaker-block col-lg-3 col-md-6 col-sm-12 wow fadeInUp " data-wow-delay="400ms ">
+                                <div class="inner-box ">
+                                    <div class="image-box ">
+                                        <figure class="image "><img src="{% static 'images/team/Pradyumn Shukla.PNG'%} " alt=" ">
+                                            <div class="social-links ">
+                                                <ul>
+                                                    <li><a href="https://www.facebook.com/pradyumn.shukla.378 "><span class="fab fa-facebook-f "></span></a></li>
+                                                    <li><a href="https://instagram.com/pradyummmmm?igshid=tmq8jmg2suep "><span class="fab fa-instagram "></span></a></li>
+                                                    <li><a href="# "><span class="fab fa-linkedin-in "></span></a></li>
+                                                    <li><a href="# "><span class="fab fa-github "></span></a></li>
+                                                </ul>
+                                            </div>
+                                        </figure>
+                                    </div>
+                                    <div class="caption-box ">
+                                        <h4 class="name "><a href="# ">Pradyumn Shukla</a></h4>
+                                        <span class="designation ">Executive Member</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="speaker-block col-lg-3 col-md-6 col-sm-12 wow fadeInUp " data-wow-delay="400ms ">
+                                <div class="inner-box ">
+                                    <div class="image-box ">
+                                        <figure class="image "><img src="{% static 'images/team/Heena Mittal.jpg'%} " alt=" ">
+                                            <div class="social-links ">
+                                                <ul>
+                                                    <li><a href="https://www.facebook.com/heena.mittal.58 "><span class="fab fa-facebook-f "></span></a></li>
+                                                    <li><a href="# "><span class="fab fa-instagram "></span></a></li>
+                                                    <li><a href="# "><span class="fab fa-linkedin-in "></span></a></li>
+                                                    <li><a href="# "><span class="fab fa-github "></span></a></li>
+                                                </ul>
+                                            </div>
+                                        </figure>
+                                    </div>
+                                    <div class="caption-box ">
+                                        <h4 class="name "><a href="# ">Heena Mittal</a></h4>
+                                        <span class="designation ">Executive Member</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="speaker-block col-lg-3 col-md-6 col-sm-12 wow fadeInUp " data-wow-delay="400ms ">
+                                <div class="inner-box ">
+                                    <div class="image-box ">
+                                        <figure class="image "><img src="{% static 'images/team/Sanyukta Patil.jpg'%} " alt=" ">
+                                            <div class="social-links ">
+                                                <ul>
+                                                    <li><a href="https://www.facebook.com/sanyukta.patil.37625 "><span class="fab fa-facebook-f "></span></a></li>
+                                                    <li><a href="https://www.instagram.com/santheghxst/ "><span class="fab fa-instagram "></span></a></li>
+                                                    <li><a href="https://www.linkedin.com/in/sanyukta-patil-4488b9194/ "><span class="fab fa-linkedin-in "></span></a></li>
+                                                    <li><a href="https://github.com/sanyuktapatil23 "><span class="fab fa-github "></span></a></li>
+                                                </ul>
+                                            </div>
+                                        </figure>
+                                    </div>
+                                    <div class="caption-box ">
+                                        <h4 class="name "><a href="# ">Sanyukta Patil</a></h4>
+                                        <span class="designation ">Executive Member</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="speaker-block col-lg-3 col-md-6 col-sm-12 wow fadeInUp " data-wow-delay="400ms ">
+                                <div class="inner-box ">
+                                    <div class="image-box ">
+                                        <figure class="image "><img src="{% static 'images/team/Deepak Shukla.jpeg'%} " alt=" ">
+                                            <div class="social-links ">
+                                                <ul>
+                                                    <li><a href="# "><span class="fab fa-facebook-f "></span></a></li>
+                                                    <li><a href="# "><span class="fab fa-instagram "></span></a></li>
+                                                    <li><a href="# "><span class="fab fa-linkedin-in "></span></a></li>
+                                                    <li><a href="# "><span class="fab fa-github "></span></a></li>
+                                                </ul>
+                                            </div>
+                                        </figure>
+                                    </div>
+                                    <div class="caption-box ">
+                                        <h4 class="name "><a href="# ">Deepak Shukla</a></h4>
+                                        <span class="designation ">Executive Member</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="speaker-block col-lg-3 col-md-6 col-sm-12 wow fadeInUp " data-wow-delay="400ms ">
+                                <div class="inner-box ">
+                                    <div class="image-box ">
+                                        <figure class="image "><img src="{% static 'images/team/Salil Sharma.jpg'%} " alt=" ">
+                                            <div class="social-links ">
+                                                <ul>
+                                                    <li><a href="https://www.facebook.com/salil.sharma.142 "><span class="fab fa-facebook-f "></span></a></li>
+                                                    <li><a href="https://www.instagram.com/salilsharma142/ linkedin.com/in/salil-kumar-sharma-717751175/ "><span class="fab fa-instagram "></span></a></li>
+                                                    <li><a href="# "><span class="fab fa-linkedin-in "></span></a></li>
+                                                    <li><a href="# "><span class="fab fa-github "></span></a></li>
+                                                </ul>
+                                            </div>
+                                        </figure>
+                                    </div>
+                                    <div class="caption-box ">
+                                        <h4 class="name "><a href="# ">Salil Sharma</a></h4>
+                                        <span class="designation ">Executive Member</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="speaker-block col-lg-3 col-md-6 col-sm-12 wow fadeInUp " data-wow-delay="400ms ">
+                                <div class="inner-box ">
+                                    <div class="image-box ">
+                                        <figure class="image "><img src="{% static 'images/team/Sandhya Singh.jpg'%} " alt=" ">
+                                            <div class="social-links ">
+                                                <ul>
+                                                    <li><a href="# "><span class="fab fa-facebook-f "></span></a></li>
+                                                    <li><a href="# "><span class="fab fa-instagram "></span></a></li>
+                                                    <li><a href="www.linkedin.com/in/singhsandhya13097 "><span class="fab fa-linkedin-in "></span></a></li>
+                                                    <li><a href="# "><span class="fab fa-github "></span></a></li>
+                                                </ul>
+                                            </div>
+                                        </figure>
+                                    </div>
+                                    <div class="caption-box ">
+                                        <h4 class="name "><a href="# ">Sandhya Singh</a></h4>
+                                        <span class="designation ">Executive Member</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="speaker-block col-lg-3 col-md-6 col-sm-12 wow fadeInUp " data-wow-delay="400ms ">
+                                <div class="inner-box ">
+                                    <div class="image-box ">
+                                        <figure class="image "><img src="{% static 'images/team/HaRsHa ReDdY.jpg'%} " alt=" ">
+                                            <div class="social-links ">
+                                                <ul>
+                                                    <li><a href="# "><span class="fab fa-facebook-f "></span></a></li>
+                                                    <li><a href="# "><span class="fab fa-instagram "></span></a></li>
+                                                    <li><a href="# "><span class="fab fa-linkedin-in "></span></a></li>
+                                                    <li><a href="# "><span class="fab fa-github "></span></a></li>
+                                                </ul>
+                                            </div>
+                                        </figure>
+                                    </div>
+                                    <div class="caption-box ">
+                                        <h4 class="name "><a href="# ">Harsha Reddy</a></h4>
+                                        <span class="designation ">Executive Member</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="speaker-block col-lg-3 col-md-6 col-sm-12 wow fadeInUp " data-wow-delay="400ms ">
+                                <div class="inner-box ">
+                                    <div class="image-box ">
+                                        <figure class="image "><img src="{% static 'images/team/Shreya Garg.jpg.png'%} " alt=" ">
+                                            <div class="social-links ">
+                                                <ul>
+                                                    <li><a href="https://www.facebook.com/shreya.garg.9210256 "><span class="fab fa-facebook-f "></span></a></li>
+                                                    <li><a href="https://www.instagram.com/shreyagarg74/ "><span class="fab fa-instagram "></span></a></li>
+                                                    <li><a href="https://www.linkedin.com/in/shreya-garg-43489b191 "><span class="fab fa-linkedin-in "></span></a></li>
+                                                    <li><a href="https://github.com/shreyagarg31 "><span class="fab fa-github "></span></a></li>
+                                                </ul>
+                                            </div>
+                                        </figure>
+                                    </div>
+                                    <div class="caption-box ">
+                                        <h4 class="name "><a href="# ">Shreya Garg</a></h4>
+                                        <span class="designation ">Executive Member</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="speaker-block col-lg-3 col-md-6 col-sm-12 wow fadeInUp " data-wow-delay="400ms ">
+                                <div class="inner-box ">
+                                    <div class="image-box ">
+                                        <figure class="image "><img src="{% static 'images/team/Saad Zemam.jpg'%} " alt=" ">
+                                            <div class="social-links ">
+                                                <ul>
+                                                    <li><a href="# "><span class="fab fa-facebook-f "></span></a></li>
+                                                    <li><a href="https://www.instagram.com/saad_zemam/ "><span class="fab fa-instagram "></span></a></li>
+                                                    <li><a href="https://www.linkedin.com/in/saad-zemam-18719a191 "><span class="fab fa-linkedin-in "></span></a></li>
+                                                    <li><a href="# "><span class="fab fa-github "></span></a></li>
+                                                </ul>
+                                            </div>
+                                        </figure>
+                                    </div>
+                                    <div class="caption-box ">
+                                        <h4 class="name "><a href="# ">Saad Zemam</a></h4>
+                                        <span class="designation ">Executive Member</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="speaker-block col-lg-3 col-md-6 col-sm-12 wow fadeInUp " data-wow-delay="400ms ">
+                                <div class="inner-box ">
+                                    <div class="image-box ">
+                                        <figure class="image "><img src="{% static 'images/team/Priyansh Maheshwari.jpg'%} " alt=" ">
+                                            <div class="social-links ">
+                                                <ul>
+                                                    <li><a href="https://m.facebook.com/priyansh.maheshwari.9?ref=bookmarks "><span class="fab fa-facebook-f "></span></a></li>
+                                                    <li><a href="https://www.instagram.com/priyansh.maheshwari.9/ "><span class="fab fa-instagram "></span></a></li>
+                                                    <li><a href="# "><span class="fab fa-linkedin-in "></span></a></li>
+                                                    <li><a href="# "><span class="fab fa-github "></span></a></li>
+                                                </ul>
+                                            </div>
+                                        </figure>
+                                    </div>
+                                    <div class="caption-box ">
+                                        <h4 class="name "><a href="# ">Priyansh Maheshwari</a></h4>
+                                        <span class="designation ">Executive Member</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="speaker-block col-lg-3 col-md-6 col-sm-12 wow fadeInUp " data-wow-delay="400ms ">
+                                <div class="inner-box ">
+                                    <div class="image-box ">
+                                        <figure class="image "><img src="{% static 'images/team/KHEMRAJ MARATHE.jpg'%} " alt=" ">
+                                            <div class="social-links ">
+                                                <ul>
+                                                    <li><a href="https://www.facebook.com/khemraj.marathe "><span class="fab fa-facebook-f "></span></a></li>
+                                                    <li><a href="https://instagram.com/im_khem112?igshid=1pb899dh3snrt "><span class="fab fa-instagram "></span></a></li>
+                                                    <li><a href="https://www.linkedin.com/in/khemraj-marathe-29b4b3194/ "><span class="fab fa-linkedin-in "></span></a></li>
+                                                    <li><a href="https://github.com/Khem112 "><span class="fab fa-github "></span></a></li>
+                                                </ul>
+                                            </div>
+                                        </figure>
+                                    </div>
+                                    <div class="caption-box ">
+                                        <h4 class="name "><a href="# ">Khemraj Marathe</a></h4>
+                                        <span class="designation ">Executive Member</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="speaker-block col-lg-3 col-md-6 col-sm-12 wow fadeInUp " data-wow-delay="400ms ">
+                                <div class="inner-box ">
+                                    <div class="image-box ">
+                                        <figure class="image "><img src="{% static 'images/team/Bhashkarjya.jpg'%} " alt=" ">
+                                            <div class="social-links ">
+                                                <ul>
+                                                    <li><a href="https://www.facebook.com/bhaskarjya.nath "><span class="fab fa-facebook-f "></span></a></li>
+                                                    <li><a href="https://www.instagram.com/bhashkarjyanath "><span class="fab fa-instagram "></span></a></li>
+                                                    <li><a href="# "><span class="fab fa-linkedin-in "></span></a></li>
+                                                    <li><a href="# "><span class="fab fa-github "></span></a></li>
+                                                </ul>
+                                            </div>
+                                        </figure>
+                                    </div>
+                                    <div class="caption-box ">
+                                        <h4 class="name "><a href="# ">Bhaskarjya Nath</a></h4>
+                                        <span class="designation ">Executive Member</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="speaker-block col-lg-3 col-md-6 col-sm-12 wow fadeInUp " data-wow-delay="400ms ">
+                                <div class="inner-box ">
+                                    <div class="image-box ">
+                                        <figure class="image "><img src="{% static 'images/team/Kanishk Vohra_.jpg'%} " alt=" ">
+                                            <div class="social-links ">
+                                                <ul>
+                                                    <li><a href="# "><span class="fab fa-facebook-f "></span></a></li>
+                                                    <li><a href="# "><span class="fab fa-instagram "></span></a></li>
+                                                    <li><a href="# "><span class="fab fa-linkedin-in "></span></a></li>
+                                                    <li><a href="# "><span class="fab fa-github "></span></a></li>
+                                                </ul>
+                                            </div>
+                                        </figure>
+                                    </div>
+                                    <div class="caption-box ">
+                                        <h4 class="name "><a href="# ">Kanishk Vohra</a></h4>
+                                        <span class="designation ">Executive Member</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row ">
+                        <div class="speaker-block col-lg-3 col-md-6 col-sm-12 wow fadeInUp " data-wow-delay="400ms ">
+                            <div class="inner-box ">
+                                <div class="image-box ">
+                                    <figure class="image "><img src="{% static 'images/team/nikunj.jpeg' %} " alt=" ">
+                                        <div class="social-links ">
+                                            <ul>
+                                                <li><a href="https://www.facebook.com/nikunj.verma.79 "><span class="fab fa-facebook-f "></span></a></li>
+                                                <li><a href="# "><span class="fab fa-instagram "></span></a></li>
+                                                <li><a href="https://www.linkedin.com/in/nikunj-verma-a40a20a7 "><span class="fab fa-linkedin-in "></span></a></li>
+                                                <li><a href="https://www.github.com/vermanikunj353/nik "><span class="fab fa-github "></span></a></li>
+                                            </ul>
+                                        </div>
+                                    </figure>
+                                </div>
+                                <div class="caption-box ">
+                                    <h4 class="name "><a href="# ">Nikunj Verma</a></h4>
+                                    <span class="designation ">Mr. MCA</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="speaker-block col-lg-3 col-md-6 col-sm-12 wow fadeInUp " data-wow-delay="400ms ">
+                            <div class="inner-box ">
+                                <div class="image-box ">
+                                    <figure class="image "><img src="{% static 'images/team/monatak.jpeg' %} " alt=" ">
+                                        <div class="social-links ">
+                                            <ul>
+                                                <li><a href="https://m.facebook.com/monika.tak.3762?ref=bookmarks "><span class="fab fa-facebook-f "></span></a></li>
+                                                <li><a href="# "><span class="fab fa-instagram "></span></a></li>
+                                                <li><a href="# "><span class="fab fa-linkedin-in "></span></a></li>
+                                                <li><a href="# "><span class="fab fa-github "></span></a></li>
+                                            </ul>
+                                        </div>
+                                    </figure>
+                                </div>
+                                <div class="caption-box ">
+                                    <h4 class="name "><a href="# ">Monika Tak</a></h4>
+                                    <span class="designation ">Ms. MCA</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="speaker-block col-lg-3 col-md-6 col-sm-12 wow fadeInUp " data-wow-delay="400ms ">
+                            <div class="inner-box ">
+                                <div class="image-box ">
+                                    <figure class="image "><img src="{% static 'images/team/ahana.jpeg' %} " alt=" ">
+                                        <div class="social-links ">
+                                            <ul>
+                                                <li><a href="http://facebook.com/ahana.panja.73 "><span class="fab fa-facebook-f "></span></a></li>
+                                                <li><a href="http://Instagram.com/ahana2oo1 "><span class="fab fa-instagram "></span></a></li>
+                                                <li><a href="# "><span class="fab fa-linkedin-in "></span></a></li>
+                                                <li><a href="# "><span class="fab fa-github "></span></a></li>
+                                            </ul>
+                                        </div>
+                                    </figure>
+                                </div>
+                                <div class="caption-box ">
+                                    <h4 class="name "><a href="# ">Ahana Panja</a></h4>
+                                    <span class="designation ">Ms. CSE</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="speaker-block col-lg-3 col-md-6 col-sm-12 wow fadeInUp " data-wow-delay="400ms ">
+                            <div class="inner-box ">
+                                <div class="image-box ">
+                                    <figure class="image "><img src="{% static 'images/team/priyanshu.jpeg' %} " alt=" ">
+                                        <div class="social-links ">
+                                            <ul>
+                                                <li><a href="# "><span class="fab fa-facebook-f "></span></a></li>
+                                                <li><a href="# "><span class="fab fa-instagram "></span></a></li>
+                                                <li><a href="# "><span class="fab fa-linkedin-in "></span></a></li>
+                                                <li><a href="# "><span class="fab fa-github "></span></a></li>
+                                            </ul>
+                                        </div>
+                                    </figure>
+                                </div>
+                                <div class="caption-box ">
+                                    <h4 class="name "><a href="# ">Priyanshu Shukla</a></h4>
+                                    <span class="designation ">Mr. CSE</span>
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
-           <div class="row">
-                <div class="speaker-block col-lg-3 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay="400ms">
-                    <div class="inner-box">
-                        <div class="image-box">
-                            <figure class="image"><img src="{% static 'images/team/Shivani Agrawal.jpg' %}" alt="">
-                                <div class="social-links">
-                                    <ul>
-                                       <li><a href="https://www.facebook.com/shivani.agrawal.5621149"><span class="fab fa-facebook-f"></span></a></li>
-                                        <li><a href="https://www.instagram.com/shivani__agr/"><span class="fab fa-instagram"></span></a></li>
-                                        <li><a href="https://www.linkedin.com/in/agshi"><span class="fab fa-linkedin-in"></span></a></li>
-                                       <li><a href="https://github.com/shivaniagr97"><span class="fab fa-github"></span></a></li>
-                                    </ul>
+            </div>
+
+            <section id="contact" class=" border-top-color2">
+
+                <div class="ftco-footer ftco-bg-dark ftco-section fluid-container text-center">
+
+                    <div class="row">
+
+                        <div class="col-sm-6 col-md-5 text-right scrollimation fade-up d1">
+
+                            <h1 class="big-text" style="color: #666666">Contact Us</h1>
+
+                            <iframe class="map-con" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3794.880316715465!2d79.52921395041203!3d17.98430438766325!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a334fbbec4fcd8b%3A0xc5f5d66e005e92dc!2sDepartment%20of%20Computer%20Science%20%26%20Engineering!5e0!3m2!1sen!2sin!4v1571860298351!5m2!1sen!2sin"
+                                frameborder="0" style="border:2px;" allowfullscreen=""></iframe>
+
+
+                        </div>
+
+                        <!--=== Contact Form ===-->
+
+                        <form style="padding-right: 10%;" id="contact-form" class="col-sm-6 col-md-offset-1 scrollimation fade-left d3" action="contact.php" method="post" novalidate>
+
+                            <div class="form-group">
+                                <label class="control-label" for="contact-name">Name</label>
+                                <div class="controls" text-align="center">
+                                    <input id="contact-name" name="contactName" placeholder="Your name" class="form-control requiredField" data-new-placeholder="Your name" type="text" data-error-empty="Please enter your name">
+                                    <i class="fa fa-user " style="align-items: center; margin-top: 2%; color: grey"></i>
                                 </div>
-                            </figure>
-                        </div>
-                        <div class="caption-box">
-                            <h4 class="name"><a href="#">Shivani Agrawal </a></h4>
-                            <span class="designation">Additional Secretary</span>
-                        </div>
+                            </div>
+                            <!-- End name input -->
+
+                            <div class="form-group">
+                                <label class="control-label" for="contact-mail">Email</label>
+                                <div class=" controls">
+                                    <input id="contact-mail" name="email" placeholder="Your email" class="form-control requiredField" data-new-placeholder="Your email" type="email" data-error-empty="Please enter your email" data-error-invalid="Invalid email address">
+                                    <i class="fa fa-envelope " style="align-items: center; margin-top: 2%; color: grey"></i>
+                                </div>
+                            </div>
+                            <!-- End email input -->
+
+                            <div class="form-group">
+                                <label class="control-label" for="contact-message">Message</label>
+                                <div class="controls">
+                                    <textarea id="contact-message" name="comments" placeholder="Your message" class="form-control requiredField" data-new-placeholder="Your message" rows="6" data-error-empty="Please enter your message"></textarea>
+                                    <i class="fa fa-comment" style="align-items: center; margin-top: 2%; color:grey"></i>
+                                </div>
+                            </div>
+                            <!-- End textarea -->
+
+                            <p><button name="submit" type="submit" class="btn btn-color2 btn-block" data-error-message="Error!" data-sending-message="Sending..." data-ok-message="Message Sent"><i class="fa fa-paper-plane"></i>Send Message</button></p>
+                            <input type="hidden" name="submitted" id="submitted" value="true">
+
+                        </form>
+                        <!-- End contact-form -->
+
                     </div>
+
                 </div>
-                <div class="speaker-block col-lg-3 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay="400ms">
-                    <div class="inner-box">
-                        <div class="image-box">
-                            <figure class="image"><img src="{% static 'images/team/RahulParihar.jpeg' %}" alt="">
-                                <div class="social-links">
-                                    <ul>
-                                       <li><a href="https://www.facebook.com/rahul.parihar.5817300"><span class="fab fa-facebook-f"></span></a></li>
-                                        <li><a href="https://www.instagram.com/_rahul_parihar/?hl=en"><span class="fab fa-instagram"></span></a></li>
-                                        <li><a href="https://www.linkedin.com/in/rahul-parihar-b0a19a135/"><span class="fab fa-linkedin-in"></span></a></li>
-                                       <li><a href="https://github.com/pariharrahul1998/"><span class="fab fa-github"></span></a></li>
-                                    </ul>
-                                </div>
-                            </figure>
-                        </div>
-                        <div class="caption-box">
-                            <h4 class="name"><a href="#">Rahul Parihar</a></h4>
-                            <span class="designation">Additional Secretary</span>
-                        </div>
-                    </div>
+
+            </section>
+
+            <footer text-align="center" class=" ftco-footer ftco-bg-dark ftco-section">
+                <div class="rounded-social-buttons">
+
+                    <!-- <h2 class="ftco-heading-2 mb-0" style="color: white">Stay Connected With Us</h2>#} -->
+                    <a class="social-button facebook" href="https://www.facebook.com/cseanitw/" target="_blank"><i class="fab fa-facebook-f" style="font-size: 50px"></i></a>
+                    <a class="social-button envelope" href="mailto:csea@student.nitw.ac.in" target="_blank"><i class="fas fa-envelope" style="font-size: 50px"></i></a>
+                    <a class="social-button linkedin" href="https://www.linkedin.com/company/csea-nitw/" target="_blank"><i class="fab fa-linkedin" style="font-size: 50px"></i></a>
+                    <a class="social-button instagram" href="https://www.instagram.com/csea_nitw/?hl=en" target="_blank"><i class="fab fa-instagram" style="font-size: 50px"></i></a>
                 </div>
-                <div class="speaker-block col-lg-3 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay="400ms">
-                    <div class="inner-box">
-                        <div class="image-box">
-                            <figure class="image"><img src="{% static 'images/team/Himanshu Khandelwal.jpg' %}" alt="">
-                                <div class="social-links">
-                                    <ul>
-                                       <li><a href="https://www.facebook.com/himkha.100"><span class="fab fa-facebook-f"></span></a></li>
-                                        <li><a href="https://www.instagram.com/himkha_100/"><span class="fab fa-instagram"></span></a></li>
-                                        <li><a href="https://www.linkedin.com/in/himanshu-khandelwal-1b7517135/"><span class="fab fa-linkedin-in"></span></a></li>
-                                       <li><a href="https://github.com/himanshu-100"><span class="fab fa-github"></span></a></li>
-                                    </ul>
-                                </div>
-                            </figure>
-                        </div>
-                        <div class="caption-box">
-                            <h4 class="name"><a href="#">Himanshu Khandelwal</a></h4>
-                            <span class="designation">Additional Secretary</span>
-                        </div>
-                    </div>
+                <div style="text-align:center">
+                    <span class="copyright">
+                            &copy; Copyright. All rights reserved. Design by <a href="https://www.facebook.com/cseanitw/">CSEA, NIT Warangal</a>
+                            </span>
                 </div>
-                <div class="speaker-block col-lg-3 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay="400ms">
-                    <div class="inner-box">
-                        <div class="image-box">
-                            <figure class="image"><img src="{% static 'images/team/Nabagata Saha .jpeg' %}" alt="">
-                                <div class="social-links">
-                                    <ul>
-                                       <li><a href="fb.com/nsaha234"><span class="fab fa-facebook-f"></span></a></li>
-                                        <li><a href="instagram.com/nabbbaaaa"><span class="fab fa-instagram"></span></a></li>
-                                        <li><a href="https://www.linkedin.com/in/nabagata-saha"><span class="fab fa-linkedin-in"></span></a></li>
-                                       <li><a href="https://github.com/Nabagata"><span class="fab fa-github"></span></a></li>
-                                    </ul>
-                                </div>
-                            </figure>
-                        </div>
-                        <div class="caption-box">
-                            <h4 class="name"><a href="#">Nabagata Saha</a></h4>
-                            <span class="designation">Additional Secretary</span>
-                        </div>
-                    </div>
-                </div>
-            <div class="speaker-block col-lg-3 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay="400ms">
-                    <div class="inner-box">
-                        <div class="image-box">
-                            <figure class="image"><img src="{% static 'images/team/Monika.jpg' %}" alt="">
-                                <div class="social-links">
-                                    <ul>
-                                       <li><a href="https://m.facebook.com/monika.pandey.902819
-https://www.facebook.com/rahul.parihar.5817300"><span class="fab fa-facebook-f"></span></a></li>
-                                        <li><a href="
-"><span class="fab fa-instagram"></span></a></li>
-                                        <li><a href="https://www.linkedin.com/in/monika-pandey-10468a146"><span class="fab fa-linkedin-in"></span></a></li>
-                                       <li><a href="https://github.com/monp97"><span class="fab fa-github"></span></a></li>
-                                    </ul>
-                                </div>
-                            </figure>
-                        </div>
-                        <div class="caption-box">
-                            <h4 class="name"><a href="#">Monika Pandey</a></h4>
-                            <span class="designation">Additional Secretary</span>
-                        </div>
-                    </div>
-            </div>
-            <div class="speaker-block col-lg-3 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay="400ms">
-                    <div class="inner-box">
-                        <div class="image-box">
-                            <figure class="image"><img src="{% static 'images/team/Saurabh Bodhe.jpeg' %}" alt="">
-                                <div class="social-links">
-                                    <ul>
-                                       <li><a href="#"><span class="fab fa-facebook-f"></span></a></li>
-                                        <li><a href="#"><span class="fab fa-instagram"></span></a></li>
-                                        <li><a href="#"><span class="fab fa-linkedin-in"></span></a></li>
-                                       <li><a href="#"><span class="fab fa-github"></span></a></li>
-                                    </ul>
-                                </div>
-                            </figure>
-                        </div>
-                        <div class="caption-box">
-                            <h4 class="name"><a href="#">Saurabh Bodhe</a></h4>
-                            <span class="designation">Additional Secretary</span>
-                        </div>
-                    </div>
-            </div>
-            <div class="speaker-block col-lg-3 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay="400ms">
-                    <div class="inner-box">
-                        <div class="image-box">
-                            <figure class="image"><img src="{% static 'images/team/AabhaasDasgupta.jpeg' %}" alt="">
-                                <div class="social-links">
-                                    <ul>
-                                       <li><a href="https://www.facebook.com/ritabratad"><span class="fab fa-facebook-f"></span></a></li>
-                                        <li><a href="https://www.instagram.com/lord_adg/"><span class="fab fa-instagram"></span></a></li>
-                                        <li><a href="https://www.linkedin.com/in/aabhaas-dasgupta-85704113b?originalSubdomain=in"><span class="fab fa-linkedin-in"></span></a></li>
-                                       <li><a href="https://github.com/ritabratad"><span class="fab fa-github"></span></a></li>
-                                    </ul>
-                                </div>
-                            </figure>
-                        </div>
-                        <div class="caption-box">
-                            <h4 class="name"><a href="#">Aabhaas Dasgupta</a></h4>
-                            <span class="designation">Additional Secretary</span>
-                        </div>
-                    </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="speaker-block col-lg-3 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay="400ms">
-                    <div class="inner-box">
-                        <div class="image-box">
-                            <figure class="image"><img src="{% static 'images/team/Ashita Agrawal.jpg' %}" alt="">
-                                <div class="social-links">
-                                    <ul>
-                                       <li><a href="https://www.facebook.com/ashuhere803"><span class="fab fa-facebook-f"></span></a></li>
-                                        <li><a href="https://www.instagram.com/ashita_agrwl/"><span class="fab fa-instagram"></span></a></li>
-                                        <li><a href="https://www.linkedin.com/in/ashita-agrawal-8517b8185/"><span class="fab fa-linkedin-in"></span></a></li>
-                                       <li><a href="#"><span class="fab fa-github"></span></a></li>
-                                    </ul>
-                                </div>
-                            </figure>
-                        </div>
-                        <div class="caption-box">
-                            <h4 class="name"><a href="#">Ashita Agrawal</a></h4>
-                            <span class="designation">Joint Secretary</span>
-                        </div>
-                    </div>
-            </div>
-            <div class="speaker-block col-lg-3 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay="400ms">
-                    <div class="inner-box">
-                        <div class="image-box">
-                            <figure class="image"><img src="{% static 'images/team/Divas.jpg' %}" alt="">
-                                <div class="social-links">
-                                    <ul>
-                                       <li><a href="https://m.facebook.com/jindaldivas"><span class="fab fa-facebook-f"></span></a></li>
-                                        <li><a href="https://www.instagram.com/divas_jindal/"><span class="fab fa-instagram"></span></a></li>
-                                        <li><a href="https://www.linkedin.com/in/divasjindal/"><span class="fab fa-linkedin-in"></span></a></li>
-                                       <li><a href="https://github.com/divas-jindal/"><span class="fab fa-github"></span></a></li>
-                                    </ul>
-                                </div>
-                            </figure>
-                        </div>
-                        <div class="caption-box">
-                            <h4 class="name"><a href="#">Divas Jindal</a></h4>
-                            <span class="designation">Joint Secretary</span>
-                        </div>
-                    </div>
-            </div>
-            <div class="speaker-block col-lg-3 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay="400ms">
-                    <div class="inner-box">
-                        <div class="image-box">
-                            <figure class="image"><img src="{% static 'images/team/Shrijnika Agrawal.jpg' %}" alt="">
-                                <div class="social-links">
-                                    <ul>
-                                       <li><a href="https://www.facebook.com/shrijnika.agrawal.5"><span class="fab fa-facebook-f"></span></a></li>
-                                        <li><a href="https://instagram.com/not_shrijnika?igshid=e50bvulv4qju"><span class="fab fa-instagram"></span></a></li>
-                                        <li><a href="#"><span class="fab fa-linkedin-in"></span></a></li>
-                                       <li><a href="#"><span class="fab fa-github"></span></a></li>
-                                    </ul>
-                                </div>
-                            </figure>
-                        </div>
-                        <div class="caption-box">
-                            <h4 class="name"><a href="#">Shrijnika Agrawal</a></h4>
-                            <span class="designation">Joint Secretary</span>
-                        </div>
-                    </div>
-            </div>
-            <div class="speaker-block col-lg-3 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay="400ms">
-                    <div class="inner-box">
-                        <div class="image-box">
-                            <figure class="image"><img src="{% static 'images/team/Anisha.jpeg' %}" alt="">
-                                <div class="social-links">
-                                    <ul>
-                                       <li><a href="https://www.facebook.com/profile.php?id=100010419646343"><span class="fab fa-facebook-f"></span></a></li>
-                                        <li><a href="https://instagram.com/anishaaaa.j?igshid=1fuyv3co62rbr"><span class="fab fa-instagram"></span></a></li>
-                                        <li><a href="https://www.linkedin.com/in/anisha-jain-04337b187"><span class="fab fa-linkedin-in"></span></a></li>
-                                       <li><a href="https://github.com/anishajain22"><span class="fab fa-github"></span></a></li>
-                                    </ul>
-                                </div>
-                            </figure>
-                        </div>
-                        <div class="caption-box">
-                            <h4 class="name"><a href="#">Anisha</a></h4>
-                            <span class="designation">Joint Secretary</span>
-                        </div>
-                    </div>
-            </div>
-            <div class="speaker-block col-lg-3 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay="400ms">
-                    <div class="inner-box">
-                        <div class="image-box">
-                            <figure class="image"><img src="{% static 'images/team/Pratik Prakash.jpg' %}" alt="">
-                                <div class="social-links">
-                                    <ul>
-                                       <li><a href="https://m.facebook.com/pratik1235"><span class="fab fa-facebook-f"></span></a></li>
-                                        <li><a href="https://www.instagram.com/pratik_1235/"><span class="fab fa-instagram"></span></a></li>
-                                        <li><a href="https://www.linkedin.com/in/pratik-prakash-249024191"><span class="fab fa-linkedin-in"></span></a></li>
-                                       <li><a href="https://github.com/pratik1235"><span class="fab fa-github"></span></a></li>
-                                    </ul>
-                                </div>
-                            </figure>
-                        </div>
-                        <div class="caption-box">
-                            <h4 class="name"><a href="#">Pratik Prakash</a></h4>
-                            <span class="designation">Joint Secretary</span>
-                        </div>
-                    </div>
-            </div>
-            <div class="speaker-block col-lg-3 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay="400ms">
-                    <div class="inner-box">
-                        <div class="image-box">
-                            <figure class="image"><img src="{% static 'images/team/Paras Jain.jpg' %}" alt="">
-                                <div class="social-links">
-                                    <ul>
-                                       <li><a href="fb.com/parasjaincs"><span class="fab fa-facebook-f"></span></a></li>
-                                        <li><a href="paras.ja.in"><span class="fab fa-instagram"></span></a></li>
-                                        <li><a href="https://www.linkedin.com/in/parasjaincs"><span class="fab fa-linkedin-in"></span></a></li>
-                                       <li><a href="http://github.com/parasjain1"><span class="fab fa-github"></span></a></li>
-                                    </ul>
-                                </div>
-                            </figure>
-                        </div>
-                        <div class="caption-box">
-                            <h4 class="name"><a href="#">Paras Jain</a></h4>
-                            <span class="designation">Joint Secretary</span>
-                        </div>
-                    </div>
-            </div>
-            <div class="speaker-block col-lg-3 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay="400ms">
-                    <div class="inner-box">
-                        <div class="image-box">
-                            <figure class="image"><img src="{% static 'images/team/Shruti Bansal.jpg' %}" alt="">
-                                <div class="social-links">
-                                    <ul>
-                                       <li><a href="https://www.facebook.com/shruti.bansal.374549"><span class="fab fa-facebook-f"></span></a></li>
-                                        <li><a href="https://www.instagram.com/shruti_1789/?hl=en"><span class="fab fa-instagram"></span></a></li>
-                                        <li><a href="https://www.linkedin.com/in/bansal1789/"><span class="fab fa-linkedin-in"></span></a></li>
-                                       <li><a href="https://github.com/bansal1789"><span class="fab fa-github"></span></a></li>
-                                    </ul>
-                                </div>
-                            </figure>
-                        </div>
-                        <div class="caption-box">
-                            <h4 class="name"><a href="#">Shruti Bansal</a></h4>
-                            <span class="designation">Joint Secretary</span>
-                        </div>
-                    </div>
-            </div>
-            <div class="speaker-block col-lg-3 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay="400ms">
-                    <div class="inner-box">
-                        <div class="image-box">
-                            <figure class="image"><img src="{% static 'images/team/Rishav Jain.jpg' %}" alt="">
-                                <div class="social-links">
-                                    <ul>
-                                       <li><a href="https://www.facebook.com/rishav.jain.7902"><span class="fab fa-facebook-f"></span></a></li>
-                                        <li><a href="https://www.instagram.com/rishav__jn/"><span class="fab fa-instagram"></span></a></li>
-                                        <li><a href="https://www.linkedin.com/in/rishav4336/"><span class="fab fa-linkedin-in"></span></a></li>
-                                       <li><a href=" https://github.com/rishav4336"><span class="fab fa-github"></span></a></li>
-                                    </ul>
-                                </div>
-                            </figure>
-                        </div>
-                        <div class="caption-box">
-                            <h4 class="name"><a href="#">Rishav Jain</a></h4>
-                            <span class="designation">Joint Secretary</span>
-                        </div>
-                    </div>
-            </div>
-            <div class="speaker-block col-lg-3 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay="400ms">
-                    <div class="inner-box">
-                        <div class="image-box">
-                            <figure class="image"><img src="{% static 'images/team/Shashank Verma.png' %}" alt="">
-                                <div class="social-links">
-                                    <ul>
-                                       <li><a href="https://www.facebook.com/vshashank23"><span class="fab fa-facebook-f"></span></a></li>
-                                        <li><a href="https://www.instagram.com/___tsuki__/ "><span class="fab fa-instagram"></span></a></li>
-                                        <li><a href="https://www.linkedin.com/in/shashank-verma-97a15b162"><span class="fab fa-linkedin-in"></span></a></li>
-                                       <li><a href="https://github.com/vshashank7"><span class="fab fa-github"></span></a></li>
-                                    </ul>
-                                </div>
-                            </figure>
-                        </div>
-                        <div class="caption-box">
-                            <h4 class="name"><a href="#">Shashank Verma</a></h4>
-                            <span class="designation">Joint Secretary</span>
-                        </div>
-                    </div>
-            </div>
-            <div class="speaker-block col-lg-3 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay="400ms">
-                    <div class="inner-box">
-                        <div class="image-box">
-                            <figure class="image"><img src="{% static 'images/team/Nitisha.jpg' %}" alt="">
-                                <div class="social-links">
-                                    <ul>
-                                       <li><a href="#"><span class="fab fa-facebook-f"></span></a></li>
-                                        <li><a href="#"><span class="fab fa-instagram"></span></a></li>
-                                        <li><a href="#"><span class="fab fa-linkedin-in"></span></a></li>
-                                       <li><a href="#"><span class="fab fa-github"></span></a></li>
-                                    </ul>
-                                </div>
-                            </figure>
-                        </div>
-                        <div class="caption-box">
-                            <h4 class="name"><a href="#">Nitisha Singhwal</a></h4>
-                            <span class="designation">Joint Secretary</span>
-                        </div>
-                    </div>
-            </div>
-        </div>
-         <div class="row">
-            <div class="speaker-block col-lg-3 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay="400ms">
-                    <div class="inner-box">
-                        <div class="image-box">
-                            <figure class="image"><img src="{% static 'images/team/Kapil Rathod.jpg' %}" alt="">
-                                <div class="social-links">
-                                    <ul>
-                                       <li><a href=" https://www.facebook.com/kapil.rathod.372"><span class="fab fa-facebook-f"></span></a></li>
-                                        <li><a href="https://www.instagram.com/kapsaquarius"><span class="fab fa-instagram"></span></a></li>
-                                        <li><a href="https://www.linkedin.com/in/kapil-rathod-a261b217b "><span class="fab fa-linkedin-in"></span></a></li>
-                                       <li><a href="https://github.com/kapsaquarius"><span class="fab fa-github"></span></a></li>
-                                    </ul>
-                                </div>
-                            </figure>
-                        </div>
-                        <div class="caption-box">
-                            <h4 class="name"><a href="#">Kapil Rathod</a></h4>
-                            <span class="designation">Executive Member</span>
-                        </div>
-                    </div>
-            </div>
-            <div class="speaker-block col-lg-3 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay="400ms">
-                    <div class="inner-box">
-                        <div class="image-box">
-                            <figure class="image"><img src="{% static 'images/team/Ashwin Ganesan.JPG' %}" alt="">
-                                <div class="social-links">
-                                    <ul>
-                                       <li><a href="https://www.facebook.com/asheldorwin"><span class="fab fa-facebook-f"></span></a></li>
-                                        <li><a href="https://www.instagram.com/asheldorwin"><span class="fab fa-instagram"></span></a></li>
-                                        <li><a href="https://www.linkedin.com/in/ashwin-ganesan-67238485/"><span class="fab fa-linkedin-in"></span></a></li>
-                                       <li><a href="#"><span class="fab fa-github"></span></a></li>
-                                    </ul>
-                                </div>
-                            </figure>
-                        </div>
-                        <div class="caption-box">
-                            <h4 class="name"><a href="#">Ashwin Ganesan</a></h4>
-                            <span class="designation">Executive Member</span>
-                        </div>
-                    </div>
-            </div>
-             <div class="speaker-block col-lg-3 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay="400ms">
-                    <div class="inner-box">
-                        <div class="image-box">
-                            <figure class="image"><img src="{% static 'images/team/Nikhil Reddy.jpg'%}"alt="">
-                                <div class="social-links">
-                                    <ul>
-                                       <li><a href="https://m.facebook.com/reddynikhilp?ref=bookmarks"><span class="fab fa-facebook-f"></span></a></li>
-                                        <li><a href="https://www.instagram.com/nikhil_reddy_pottanigari/ "><span class="fab fa-instagram"></span></a></li>
-                                        <li><a href="#"><span class="fab fa-linkedin-in"></span></a></li>
-                                       <li><a href="#"><span class="fab fa-github"></span></a></li>
-                                    </ul>
-                                </div>
-                            </figure>
-                        </div>
-                        <div class="caption-box">
-                            <h4 class="name"><a href="#">Nikhil Reddy</a></h4>
-                            <span class="designation">Executive Member</span>
-                        </div>
-                    </div>
-            </div>
-            <div class="speaker-block col-lg-3 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay="400ms">
-                    <div class="inner-box">
-                        <div class="image-box">
-                            <figure class="image"><img src="{% static 'images/team/Anmol Sahu.jpg'%}"alt="">
-                                <div class="social-links">
-                                    <ul>
-                                       <li><a href="https://m.facebook.com/anmol.sahu.1694"><span class="fab fa-facebook-f"></span></a></li>
-                                        <li><a href="https://instagram.com/anmol_sahu09?igshid=18bl80xchtqva"><span class="fab fa-instagram"></span></a></li>
-                                        <li><a href="https://www.linkedin.com/in/anmol-sahu"><span class="fab fa-linkedin-in"></span></a></li>
-                                       <li><a href="https://github.com/Anmol-Sahu "><span class="fab fa-github"></span></a></li>
-                                    </ul>
-                                </div>
-                            </figure>
-                        </div>
-                        <div class="caption-box">
-                            <h4 class="name"><a href="#">Anmol Sahu</a></h4>
-                            <span class="designation">Executive Member</span>
-                        </div>
-                    </div>
-        </div>
-        <div class="speaker-block col-lg-3 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay="400ms">
-                    <div class="inner-box">
-                        <div class="image-box">
-                            <figure class="image"><img src="{% static 'images/team/Surya Ramanand Sharma.jpg'%}"alt="">
-                                <div class="social-links">
-                                    <ul>
-                                       <li><a href="https://www.facebook.com/profile.php?id=100027448222663"><span class="fab fa-facebook-f"></span></a></li>
-                                        <li><a href="https://www.instagram.com/surya_9900/?hl=en"><span class="fab fa-instagram"></span></a></li>
-                                        <li><a href="#"><span class="fab fa-linkedin-in"></span></a></li>
-                                       <li><a href="#"><span class="fab fa-github"></span></a></li>
-                                    </ul>
-                                </div>
-                            </figure>
-                        </div>
-                        <div class="caption-box">
-                            <h4 class="name"><a href="#">Surya Sharma</a></h4>
-                            <span class="designation">Executive Member</span>
-                        </div>
-                    </div>
-        </div>
-        <div class="speaker-block col-lg-3 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay="400ms">
-                    <div class="inner-box">
-                        <div class="image-box">
-                            <figure class="image"><img src="{% static 'images/team/Prapti.jpg'%}"alt="">
-                                <div class="social-links">
-                                    <ul>
-                                       <li><a href="https://www.facebook.com/prapti.maheshwari.90"><span class="fab fa-facebook-f"></span></a></li>
-                                        <li><a href="https://www.instagram.com/prapssss29?r=nametag"><span class="fab fa-instagram"></span></a></li>
-                                        <li><a href="https://www.linkedin.com/in/prapti-maheshwari-b008ba194"><span class="fab fa-linkedin-in"></span></a></li>
-                                       <li><a href="https://github.com/praptim"><span class="fab fa-github"></span></a></li>
-                                    </ul>
-                                </div>
-                            </figure>
-                        </div>
-                        <div class="caption-box">
-                            <h4 class="name"><a href="#">Prapti Maheshwari</a></h4>
-                            <span class="designation">Executive Member</span>
-                        </div>
-                    </div>
-        </div>
-        <div class="speaker-block col-lg-3 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay="400ms">
-                    <div class="inner-box">
-                        <div class="image-box">
-                            <figure class="image"><img src="{% static 'images/team/Pradyumn Shukla.PNG'%}" alt="">
-                                <div class="social-links">
-                                    <ul>
-                                       <li><a href="https://www.facebook.com/pradyumn.shukla.378"><span class="fab fa-facebook-f"></span></a></li>
-                                        <li><a href="https://instagram.com/pradyummmmm?igshid=tmq8jmg2suep"><span class="fab fa-instagram"></span></a></li>
-                                        <li><a href="#"><span class="fab fa-linkedin-in"></span></a></li>
-                                       <li><a href="#"><span class="fab fa-github"></span></a></li>
-                                    </ul>
-                                </div>
-                            </figure>
-                        </div>
-                        <div class="caption-box">
-                            <h4 class="name"><a href="#">Pradyumn Shukla</a></h4>
-                            <span class="designation">Executive Member</span>
-                        </div>
-                    </div>
-            </div>
-        <div class="speaker-block col-lg-3 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay="400ms">
-                    <div class="inner-box">
-                        <div class="image-box">
-                            <figure class="image"><img src="{% static 'images/team/Heena Mittal.jpg'%}" alt="">
-                                <div class="social-links">
-                                    <ul>
-                                       <li><a href="https://www.facebook.com/heena.mittal.58"><span class="fab fa-facebook-f"></span></a></li>
-                                        <li><a href="#"><span class="fab fa-instagram"></span></a></li>
-                                        <li><a href="#"><span class="fab fa-linkedin-in"></span></a></li>
-                                       <li><a href="#"><span class="fab fa-github"></span></a></li>
-                                    </ul>
-                                </div>
-                            </figure>
-                        </div>
-                        <div class="caption-box">
-                            <h4 class="name"><a href="#">Heena Mittal</a></h4>
-                            <span class="designation">Executive Member</span>
-                        </div>
-                    </div>
-            </div>
-        <div class="speaker-block col-lg-3 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay="400ms">
-                    <div class="inner-box">
-                        <div class="image-box">
-                            <figure class="image"><img src="{% static 'images/team/Sanyukta Patil.jpg'%}"alt="">
-                                <div class="social-links">
-                                    <ul>
-                                       <li><a href="https://www.facebook.com/sanyukta.patil.37625"><span class="fab fa-facebook-f"></span></a></li>
-                                        <li><a href="https://www.instagram.com/santheghxst/"><span class="fab fa-instagram"></span></a></li>
-                                        <li><a href="https://www.linkedin.com/in/sanyukta-patil-4488b9194/"><span class="fab fa-linkedin-in"></span></a></li>
-                                       <li><a href="https://github.com/sanyuktapatil23"><span class="fab fa-github"></span></a></li>
-                                    </ul>
-                                </div>
-                            </figure>
-                        </div>
-                        <div class="caption-box">
-                            <h4 class="name"><a href="#">Sanyukta Patil</a></h4>
-                            <span class="designation">Executive Member</span>
-                        </div>
-                    </div>
-        </div>
-         <div class="speaker-block col-lg-3 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay="400ms">
-                    <div class="inner-box">
-                        <div class="image-box">
-                            <figure class="image"><img src="{% static 'images/team/Deepak Shukla.jpeg'%}"alt="">
-                                <div class="social-links">
-                                    <ul>
-                                       <li><a href="#"><span class="fab fa-facebook-f"></span></a></li>
-                                        <li><a href="#"><span class="fab fa-instagram"></span></a></li>
-                                        <li><a href="#"><span class="fab fa-linkedin-in"></span></a></li>
-                                       <li><a href="#"><span class="fab fa-github"></span></a></li>
-                                    </ul>
-                                </div>
-                            </figure>
-                        </div>
-                        <div class="caption-box">
-                            <h4 class="name"><a href="#">Deepak Shukla</a></h4>
-                            <span class="designation">Executive Member</span>
-                        </div>
-                    </div>
-        </div>
-                 <div class="speaker-block col-lg-3 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay="400ms">
-                    <div class="inner-box">
-                        <div class="image-box">
-                            <figure class="image"><img src="{% static 'images/team/Salil Sharma.jpg'%}"alt="">
-                                <div class="social-links">
-                                    <ul>
-                                       <li><a href="https://www.facebook.com/salil.sharma.142"><span class="fab fa-facebook-f"></span></a></li>
-                                        <li><a href="https://www.instagram.com/salilsharma142/   linkedin.com/in/salil-kumar-sharma-717751175/"><span class="fab fa-instagram"></span></a></li>
-                                        <li><a href="#"><span class="fab fa-linkedin-in"></span></a></li>
-                                       <li><a href="#"><span class="fab fa-github"></span></a></li>
-                                    </ul>
-                                </div>
-                            </figure>
-                        </div>
-                        <div class="caption-box">
-                            <h4 class="name"><a href="#">Salil Sharma</a></h4>
-                            <span class="designation">Executive Member</span>
-                        </div>
-                    </div>
-        </div>
-                      <div class="speaker-block col-lg-3 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay="400ms">
-                    <div class="inner-box">
-                        <div class="image-box">
-                            <figure class="image"><img src="{% static 'images/team/Sandhya Singh.jpg'%}"alt="">
-                                <div class="social-links">
-                                    <ul>
-                                       <li><a href="#"><span class="fab fa-facebook-f"></span></a></li>
-                                        <li><a href="#"><span class="fab fa-instagram"></span></a></li>
-                                        <li><a href="www.linkedin.com/in/singhsandhya13097"><span class="fab fa-linkedin-in"></span></a></li>
-                                       <li><a href="#"><span class="fab fa-github"></span></a></li>
-                                    </ul>
-                                </div>
-                            </figure>
-                        </div>
-                        <div class="caption-box">
-                            <h4 class="name"><a href="#">Sandhya Singh</a></h4>
-                            <span class="designation">Executive Member</span>
-                        </div>
-                    </div>
-        </div>
-  <div class="speaker-block col-lg-3 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay="400ms">
-                    <div class="inner-box">
-                        <div class="image-box">
-                            <figure class="image"><img src="{% static 'images/team/HaRsHa ReDdY.jpg'%}"alt="">
-                                <div class="social-links">
-                                    <ul>
-                                       <li><a href="#"><span class="fab fa-facebook-f"></span></a></li>
-                                        <li><a href="#"><span class="fab fa-instagram"></span></a></li>
-                                        <li><a href="#"><span class="fab fa-linkedin-in"></span></a></li>
-                                       <li><a href="#"><span class="fab fa-github"></span></a></li>
-                                    </ul>
-                                </div>
-                            </figure>
-                        </div>
-                        <div class="caption-box">
-                            <h4 class="name"><a href="#">Harsha Reddy</a></h4>
-                            <span class="designation">Executive Member</span>
-                        </div>
-                    </div>
-  </div>
-             <div class="speaker-block col-lg-3 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay="400ms">
-                    <div class="inner-box">
-                        <div class="image-box">
-                            <figure class="image"><img src="{% static 'images/team/Shreya Garg.jpg.png'%}"alt="">
-                                <div class="social-links">
-                                    <ul>
-                                       <li><a href="https://www.facebook.com/shreya.garg.9210256"><span class="fab fa-facebook-f"></span></a></li>
-                                        <li><a href="https://www.instagram.com/shreyagarg74/"><span class="fab fa-instagram"></span></a></li>
-                                        <li><a href="https://www.linkedin.com/in/shreya-garg-43489b191"><span class="fab fa-linkedin-in"></span></a></li>
-                                       <li><a href="https://github.com/shreyagarg31"><span class="fab fa-github"></span></a></li>
-                                    </ul>
-                                </div>
-                            </figure>
-                        </div>
-                        <div class="caption-box">
-                            <h4 class="name"><a href="#">Shreya Garg</a></h4>
-                            <span class="designation">Executive Member</span>
-                        </div>
-                    </div>
-            </div>
-             <div class="speaker-block col-lg-3 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay="400ms">
-                    <div class="inner-box">
-                        <div class="image-box">
-                            <figure class="image"><img src="{% static 'images/team/Saad Zemam.jpg'%}"alt="">
-                                <div class="social-links">
-                                    <ul>
-                                       <li><a href="#"><span class="fab fa-facebook-f"></span></a></li>
-                                        <li><a href="https://www.instagram.com/saad_zemam/"><span class="fab fa-instagram"></span></a></li>
-                                        <li><a href="https://www.linkedin.com/in/saad-zemam-18719a191"><span class="fab fa-linkedin-in"></span></a></li>
-                                       <li><a href="#"><span class="fab fa-github"></span></a></li>
-                                    </ul>
-                                </div>
-                            </figure>
-                        </div>
-                        <div class="caption-box">
-                            <h4 class="name"><a href="#">Saad Zemam</a></h4>
-                            <span class="designation">Executive Member</span>
-                        </div>
-                    </div>
-            </div>
-            <div class="speaker-block col-lg-3 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay="400ms">
-                    <div class="inner-box">
-                        <div class="image-box">
-                            <figure class="image"><img src="{% static 'images/team/Priyansh Maheshwari.jpg'%}"alt="">
-                                <div class="social-links">
-                                    <ul>
-                                       <li><a href="https://m.facebook.com/priyansh.maheshwari.9?ref=bookmarks"><span class="fab fa-facebook-f"></span></a></li>
-                                        <li><a href="https://www.instagram.com/priyansh.maheshwari.9/"><span class="fab fa-instagram"></span></a></li>
-                                        <li><a href="#"><span class="fab fa-linkedin-in"></span></a></li>
-                                       <li><a href="#"><span class="fab fa-github"></span></a></li>
-                                    </ul>
-                                </div>
-                            </figure>
-                        </div>
-                        <div class="caption-box">
-                            <h4 class="name"><a href="#">Priyansh Maheshwari</a></h4>
-                            <span class="designation">Executive Member</span>
-                        </div>
-                    </div>
-            </div>
-             <div class="speaker-block col-lg-3 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay="400ms">
-                    <div class="inner-box">
-                        <div class="image-box">
-                            <figure class="image"><img src="{% static 'images/team/KHEMRAJ MARATHE.jpg'%}"alt="">
-                                <div class="social-links">
-                                    <ul>
-                                       <li><a href="https://www.facebook.com/khemraj.marathe"><span class="fab fa-facebook-f"></span></a></li>
-                                        <li><a href="https://instagram.com/im_khem112?igshid=1pb899dh3snrt"><span class="fab fa-instagram"></span></a></li>
-                                        <li><a href="https://www.linkedin.com/in/khemraj-marathe-29b4b3194/"><span class="fab fa-linkedin-in"></span></a></li>
-                                       <li><a href="https://github.com/Khem112"><span class="fab fa-github"></span></a></li>
-                                    </ul>
-                                </div>
-                            </figure>
-                        </div>
-                        <div class="caption-box">
-                            <h4 class="name"><a href="#">Khemraj Marathe</a></h4>
-                            <span class="designation">Executive Member</span>
-                        </div>
-                    </div>
-            </div>
-             <div class="speaker-block col-lg-3 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay="400ms">
-                    <div class="inner-box">
-                        <div class="image-box">
-                            <figure class="image"><img src="{% static 'images/team/Bhashkarjya.jpg'%}"alt="">
-                                <div class="social-links">
-                                    <ul>
-                                       <li><a href="https://www.facebook.com/bhaskarjya.nath"><span class="fab fa-facebook-f"></span></a></li>
-                                        <li><a href="https://www.instagram.com/bhashkarjyanath"><span class="fab fa-instagram"></span></a></li>
-                                        <li><a href="#"><span class="fab fa-linkedin-in"></span></a></li>
-                                       <li><a href="#"><span class="fab fa-github"></span></a></li>
-                                    </ul>
-                                </div>
-                            </figure>
-                        </div>
-                        <div class="caption-box">
-                            <h4 class="name"><a href="#">Bhaskarjya Nath</a></h4>
-                            <span class="designation">Executive Member</span>
-                        </div>
-                    </div>
-            </div>
-             <div class="speaker-block col-lg-3 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay="400ms">
-                    <div class="inner-box">
-                        <div class="image-box">
-                            <figure class="image"><img src="{% static 'images/team/Kanishk Vohra_.jpg'%}"alt="">
-                                <div class="social-links">
-                                    <ul>
-                                       <li><a href="#"><span class="fab fa-facebook-f"></span></a></li>
-                                        <li><a href="#"><span class="fab fa-instagram"></span></a></li>
-                                        <li><a href="#"><span class="fab fa-linkedin-in"></span></a></li>
-                                       <li><a href="#"><span class="fab fa-github"></span></a></li>
-                                    </ul>
-                                </div>
-                            </figure>
-                        </div>
-                        <div class="caption-box">
-                            <h4 class="name"><a href="#">Kanishk Vohra</a></h4>
-                            <span class="designation">Executive Member</span>
-                        </div>
-                    </div>
-            </div>
-     </div>
-    </div>
-                <div class="row">
-            <div class="speaker-block col-lg-3 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay="400ms">
-                    <div class="inner-box">
-                        <div class="image-box">
-                            <figure class="image"><img src="{% static 'images/team/nikunj.jpg' %}" alt="">
-                                <div class="social-links">
-                                    <ul>
-                                       <li><a href="https://www.facebook.com/nikunj.verma.79"><span class="fab fa-facebook-f"></span></a></li>
-                                        <li><a href="#"><span class="fab fa-instagram"></span></a></li>
-                                        <li><a href="https://www.linkedin.com/in/nikunj-verma-a40a20a7"><span class="fab fa-linkedin-in"></span></a></li>
-                                       <li><a href="https://www.github.com/vermanikunj353/nik"><span class="fab fa-github"></span></a></li>
-                                    </ul>
-                                </div>
-                            </figure>
-                        </div>
-                        <div class="caption-box">
-                            <h4 class="name"><a href="#">Nikunj Verma</a></h4>
-                            <span class="designation">Mr. MCA</span>
-                        </div>
-                    </div>
-            </div>
-            <div class="speaker-block col-lg-3 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay="400ms">
-                    <div class="inner-box">
-                        <div class="image-box">
-                            <figure class="image"><img src="{% static 'images/team/monikatak.jpg' %}" alt="">
-                                <div class="social-links">
-                                    <ul>
-                                       <li><a href="https://m.facebook.com/monika.tak.3762?ref=bookmarks"><span class="fab fa-facebook-f"></span></a></li>
-                                        <li><a href="#"><span class="fab fa-instagram"></span></a></li>
-                                        <li><a href="#"><span class="fab fa-linkedin-in"></span></a></li>
-                                       <li><a href="#"><span class="fab fa-github"></span></a></li>
-                                    </ul>
-                                </div>
-                            </figure>
-                        </div>
-                        <div class="caption-box">
-                            <h4 class="name"><a href="#">Monika Tak</a></h4>
-                            <span class="designation">Ms. MCA</span>
-                        </div>
-                    </div>
-            </div>
-            <div class="speaker-block col-lg-3 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay="400ms">
-                    <div class="inner-box">
-                        <div class="image-box">
-                            <figure class="image"><img src="{% static 'images/team/ahana.jpeg' %}" alt="">
-                                <div class="social-links">
-                                    <ul>
-                                       <li><a href="http://facebook.com/ahana.panja.73"><span class="fab fa-facebook-f"></span></a></li>
-                                        <li><a href="http://Instagram.com/ahana2oo1"><span class="fab fa-instagram"></span></a></li>
-                                        <li><a href="#"><span class="fab fa-linkedin-in"></span></a></li>
-                                       <li><a href="#"><span class="fab fa-github"></span></a></li>
-                                    </ul>
-                                </div>
-                            </figure>
-                        </div>
-                        <div class="caption-box">
-                            <h4 class="name"><a href="#">Ahana Panja</a></h4>
-                            <span class="designation">Ms. CSE</span>
-                        </div>
-                    </div>
-            </div>
-            <div class="speaker-block col-lg-3 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay="400ms">
-                    <div class="inner-box">
-                        <div class="image-box">
-                            <figure class="image"><img src="{% static 'images/team/priyanshu.jpeg' %}" alt="">
-                                <div class="social-links">
-                                    <ul>
-                                       <li><a href="#"><span class="fab fa-facebook-f"></span></a></li>
-                                        <li><a href="#"><span class="fab fa-instagram"></span></a></li>
-                                        <li><a href="#"><span class="fab fa-linkedin-in"></span></a></li>
-                                       <li><a href="#"><span class="fab fa-github"></span></a></li>
-                                    </ul>
-                                </div>
-                            </figure>
-                        </div>
-                        <div class="caption-box">
-                            <h4 class="name"><a href="#">Priyanshu Shukla</a></h4>
-                            <span class="designation">Mr. CSE</span>
-                        </div>
-                    </div>
-            </div>
-    </section>
-            </div>
-</div>
-  </div>
-  <div align="center">
-
-    <footer text-align="center" class="ftco-footer ftco-bg-dark ftco-section">
-      <div class="container" class="col-md-5">
-        <div class="row mb-2 ">
-<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3794.880316715465!2d79.52921395041203!3d17.98430438766325!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a334fbbec4fcd8b%3A0xc5f5d66e005e92dc!2sDepartment%20of%20Computer%20Science%20%26%20Engineering!5e0!3m2!1sen!2sin!4v1571860298351!5m2!1sen!2sin" width="500" height="300" frameborder="0" style="border:2px;" allowfullscreen="" ></iframe>
-
-        <div class="col-md-5 col-lg-2">
-            </div>
-
-{#          </div>#}
-            <div class="col-md-2 col-lg-4">
-            <div class="ftco-footer-widget ">
-              <h2 class="ftco-heading-2 mb-0">Stay Connected With Us</h2>
-{#              <p></p>#}
-                <ul class="list-inline social-buttons">
-
-                        <li class="list-inline-item">
-                          <a  href="mailto:csea@student.nitw.ac.in"><img src="{% static 'images/email.png' %}" width="50ox" height="50px margin-left "></a>
-
-                        </li>
-                        <li class="list-inline-item">
-                <a href="https://www.facebook.com/cseanitw/"><img src="{% static 'images/fb.png' %}" width="50px"height="50px"></a>
-                        </li>
-                        <li class="list-inline-item">
-                <a href="https://www.instagram.com/csea_nitw/?hl=en"><img src="{% static 'images/insta.png' %}" width="50px" height="50px"></a>
-        </li>
-                      </ul>
-                &nbsp;
-
-            </div>
-
-          </div>
-          </div>
-      </div>
-        <br><br>
-    <div align="centre">
-            <span class="copyright">
-      &copy; Copyright. All rights reserved. Design by <a href="https://www.facebook.com/cseanitw/">CSEA, NIT Warangal</a>
-    </span></div>
-        <button onclick="topFunction()" id="myBtn" title="Go to top"><i class=" fa fa-angle-double-up"></i> </button>
+                <button onclick="topFunction()" id="myBtn" title="Go to top"><i class=" fa fa-angle-double-up"></i> </button>
             </footer>
-  </div>
 
 
-<script>
-    //Get the button:
-mybutton = document.getElementById("myBtn");
 
-// When the user scrolls down 20px from the top of the document, show the button
-window.onscroll = function() {scrollFunction()};
+            <script>
+                //Get the button:
+                mybutton = document.getElementById("myBtn");
 
-function scrollFunction() {
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    mybutton.style.display = "block";
-  } else {
-    mybutton.style.display = "none";
-  }
-}
+                // When the user scrolls down 20px from the top of the document, show the button
+                window.onscroll = function() {
+                    scrollFunction()
+                };
 
-// When the user clicks on the button, scroll to the top of the document
-function topFunction() {
-  document.body.scrollTop = 0; // For Safari
-  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
-}
-</script>
+                function scrollFunction() {
+                    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                        mybutton.style.display = "block";
+                    } else {
+                        mybutton.style.display = "none";
+                    }
+                }
 
-  </body>
+                // When the user clicks on the button, scroll to the top of the document
+                function topFunction() {
+                    document.body.scrollTop = 0; // For Safari
+                    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+                }
+            </script>
+
+
+
+</body>
+
 </html>
