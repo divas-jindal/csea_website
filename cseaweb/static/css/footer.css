@@ -135,13 +135,13 @@ iframe {
 }
 
 
-/*.rounded-social-buttons .fa-envelope, .fa-facebook-f, .fa-linkedin, .fa-youtube, .fa-instagram {*/
-
-
-/*  font-size: 50px;*/
-
-
-/*}*/
+/* .rounded-social-buttons .fa-envelope,
+.fa-facebook-f,
+.fa-linkedin,
+.fa-youtube,
+.fa-instagram {
+    font-size: 50px;
+} */
 
 .rounded-social-buttons .social-button.facebook {
     background: #3b5998;

@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Alumni Connect</title>
+    <title>Straight Outta CSED</title>
     <meta name=”viewport” content=”width=device-width, initial-scale=1″>
     <!-- <meta content="width=device-width, initial-scale=1.0" name="viewport"> -->
     <!-- Bootstrap CSS File -->
@@ -24,13 +24,9 @@
 
 
     <link href="https://fonts.googleapis.com/css?family=Quicksand:400,500,700&subset=latin-ext">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <link href="{% static 'style1.css' %}" rel="stylesheet">
-    <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="css/bootstrap-responsive.css">
-    <link rel="stylesheet" href="css/font-awesome.css">
-    <link rel="stylesheet" href="css/app.css">
+
     <link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="{% static 'css/css/open-iconic-bootstrap.min.css' %}">
@@ -43,20 +39,50 @@
     <link rel="stylesheet" href="{% static 'css/css/aos.css'%}">
 
     <link rel="stylesheet" href="{% static 'css/css/ionicons.min.css'%}">
-
-    <link rel="stylesheet" href="{% static 'css/css/flaticon.css'%}">
-    <link rel="stylesheet" href="{% static 'css/css/icomoon.css' %}">
-    <link rel="stylesheet" href="{% static 'css/css/style.css'%}">
-    <link rel="stylesheet" href="{% static 'straight.css'%}">
     <link href="{% static 'fab/css/all.css' %}" rel="stylesheet">
     <!--load all styles -->
 
     <!-- ... -->
     <link rel="stylesheet" id="font-awesome-css" href="//maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css?ver=4.9.4" type="text/css" media="all">
 
+
+    <link rel="stylesheet" href="{% static 'css/css/flaticon.css'%}">
+    <link rel="stylesheet" href="{% static 'css/css/icomoon.css' %}">
+    <link rel="stylesheet" href="{% static 'css/css/style.css'%}">
+    <link rel="stylesheet" href="{% static 'straight.css'%}">
+
     <style type="text/css">
     .activeq {
             background-color: #717171;
+        }
+        
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+        }
+        
+        li {
+            float: left;
+        }
+        
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 20px 30px;
+            text-decoration: none;
+        }
+        /* Change the link color to #111 (black) on hover */
+        
+        li a:hover {
+            background-color: #111;
+        }
+        
+        activeq/Current Navigation Link Add an "activeq" class to the current link to let the user know which page he/she is on: HomeNewsContactAbout Example .activeq {
+            background-color: #4CAF50;
         }
         
         footer {
@@ -153,7 +179,7 @@
                 <li class="nav-item"><a href="/team/">Team</a></li>
                 <li class="nav-item"><a href="/alumni/">Alumni</a></li>
 
-                <!-- <li class="nav-item"><a href="/feedback/">Feedback</a></li> -->
+                <!-- <li class="nav-item"><a href="/feedback/">Feedback</a></li>#} -->
                 <li class="nav-item"><a href="/straightoutta/">Straight Outta CSED</a></li>
                 <li class="nav-item"><a class="activeq" href="/alumniconnect/">Alumni Connect</a></li>
             </ul>
@@ -166,7 +192,7 @@
         <h1><b>Computer Science and Engineering Association, NITW</b></h1>
     </div>
 
-    <!-- 
+    <!--
   <div class="background">
   </div> -->
     <div class="wrapper" style="background-image: url(http://jmd.im/wp-content/uploads/2017/06/blacki_thumbnail.jpg); margin-top: -50px">
@@ -174,7 +200,6 @@
         <div class="item-bg"></div>
 
         <div class="news-slider">
-
             <div class="news-slider__wrp swiper-wrapper">
 
                 <div class="news-slider__item swiper-slide">
@@ -212,245 +237,244 @@
                 </div>
 
 
+                <div class="news-slider__item swiper-slide">
+                    <a href="https://www.facebook.com/cseanitw/posts/743386696101856" target="_blank" class="news__item">
 
+                        <div class="news__title">
+                            Sruthi Gontala
+                        </div>
 
-                <div class="news-slider__wrp swiper-wrapper">
-                    <div class="news-slider__item swiper-slide">
-                        <a href="https://www.facebook.com/cseanitw/posts/743386696101856" target="_blank" class="news__item">
-
-                            <div class="news__title">
-                                Sruthi Gontala
-                            </div>
-
-                            <p class="news__txt">
-                                Passed out batch 2013-17.
-                                <br>GATE AIR 39
-                                <br>Currently Pursuing Masters from Computer Science and Automation,IISC.<br> Read more...</p>
-                            <div class="news__img">
-                                <img src="{% static 'images/connect/sruthi.jpeg' %}" alt="news">
-                            </div>
-                        </a>
-                    </div>
-
-
-                    <div class="news-slider__item swiper-slide">
-                        <a href="https://www.facebook.com/cseanitw/posts/618177661956094" target="_blank" class="news__item">
-
-                            <div class="news__title">
-                                Devamanyu Hazarika
-                            </div>
-
-                            <p class="news__txt">
-                                Passed out batch 2013-17.<br> PhD candidate at National University of Singapore.<br> Read more...<br><br>
-                            </p>
-
-                            <div class="news__img">
-                                <img src="{% static 'images/connect/dev.jpeg' %}" alt="news">
-                            </div>
-                        </a>
-                    </div>
-
-                    <div class="news-slider__item swiper-slide">
-                        <a href="https://www.facebook.com/cseanitw/posts/604467959993731" target="_blank" class="news__item">
-
-                            <div class="news__title">
-                                Aniket Marlapalle
-                            </div>
-
-                            <p class="news__txt">
-                                Passed out batch 2013-17.<br> Currently working in Microsoft <br> Read more...<br><br>
-                                <br> </p>
-
-                            <div class="news__img">
-                                <img src="{% static 'images/connect/aniket.jpeg' %}" alt="news">
-                            </div>
-                        </a>
-                    </div>
-
-
-
-                    <div class="news-slider__item swiper-slide">
-                        <a href="#" class="news__item">
-
-                            <div class="news__title">
-                                Abhishek Somani
-                            </div>
-
-                            <p class="news__txt">
-                                Passed out batch 2013-17.<br> Currently working in Amazon.<br> Previously worked in Microsoft.<br> Read more...<br><br></p>
-
-                            <div class="news__img">
-                                <img src="{% static 'images/connect/abhishek.jpg' %}" alt="news">
-                            </div>
-                        </a>
-                    </div>
-
-                    <div class="news-slider__item swiper-slide">
-                        <a href="#" class="news__item">
-
-                            <div class="news__title">
-                                Sudheesh Singanamalla
-                            </div>
-
-                            <p class="news__txt">
-                                Passed out batch 2013-17.<br> Pursuing MS at University of Washington.<br> Previously worked at Microsoft.<br> Read more...<br><br></p>
-
-                            <div class="news__img">
-                                <img src="{% static 'images/connect/sudheesh.jpg' %}" alt="news">
-                            </div>
-                        </a>
-                    </div>
+                        <p class="news__txt">
+                            Passed out batch 2013-17.
+                            <br>GATE AIR 39
+                            <br>Currently Pursuing Masters from Computer Science and Automation,IISC.<br> Read more...</p>
+                        <div class="news__img">
+                            <img src="{% static 'images/connect/sruthi.jpeg' %}" alt="news">
+                        </div>
+                    </a>
                 </div>
 
-                <div class="news-slider__ctr">
 
-                    <div class="news-slider__arrows">
-                        <button class="news-slider__arrow news-slider-prev">
-          <span >
-            <svg class="icon icon-arrow-left"><use xlink:href="#icon-arrow-left"></use></svg>
-          </span>
-        </button>
-                        <button class="news-slider__arrow news-slider-next">
-          <span >
-            <svg class="icon icon-arrow-right"><use xlink:href="#icon-arrow-right"></use></svg>
-          </span>
-        </button>
-                    </div>
+                <div class="news-slider__item swiper-slide">
+                    <a href="https://www.facebook.com/cseanitw/posts/618177661956094" target="_blank" class="news__item">
 
-                    <div class="news-slider__pagination"></div>
+                        <div class="news__title">
+                            Devamanyu Hazarika
+                        </div>
 
+                        <p class="news__txt">
+                            Passed out batch 2013-17.<br> PhD candidate at National University of Singapore.<br> Read more...<br><br>
+                        </p>
+
+                        <div class="news__img">
+                            <img src="{% static 'images/connect/dev.jpeg' %}" alt="news">
+                        </div>
+                    </a>
                 </div>
+
+                <div class="news-slider__item swiper-slide">
+                    <a href="https://www.facebook.com/cseanitw/posts/604467959993731" target="_blank" class="news__item">
+
+                        <div class="news__title">
+                            Aniket Marlapalle
+                        </div>
+
+                        <p class="news__txt">
+                            Passed out batch 2013-17.<br> Currently working in Microsoft <br> Read more...<br><br>
+                            <br> </p>
+
+                        <div class="news__img">
+                            <img src="{% static 'images/connect/aniket.jpeg' %}" alt="news">
+                        </div>
+                    </a>
+                </div>
+
+
+
+                <div class="news-slider__item swiper-slide">
+                    <a href="#" class="news__item">
+
+                        <div class="news__title">
+                            Abhishek Somani
+                        </div>
+
+                        <p class="news__txt">
+                            Passed out batch 2013-17.<br> Currently working in Amazon.<br> Previously worked in Microsoft.<br> Read more...<br><br></p>
+
+                        <div class="news__img">
+                            <img src="{% static 'images/connect/abhishek.jpg' %}" alt="news">
+                        </div>
+                    </a>
+                </div>
+
+                <div class="news-slider__item swiper-slide">
+                    <a href="#" class="news__item">
+
+                        <div class="news__title">
+                            Sudheesh Singanamalla
+                        </div>
+
+                        <p class="news__txt">
+                            Passed out batch 2013-17.<br> Pursuing MS at University of Washington.<br> Previously worked at Microsoft.<br> Read more...<br><br></p>
+
+                        <div class="news__img">
+                            <img src="{% static 'images/connect/sudheesh.jpg' %}" alt="news">
+                        </div>
+                    </a>
+                </div>
+
+
+
+            </div>
+            <div class="news-slider__ctr">
+
+                <div class="news-slider__arrows">
+                    <button class="news-slider__arrow news-slider-prev">
+      <span >
+        <svg class="icon icon-arrow-left"><use xlink:href="#icon-arrow-left"></use></svg>
+      </span>
+    </button>
+                    <button class="news-slider__arrow news-slider-next">
+      <span >
+        <svg class="icon icon-arrow-right"><use xlink:href="#icon-arrow-right"></use></svg>
+      </span>
+    </button>
+                </div>
+
+                <div class="news-slider__pagination"></div>
 
             </div>
 
+        </div>
 
-            <div align="centre">
-                <svg>
-  <defs>
-    <symbol id="icon-arrow-left" viewBox="0 0 32 32">
-      <title>arrow-left</title>
-      <path d="M0.704 17.696l9.856 9.856c0.896 0.896 2.432 0.896 3.328 0s0.896-2.432 0-3.328l-5.792-5.856h21.568c1.312 0 2.368-1.056 2.368-2.368s-1.056-2.368-2.368-2.368h-21.568l5.824-5.824c0.896-0.896 0.896-2.432 0-3.328-0.48-0.48-1.088-0.704-1.696-0.704s-1.216 0.224-1.696 0.704l-9.824 9.824c-0.448 0.448-0.704 1.056-0.704 1.696s0.224 1.248 0.704 1.696z"></path>
-    </symbol>
-    <symbol id="icon-arrow-right" viewBox="0 0 32 32">
-      <title>arrow-right</title>
-      <path d="M31.296 14.336l-9.888-9.888c-0.896-0.896-2.432-0.896-3.328 0s-0.896 2.432 0 3.328l5.824 5.856h-21.536c-1.312 0-2.368 1.056-2.368 2.368s1.056 2.368 2.368 2.368h21.568l-5.856 5.824c-0.896 0.896-0.896 2.432 0 3.328 0.48 0.48 1.088 0.704 1.696 0.704s1.216-0.224 1.696-0.704l9.824-9.824c0.448-0.448 0.704-1.056 0.704-1.696s-0.224-1.248-0.704-1.664z"></path>
-    </symbol>
-  </defs>
+
+        <div align="centre">
+            <svg>
+<defs>
+<symbol id="icon-arrow-left" viewBox="0 0 32 32">
+  <title>arrow-left</title>
+  <path d="M0.704 17.696l9.856 9.856c0.896 0.896 2.432 0.896 3.328 0s0.896-2.432 0-3.328l-5.792-5.856h21.568c1.312 0 2.368-1.056 2.368-2.368s-1.056-2.368-2.368-2.368h-21.568l5.824-5.824c0.896-0.896 0.896-2.432 0-3.328-0.48-0.48-1.088-0.704-1.696-0.704s-1.216 0.224-1.696 0.704l-9.824 9.824c-0.448 0.448-0.704 1.056-0.704 1.696s0.224 1.248 0.704 1.696z"></path>
+</symbol>
+<symbol id="icon-arrow-right" viewBox="0 0 32 32">
+  <title>arrow-right</title>
+  <path d="M31.296 14.336l-9.888-9.888c-0.896-0.896-2.432-0.896-3.328 0s-0.896 2.432 0 3.328l5.824 5.856h-21.536c-1.312 0-2.368 1.056-2.368 2.368s1.056 2.368 2.368 2.368h21.568l-5.856 5.824c-0.896 0.896-0.896 2.432 0 3.328 0.48 0.48 1.088 0.704 1.696 0.704s1.216-0.224 1.696-0.704l9.824-9.824c0.448-0.448 0.704-1.056 0.704-1.696s-0.224-1.248-0.704-1.664z"></path>
+</symbol>
+</defs>
 </svg>
 
 
-                <section id="contact" class=" border-top-color2">
+            <section id="contact" class=" border-top-color2">
 
-                    <div class="ftco-footer ftco-bg-dark ftco-section fluid-container text-center">
+                <div class="ftco-footer ftco-bg-dark ftco-section fluid-container text-center">
 
-                        <div class="row">
+                    <div class="row">
 
-                            <div class="col-sm-6 col-md-5 text-right scrollimation fade-up d1">
+                        <div class="col-sm-6 col-md-5 text-right scrollimation fade-up d1">
 
-                                <h1 class="big-text" style="color: #666666">Contact Us</h1>
+                            <h1 class="big-text" style="color: #666666">Contact Us</h1>
 
-                                <iframe class="map-con" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3794.880316715465!2d79.52921395041203!3d17.98430438766325!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a334fbbec4fcd8b%3A0xc5f5d66e005e92dc!2sDepartment%20of%20Computer%20Science%20%26%20Engineering!5e0!3m2!1sen!2sin!4v1571860298351!5m2!1sen!2sin"
-                                    frameborder="0" style="border:2px;" allowfullscreen=""></iframe>
+                            <iframe class="map-con" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3794.880316715465!2d79.52921395041203!3d17.98430438766325!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a334fbbec4fcd8b%3A0xc5f5d66e005e92dc!2sDepartment%20of%20Computer%20Science%20%26%20Engineering!5e0!3m2!1sen!2sin!4v1571860298351!5m2!1sen!2sin"
+                                frameborder="0" style="border:2px;" allowfullscreen=""></iframe>
 
-
-                            </div>
-
-                            <!--=== Contact Form ===-->
-
-                            <form style="padding-right: 10%;" id="contact-form" class="col-sm-6 col-md-offset-1 scrollimation fade-left d3" action="contact.php" method="post" novalidate>
-
-                                <div class="form-group">
-                                    <label class="control-label" for="contact-name">Name</label>
-                                    <div class="controls" text-align="center">
-                                        <input id="contact-name" name="contactName" placeholder="Your name" class="form-control requiredField" data-new-placeholder="Your name" type="text" data-error-empty="Please enter your name">
-                                        <i class="fa fa-user " style="align-items: center; margin-top: 2%; color: grey"></i>
-                                    </div>
-                                </div>
-                                <!-- End name input -->
-
-                                <div class="form-group">
-                                    <label class="control-label" for="contact-mail">Email</label>
-                                    <div class=" controls">
-                                        <input id="contact-mail" name="email" placeholder="Your email" class="form-control requiredField" data-new-placeholder="Your email" type="email" data-error-empty="Please enter your email" data-error-invalid="Invalid email address">
-                                        <i class="fa fa-envelope " style="align-items: center; margin-top: 2%; color: grey"></i>
-                                    </div>
-                                </div>
-                                <!-- End email input -->
-
-                                <div class="form-group">
-                                    <label class="control-label" for="contact-message">Message</label>
-                                    <div class="controls">
-                                        <textarea id="contact-message" name="comments" placeholder="Your message" class="form-control requiredField" data-new-placeholder="Your message" rows="6" data-error-empty="Please enter your message"></textarea>
-                                        <i class="fa fa-comment" style="align-items: center; margin-top: 2%; color:grey"></i>
-                                    </div>
-                                </div>
-                                <!-- End textarea -->
-
-                                <p><button name="submit" type="submit" class="btn btn-color2 btn-block" data-error-message="Error!" data-sending-message="Sending..." data-ok-message="Message Sent"><i class="fa fa-paper-plane"></i>Send Message</button></p>
-                                <input type="hidden" name="submitted" id="submitted" value="true">
-
-                            </form>
-                            <!-- End contact-form -->
 
                         </div>
 
+                        <!--=== Contact Form ===-->
+
+                        <form style="padding-right: 10%;" id="contact-form" class="col-sm-6 col-md-offset-1 scrollimation fade-left d3" action="contact.php" method="post" novalidate>
+
+                            <div class="form-group">
+                                <label class="control-label" for="contact-name">Name</label>
+                                <div class="controls" text-align="center">
+                                    <input id="contact-name" name="contactName" placeholder="Your name" class="form-control requiredField" data-new-placeholder="Your name" type="text" data-error-empty="Please enter your name">
+                                    <i class="fa fa-user " style="align-items: center; margin-top: 2%; color: grey"></i>
+                                </div>
+                            </div>
+                            <!-- End name input -->
+
+                            <div class="form-group">
+                                <label class="control-label" for="contact-mail">Email</label>
+                                <div class=" controls">
+                                    <input id="contact-mail" name="email" placeholder="Your email" class="form-control requiredField" data-new-placeholder="Your email" type="email" data-error-empty="Please enter your email" data-error-invalid="Invalid email address">
+                                    <i class="fa fa-envelope " style="align-items: center; margin-top: 2%; color: grey"></i>
+                                </div>
+                            </div>
+                            <!-- End email input -->
+
+                            <div class="form-group">
+                                <label class="control-label" for="contact-message">Message</label>
+                                <div class="controls">
+                                    <textarea id="contact-message" name="comments" placeholder="Your message" class="form-control requiredField" data-new-placeholder="Your message" rows="6" data-error-empty="Please enter your message"></textarea>
+                                    <i class="fa fa-comment" style="align-items: center; margin-top: 2%; color:grey"></i>
+                                </div>
+                            </div>
+                            <!-- End textarea -->
+
+                            <p><button name="submit" type="submit" class="btn btn-color2 btn-block" data-error-message="Error!" data-sending-message="Sending..." data-ok-message="Message Sent"><i class="fa fa-paper-plane"></i>Send Message</button></p>
+                            <input type="hidden" name="submitted" id="submitted" value="true">
+
+                        </form>
+                        <!-- End contact-form -->
+
                     </div>
 
-                </section>
+                </div>
 
-                <footer text-align="center" class=" ftco-footer ftco-bg-dark ftco-section">
-                    <div class="rounded-social-buttons">
+            </section>
 
-                        <!-- <h2 class="ftco-heading-2 mb-0" style="color: white">Stay Connected With Us</h2>#} -->
-                        <a class="social-button facebook" href="https://www.facebook.com/cseanitw/" target="_blank"><i class="fab fa-facebook-f" style="font-size: 50px"></i></a>
-                        <a class="social-button envelope" href="mailto:csea@student.nitw.ac.in" target="_blank"><i class="fas fa-envelope" style="font-size: 50px"></i></a>
-                        <a class="social-button linkedin" href="https://www.linkedin.com/company/csea-nitw/" target="_blank"><i class="fab fa-linkedin" style="font-size: 50px"></i></a>
-                        <a class="social-button instagram" href="https://www.instagram.com/csea_nitw/?hl=en" target="_blank"><i class="fab fa-instagram" style="font-size: 50px"></i></a>
-                    </div>
-                    <div style="text-align:center">
-                        <span class="copyright">
+            <footer text-align="center" class=" ftco-footer ftco-bg-dark ftco-section">
+                <div class="rounded-social-buttons">
+
+                    <!-- <h2 class="ftco-heading-2 mb-0" style="color: white">Stay Connected With Us</h2>#} -->
+                    <a class="social-button facebook" href="https://www.facebook.com/cseanitw/" target="_blank"><i class="fab fa-facebook-f" style="font-size: 50px"></i></a>
+                    <a class="social-button envelope" href="mailto:csea@student.nitw.ac.in" target="_blank"><i class="fas fa-envelope" style="font-size: 50px"></i></a>
+                    <a class="social-button linkedin" href="https://www.linkedin.com/company/csea-nitw/" target="_blank"><i class="fab fa-linkedin" style="font-size: 50px"></i></a>
+                    <a class="social-button instagram" href="https://www.instagram.com/csea_nitw/?hl=en" target="_blank"><i class="fab fa-instagram" style="font-size: 50px"></i></a>
+                </div>
+                <div style="text-align:center">
+                    <span class="copyright">
 &copy; Copyright. All rights reserved. Design by <a href="https://www.facebook.com/cseanitw/">CSEA, NIT Warangal</a>
 </span>
-                    </div>
-                    <button onclick="topFunction()" id="myBtn" title="Go to top"><i class=" fa fa-angle-double-up"></i> </button>
-                </footer>
+                </div>
+                <button onclick="topFunction()" id="myBtn" title="Go to top"><i class=" fa fa-angle-double-up"></i> </button>
+            </footer>
 
 
 
-                <script>
-                    //Get the button:
-                    mybutton = document.getElementById("myBtn");
+            <script>
+                //Get the button:
+                mybutton = document.getElementById("myBtn");
 
-                    // When the user scrolls down 20px from the top of the document, show the button
-                    window.onscroll = function() {
-                        scrollFunction()
-                    };
+                // When the user scrolls down 20px from the top of the document, show the button
+                window.onscroll = function() {
+                    scrollFunction()
+                };
 
-                    function scrollFunction() {
-                        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-                            mybutton.style.display = "block";
-                        } else {
-                            mybutton.style.display = "none";
-                        }
+                function scrollFunction() {
+                    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                        mybutton.style.display = "block";
+                    } else {
+                        mybutton.style.display = "none";
                     }
+                }
 
-                    // When the user clicks on the button, scroll to the top of the document
-                    function topFunction() {
-                        document.body.scrollTop = 0; // For Safari
-                        document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
-                    }
-                </script>
+                // When the user clicks on the button, scroll to the top of the document
+                function topFunction() {
+                    document.body.scrollTop = 0; // For Safari
+                    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+                }
+            </script>
 
 
 
-                <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> -->
+            <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> -->
 
-                <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-                <!-- Latest compiled JavaScript -->
-                <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+            <!-- Latest compiled JavaScript -->
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 
-                <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.5/js/swiper.min.js"></script>
-                <script src="{% static 'jav.js' %}"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.5/js/swiper.min.js"></script>
+            <script src="{% static 'jav.js' %}"></script>
 
 </body>
 
