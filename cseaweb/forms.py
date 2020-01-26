@@ -1,8 +1,8 @@
 from django import forms
 from django.contrib.auth.forms import UserCreationForm,AuthenticationForm
 from django.contrib.auth.models import User
-class feedbackform(forms.Form):
-    cem = forms.CharField(label='College E-mail:',max_length=300)
-    event_name = forms.CharField(label='Event Name:',max_length=100, required=True)
-    fback = forms.CharField(label='Your Feedback:',max_length=600, required=True)
+class contactForms(forms.Form):
+    name = forms.CharField(label='Name:',required = True ,max_length=100,help_text = 'max 100 chars allowed')
+    email = forms.EmailField(required = True,label='E-mail:')
+    comment = forms.CharField(label='Feedback:',required = True,widget=forms.Textarea)
     

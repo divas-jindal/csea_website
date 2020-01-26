@@ -167,8 +167,8 @@
 
 <body style="font-family:Poppins">
 
-    <nav style="margin-bottom: 50px; background-color: #333" class="navbar sticky-top navbar-expand-xl navbar-dark ">
-        <a href="/home/" class="navbar-brand"> <img src="{% static 'images/csealogo.png' %}" height="30px" width="100px" hspace="50px"></a>
+    <nav style=" background-color: #333" class="navbar sticky-top navbar-expand-xl navbar-dark ">
+        <a href="/home/" class="navbar-brand"> <img src="{% static 'images/csealogo.png' %}" height="30px" width="100px" hspace="10px"></a>
         <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarMenu">
         <span class="navbar-toggler-icon"></span>
     </button>
@@ -186,7 +186,7 @@
         </div>
     </nav>
 
-<!--     <div align="center" class="fluid-container">
+    <!-- <div align="center" class="fluid-container">
 
         <img src="{% static 'images/nitwlogo.png' %}" width="390"> <img src="{% static 'images/logo.jpg' %}" width="240">
         <h1><b>Computer Science and Engineering Association, NITW</b></h1>
@@ -195,11 +195,44 @@
     <!--
   <div class="background">
   </div> -->
-    <div class="wrapper" style="background-image: url(http://jmd.im/wp-content/uploads/2017/06/blacki_thumbnail.jpg);">
+    <div class="wrapper" style="background-image: url(http://jmd.im/wp-content/uploads/2017/06/blacki_thumbnail.jpg); margin-top: 0px;">
         <div class="item-bg"></div>
 
-        <div class="news-slider">
+        <div class="news-slider" style="margin-top: 0px;">
+            <h2 style="font-family: inherit ; font-size: 60px; text-align: center; color: white; padding-top: 7%; padding-bottom: 4%;">Straight Outta CSED</h2>
             <div class="news-slider__wrp swiper-wrapper">
+                <div class="news-slider__item swiper-slide">
+                    <a href="https://www.facebook.com/cseanitw/photos/a.590413381399189/780568059050386/?type=3" target="_blank" class="news__item">
+
+                        <div class="news__title">
+                            Alcy
+                        </div>
+
+                        <p class="news__txt">
+                            I grew up in a small town in Africa, yet I enjoyed my childhood there. I used to play all sorts of sports – football, basketball etc. and was pretty good at them. At 13, I won a scholarship to the US. </p>
+                        <p>Read More</p>
+                        <div class="news__img">
+                            <img src="{% static 'images/alcy.jpg' %}" alt="news">
+                        </div>
+                    </a>
+                </div>
+
+
+                <div class="news-slider__item swiper-slide">
+                    <a href="https://www.facebook.com/cseanitw/photos/a.590413381399189/799968527110339/?type=3" target="_blank" class="news__item">
+
+                        <div class="news__title">
+                            Ramakant
+                        </div>
+
+                        <p class="news__txt">
+                            I am a person who believes in 'Work sincerely, Get output'. I was raised in a village called Bhind. For even the smallest necessity, we had to go 10 km away from the village. I had always been good at academics but </p>
+                        <p>Read More</p>
+                        <div class="news__img">
+                            <img src="{% static 'images/ramakant.jpg' %}" alt="news">
+                        </div>
+                    </a>
+                </div>
                 <div class="news-slider__item swiper-slide">
                     <a href="https://www.facebook.com/cseanitw/photos/a.590413381399189/732681937172332/?type=3" target="_blank" class="news__item">
 
@@ -373,10 +406,12 @@
                 </div>
                 <div style="text-align:center">
                     <span class="copyright">
-&copy; Copyright. All rights reserved. Design by <a href="https://www.facebook.com/cseanitw/">CSEA, NIT Warangal</a>
-</span>
-                </div>
-                <button onclick="topFunction()" id="myBtn" title="Go to top"><i class=" fa fa-angle-double-up"></i> </button>
+                    &copy; Copyright. All rights reserved. Design by <a href="https://www.facebook.com/cseanitw/">CSEA, NIT Warangal <br>
+                    </a> <p>Made with 💗 by <a href="https://www.linkedin.com/in/divasjindal/">Divas</a>,
+                    <a href="https://www.linkedin.com/in/anisha-jain-04337b187">Anisha</a> and 
+                    <a href="https://www.linkedin.com/in/kapil-rathod-a261b217b">Kapil</a> !
+                </p></span>
+                    <button onclick="topFunction()" id="myBtn" title="Go to top"><i class=" fa fa-angle-double-up"></i> </button>
             </footer>
 
 

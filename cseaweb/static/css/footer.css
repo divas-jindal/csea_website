@@ -546,3 +546,17 @@ body {
     color: #fff;
     background: #f9398c;
 }
+
+.create .drop_up {
+    position: absolute;
+    opacity: 0;
+    height: 5rem;
+    /* height: 15rem; */
+    width: 30rem;
+    overflow: hidden;
+    background-color: #dcdcdc;
+    color: #121212;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: 0.5s height, 0.5s width, 0.5s opacity;
+}

@@ -159,19 +159,19 @@
 
 <body style="font-family:Poppins">
 
-    <nav style="margin-bottom: 50px ; background-color: #333; padding-top: 1%; padding-bottom: 1% " class="navbar sticky-top navbar-expand-xl navbar-dark ">
-        <a href="/home/" class="navbar-brand"> <img src="{% static 'images/csealogo.png' %}" height="30px" width="100px" hspace="50px"></a>
-        <button class="navbar-toggler " data-toggle="collapse" data-target="#navbarMenu">
+    <nav style="margin-bottom: 50px; background-color: #333" class="navbar sticky-top navbar-expand-xl navbar-dark ">
+        <a href="/home/" class="navbar-brand "> <img src="{% static 'images/csealogo.png' %}" height="30px" width="100px" hspace="0px"></a>
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarMenu">
         <span class="navbar-toggler-icon"></span>
     </button>
-        <div class="collapse navbar-collapse justify-content-end" id="navbarMenu">
-            <ul class="navbar-nav ml-auto" style="background-color: #333">
+        <div class="collapse navbar-collapse" id="navbarMenu" style="margin-left: 33%;">
+            <ul class="navbar-nav ml-auto" style="background-color: #333;">
                 <li class="nav-item"><a href="/gallery/">Gallery</a></li>
-                <li class="nav-item"><a class="active" href="/events/">Events</a></li>
+                <li class="nav-item"><a href="/events/">Events</a></li>
                 <li class="nav-item"><a href="/team/">Team</a></li>
                 <li class="nav-item"><a href="/alumni/">Alumni</a></li>
-                <!-- {#
-                <li class="nav-item"><a href="/feedback/">Feedback</a></li>#} -->
+
+                <!-- <li class="nav-item"><a href="/feedback/">Feedback</a></li> -->
                 <li class="nav-item"><a href="/straightoutta/">Straight Outta CSED</a></li>
                 <li class="nav-item"><a href="/alumniconnect/">Alumni Connect</a></li>
             </ul>
@@ -607,6 +607,7 @@
             </div>
 
         </div>
+
     </section>
 
 
@@ -666,24 +667,25 @@
             </div>
 
         </div>
-
     </section>
 
-    <footer text-align="center" class=" ftco-footer ftco-bg-dark ftco-section" style="margin-top: -8%;">
+    <footer text-align="center" class=" ftco-footer ftco-bg-dark ftco-section" style="margin-top: -10%;">
+        <div class="rounded-social-buttons">
+            <!-- {#
+          <h2 class="ftco-heading-2 mb-0" style="color: white">Stay Connected With Us</h2>#} -->
+            <a class="social-button facebook" href="https://www.facebook.com/cseanitw/" target="_blank" style="width: 6.725rem; height: 6.725rem; border-radius: 2.5rem; "><i class="fab fa-facebook-f" style="font-size: 50px; margin-top:10% ;"></i></a>
+            <a class="social-button envelope" href="mailto:csea@student.nitw.ac.in" target="_blank" style="width: 6.725rem; height: 6.725rem; border-radius: 2.5rem; "><i class="fas fa-envelope" style="font-size: 50px; margin-top:10% ;"></i></a>
+            <a class="social-button linkedin" href="https://www.linkedin.com/company/csea-nitw/" target="_blank" style="width: 6.725rem; height: 6.725rem; border-radius: 2.5rem; "><i class="fab fa-linkedin" style="font-size: 50px; margin-top:10% ;"></i></a>
+            <a class="social-button instagram" href="https://www.instagram.com/csea_nitw/?hl=en" target="_blank" style="width: 6.725rem; height: 6.725rem; border-radius: 2.5rem; "><i class="fab fa-instagram" style="font-size: 50px; margin-top:10% ;"></i></a>
 
-
-        <div class="rounded-social-buttons2">
-
-            <!-- <h2 class="ftco-heading-2 mb-0" style="color: white">Stay Connected With Us</h2>#} -->
-            <a class="social-button facebook" href="https://www.facebook.com/cseanitw/" target="_blank"><i class="fab fa-facebook-f" style="font-size: 50px"></i></a>
-            <a class="social-button envelope" href="mailto:csea@student.nitw.ac.in" target="_blank"><i class="fas fa-envelope" style="font-size: 50px"></i></a>
-            <a class="social-button linkedin" href="https://www.linkedin.com/company/csea-nitw/" target="_blank"><i class="fab fa-linkedin" style="font-size: 50px"></i></a>
-            <a class="social-button instagram" href="https://www.instagram.com/csea_nitw/?hl=en" target="_blank"><i class="fab fa-instagram" style="font-size: 50px"></i></a>
         </div>
         <div style="text-align:center">
             <span class="copyright">
-            &copy; Copyright. All rights reserved. Design by <a href="https://www.facebook.com/cseanitw/">CSEA, NIT Warangal</a>
-            </span>
+            &copy; Copyright. All rights reserved. Design by <a href="https://www.facebook.com/cseanitw/">CSEA, NIT Warangal <br>
+            </a> <p>Made with 💗 by <a href="https://www.linkedin.com/in/divasjindal/">Divas</a>,
+            <a href="https://www.linkedin.com/in/anisha-jain-04337b187">Anisha</a> and 
+            <a href="https://www.linkedin.com/in/kapil-rathod-a261b217b">Kapil</a> !
+        </p></span>
         </div>
         <button onclick="topFunction()" id="myBtn" title="Go to top"><i class=" fa fa-angle-double-up"></i> </button>
     </footer>

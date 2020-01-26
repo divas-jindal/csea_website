@@ -1,7 +1,8 @@
 from django.shortcuts import render
-from cseaweb.forms import feedbackform
+from cseaweb.forms import contactForms
 from django.core.mail import send_mail
 from cseaweb.models import feedback
+from django.conf import settings
 # Create your views here.
 def home(request):
 	return render(request,'home.html')
@@ -20,21 +21,25 @@ def feedback1(request):
 		print("cp1")
 		if form.is_valid():
 			print("cp2")
-			sender = form.cleaned_data['cem']
-			e_name = form.cleaned_data['event_name']
-			fb = form.cleaned_data['fback']
-			recipients = ['kapilrathod1234@gmail.com']
-			subject = "Feedback on " + e_name
-			message = fb
-			send_mail(subject, message, sender, recipients) # sends to specified email
-			f=feedback()
-			f.cemail=sender
-			f.eventname = e_name
-			f.fback = fb
+			name = form.cleaned_data['name']
+			comment = form.cleaned_data['comment']
+			subject='Message from www.cseanitw.in'
+			message = '%s %s' %(comment,name)
+			emailFrom=form.cleaned_data['email']
+			emailTo = ['divasjindal@gmail.com']
+			send_mail(subject,message,emailFrom,emailTo,fail_silently=True,)
+			title = 'Thanks'
+			msg = 'We will get right back to you..'
+			form = None
+			f.email=sender
+			f.name = name
+			f.comment = comment
 			f.save()
 			print("hey")
 
-	return render(request,'feedback.html')
+	context = {'title':title,'form':form,'msg':msg,}
+	template = 'home.html'
+	return render(request,template,context)
 
 def straightoutta(request):
 	return render(request,'straightoutta.html')
