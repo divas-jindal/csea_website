@@ -6,4 +6,4 @@
 Link to website: www.cseanitw.in
 
 
-Preview ![alt-text](https://github.com/divas-jindal/csea_website/blob/master/cseaweb/static/images/csea.png)
+![alt-text](https://github.com/divas-jindal/csea_website/blob/master/cseaweb/static/images/csea.png)
