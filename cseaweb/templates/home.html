@@ -98,7 +98,7 @@
         }
         
         .par {
-            background-image: url('{% static 'images/csea2019.jpg' %}');
+            background-image: url('{% static 'images/csea2020.jpg' %}');
             /* Full height */
             height: 100%;
             /* Create the parallax scrolling effect */
@@ -138,15 +138,15 @@
         /* Fading animation */
         
         .fade {
-            -webkit-animation-name: fade;
-            -webkit-animation-duration: 4s;
-            animation-name: fade;
+             -webkit-animation-name: fade; 
+            -webkit-animation-duration:4s;
+             animation-name: fade; 
             animation-duration: 4s;
         }
         
         @-webkit-keyframes fade {
             from {
-                opacity: .4
+                opacity: 0.8
             }
             to {
                 opacity: 1
@@ -155,7 +155,7 @@
         
         @keyframes fade {
             from {
-                opacity: .4
+                opacity: 0.8
             }
             to {
                 opacity: 1
@@ -326,14 +326,14 @@
 
     <div style="background-image: url(http://jmd.im/wp-content/uploads/2017/06/blacki_thumbnail.jpg);">
 
-        <div style="text-align:center">
+        <!-- <div style="text-align:center">
             <span class="dot" onclick="currentSlide(1)"></span>
             <span class="dot" onclick="currentSlide(2)"></span>
             <span class="dot" onclick="currentSlide(3)"></span>
             <span class="dot" onclick="currentSlide(4)"></span>
             <span class="dot" onclick="currentSlide(5)"></span>
             <span class="dot" onclick="currentSlide(6)"></span>
-        </div>
+        </div> -->
     </div>
 
 
@@ -371,7 +371,7 @@
 
 
     <div class="par">
-        <img width="100%" height="600px" src="{% static 'images/csea2019.jpg' %}">
+        <img width="100%" height="600px" src="{% static 'images/csea2020.jpg' %}">
     </div>
 
 
@@ -492,10 +492,12 @@
         <div class="rounded-social-buttons">
             <!-- {#
             <h2 class="ftco-heading-2 mb-0" style="color: white">Stay Connected With Us</h2>#} -->
-            <a class="social-button facebook" href="https://www.facebook.com/cseanitw/" target="_blank"><i class="fab fa-facebook-f" style="font-size: 50px"></i></a>
+            
             <a class="social-button envelope" href="mailto:csea@student.nitw.ac.in" target="_blank"><i class="fas fa-envelope" style="font-size: 50px"></i></a>
             <a class="social-button linkedin" href="https://www.linkedin.com/company/csea-nitw/" target="_blank"><i class="fab fa-linkedin" style="font-size: 50px"></i></a>
+            <a class="social-button facebook" href="https://www.facebook.com/cseanitw/" target="_blank"><i class="fab fa-facebook-f" style="font-size: 50px"></i></a>
             <a class="social-button instagram" href="https://www.instagram.com/csea_nitw/?hl=en" target="_blank"><i class="fab fa-instagram" style="font-size: 50px"></i></a>
+            <a class="social-button youtube" href="https://www.youtube.com/channel/UCncaLmXj3WstjFut4w8vepQ" target="_blank"><i class="fab fa-youtube" style="font-size: 50px"></i></a>
 
         </div>
         <div style="text-align:center">
