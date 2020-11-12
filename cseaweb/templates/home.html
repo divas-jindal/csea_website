@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="{% static 'css/css/open-iconic-bootstrap.min.css' %}">
     <link rel="stylesheet" href="{% static 'css/css/animate.css' %}">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Goldman&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="{% static 'css/css/owl.carousel.min.css'%}">
     <link rel="stylesheet" href="{% static 'css/css/owl.theme.default.min.css'%}">
@@ -229,6 +231,58 @@
         background-color: #555;
         /* Add a dark-grey background on hover */
     }
+
+    /* Counter Code */
+    <style>
+
+body {
+  font-family: Arial;
+  padding: 25px;
+  background-color: #f5f5f5;
+  color: #808080;
+  	text-align: center;	
+}
+
+/*-=-=-=-=-=-=-=-=-=-=-=- */
+/* Column Grids */
+/*-=-=-=-=-=-=-=-=-=-=-=- */
+
+.col_half { width: 49%; }
+.col_third { width: 32%; }
+.col_fourth { width: 23.5%; }
+.col_fifth { width: 18.4%; }
+.col_sixth { width: 15%; }
+.col_three_fourth { width: 74.5%;}
+.col_twothird{ width: 66%;}
+.col_half,
+.col_third,
+.col_twothird,
+.col_fourth,
+.col_three_fourth,
+.col_fifth{
+	position: relative;
+	display:inline;
+	display: inline-block;
+	float: left;
+	margin-right: 2%;
+	margin-bottom: 20px;
+}
+.end { margin-right: 0 !important; }
+/* Column Grids End */
+
+.wrapper_counter { width: 980px; margin: 30px auto; position: relative;}
+.counter { background-color: #000000; padding: 20px 0; border-radius: 5px;}
+/* .counter:hover{
+    background-color: #ffffff;
+} */
+.count-title { font-size: 40px; font-weight: normal;  margin-top: 10px; margin-bottom: 0; text-align: center; color: #4c8bf5; font-family: 'Goldman', cursive;}
+.count-text { font-size: 20px; font-weight: normal;  margin-top: 10px; margin-bottom: 0; text-align: center; color: #4ad1e5; font-family: 'Goldman', cursive;}
+.fa-2x { margin: 0 auto; float: none; display: table; color: #4ad1e5; }
+
+</style>
+        
+
+    
     </style>
     <script type="text/javascript">
         var map;
@@ -272,6 +326,7 @@
                 <!-- <li class="nav-item"><a href="/feedback/">Feedback</a></li> -->
                 <li class="nav-item"><a href="/straightoutta/">Straight Outta CSED</a></li>
                 <li class="nav-item"><a href="/alumniconnect/">Alumni Connect</a></li>
+                <li class="nav-item"><a href="/talksWithCsea/">Talks With CSEA</a></li>
             </ul>
         </div>
     </nav>
@@ -363,7 +418,11 @@
     </script>
 
 
-    <div align="center" class="ftco-footer ftco-bg-dark ftco-section" align="center">
+    <div align="center" class="ftco-footer ftco-bg-dark ftco-section" style="background-image: url(http://jmd.im/wp-content/uploads/2017/06/blacki_thumbnail.jpg);">
+        
+        <div class="container" align="center" style="color: white">
+            <h1>About US</h1>
+        </div>
         <p>
             <h3 style="color:white;"><b>We are a group of enthusiastic students from the Department of Computer Science and Engineering NIT Warangal and who work timelessly to deliver the pure essence of Computer Science to everyone in our vicinity</b></h3>
         </p>
@@ -375,34 +434,35 @@
     </div>
 
 
-
-    <div align="center" class="ftco-footer ftco-bg-dark ftco-section" align="center">
-        <h3 style="color:white;"><b>Snaps of Some of Our Events</b></h3>
+    <div align="center" class="ftco-bg-dark ftco-section" style="background-image: url(http://jmd.im/wp-content/uploads/2017/06/blacki_thumbnail.jpg);">
+        <div class="row">
+            <div class="wrapper_counter">
+                <div class="counter col_fourth">
+                  <i class="fas fa-calendar-alt fa-2x"></i>
+                  <h2 class="timer count-title count-number" data-to="300" data-speed="1500"></h2>
+                   <p class="count-text ">Events</p>
+                </div>
+            
+                <div class="counter col_fourth">
+                  <i class="fas fa-users fa-2x"></i>
+                  <h2 class="timer count-title count-number" data-to="11900" data-speed="1500"></h2>
+                  <p class="count-text ">Attendees</p>
+                </div>
+            
+                <div class="counter col_fourth">
+                  <i class="fa fa-hands-helping fa-2x"></i>
+                  <h2 class="timer count-title count-number" data-to="23" data-speed="1500"></h2>
+                  <p class="count-text ">Collaborations</p>
+                </div>
+            
+                <div class="counter col_fourth end">
+                  <i class="fas fa-mouse-pointer fa-2x"></i>
+                  <h2 class="timer count-title count-number" data-to="4960" data-speed="1500"></h2>
+                  <p class="count-text ">Social Reach</p>
+                </div>
+            </div>
+        </div>
     </div>
-
-
-    <div style="background-image: url(http://jmd.im/wp-content/uploads/2017/06/blacki_thumbnail.jpg);" class="clearfix">
-        <div class="img-container">
-            <img src="{% static 'images/i1.jpg' %}" style="width:100%" height="350px">
-        </div>
-        <div class="img-container">
-            <img src="{% static 'images/i2.JPG' %}" style="width:100%" height="350px">
-        </div>
-        <div class="img-container">
-            <img src="{% static 'images/i3.jpg' %}" style="width:100%" height="350px">
-        </div>
-        <div class="img-container">
-            <img src="{% static 'images/i4.jpg' %}" style="width:100%" height="350px">
-        </div>
-        <div class="img-container">
-            <img src="{% static 'images/i5.jpg' %}" style="width:100%" height="350px">
-        </div>
-        <div class="img-container">
-            <img src="{% static 'images/i6.jpg' %}" style="width:100%" height="350px">
-        </div>
-    </div>
-
-
 
 
 
@@ -534,6 +594,109 @@
             document.body.scrollTop = 0; // For Safari
             document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
         }
+
+        //COunter Code
+
+        (function ($) {
+	$.fn.countTo = function (options) {
+		options = options || {};
+		
+		return $(this).each(function () {
+			// set options for current element
+			var settings = $.extend({}, $.fn.countTo.defaults, {
+				from:            $(this).data('from'),
+				to:              $(this).data('to'),
+				speed:           $(this).data('speed'),
+				refreshInterval: $(this).data('refresh-interval'),
+				decimals:        $(this).data('decimals')
+			}, options);
+			
+			// how many times to update the value, and how much to increment the value on each update
+			var loops = Math.ceil(settings.speed / settings.refreshInterval),
+				increment = (settings.to - settings.from) / loops;
+			
+			// references & variables that will change with each update
+			var self = this,
+				$self = $(this),
+				loopCount = 0,
+				value = settings.from,
+				data = $self.data('countTo') || {};
+			
+			$self.data('countTo', data);
+			
+			// if an existing interval can be found, clear it first
+			if (data.interval) {
+				clearInterval(data.interval);
+			}
+			data.interval = setInterval(updateTimer, settings.refreshInterval);
+			
+			// initialize the element with the starting value
+			render(value);
+			
+			function updateTimer() {
+				value += increment;
+				loopCount++;
+				
+				render(value);
+				
+				if (typeof(settings.onUpdate) == 'function') {
+					settings.onUpdate.call(self, value);
+				}
+				
+				if (loopCount >= loops) {
+					// remove the interval
+					$self.removeData('countTo');
+					clearInterval(data.interval);
+					value = settings.to;
+					
+					if (typeof(settings.onComplete) == 'function') {
+						settings.onComplete.call(self, value);
+					}
+				}
+			}
+			
+			function render(value) {
+				var formattedValue = settings.formatter.call(self, value, settings);
+				$self.html(formattedValue+ '+');
+			}
+		});
+	};
+	
+	$.fn.countTo.defaults = {
+		from: 0,               // the number the element should start at
+		to: 0,                 // the number the element should end at
+		speed: 1000,           // how long it should take to count between the target numbers
+		refreshInterval: 100,  // how often the element should be updated
+		decimals: 0,           // the number of decimal places to show
+		formatter: formatter,  // handler for formatting the value before rendering
+		onUpdate: null,        // callback method for every time the element is updated
+		onComplete: null       // callback method for when the element finishes updating
+	};
+	
+	function formatter(value, settings) {
+		return value.toFixed(settings.decimals);
+	}
+}(jQuery));
+
+jQuery(function ($) {
+  // custom formatting example
+  $('.count-number').data('countToOptions', {
+	formatter: function (value, options) {
+	  return value.toFixed(options.decimals).replace(/\B(?=(?:\d{3})+(?!\d))/g, ',');
+	}
+  });
+  
+  // start all the timers
+  $('.timer').each(count);  
+  
+  function count(options) {
+	var $this = $(this);
+	options = $.extend({}, options || {}, $this.data('countToOptions') || {});
+	$this.countTo(options);
+  }
+});
+
+        //Counter COde Ends
     </script>
 
 

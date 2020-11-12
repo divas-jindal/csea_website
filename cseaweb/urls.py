@@ -11,5 +11,5 @@ urlpatterns = [
     url(r'^feedback/', views.feedback1), 
     url(r'^straightoutta/', views.straightoutta),
     url(r'^alumniconnect/',views.alumniconnect),
-
+    url(r'^talksWithCsea/',views.talksWithCsea)
 ]

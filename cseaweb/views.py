@@ -46,3 +46,6 @@ def straightoutta(request):
 
 def alumniconnect(request):
 	return render(request,'alumniconnect.html')
+
+def talksWithCsea(request):
+	return render(request,'talksWithCsea.html');
