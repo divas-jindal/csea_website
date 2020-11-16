@@ -167,7 +167,6 @@
         footer {
             {
                 #margin-top: 100px;
-                #
             }
             background-color:;
             font-family: "Segoe UI",
@@ -279,6 +278,70 @@ body {
 .count-text { font-size: 20px; font-weight: normal;  margin-top: 10px; margin-bottom: 0; text-align: center; color: #4ad1e5; font-family: 'Goldman', cursive;}
 .fa-2x { margin: 0 auto; float: none; display: table; color: #4ad1e5; }
 
+
+/* Slide Show Code */
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.rotate-body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #000;
+    background-image: url(http://jmd.im/wp-content/uploads/2017/06/blacki_thumbnail.jpg);
+}
+
+.box{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    transform-style: preserve-3d;
+    animation: animate 40s linear infinite;
+}
+
+@keyframes animate
+{
+    0%
+    {
+        transform: perspective(1000px) rotateY(0deg);
+    }
+    100%
+    {
+        transform: perspective(1000px) rotateY(360deg);
+    }
+}
+
+.box .pic{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform-origin: center;
+    transform-style: preserve-3d;
+    transform: rotateY(calc(var(--i)* 25.7deg)) translateZ(500px);
+    -webkit-box-reflect: below 0px linear-gradient(transparent,transparent,#0004);
+}
+
+.box .pic img
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Code for Slide Show ends */
+
+
 </style>
         
 
@@ -337,47 +400,24 @@ body {
         <h1><b>Computer Science and Engineering Association, NITW</b></h1>
     </div>
 
-
-
-
-
-    <div class="slideshow-container">
-
-        <div class="mySlides fade">
-            <img src="{% static 'images/i19.jpg' %}" style="width:100%">
-
+    <div class="rotate-body">
+        <div class="box">
+            <span class="pic" style="--i: 1;"><img  src="../static/images/n1.jpg"></span>
+            <span class="pic" style="--i: 2;"><img  src="../static/images/i2.jpg"></span>
+            <span class="pic" style="--i: 3;"><img  src="../static/images/n4.jpg"></span>
+            <span class="pic" style="--i: 4;"><img  src="../static/images/i4.jpg"></span>
+            <span class="pic" style="--i: 5;"><img  src="../static/images/i5.jpg"></span>
+            <span class="pic" style="--i: 6;"><img  src="../static/images/i6.jpg"></span>
+            <span class="pic" style="--i: 7;"><img  src="../static/images/i7.jpg"></span>
+            <span class="pic" style="--i: 8;"><img  src="../static/images/n6.jpg"></span>
+            <span class="pic" style="--i: 9;"><img  src="../static/images/n5.jpg"></span>
+            <span class="pic" style="--i: 10;"><img src="../static/images/i10.jpg"></span>
+            <span class="pic" style="--i: 11;"><img src="../static/images/n2.jpg"></span>
+            <span class="pic" style="--i: 12;"><img src="../static/images/v1.jpeg"></span>
+            <span class="pic" style="--i: 13;"><img src="../static/images/i23.jpg"></span>
+            <span class="pic" style="--i: 14;"><img src="../static/images/android1.jpg"></span>
         </div>
-
-        <div class="mySlides fade">
-
-            <img src="{% static 'images/i2.JPG' %}" style="width:100%">
-
-        </div>
-
-
-
-        <div class="mySlides fade">
-            <img src="{% static 'images/i4.jpg' %}" style="width:100%">
-
-        </div>
-
-        <div class="mySlides fade">
-
-            <img src="{% static 'images/v1.jpeg' %}" style="width:100%">
-
-        </div>
-
-        <div class="mySlides fade">
-
-            <img src="{% static 'images/i6.jpg' %}" style="width:100%">
-        </div>
-
-
-        <!-- Next and previous buttons -->
-        <!--<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-        <a class="next" onclick="plusSlides(1)">&#10095;</a> -->
     </div>
-    <br>
 
     <div style="background-image: url(http://jmd.im/wp-content/uploads/2017/06/blacki_thumbnail.jpg);">
 
@@ -439,25 +479,25 @@ body {
             <div class="wrapper_counter">
                 <div class="counter col_fourth">
                   <i class="fas fa-calendar-alt fa-2x"></i>
-                  <h2 class="timer count-title count-number" data-to="300" data-speed="1500"></h2>
+                  <h2 class="timer count-title count-number" data-to="226" data-speed="5000"></h2>
                    <p class="count-text ">Events</p>
                 </div>
             
                 <div class="counter col_fourth">
                   <i class="fas fa-users fa-2x"></i>
-                  <h2 class="timer count-title count-number" data-to="11900" data-speed="1500"></h2>
+                  <h2 class="timer count-title count-number" data-to="3100" data-speed="5000"></h2>
                   <p class="count-text ">Attendees</p>
                 </div>
             
                 <div class="counter col_fourth">
                   <i class="fa fa-hands-helping fa-2x"></i>
-                  <h2 class="timer count-title count-number" data-to="23" data-speed="1500"></h2>
+                  <h2 class="timer count-title count-number" data-to="23" data-speed="5000"></h2>
                   <p class="count-text ">Collaborations</p>
                 </div>
             
                 <div class="counter col_fourth end">
                   <i class="fas fa-mouse-pointer fa-2x"></i>
-                  <h2 class="timer count-title count-number" data-to="4960" data-speed="1500"></h2>
+                  <h2 class="timer count-title count-number" data-to="4960" data-speed="5000"></h2>
                   <p class="count-text ">Social Reach</p>
                 </div>
             </div>
