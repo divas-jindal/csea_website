@@ -49,3 +49,6 @@ def alumniconnect(request):
 
 def talksWithCsea(request):
 	return render(request,'talksWithCsea.html')
+
+def card(request):
+	return render(request,'card.html')
