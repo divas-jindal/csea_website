@@ -77,92 +77,7 @@
             user-select: none;
         }
         
-        .parallax {
-            /* The image used */
-            background-image: url('{% static 'images/i1.jpg' %}');
-            background-image: url('{% static 'images/i2.JPG' %}');
-            background-image: url('{% static 'images/i3.jpg' %}');
-            background-image: url('{% static 'images/i4.jpg' %}');
-            background-image: url('{% static 'images/i5.jpg' %}');
-            background-image: url('{% static 'images/i6.jpg' %}');
-            background-image: url('{% static 'images/i7.jpg' %}');
-            background-image: url('{% static 'images/i8.JPG' %}');
-            background-image: url('{% static 'images/i9.JPG' %}');
-            background-image: url('{% static 'images/i10.JPG' %}');
-            background-image: url('{% static 'images/i11.JPG' %}');
-            /* Full height */
-            height: 100%;
-            /* Create the parallax scrolling effect */
-            background-attachment: fixed;
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
-        }
         
-        .par {
-            background-image: url('{% static 'images/csea2020.jpg' %}');
-            /* Full height */
-            height: 100%;
-            /* Create the parallax scrolling effect */
-            background-attachment: fixed;
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
-        }
-        /* Position the "next button" to the right */
-        
-        .next {
-            right: 0;
-            border-radius: 3px 0 0 3px;
-        }
-        /* On hover, add a black background color with a little bit see-through */
-        
-        .prev:hover,
-        .next:hover {
-            background-color: rgba(0, 0, 0, 0.8);
-        }
-        
-        .dot {
-            cursor: pointer;
-            height: 15px;
-            width: 15px;
-            margin: 0 2px;
-            background-color: #bbb;
-            border-radius: 50%;
-            display: inline-block;
-            transition: background-color 0.6s ease;
-        }
-        
-        .active,
-        .dot:hover {
-            background-color: #717171;
-        }
-        /* Fading animation */
-        
-        .fade {
-             -webkit-animation-name: fade; 
-            -webkit-animation-duration:4s;
-             animation-name: fade; 
-            animation-duration: 4s;
-        }
-        
-        @-webkit-keyframes fade {
-            from {
-                opacity: 0.8
-            }
-            to {
-                opacity: 1
-            }
-        }
-        
-        @keyframes fade {
-            from {
-                opacity: 0.8
-            }
-            to {
-                opacity: 1
-            }
-        }
         
         footer {
             {
@@ -341,12 +256,58 @@ body {
 
 /* Code for Slide Show ends */
 
+/* Code for Loader */
+.loader-bg{
+    position: fixed;
+    z-index: 9999;
+    background: #fff;
+    width: 100%;
+    height: 100%;
+}
+
+.loader{
+    border: 0 solid transparent;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    top: calc(50vh-75px);
+    left: calc(50vw-75px); 
+}
+
+.loader:before, .loader:after{
+    content: '';
+    border: 1em solid #ff5733;
+    width: inherit;
+    height: inherit;
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation: loader 2s linear infinite;
+    opacity: 0;
+}
+
+.loader:before{
+    animation-delay: 0.5s;
+}
+
+@keyframes loader{
+    0%{
+        transform: scale(0);
+        opacity: 0;
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        transform: scale(1);
+        opacity: 0;
+    }
+}
+/* Code for loader ends here */
 
 </style>
-        
 
-    
-    </style>
     <script type="text/javascript">
         var map;
 
@@ -373,6 +334,9 @@ body {
 
 <body>
 
+    <!-- <div class="loader-bg">
+        <div class="loader"></div>
+    </div> -->
 
     <nav style="margin-bottom: 50px; background-color: #333" class="navbar sticky-top navbar-expand-xl navbar-dark ">
         <a href="/home/" class="navbar-brand "> <img src="{% static 'images/csealogo.png' %}" height="30px" width="100px" hspace="10px"></a>
@@ -398,47 +362,39 @@ body {
 
         <img src="{% static 'images/nitwlogo.png' %}" width="400"> <img src="{% static 'images/logo.jpg' %}" width="240">
         <h1><b>Computer Science and Engineering Association, NITW</b></h1>
-    </div>
 
-    <div class="rotate-body">
-        <div class="box">
-            <span class="pic" style="--i: 1;"><img  src="../static/images/n1.jpg"></span>
-            <span class="pic" style="--i: 2;"><img  src="../static/images/i2.jpg"></span>
-            <span class="pic" style="--i: 3;"><img  src="../static/images/n4.jpg"></span>
-            <span class="pic" style="--i: 4;"><img  src="../static/images/i4.jpg"></span>
-            <span class="pic" style="--i: 5;"><img  src="../static/images/i5.jpg"></span>
-            <span class="pic" style="--i: 6;"><img  src="../static/images/i6.jpg"></span>
-            <span class="pic" style="--i: 7;"><img  src="../static/images/i7.jpg"></span>
-            <span class="pic" style="--i: 8;"><img  src="../static/images/n6.jpg"></span>
-            <span class="pic" style="--i: 9;"><img  src="../static/images/n5.jpg"></span>
-            <span class="pic" style="--i: 10;"><img src="../static/images/i10.jpg"></span>
-            <span class="pic" style="--i: 11;"><img src="../static/images/n2.jpg"></span>
-            <span class="pic" style="--i: 12;"><img src="../static/images/v1.jpeg"></span>
-            <span class="pic" style="--i: 13;"><img src="../static/images/i23.jpg"></span>
-            <span class="pic" style="--i: 14;"><img src="../static/images/android1.jpg"></span>
+        <div class="rotate-body">
+            <div class="box">
+                <span class="pic" style="--i: 1;"><img  src="../static/images/home/n1-min.jpg"></span>
+                <span class="pic" style="--i: 2;"><img  src="../static/images/home/i2-min.jpg"></span>
+                <span class="pic" style="--i: 3;"><img  src="../static/images/home/n4-min.jpg"></span>
+                <span class="pic" style="--i: 4;"><img  src="../static/images/home/i4-min.jpg"></span>
+                <span class="pic" style="--i: 5;"><img  src="../static/images/home/i5-min.jpg"></span>
+                <span class="pic" style="--i: 6;"><img  src="../static/images/home/i6-min.jpg"></span>
+                <span class="pic" style="--i: 7;"><img  src="../static/images/home/i7-min.jpg"></span>
+                <span class="pic" style="--i: 8;"><img  src="../static/images/home/n6-min.jpg"></span>
+                <span class="pic" style="--i: 9;"><img  src="../static/images/home/n5-min.jpg"></span>
+                <span class="pic" style="--i: 10;"><img src="../static/images/home/i10-min.jpg"></span>
+                <span class="pic" style="--i: 11;"><img src="../static/images/home/n2-min.jpg"></span>
+                <span class="pic" style="--i: 12;"><img src="../static/images/home/v1-min.jpeg"></span>
+                <span class="pic" style="--i: 13;"><img src="../static/images/home/i23-min.jpg"></span>
+                <span class="pic" style="--i: 14;"><img src="../static/images/home/android1-min.jpg"></span>
+            </div>
         </div>
     </div>
 
     <div style="background-image: url(http://jmd.im/wp-content/uploads/2017/06/blacki_thumbnail.jpg);">
-
-        <!-- <div style="text-align:center">
-            <span class="dot" onclick="currentSlide(1)"></span>
-            <span class="dot" onclick="currentSlide(2)"></span>
-            <span class="dot" onclick="currentSlide(3)"></span>
-            <span class="dot" onclick="currentSlide(4)"></span>
-            <span class="dot" onclick="currentSlide(5)"></span>
-            <span class="dot" onclick="currentSlide(6)"></span>
-        </div> -->
     </div>
-
-
-
-    </div>
-
-
-
 
     <script type="text/javascript">
+        
+        let spinnerWrapper = document.querySelector('.spinner-wrapper');
+
+    window.addEventListener('load', function () {
+        // spinnerWrapper.style.display = 'none';
+        spinnerWrapper.parentElement.removeChild(spinnerWrapper);
+    });
+        
         var slideIndex = 0;
         showSlides();
 
@@ -612,7 +568,11 @@ body {
 
 
 
-    <script>
+    <script >
+        setTimeout(function() {
+            $('loader-bg').fadeToggle();
+        },1500);
+
         //Get the button:
         mybutton = document.getElementById("myBtn");
 
