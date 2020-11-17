@@ -27,6 +27,13 @@
     <link rel="stylesheet" href="{% static 'css/css/style.css'%}">
 
     <style type="text/css">
+    html,body
+    {
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+    }
     .img-container {
             float: left;
             width: 33.33%;
@@ -256,55 +263,17 @@ body {
 
 /* Code for Slide Show ends */
 
-/* Code for Loader */
-.loader-bg{
+/* Code for preloader */
+#loading{
     position: fixed;
-    z-index: 9999;
-    background: #fff;
     width: 100%;
-    height: 100%;
+    height: 100vh;
+    background: #000 url(./../static/images/Infinity-1s-200px.gif) no-repeat center;
+    z-index: 999999;
+
 }
 
-.loader{
-    border: 0 solid transparent;
-    border-radius: 50%;
-    width: 150px;
-    height: 150px;
-    position: absolute;
-    top: calc(50vh-75px);
-    left: calc(50vw-75px); 
-}
-
-.loader:before, .loader:after{
-    content: '';
-    border: 1em solid #ff5733;
-    width: inherit;
-    height: inherit;
-    position: absolute;
-    top: 0;
-    left: 0;
-    animation: loader 2s linear infinite;
-    opacity: 0;
-}
-
-.loader:before{
-    animation-delay: 0.5s;
-}
-
-@keyframes loader{
-    0%{
-        transform: scale(0);
-        opacity: 0;
-    }
-    50%{
-        opacity: 1;
-    }
-    100%{
-        transform: scale(1);
-        opacity: 0;
-    }
-}
-/* Code for loader ends here */
+/* Code for preloader ends here */
 
 </style>
 
@@ -332,12 +301,13 @@ body {
 
 </head>
 
-<body>
-
-    <!-- <div class="loader-bg">
-        <div class="loader"></div>
+<body onload="loaderbody()">
+    <!--PRELOADER-->
+    <div id="loading"></div>
+    <!-- <div class="loader-wrapper">
+    <span class="loader"><span class="loader-inner"></span></span>
     </div> -->
-
+    <!--/PRELOADER-->
     <nav style="margin-bottom: 50px; background-color: #333" class="navbar sticky-top navbar-expand-xl navbar-dark ">
         <a href="/home/" class="navbar-brand "> <img src="{% static 'images/csealogo.png' %}" height="30px" width="100px" hspace="10px"></a>
         <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarMenu">
@@ -366,7 +336,7 @@ body {
         <div class="rotate-body">
             <div class="box">
                 <span class="pic" style="--i: 1;"><img  src="../static/images/home/n1-min.jpg"></span>
-                <span class="pic" style="--i: 2;"><img  src="../static/images/events/Webathon.jpg"></span>
+                <span class="pic" style="--i: 2;"><img  src="../static/images/home/n6.JPG"></span>
                 <span class="pic" style="--i: 3;"><img  src="../static/images/home/n4-min.jpg"></span>
                 <span class="pic" style="--i: 4;"><img  src="../static/images/home/i4-min.jpg"></span>
                 <span class="pic" style="--i: 5;"><img  src="../static/images/home/i5-min.jpg"></span>
@@ -567,7 +537,6 @@ body {
     </footer>
 
 
-
     <script >
         setTimeout(function() {
             $('loader-bg').fadeToggle();
@@ -699,7 +668,13 @@ jQuery(function ($) {
         //Counter COde Ends
     </script>
 
-
+    <!-- // Loader query -->
+    <script>
+        var preloader = document.getElementById('loading');
+        function loaderbody(){
+            preloader.style.display = 'none';
+        }
+    </script>
 
 </body>
 
