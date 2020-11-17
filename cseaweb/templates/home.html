@@ -214,21 +214,18 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 75vh;
+    height: 75vh;
     background: #000;
     background-image: url(http://jmd.im/wp-content/uploads/2017/06/blacki_thumbnail.jpg);
-    background-position: center center; 
-    background-attachment: fixed; 
-    background-repeat: no-repeat; 
+     
     background-size: cover; 
 }
-@media (max-width: 480px) {
-  .rotate-body {
-    /* The file size of this background image is 93% smaller
-       to improve page load speed on mobile internet connections */
-    min-height: 50vh;
-  }
-}
+@media only screen and (max-width: 980px) {
+        .rotate-body {
+            height: 40vh;
+            background-color: #4ad1e5 ;
+        }
+    }
 
 .box{
     position: relative;
@@ -339,7 +336,7 @@ body {
     <div align="center" class="fluid-container">
 
         <img src="{% static 'images/nitwlogo.png' %}" width="400"> <img src="{% static 'images/logo.jpg' %}" width="240">
-        <h1><b>Computer Science and Engineering Association, NITW</b></h1>
+        <h1 style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;"><b>Computer Science and Engineering Association, NITW</b></h1>
 
         <div class="rotate-body">
             <div class="box">
