@@ -27,6 +27,13 @@
     <link rel="stylesheet" href="{% static 'css/css/style.css'%}">
 
     <style type="text/css">
+    html,body
+    {
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+    }
     .img-container {
             float: left;
             width: 33.33%;
@@ -207,10 +214,18 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
+    height: 75vh;
     background: #000;
     background-image: url(http://jmd.im/wp-content/uploads/2017/06/blacki_thumbnail.jpg);
+     
+    background-size: cover; 
 }
+@media only screen and (max-width: 980px) {
+        .rotate-body {
+            height: 40vh;
+            background-color: #4ad1e5 ;
+        }
+    }
 
 .box{
     position: relative;
@@ -256,55 +271,17 @@ body {
 
 /* Code for Slide Show ends */
 
-/* Code for Loader */
-.loader-bg{
+/* Code for preloader */
+#loading{
     position: fixed;
-    z-index: 9999;
-    background: #fff;
     width: 100%;
-    height: 100%;
+    height: 100vh;
+    background: #000 url(./../static/images/Infinity-1s-200px.gif) no-repeat center;
+    z-index: 999999;
+
 }
 
-.loader{
-    border: 0 solid transparent;
-    border-radius: 50%;
-    width: 150px;
-    height: 150px;
-    position: absolute;
-    top: calc(50vh-75px);
-    left: calc(50vw-75px); 
-}
-
-.loader:before, .loader:after{
-    content: '';
-    border: 1em solid #ff5733;
-    width: inherit;
-    height: inherit;
-    position: absolute;
-    top: 0;
-    left: 0;
-    animation: loader 2s linear infinite;
-    opacity: 0;
-}
-
-.loader:before{
-    animation-delay: 0.5s;
-}
-
-@keyframes loader{
-    0%{
-        transform: scale(0);
-        opacity: 0;
-    }
-    50%{
-        opacity: 1;
-    }
-    100%{
-        transform: scale(1);
-        opacity: 0;
-    }
-}
-/* Code for loader ends here */
+/* Code for preloader ends here */
 
 </style>
 
@@ -332,12 +309,10 @@ body {
 
 </head>
 
-<body>
-
-    <!-- <div class="loader-bg">
-        <div class="loader"></div>
-    </div> -->
-
+<body onload="loaderbody()">
+    <!--PRELOADER-->
+    <div id="loading"></div>
+    <!--/PRELOADER-->
     <nav style="margin-bottom: 50px; background-color: #333" class="navbar sticky-top navbar-expand-xl navbar-dark ">
         <a href="/home/" class="navbar-brand "> <img src="{% static 'images/csealogo.png' %}" height="30px" width="100px" hspace="10px"></a>
         <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarMenu">
@@ -361,12 +336,12 @@ body {
     <div align="center" class="fluid-container">
 
         <img src="{% static 'images/nitwlogo.png' %}" width="400"> <img src="{% static 'images/logo.jpg' %}" width="240">
-        <h1><b>Computer Science and Engineering Association, NITW</b></h1>
+        <h1 style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;"><b>Computer Science and Engineering Association, NITW</b></h1>
 
         <div class="rotate-body">
             <div class="box">
                 <span class="pic" style="--i: 1;"><img  src="../static/images/home/n1-min.jpg"></span>
-                <span class="pic" style="--i: 2;"><img  src="../static/images/events/Webathon.jpg"></span>
+                <span class="pic" style="--i: 2;"><img  src="../static/images/home/n6.JPG"></span>
                 <span class="pic" style="--i: 3;"><img  src="../static/images/home/n4-min.jpg"></span>
                 <span class="pic" style="--i: 4;"><img  src="../static/images/home/i4-min.jpg"></span>
                 <span class="pic" style="--i: 5;"><img  src="../static/images/home/i5-min.jpg"></span>
@@ -383,8 +358,6 @@ body {
         </div>
     </div>
 
-    <div style="background-image: url(http://jmd.im/wp-content/uploads/2017/06/blacki_thumbnail.jpg);">
-    </div>
 
     <script type="text/javascript">
         
@@ -420,17 +393,11 @@ body {
             <h1>About US</h1>
         </div>
         <p>
-            <h3 style="color:white;"><b>We are a group of enthusiastic students from the Department of Computer Science and Engineering NIT Warangal and who work timelessly to deliver the pure essence of Computer Science to everyone in our vicinity</b></h3>
+            <h3 style="color:white;"><b>We are a group of enthusiastic students from the Department of Computer Science and Engineering NIT Warangal and who work tirelessly to deliver the pure essence of Computer Science to everyone in our vicinity</b></h3>
         </p>
-    </div>
+    
 
 
-    <div class="par">
-        <img width="100%" height="600px" src="{% static 'images/csea2020.jpg' %}">
-    </div>
-
-
-    <div align="center" class="ftco-bg-dark ftco-section" style="background-image: url(http://jmd.im/wp-content/uploads/2017/06/blacki_thumbnail.jpg);">
         <div class="row">
             <div class="wrapper_counter">
                 <div class="counter col_fourth">
@@ -462,6 +429,9 @@ body {
 
 
 
+    <div class="par">
+        <img width="100%" height="600px" src="{% static 'images/csea2020.jpg' %}">
+    </div>
 
     <section id="contact" class=" border-top-color2">
 
@@ -565,7 +535,6 @@ body {
 
         <button onclick="topFunction()" id="myBtn" title="Go to top"><i class=" fa fa-angle-double-up"></i> </button>
     </footer>
-
 
 
     <script >
@@ -699,7 +668,13 @@ jQuery(function ($) {
         //Counter COde Ends
     </script>
 
-
+    <!-- // Loader query -->
+    <script>
+        var preloader = document.getElementById('loading');
+        function loaderbody(){
+            preloader.style.display = 'none';
+        }
+    </script>
 
 </body>
 
