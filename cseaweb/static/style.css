@@ -13,7 +13,8 @@ body {
 
 }
 
-h1 {
+/* Commented because this was making the events tab Heading different from the gallery tab */
+/* h1 {
   font-size: 200%;
   text-transform: uppercase;
   letter-spacing: 3px;
@@ -21,7 +22,6 @@ h1 {
 }
 
 header {
-  
   color: #FFFFFF;
   padding: 150px 0;
 }
@@ -31,7 +31,9 @@ header p {
   margin-bottom: 0;
   font-size: 60px;
   margin-top: -30px;
-}
+} */
+
+
 
 .timeline {
   position: relative;
@@ -137,7 +139,8 @@ header p {
 blockquote {
   margin-top: 30px;
   color: #757575;
-  border-left-color: #3F51B5;
+  font-size:17.5px;
+  border-left:5px solid 	#3F51B5;
   padding: 0 20px;
 }
 

@@ -30,13 +30,12 @@
 
     <link href="https://fonts.googleapis.com/css?family=Roboto:100i,300,400,500,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Allura" rel="stylesheet">
-    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css'>
-    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css'>
+    {% comment %} This line was the whole cause of events tab anomaly {% endcomment %}
+    {% comment %} <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css'> {% endcomment %}
     <link rel="stylesheet" href="{% static 'style.css' %}">
     <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
     <script src='https://cdn.jsdelivr.net/scrollreveal.js/3.3.1/scrollreveal.min.js'></script>
     <script src="{% static 'script.js' %}"></script>
-
     <style type="text/css">
 
     .date {
@@ -158,7 +157,7 @@
     <link rel="stylesheet" href="{% static 'css/footer.css'%}">
 </head>
 
-<body >
+<body style="font-family:Poppins">
 
     <nav style="background-color: #333" class="navbar sticky-top navbar-expand-xl navbar-dark ">
         <a href="/home/" class="navbar-brand"> <img src="{% static 'images/csealogo.png' %}" height="30px" width="100px" hspace="10px"></a>
@@ -171,7 +170,7 @@
                 <li class="nav-item"><a class="active" href="/events/">Events</a></li>
                 <li class="nav-item"><a href="/team/">Team</a></li>
                 <li class="nav-item"><a href="/alumni/">Alumni</a></li>
-                <!-- {#            <li class="nav-item"><a href="/feedback/">Feedback</a></li>#} -->
+                <!-- <li class="nav-item"><a href="/feedback/">Feedback</a></li>#} -->
                 <li class="nav-item"><a href="/straightoutta/">Straight Outta CSED</a></li>
                 <li class="nav-item"><a href="/alumniconnect/">Alumni Connect</a></li>
                 <li class="nav-item"><a href="/talksWithCsea/">Talks With CSEA</a></li>
@@ -184,7 +183,6 @@
         <img src="{% static 'images/nitwlogo.png' %}" width="400"> <img src="{% static 'images/logo.jpg' %}" width="240">
         <h1 style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;"><b>Computer Science and Engineering Association, NITW</b></h1>
     </div>
-
 
 
 
@@ -710,11 +708,11 @@
         <div class="rounded-social-buttons">
             <!-- {#
           <h2 class="ftco-heading-2 mb-0" style="color: white">Stay Connected With Us</h2>#} -->
-            <a class="social-button envelope" href="mailto:csea@student.nitw.ac.in" target="_blank" style="width: 6.725rem; height: 6.725rem; border-radius: 2.5rem; "><i class="fas fa-envelope" style="font-size: 50px; margin-top:10% ;"></i></a>
-            <a class="social-button linkedin" href="https://www.linkedin.com/company/csea-nitw/" target="_blank" style="width: 6.725rem; height: 6.725rem; border-radius: 2.5rem; "><i class="fab fa-linkedin" style="font-size: 50px; margin-top:10% ;"></i></a>
-            <a class="social-button facebook" href="https://www.facebook.com/cseanitw/" target="_blank" style="width: 6.725rem; height: 6.725rem; border-radius: 2.5rem; "><i class="fab fa-facebook-f" style="font-size: 50px; margin-top:10% ;"></i></a>
-            <a class="social-button instagram" href="https://www.instagram.com/csea_nitw/?hl=en" target="_blank" style="width: 6.725rem; height: 6.725rem; border-radius: 2.5rem; "><i class="fab fa-instagram" style="font-size: 50px; margin-top:10% ;"></i></a>
-            <a class="social-button youtube" href="https://www.youtube.com/channel/UCncaLmXj3WstjFut4w8vepQ" target="_blank" style="width: 6.725rem; height: 6.725rem; border-radius: 2.5rem; "><i class="fab fa-youtube" style="font-size: 50px; margin-top:10% ;"></i></a>
+          <a class="social-button envelope" href="mailto:csea@student.nitw.ac.in" target="_blank"><i class="fas fa-envelope" style="font-size: 50px"></i></a>
+          <a class="social-button linkedin" href="https://www.linkedin.com/company/csea-nitw/" target="_blank"><i class="fab fa-linkedin" style="font-size: 50px"></i></a>
+          <a class="social-button facebook" href="https://www.facebook.com/cseanitw/" target="_blank"><i class="fab fa-facebook-f" style="font-size: 50px"></i></a>
+          <a class="social-button instagram" href="https://www.instagram.com/csea_nitw/?hl=en" target="_blank"><i class="fab fa-instagram" style="font-size: 50px"></i></a>
+          <a class="social-button youtube" href="https://www.youtube.com/channel/UCncaLmXj3WstjFut4w8vepQ" target="_blank"><i class="fab fa-youtube" style="font-size: 50px"></i></a>
 
         </div>
         <div style="text-align:center">
