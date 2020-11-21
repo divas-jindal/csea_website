@@ -1,3 +1,4 @@
 # requirements need to be added
 
 django
+python-dotenv

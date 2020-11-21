@@ -34,8 +34,13 @@ def feedback1(request):
 			comment = form.cleaned_data['comment']
 			to_email = form.cleaned_data['email']
 			#Acknowledgement mail to sender
-			subject='Message from www.cseanitw.in'
-			message = 'Thanks, We will get right back to you..'
+			subject='Message from CSEA NIT Warangal'
+			message = 'Hey ' + name + ',\n\n' + 'Hope you are safe and doing well.\n\n' + \
+			'Thank you for contacting us. We will get back to you soon.\n\n\n' + \
+			'Best Regards,\n\n' + \
+			'Divas Jindal\n'+ \
+			'General Secretary\n'+ \
+			'CSEA NIT Warangal'
 			recipient_list = [to_email]
 			email_from = settings.EMAIL_HOST_USER
 			send_mail(subject, message, email_from, recipient_list)
