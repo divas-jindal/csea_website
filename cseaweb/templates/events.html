@@ -666,37 +666,40 @@
 
                 <!--=== Contact Form ===-->
 
-                <form style="padding-right: 10%;" id="contact-form" class="col-sm-6 col-md-offset-1 scrollimation fade-left d3" action="contact.php" method="post" novalidate>
-
+                <form id="contact-form" class="col-sm-6 col-md-offset-1 scrollimation fade-left d3" method="POST" action="/feedback/">
+                    {% csrf_token %}
                     <div class="form-group">
-                        <label class="control-label" for="contact-name">Name</label>
-                        <div class="controls" text-align="center">
-                            <input id="contact-name" name="contactName" placeholder="Your name" class="form-control requiredField" data-new-placeholder="Your name" type="text" data-error-empty="Please enter your name">
+                        <label class="control-label" for="id_name">Name</label>
+                        <div class="controls">
+                            <input id="id_name" name="name" placeholder="Your name" class="form-control requiredField" data-new-placeholder="Your name">
                             <i class="fa fa-user " style="align-items: center; margin-top: 2%; color: grey"></i>
                         </div>
                     </div>
                     <!-- End name input -->
 
                     <div class="form-group">
-                        <label class="control-label" for="contact-mail">Email</label>
+                        <label class="control-label" for="id_email">Email</label>
                         <div class=" controls">
-                            <input id="contact-mail" name="email" placeholder="Your email" class="form-control requiredField" data-new-placeholder="Your email" type="email" data-error-empty="Please enter your email" data-error-invalid="Invalid email address">
+                            <input id="id_email" name="email" placeholder="Your email" class="form-control requiredField" data-new-placeholder="Your email">
                             <i class="fa fa-envelope " style="align-items: center; margin-top: 2%; color: grey"></i>
                         </div>
                     </div>
                     <!-- End email input -->
 
                     <div class="form-group">
-                        <label class="control-label" for="contact-message">Message</label>
+                        <label class="control-label" for="id_comment">Message</label>
                         <div class="controls">
-                            <textarea id="contact-message" name="comments" placeholder="Your message" class="form-control requiredField" data-new-placeholder="Your message" rows="6" data-error-empty="Please enter your message"></textarea>
-                            <i class="fa fa-comment" style="align-items: center; margin-top: 2%; color:grey"></i>
+                            <textarea id="id_comment" name="comment" placeholder="Your message" class="form-control requiredField" data-new-placeholder="Your message" rows="6"></textarea>
+                            <i class="fa fa-comment" style="align-items: center; margin-top: 2%; color: grey"></i>
                         </div>
                     </div>
                     <!-- End textarea -->
 
-                    <p><button name="submit" type="submit" class="btn btn-color2 btn-block" data-error-message="Error!" data-sending-message="Sending..." data-ok-message="Message Sent"><i class="fa fa-paper-plane"></i>Send Message</button></p>
-                    <input type="hidden" name="submitted" id="submitted" value="true">
+                    <p><button name="submit" type="submit" class="btn btn-color2 btn-block"><i class="fa fa-paper-plane"></i>Send Message</button>
+                    </p>
+                    <!-- <input type="submit" name="submitted" id="submitted" value="submit-form"> -->
+                    <!-- <input type="hidden" name="submitted" id="submitted" value="true"> -->
+{#                    <input type="submit" value="submit-form" class="btn btn-default">#}
 
                 </form>
                 <!-- End contact-form -->
