@@ -3,7 +3,8 @@ from cseaweb.forms import contactForms
 from django.core.mail import send_mail
 from cseaweb.models import feedback
 from django.conf import settings
-# Create your views here.
+from django.http import HttpResponseRedirect
+
 def home(request):
 	return render(request,'home.html')
 def events(request):
@@ -18,13 +19,17 @@ def alumni(request):
 def feedback1(request):
 	print("cp0")
 	# context = {}
+	next = '/'
 	if request.method == 'POST':
 		form = contactForms(request.POST)
+
 		print("cp1")
 		if form.is_valid():
 			print("cp2")
 			f = form.save(commit=False)
 			f.save()
+			next = request.POST.get('next', '/')
+			print("path: " + next)
 			name = form.cleaned_data['name']
 			comment = form.cleaned_data['comment']
 			to_email = form.cleaned_data['email']
@@ -44,7 +49,7 @@ def feedback1(request):
 			# title = 'Thanks'
 			# context = {'title':title,'form':form,'msg':msg,}
 
-	return redirect('/')
+	return HttpResponseRedirect(next)
 
 
 def straightoutta(request):
