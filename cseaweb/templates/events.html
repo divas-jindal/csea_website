@@ -30,13 +30,12 @@
 
     <link href="https://fonts.googleapis.com/css?family=Roboto:100i,300,400,500,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Allura" rel="stylesheet">
-    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css'>
-    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css'>
+    {% comment %} This line was the whole cause of events tab anomaly {% endcomment %}
+    {% comment %} <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css'> {% endcomment %}
     <link rel="stylesheet" href="{% static 'style.css' %}">
     <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
     <script src='https://cdn.jsdelivr.net/scrollreveal.js/3.3.1/scrollreveal.min.js'></script>
     <script src="{% static 'script.js' %}"></script>
-
     <style type="text/css">
 
     .date {
@@ -82,7 +81,6 @@
         footer {
             {
                 #margin-top: 100px;
-                #
             }
             background-color:;
             font-family: "Segoe UI",
@@ -158,10 +156,10 @@
     <link rel="stylesheet" href="{% static 'css/footer.css'%}">
 </head>
 
-<body >
+<body style="font-family:Poppins">
 
     <nav style="background-color: #333" class="navbar sticky-top navbar-expand-xl navbar-dark ">
-        <a href="/home/" class="navbar-brand"> <img src="{% static 'images/csealogo.png' %}" height="30px" width="100px" hspace="10px"></a>
+        <a href="/home/" class="navbar-brand"> <img src="{% static 'images/logo/csealogo.png' %}" height="30px" width="100px" hspace="10px"></a>
         <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarMenu">
         <span class="navbar-toggler-icon"></span>
     </button>
@@ -171,7 +169,7 @@
                 <li class="nav-item"><a class="active" href="/events/">Events</a></li>
                 <li class="nav-item"><a href="/team/">Team</a></li>
                 <li class="nav-item"><a href="/alumni/">Alumni</a></li>
-                <!-- {#            <li class="nav-item"><a href="/feedback/">Feedback</a></li>#} -->
+                <!-- <li class="nav-item"><a href="/feedback/">Feedback</a></li>#} -->
                 <li class="nav-item"><a href="/straightoutta/">Straight Outta CSED</a></li>
                 <li class="nav-item"><a href="/alumniconnect/">Alumni Connect</a></li>
                 <li class="nav-item"><a href="/talksWithCsea/">Talks With CSEA</a></li>
@@ -181,10 +179,9 @@
 
     <div align="center" class="fluid-container">
 
-        <img src="{% static 'images/nitwlogo.png' %}" width="400"> <img src="{% static 'images/logo.jpg' %}" width="240">
+        <img src="{% static 'images/logo/nitwlogo.png' %}" width="400"> <img src="{% static 'images/logo/logo.jpg' %}" width="240">
         <h1 style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;"><b>Computer Science and Engineering Association, NITW</b></h1>
     </div>
-
 
 
 
@@ -206,11 +203,117 @@
                     <blockquote>To celebrate the innocence of childhood and bring lights in everyone's lives this Diwali, CSEA NIT Warangal conducted Umang- "Bringing smiles on young faces"- an initiative to spend time with young school children of ATHIDI ASHRAMAM
                         and share with them the joys that computers bring and showed them technologies they might have never thought of.</blockquote>#} {##} {# </div>#} {# </div>#} -->
 
+                        <div class="timeline-item">
+                            <div class="timeline-img"></div>
+                            <div class="timeline-content js--fadeInRight">
+                                <div>
+                                    <img src="{% static 'images/events/winter_of_doing.jpg' %}" height="230px" width="100%">
+                                </div>
+                                <div class="date">All set for 16th Jan</div>
+                                <h2>CRIO Winter of doing</h2>
+                                <blockquote>
+                                    CSEA in collaboration with CRIO bring to you an exciting week of tech externships to kick start the year. 
+                                    An opportunity to escape the virtual classroom and gain real world work experience and refine your skills. CRIO Winter of Doing is here, and India’s top start-ups are lining up their tech challenges for you. Join India’s largest tech externship program for developers.
+                                </blockquote>
+                            </div>
+                        </div>
 
                         <div class="timeline-item">
-
                             <div class="timeline-img"></div>
-            
+                            <div class="timeline-content js--fadeInLeft">
+                                <div>
+                                    <img src="{% static 'images/events/CPL1.jpeg' %}" height="230px" width="100%">
+                                </div>
+                                <div class="date">Coming Soon...</div>
+                                <h2>Coding Premier League (CPL) 1.0</h2>
+                                <blockquote>
+                                    Now that the IPL is done, feeling bored? How about an IPL fashioned coding contest? Get ready for NITWs own CPL- Coding Premiere League!
+                                    Gather up points with each contest and rise through the ranks, to reach the top. The coding frenzy doesn't stop here, you also get the opportunity to set problems yourself for a contest! Along with the top coders and seniors guiding you at every point and the excitement and fun of competitive programming, this is surely not an opportunity to miss!
+                                    In this team event, form teams by auctioning the best coders, and race with your team to victory! Wear your thinking hats and power up your laptops, as this is going to be a breathtaking ride!
+                                </blockquote>
+                            </div>
+                        </div>
+
+                        <div class="timeline-item">
+                            <div class="timeline-img"></div>
+                            <div class="timeline-content js--fadeInRight">
+                                <div>
+                                    <img src="{% static 'images/events/valar_pscp.jpg' %}" height="230px" width="100%">
+                                </div>
+                                <div class="date">28th December, 2020</div>
+                                <h2>Valar Doubtulis</h2>
+                                <blockquote>
+                                    If you are tensed about your upcoming PSCP minor or worried in general like a normal human being, there is nothing like getting your doubts cleared by your seniors.
+                                    CSEA presents a short Valar Doubutlis session to clear any doubts or confusion in PSCP (Programming in C++).
+                                </blockquote>
+                            </div>
+                        </div>
+
+                        <div class="timeline-item">
+                            <div class="timeline-img"></div>
+                            <div class="timeline-content js--fadeInLeft">
+                                <div>
+                                    <img src="{% static 'images/events/40_hours.jpg' %}" height="230px" width="100%">
+                                </div>
+                                <div class="date">26th December, 2020</div>
+                                <h2>40 hours of Web Dev</h2>
+                                <blockquote>
+                                    CSEA NIT Warangal is happy to bring '40 hours of Web Dev' for all students in the National Institute of Technology Warangal. This program is hosted by Progate Japan from 8 AM IST on 26th December 2020 and is free for all participants!
+                                    You can learn the fundamentals of web development and download your certificate!
+                                </blockquote>
+                            </div>
+                        </div>
+
+
+                        <div class="timeline-item">
+                            <div class="timeline-img"></div>
+                            <div class="timeline-content js--fadeInRight">
+                                <div>
+                                    <img src="{% static 'images/events/merry_quizmass.jpg' %}" height="230px" width="100%">
+                                </div>
+                                <div class="date">23rd December, 2020</div>
+                                <h2>Merry QuizMass</h2>
+                                <blockquote>
+                                    Santa is facing travel restrictions! Are you having a complete meltdown? Fret Not!
+                                    CSEA is here to make your Christmas merry with Quizmass 2020. It's time for a week of displaying your knowledge and competitiveness.
+                                </blockquote>
+                            </div>
+                        </div>
+
+                        <div class="timeline-item">
+                            <div class="timeline-img"></div>
+                            <div class="timeline-content js--fadeInLeft">
+                                <div>
+                                    <img src="{% static 'images/events/DSA_session.jpg' %}" height="230px" width="100%">
+                                </div>
+                                <div class="date">10th Decemeber, 2020</div>
+                                <h2>Valar Doubtulis DSA Edition</h2>
+                                <blockquote>
+                                    If you are tensed about your upcoming DSA End-Sem Exam, or worried in general like a normal human being, there is nothing like getting your doubts cleared by your seniors.
+                                    CSEA presents a short Valar Doubutlis session to clear any confusion about DSA.In this team event, form teams by auctioning the best coders, and race with your team to victory! Wear your thinking hats and power up your laptops, as this is going to be a breathtaking ride!
+                                </blockquote>
+                            </div>
+                        </div>
+
+                        <div class="timeline-item">
+                            <div class="timeline-img"></div>
+                            <div class="timeline-content js--fadeInRight">
+                                <div>
+                                    <img src="{% static 'images/events/codeathon3.jpeg' %}" height="230px" width="100%">
+                                </div>
+                                <div class="date">29th November, 2020</div>
+                                <h2>Codeathon 3.0</h2>
+                                <blockquote>
+                                    CSEA proudly presents Codeathon 3.0, the third episode of our superhit Codeathon contest series.
+                                    Break out of the boring monotonous routine of classes and assignments and prepare yourself for this epic battle of the brains.
+                                    If you are new to competitive programming this is the best opportunity to kickstart your way into the world of CP.
+                                    So go ahead and grab a cup of coffee, grab your friends and laptop, and get ready to code
+                                </blockquote>
+                            </div>
+                        </div>
+
+                        <div class="timeline-item">
+                            <div class="timeline-img"></div>
                             <div class="timeline-content js--fadeInLeft">
                                 <div>
                                     <img src="{% static 'images/Somani.jpg' %}" height="230px" width="100%">
@@ -219,7 +322,6 @@
                                 <h2>Talks with CSEA</h2>
                                 <blockquote>We're here to help you along with Abhishek Somani, who is currently working as an SDE II at Amazon, ex- Microsoft, and was also offered jobs from Facebook and Uber. From giving you tips to crack interviews and OTs to unfolding the dos and don'ts before and after getting an offer, we have got it all covered. Since COVID-19 has taken a big toll, 
                                     virtual interviews are being held, and cracking them need some special efforts and those will be discussed as well! </blockquote>
-            
                             </div>
                         </div>
             
@@ -666,37 +768,41 @@
 
                 <!--=== Contact Form ===-->
 
-                <form style="padding-right: 10%;" id="contact-form" class="col-sm-6 col-md-offset-1 scrollimation fade-left d3" action="contact.php" method="post" novalidate>
-
+                <form id="contact-form" class="col-sm-6 col-md-offset-1 scrollimation fade-left d3" method="POST" action="/feedback/">
+                    {% csrf_token %}
                     <div class="form-group">
-                        <label class="control-label" for="contact-name">Name</label>
-                        <div class="controls" text-align="center">
-                            <input id="contact-name" name="contactName" placeholder="Your name" class="form-control requiredField" data-new-placeholder="Your name" type="text" data-error-empty="Please enter your name">
+                        <label class="control-label" for="id_name">Name</label>
+                        <div class="controls">
+                            <input id="id_name" name="name" placeholder="Your name" class="form-control requiredField" data-new-placeholder="Your name">
                             <i class="fa fa-user " style="align-items: center; margin-top: 2%; color: grey"></i>
                         </div>
                     </div>
                     <!-- End name input -->
 
                     <div class="form-group">
-                        <label class="control-label" for="contact-mail">Email</label>
+                        <label class="control-label" for="id_email">Email</label>
                         <div class=" controls">
-                            <input id="contact-mail" name="email" placeholder="Your email" class="form-control requiredField" data-new-placeholder="Your email" type="email" data-error-empty="Please enter your email" data-error-invalid="Invalid email address">
+                            <input id="id_email" name="email" placeholder="Your email" class="form-control requiredField" data-new-placeholder="Your email">
                             <i class="fa fa-envelope " style="align-items: center; margin-top: 2%; color: grey"></i>
                         </div>
                     </div>
                     <!-- End email input -->
 
                     <div class="form-group">
-                        <label class="control-label" for="contact-message">Message</label>
+                        <label class="control-label" for="id_comment">Message</label>
                         <div class="controls">
-                            <textarea id="contact-message" name="comments" placeholder="Your message" class="form-control requiredField" data-new-placeholder="Your message" rows="6" data-error-empty="Please enter your message"></textarea>
-                            <i class="fa fa-comment" style="align-items: center; margin-top: 2%; color:grey"></i>
+                            <textarea id="id_comment" name="comment" placeholder="Your message" class="form-control requiredField" data-new-placeholder="Your message" rows="6"></textarea>
+                            <i class="fa fa-comment" style="align-items: center; margin-top: 2%; color: grey"></i>
                         </div>
                     </div>
                     <!-- End textarea -->
 
-                    <p><button name="submit" type="submit" class="btn btn-color2 btn-block" data-error-message="Error!" data-sending-message="Sending..." data-ok-message="Message Sent"><i class="fa fa-paper-plane"></i>Send Message</button></p>
-                    <input type="hidden" name="submitted" id="submitted" value="true">
+                    <input type="hidden" name="next" value="{{ request.path }}">
+                    <p><button name="submit" type="submit" class="btn btn-color2 btn-block"><i class="fa fa-paper-plane"></i>Send Message</button>
+                    </p>
+                    <!-- <input type="submit" name="submitted" id="submitted" value="submit-form"> -->
+                    <!-- <input type="hidden" name="submitted" id="submitted" value="true"> -->
+{#                    <input type="submit" value="submit-form" class="btn btn-default">#}
 
                 </form>
                 <!-- End contact-form -->
@@ -710,11 +816,11 @@
         <div class="rounded-social-buttons">
             <!-- {#
           <h2 class="ftco-heading-2 mb-0" style="color: white">Stay Connected With Us</h2>#} -->
-            <a class="social-button envelope" href="mailto:csea@student.nitw.ac.in" target="_blank" style="width: 6.725rem; height: 6.725rem; border-radius: 2.5rem; "><i class="fas fa-envelope" style="font-size: 50px; margin-top:10% ;"></i></a>
-            <a class="social-button linkedin" href="https://www.linkedin.com/company/csea-nitw/" target="_blank" style="width: 6.725rem; height: 6.725rem; border-radius: 2.5rem; "><i class="fab fa-linkedin" style="font-size: 50px; margin-top:10% ;"></i></a>
-            <a class="social-button facebook" href="https://www.facebook.com/cseanitw/" target="_blank" style="width: 6.725rem; height: 6.725rem; border-radius: 2.5rem; "><i class="fab fa-facebook-f" style="font-size: 50px; margin-top:10% ;"></i></a>
-            <a class="social-button instagram" href="https://www.instagram.com/csea_nitw/?hl=en" target="_blank" style="width: 6.725rem; height: 6.725rem; border-radius: 2.5rem; "><i class="fab fa-instagram" style="font-size: 50px; margin-top:10% ;"></i></a>
-            <a class="social-button youtube" href="https://www.youtube.com/channel/UCncaLmXj3WstjFut4w8vepQ" target="_blank" style="width: 6.725rem; height: 6.725rem; border-radius: 2.5rem; "><i class="fab fa-youtube" style="font-size: 50px; margin-top:10% ;"></i></a>
+          <a class="social-button envelope" href="mailto:csea@student.nitw.ac.in" target="_blank"><i class="fas fa-envelope" style="font-size: 50px"></i></a>
+          <a class="social-button linkedin" href="https://www.linkedin.com/company/csea-nitw/" target="_blank"><i class="fab fa-linkedin" style="font-size: 50px"></i></a>
+          <a class="social-button facebook" href="https://www.facebook.com/cseanitw/" target="_blank"><i class="fab fa-facebook-f" style="font-size: 50px"></i></a>
+          <a class="social-button instagram" href="https://www.instagram.com/csea_nitw/?hl=en" target="_blank"><i class="fab fa-instagram" style="font-size: 50px"></i></a>
+          <a class="social-button youtube" href="https://www.youtube.com/channel/UCncaLmXj3WstjFut4w8vepQ" target="_blank"><i class="fab fa-youtube" style="font-size: 50px"></i></a>
 
         </div>
         <div style="text-align:center">

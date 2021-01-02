@@ -3,4 +3,10 @@ from cseaweb.models import feedback
 
 # Register your models here.
 
-admin.site.register(feedback)
+class  FeedbackAdmin(admin.ModelAdmin):
+    list_display = (
+        'name',
+        'comment',
+        'email'
+    )
+admin.site.register(feedback, FeedbackAdmin)

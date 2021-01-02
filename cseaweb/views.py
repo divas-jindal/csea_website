@@ -1,9 +1,10 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from cseaweb.forms import contactForms
 from django.core.mail import send_mail
 from cseaweb.models import feedback
 from django.conf import settings
-# Create your views here.
+from django.http import HttpResponseRedirect
+
 def home(request):
 	return render(request,'home.html')
 def events(request):
@@ -14,32 +15,47 @@ def team(request):
 	return render(request,'team.html')
 def alumni(request):
 	return render(request,'alumni.html')
+
 def feedback1(request):
 	print("cp0")
+	# context = {}
+	next = '/'
 	if request.method == 'POST':
-		form = feedbackform(request.POST)
+		form = contactForms(request.POST)
+
 		print("cp1")
 		if form.is_valid():
 			print("cp2")
+			f = form.save(commit=False)
+			f.save()
+			next = request.POST.get('next', '/')
+			print("path: " + next)
 			name = form.cleaned_data['name']
 			comment = form.cleaned_data['comment']
-			subject='Message from www.cseanitw.in'
-			message = '%s %s' %(comment,name)
-			emailFrom=form.cleaned_data['email']
-			emailTo = ['divasjindal@gmail.com']
-			send_mail(subject,message,emailFrom,emailTo,fail_silently=True,)
-			title = 'Thanks'
-			msg = 'We will get right back to you..'
-			form = None
-			f.email=sender
-			f.name = name
-			f.comment = comment
-			f.save()
+			to_email = form.cleaned_data['email']
+			#Acknowledgement mail to sender
+			subject='Message from CSEA NIT Warangal'
+			message = 'Hey ' + name + ',\n\n' + 'Hope you are safe and doing well.\n\n' + \
+			'Thank you for contacting us. We will get back to you soon.\n\n\n' + \
+			'Best Regards,\n\n' + \
+			'Divas Jindal\n'+ \
+			'General Secretary\n'+ \
+			'CSEA NIT Warangal'
+			recipient_list = [to_email]
+			email_from = settings.EMAIL_HOST_USER
+			send_mail(subject, message, email_from, recipient_list)
+			print(email_from)
+			#Mail to Admin
+			subject = 'CSEA feeback Received'
+			message = '%s \nName : %s \nEmail ID : %s' %(comment,name, to_email)
+			recipient_list = [email_from]
+			send_mail(subject, message, email_from, recipient_list)
 			print("hey")
+			# title = 'Thanks'
+			# context = {'title':title,'form':form,'msg':msg,}
 
-	context = {'title':title,'form':form,'msg':msg,}
-	template = 'home.html'
-	return render(request,template,context)
+	return HttpResponseRedirect(next)
+
 
 def straightoutta(request):
 	return render(request,'straightoutta.html')

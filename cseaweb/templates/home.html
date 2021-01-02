@@ -314,7 +314,7 @@ body {
     <div id="loading"></div>
     <!--/PRELOADER-->
     <nav style="margin-bottom: 50px; background-color: #333" class="navbar sticky-top navbar-expand-xl navbar-dark ">
-        <a href="/home/" class="navbar-brand "> <img src="{% static 'images/csealogo.png' %}" height="30px" width="100px" hspace="10px"></a>
+        <a href="/home/" class="navbar-brand "> <img src="{% static 'images/logo/csealogo.png' %}" height="30px" width="100px" hspace="10px"></a>
         <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarMenu">
         <span class="navbar-toggler-icon"></span>
     </button>
@@ -335,7 +335,7 @@ body {
 
     <div align="center" class="fluid-container">
 
-        <img src="{% static 'images/nitwlogo.png' %}" width="400"> <img src="{% static 'images/logo.jpg' %}" width="240">
+        <img src="{% static 'images/logo/nitwlogo.png' %}" width="400"> <img src="{% static 'images/logo/logo.jpg' %}" width="240">
         <h1 style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;"><b>Computer Science and Engineering Association, NITW</b></h1>
 
         <div class="rotate-body">
@@ -451,12 +451,12 @@ body {
 
                 <!--=== Contact Form ===-->
 
-                <form id="contact-form" class="col-sm-6 col-md-offset-1 scrollimation fade-left d3" method="POST" action="">
+                <form id="contact-form" class="col-sm-6 col-md-offset-1 scrollimation fade-left d3" method="POST" action="/feedback/">
                     {% csrf_token %}
                     <div class="form-group">
                         <label class="control-label" for="id_name">Name</label>
                         <div class="controls">
-                            <input id="id_name" name="name" placeholder="Your name" class="form-control requiredField" data-new-placeholder="Your name">
+                            <input id="id_name" name="name" placeholder="Your name" class="form-control requiredField" data-new-placeholder="Your name" minlength="3">
                             <i class="fa fa-user " style="align-items: center; margin-top: 2%; color: grey"></i>
                         </div>
                     </div>
@@ -465,7 +465,7 @@ body {
                     <div class="form-group">
                         <label class="control-label" for="id_email">Email</label>
                         <div class=" controls">
-                            <input id="id_email" name="email" placeholder="Your email" class="form-control requiredField" data-new-placeholder="Your email">
+                            <input id="id_email" type="email" name="email" placeholder="Your email" class="form-control requiredField" data-new-placeholder="Your email">
                             <i class="fa fa-envelope " style="align-items: center; margin-top: 2%; color: grey"></i>
                         </div>
                     </div>
@@ -474,12 +474,14 @@ body {
                     <div class="form-group">
                         <label class="control-label" for="id_comment">Message</label>
                         <div class="controls">
-                            <textarea id="id_comment" name="comment" placeholder="Your message" class="form-control requiredField" data-new-placeholder="Your message" rows="6"></textarea>
+                            <textarea id="id_comment" name="comment" placeholder="Your message" class="form-control requiredField" data-new-placeholder="Your message" rows="6" minlength="2"></textarea>
                             <i class="fa fa-comment" style="align-items: center; margin-top: 2%; color: grey"></i>
                         </div>
                     </div>
+
                     <!-- End textarea -->
 
+                    <input type="hidden" name="next" value="{{ request.path }}">
                     <p><button name="submit" type="submit" class="btn btn-color2 btn-block"><i class="fa fa-paper-plane"></i>Send Message</button>
                     </p>
                     <!-- <input type="submit" name="submitted" id="submitted" value="submit-form"> -->
