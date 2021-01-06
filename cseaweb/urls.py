@@ -12,6 +12,6 @@ urlpatterns = [
     url(r'^straightoutta/', views.straightoutta),
     url(r'^alumniconnect/',views.alumniconnect),
     url(r'^talksWithCsea/',views.talksWithCsea),
-    url(r'^card/',views.card)
+    url(r'^cpl/',views.CPL)
 
 ]
