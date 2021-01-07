@@ -9,8 +9,8 @@ urlpatterns = [
     url(r'^team/', views.team),
     url(r'^alumni/', views.alumni),
     url(r'^feedback/', views.feedback1), 
-    url(r'^straightoutta/', views.straightoutta),
-    url(r'^alumniconnect/',views.alumniconnect),
+    url(r'^intoTheCSED/', views.intoTheCSED),
+    url(r'^straightoutta',views.intoTheCSED),
     url(r'^talksWithCsea/',views.talksWithCsea),
     url(r'^card/',views.card)
 
