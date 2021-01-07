@@ -213,28 +213,37 @@
     </nav>
 
     <div class="wrapper" style="background-image: url(http://jmd.im/wp-content/uploads/2017/06/blacki_thumbnail.jpg); margin-top: 0px;">
-        <div class="card-group">
-            <div class="card">
-                <img src="../../static/images/CplLogo.jpg" class="card-img-top" alt="...">
-                <div class="card-body center" >
-                  <h5 class="card-title">Auction</h5>
-                </div>
-            </div>
-            <div class="card">
-              <img src="../../static/images/CPLMainLogo.jpg" class="card-img-top" alt="...">
-              <div class="card-body center">
-                <h5 class="card-title">CPL</h5>
-              </div>
-            </div>
-            <div class="card">
-              <img src="../../static/images/AbtCPL.jpg" class="card-img-top" alt="...">
-              <div class="card-body center">
-                <h5 class="card-title">About CPL</h5>
-              </div>
-            </div>
-          </div>
-
           
+        <div class="item-bg"></div>
+
+        <div class="news-slider" style="margin-top: 0px;">
+            <h2 style="font-family: inherit ; font-size: 60px; text-align: center; color: white; padding-top: 7%; padding-bottom: 4%;">CODING PREMIER LEAGUE</h2>
+        </div>
+        <div id="img-collage-top">
+            <div class="row justify-content-center">
+              <div class="col-xs-4">
+                <img src="../../static/images/AbtCPL.jpg" class="tll-img img-responsive">
+              </div>
+              <div class="col-xs-4">
+                <div class="row">
+                  <div class="col-xs-12">
+                    <img src="../../static/images/CplLogo.jpg" class="img-responsive sml-img">
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-xs-12">
+                    <img src="../../static/images/CPLMainLogo.jpg" class="img-responsive sml-img">
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+          
+         
+        <section class="section_auction">
+            <h2 class="section__title_auction"><span>Auction</span><br>10th Jan,2021</h2>
+        </section>
+
           <!-- Schedule of the event starts here -->
           
         <div class="container-fluid blue-bg">
@@ -317,9 +326,17 @@
                 <div class="circle">4</div>
                 </div>
             </div>
-            
+            <br><br><br>
             </div>
         </div>
+
+        <div class=" fluid-container ftco-footer ftco-bg-dark ftco-section" align="center" >
+            <h2 style="color: #ffffff; font-family: inherit; margin-bottom: 3%;">Title Sponsor</h2>
+            <section class="customer-logos slider">
+                <div class=""><img src="../../static/images/partners/scalarEdge.jpg" style="width: 25%;"></div>
+            </section>
+        </div>
+
     </div>
 
             <footer text-align="center" class=" ftco-footer ftco-bg-dark ftco-section">
@@ -346,6 +363,34 @@
 
             <script>
 
+
+                const stars = () => {
+                const count = 200;
+                const section = document.querySelector('.section_auction');
+                let i = 0;
+                while (i < count) {
+                    const star = document.createElement('i');
+                    const x = Math.floor(Math.random() * window.innerWidth);
+                    const y = Math.floor(Math.random() * window.innerHeight);
+                    
+                    const size = Math.random() * 4;
+                    star.style.left = x + 'px';
+                    star.style.top = y + 'px';
+                    star.style.width = 1 + size + 'px';
+                    star.style.height = 1 + size + 'px';
+                    
+                    const duration = Math.random() * 2;
+                    
+                    star.style.animationDuration = 2 + duration + 's';
+                    star.style.animationDelay = 2 + duration + 's';
+                    
+                    section.appendChild(star);
+                    i++;
+                }
+                }
+
+                stars();
+               
                 //Get the button:
                 mybutton = document.getElementById("myBtn");
 
