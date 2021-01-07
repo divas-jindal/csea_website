@@ -57,11 +57,11 @@ def feedback1(request):
 	return HttpResponseRedirect(next)
 
 
-def straightoutta(request):
-	return render(request,'straightoutta.html')
+def intoTheCSED(request):
+	return render(request,'intoTheCSED.html')
 
-def alumniconnect(request):
-	return render(request,'alumniconnect.html')
+# def alumniconnect(request):
+# 	return render(request,'alumniconnect.html')
 
 def talksWithCsea(request):
 	return render(request,'talksWithCsea.html')
