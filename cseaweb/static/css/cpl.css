@@ -129,7 +129,8 @@ body {
   justify-content: center;
   align-items: center;
   position: relative;
-  min-height: 100vh;
+  height: auto;
+  min-height: 50vw;
   background: linear-gradient(135deg, #111, #222, #111);
 }
 .section_auction::before {
@@ -137,7 +138,7 @@ body {
   position: absolute;
   width: 30vw;
   height: 30vw;
-  border: 5vw solid #ff1062;
+  border: 5vw solid #fe8611;
   border-radius: 50%;
   box-shadow: 0 0 0 1vw #222, 0 0 0 1.3vw #fff;
 }
