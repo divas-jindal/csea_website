@@ -2,4 +2,8 @@
 
 django
 python-dotenv
+<<<<<<< HEAD
+python-decouple==3.3
+=======
 python-decouple
+>>>>>>> 783059e9f4bd0b29a27f076a26a5b34749870c01
