@@ -207,7 +207,8 @@
                 <!-- <li class="nav-item"><a href="/feedback/">Feedback</a></li>#} -->
                 <li class="nav-item"><a href="/straightoutta/">Straight Outta CSED</a></li>
                 <li class="nav-item"><a href="/alumniconnect/">Alumni Connect</a></li>
-                <li class="nav-item"><a class="activeq" href="/talksWithCSEA/" href="/talksWithCsea/">Talks With CSEA</a></li>
+                <li class="nav-item"><a href="/talksWithCSEA/" href="/talksWithCsea/">Talks With CSEA</a></li>
+                <li class="nav-item"><a class="activeq" href="/cpl/">CPL</a></li>
             </ul>
         </div>
     </nav>
@@ -365,13 +366,17 @@
 
 
                 const stars = () => {
-                const count = 200;
+                let max = 200;
                 const section = document.querySelector('.section_auction');
                 let i = 0;
-                while (i < count) {
+                const count=Math.floor(section.clientWidth*section.clientWidth*0.0002);
+                {% comment %} count dependent on square of client width to check the density of the stars {% endcomment %}
+                if(max>count)
+                max=count;
+                while (i < max) {
                     const star = document.createElement('i');
-                    const x = Math.floor(Math.random() * window.innerWidth);
-                    const y = Math.floor(Math.random() * window.innerHeight);
+                    const x = Math.floor(Math.random() * section.clientWidth);
+                    const y = Math.floor(Math.random() * section.clientHeight);
                     
                     const size = Math.random() * 4;
                     star.style.left = x + 'px';
