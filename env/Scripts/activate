@@ -37,7 +37,7 @@ deactivate () {
 # unset irrelevant variables
 deactivate nondestructive
 
-VIRTUAL_ENV="C:\Users\Asus\Desktop\Important Stuff\csea_website\env"
+VIRTUAL_ENV="C:\Users\Asus\Desktop\csea_website\env"
 export VIRTUAL_ENV
 
 _OLD_VIRTUAL_PATH="$PATH"

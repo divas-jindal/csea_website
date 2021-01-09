@@ -1,4 +1,4 @@
-#!c:\users\asus\desktop\important stuff\csea_website\env\scripts\python.exe
+#!c:\users\asus\desktop\csea_website\env\scripts\python.exe
 # When the django-admin.py deprecation ends, remove this script.
 import warnings
 
