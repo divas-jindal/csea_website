@@ -12,6 +12,7 @@ urlpatterns = [
     url(r'^intoTheCSED/', views.intoTheCSED),
     url(r'^straightoutta',views.intoTheCSED),
     url(r'^talksWithCsea/',views.talksWithCsea),
-    url(r'^card/',views.card)
+    url(r'^card/',views.card),
+    url(r'cpl/',views.cpl)
 
 ]

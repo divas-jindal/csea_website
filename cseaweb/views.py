@@ -68,3 +68,6 @@ def talksWithCsea(request):
 
 def card(request):
 	return render(request,'card.html')
+
+def cpl(request):
+	return render(request,'CPL/main.html')

@@ -1,0 +1,341 @@
+.logo img{
+    height: 300px;
+    width: auto;
+    
+}
+
+.center{
+    text-align: center;
+}
+
+
+html,
+body {
+  font: 100% "Lato", sans-serif;
+  font-weight: 300;
+  height: 100%;
+  background-color: #4D4545;
+}
+
+.blue-bg {
+  background-color: #4D4545;
+  color: #ED8D8D;
+  height: 100%;
+}
+
+.circle {
+  font-weight: bold;
+  padding: 15px 20px;
+  border-radius: 50%;
+  background-color: #ED8D8D;
+  color: #4D4545;
+  max-height: 50px;
+  z-index: 2;
+}
+
+.how-it-works.row {
+  display: flex;
+}
+.how-it-works.row .col-2 {
+  display: inline-flex;
+  align-self: stretch;
+  align-items: center;
+  justify-content: center;
+}
+.how-it-works.row .col-2::after {
+  content: "";
+  position: absolute;
+  border-left: 3px solid #ED8D8D;
+  z-index: 1;
+}
+.how-it-works.row .col-2.bottom::after {
+  height: 50%;
+  left: 50%;
+  top: 50%;
+}
+.how-it-works.row .col-2.full::after {
+  height: 100%;
+  left: calc(50% - 3px);
+}
+.how-it-works.row .col-2.top::after {
+  height: 50%;
+  left: 50%;
+  top: 0;
+}
+
+.timeline div {
+  padding: 0;
+  height: 40px;
+}
+.timeline hr {
+  border-top: 3px solid #ED8D8D;
+  margin: 0;
+  top: 17px;
+  position: relative;
+}
+.timeline .col-2 {
+  display: flex;
+  overflow: hidden;
+}
+.timeline .corner {
+  border: 3px solid #ED8D8D;
+  width: 100%;
+  position: relative;
+  border-radius: 15px;
+}
+.timeline .top-right {
+  left: 50%;
+  top: -50%;
+}
+.timeline .left-bottom {
+  left: -50%;
+  top: calc(50% - 3px);
+}
+.timeline .top-left {
+  left: -50%;
+  top: -50%;
+}
+.timeline .right-bottom {
+  left: 50%;
+  top: calc(50% - 3px);
+}
+
+
+.sml-img {
+  height: 300px;
+  width: 400px;
+  
+  border-style: solid;
+  border-radius: 8px;
+  border-width: 6px;
+}
+
+.tll-img {
+  height: 600px;
+  width: 400px;
+  border-style: solid;
+  border-radius: 8px;
+  border-width: 6px;
+}
+
+#img-collage-top:after {
+  content: "\a\a";
+  white-space: pre;
+}
+
+
+.section_auction {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  height: auto;
+  min-height: 50vw;
+  background: linear-gradient(135deg, #111, #222, #111);
+}
+.section_auction::before {
+  content: "";
+  position: absolute;
+  width: 30vw;
+  height: 30vw;
+  border: 5vw solid #fe8611;
+  border-radius: 50%;
+  box-shadow: 0 0 0 1vw #222, 0 0 0 1.3vw #fff;
+}
+.section_auction .section__title_auction {
+  position: absolute;
+  transform: skewY(-7deg);
+  z-index: 10;
+  color: #fff;
+  text-align: center;
+  font-size: 3vw;
+  line-height: 2em;
+  text-shadow: 1px 1px 0 #ccc, 2px 2px 0 #ccc, 3px 3px 0 #ccc, 4px 4px 0 #ccc, 5px 5px 0 #ccc, 10px 10px 0 rgba(0, 0, 0, 0.2);
+  animation: floating 5s ease-in-out infinite;
+}
+.section_auction .section__title_auction span {
+  text-shadow: 1px 1px 0 #ccc, 2px 2px 0 #ccc, 3px 3px 0 #ccc, 4px 4px 0 #ccc, 5px 5px 0 #ccc, 6px 6px 0 #ccc, 7px 7px 0 #ccc, 8px 8px 0 #ccc, 9px 9px 0 #ccc, 20px 20px 0 rgba(0, 0, 0, 0.2);
+  font-weight: 700;
+  font-size: 3em;
+}
+.section_auction i {
+  position: absolute;
+  background: #fff;
+  border-radius: 50%;
+  box-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 40px #fff, 0 0 80px #fff;
+  animation: animate linear infinite;
+}
+
+@keyframes floating {
+  0%, 100% {
+    transform: skewY(-7deg) translate(0, -20px);
+  }
+  50% {
+    transform: skewY(-7deg) translate(0, 20px);
+  }
+}
+@keyframes animate {
+  0% {
+    opactiy: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+body, html{
+  width: 100%;
+  height: 100%;	
+  margin: 0;
+  font-family: 'Just Another Hand', cursive;
+  overflow-X: hidden;/* optional */
+}
+
+#i1, #i2, #i3, #i4, #i5, #i6{ display: none;}
+
+.a-container{
+  margin: 0 auto;
+  margin-top: 0px;
+  position: relative;
+  width: 70%;
+  height: 100%;
+  padding-bottom: 38%;
+  user-select: none;
+  background-color: #1c1c1c;
+  border: solid 10px #616161;
+  border-radius:10px ; 
+}
+
+.a-container .slide_img{
+  position: absolute;
+  width: 100%;;
+  height: 100%;
+}
+.a-container .slide_img img{
+  width: inherit;
+  height: inherit;
+}
+
+ .prev, .next{
+  width: 12%;
+  height: inherit;
+  position: absolute;
+  top:0; 
+  background-color: rgba(88, 88, 88,.2);
+  color:rgba(244, 244, 244,.9);
+  z-index: 99;
+  transition: .45s;
+  cursor: pointer;
+  text-align: center;
+}
+
+.next{right:0;}
+.prev{left:0;}
+
+label span{
+  position: absolute;
+  font-size: 100pt;
+  top: 50%;
+   transform: translateY(-50%);
+}
+
+.prev:hover, .next:hover{
+  transition: .3s;
+  background-color: rgba(88, 88, 89,.8);
+  color: #ffffff; 
+}
+
+.a-container #nav_slide{
+width: 100%;
+bottom: 12%;
+height: 11px;
+position: absolute;
+text-align: center;
+z-index: 99;
+cursor: default;
+}
+
+#nav_slide .dots{
+top: -5px;
+width: 18px;
+height: 18px;
+margin: 0 4px;
+position: relative;
+border-radius: 100%;
+display: inline-block;
+background-color: rgba(0, 0, 0, 0.6);
+transition: .4s;
+}
+
+#nav_slide .dots:hover {
+cursor: pointer;
+background-color: rgba(255, 255, 255, 0.9);
+transition: .25s
+}
+
+.slide_img{z-index: -1;}
+
+#i1:checked ~ #one  ,
+#i2:checked ~ #two  ,
+#i3:checked ~ #three,
+#i4:checked ~ #four ,
+#i5:checked ~ #five ,
+#i6:checked ~ #six
+{z-index: 9; animation: scroll 1s ease-in-out;}
+
+#i1:checked  ~  #nav_slide #dot1,
+#i2:checked  ~  #nav_slide #dot2,
+#i3:checked  ~  #nav_slide #dot3,
+#i4:checked  ~  #nav_slide #dot4,
+#i5:checked  ~  #nav_slide #dot5,
+#i6:checked  ~  #nav_slide #dot6
+{ background-color: rgba(255,255,255,.9);}
+
+@keyframes scroll{
+0%{	opacity:.4;}
+100%{opacity:1;}
+}		
+
+
+@media screen and (max-width: 685px){
+.a-container{
+  border: none;
+  width: 100%;
+  height: 0;
+  padding-bottom: 55%; 
+}	
+
+label span { font-size: 50pt; }
+
+.prev, .next{
+  width: 15%;
+}	
+#nav_slide .dots{
+  width: 12px;
+  height: 12px;
+}
+}
+@media screen  and(min-width: 970px){
+.me{ display: none;}
+}
+
+.heading_top{
+font-family: inherit ; 
+font-size: 60px; 
+text-align: center;
+ color: white; 
+ padding-top: 7%; 
+ padding-bottom: 4%;
+}
+
+@media screen and (max-width: 685px){
+.heading_top{
+  font-size: 30px;
+}
+}
