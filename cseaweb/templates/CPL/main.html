@@ -218,28 +218,77 @@
         <div class="item-bg"></div>
 
         <div class="news-slider" style="margin-top: 0px;">
-            <h2 style="font-family: inherit ; font-size: 60px; text-align: center; color: white; padding-top: 7%; padding-bottom: 4%;">CODING PREMIER LEAGUE</h2>
+            <h2 class="heading_top" >CODING PREMIER LEAGUE</h2>
         </div>
-        <div id="img-collage-top">
-            <div class="row justify-content-center">
-              <div class="col-xs-4">
-                <img src="../../static/images/AbtCPL.jpg" class="tll-img img-responsive">
-              </div>
-              <div class="col-xs-4">
-                <div class="row">
-                  <div class="col-xs-12">
-                    <img src="../../static/images/CplLogo.jpg" class="img-responsive sml-img">
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="col-xs-12">
-                    <img src="../../static/images/CPLMainLogo.jpg" class="img-responsive sml-img">
-                  </div>
-                </div>
-              </div>
+        
+        <div class="a-container">
+	
+            <input type="radio" id="i1" name="images" checked />
+            <input type="radio" id="i2" name="images" />
+            <input type="radio" id="i3" name="images" />
+            <input type="radio" id="i4" name="images" />
+            <input type="radio" id="i5" name="images" />
+            <input type="radio" id="i6" name="images" />	
+            
+            <div class="slide_img" id="one">			
+                    
+                <img src="../../static/images/CPLMainLogo.jpg">
+                
+                    <label class="prev" for="i6"><span>&#x2039;</span></label>
+                    <label class="next" for="i2"><span>&#x203a;</span></label>	
+            
             </div>
+            
+            <div class="slide_img" id="two">			
+                    
+                    <img src="../../static/images/AbtCPL.jpg">
+                    
+                        <label class="prev" for="i1"><span>&#x2039;</span></label>
+                        <label class="next" for="i3"><span>&#x203a;</span></label>	
+                
+            </div>
+            
+            <div class="slide_img" id="three">
+                
+                    <img src="../../static/images/League_teams.jpg" >
+                    
+                        <label class="prev" for="i2"><span>&#x2039;</span></label>
+                        <label class="next" for="i4"><span>&#x203a;</span></label>
+                
+            </div>
+                    
+            <div class="slide_img" id="four">
+                    <img src="../../static/images/cpl_individuals.jpg">	
+                    
+                        <label class="prev" for="i3"><span>&#x2039;</span></label>
+                        <label class="next" for="i5"><span>&#x203a;</span></label>
+            </div>
+        
+            <div class="slide_img" id="five">
+                    <img src="../../static/images/cpl_team_formation.jpg">	
+                    
+                        <label class="prev" for="i4"><span>&#x2039;</span></label>
+                        <label class="next" for="i6"><span>&#x203a;</span></label>
+            </div>
+        
+            <div class="slide_img" id="six">
+                    <img src="../../static/images/cpl_contests.jpg">	
+                    
+                        <label class="prev" for="i5"><span>&#x2039;</span></label>
+                        <label class="next" for="i1"><span>&#x203a;</span></label>
+        
+            </div>
+        
+            <div id="nav_slide">
+                <label for="i1" class="dots" id="dot1"></label>
+                <label for="i2" class="dots" id="dot2"></label>
+                <label for="i3" class="dots" id="dot3"></label>
+                <label for="i4" class="dots" id="dot4"></label>
+                <label for="i5" class="dots" id="dot5"></label>
+                <label for="i6" class="dots" id="dot6"></label>
+            </div>
+                
         </div>
-          
          
         <section class="section_auction">
             <h2 class="section__title_auction"><span>Auction</span><br>10th Jan,2021</h2>
