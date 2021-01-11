@@ -1,0 +1,338 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Talks With CSEA</title>
+    <meta name=”viewport” content=”width=device-width, initial-scale=1″>
+    <!-- <meta content="width=device-width, initial-scale=1.0" name="viewport"> -->
+    <!-- Bootstrap CSS File -->
+    <!-- <link href="style.css" rel="stylesheet"> -->
+
+
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.5/css/swiper.min.css">
+
+
+    <link href="https://fonts.googleapis.com/css?family=Quicksand:400,500,700&subset=latin-ext">
+
+    <link href="{% static 'style1.css' %}" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="{% static 'css/css/open-iconic-bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/css/animate.css' %}">
+
+    <link rel="stylesheet" href="{% static 'css/css/owl.carousel.min.css'%}">
+    <link rel="stylesheet" href='../../static/css/cpl.css'>
+    <link rel="stylesheet" href="{% static 'css/css/owl.theme.default.min.css'%}">
+    <link rel="stylesheet" href="{% static 'css/css/magnific-popup.css' %}">
+
+    <link rel="stylesheet" href="{% static 'css/css/aos.css'%}">
+
+    <link rel="stylesheet" href="{% static 'css/css/ionicons.min.css'%}">
+    <link href="{% static 'fab/css/all.css' %}" rel="stylesheet">
+    <!--load all styles -->
+
+    <!-- ... -->
+    <link rel="stylesheet" id="font-awesome-css" href="//maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css?ver=4.9.4" type="text/css" media="all">
+
+
+    <link rel="stylesheet" href="{% static 'css/css/flaticon.css'%}">
+    <link rel="stylesheet" href="{% static 'css/css/icomoon.css' %}">
+    <link rel="stylesheet" href="{% static 'css/css/style.css'%}">
+    <link rel="stylesheet" href="{% static 'straight.css'%}">
+
+    <style type="text/css">
+    .logo {
+            max-width: 15%;
+            height: auto;
+        }
+        
+        .p-logo {
+            text-align: center;
+        }
+        
+        .activeq {
+            background-color: #717171;
+        }
+        
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+        }
+        
+        li {
+            float: left;
+        }
+        
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 20px 30px;
+            text-decoration: none;
+        }
+        /* Change the link color to #111 (black) on hover */
+        
+        li a:hover {
+            background-color: #111;
+        }
+        
+        activeq/Current Navigation Link Add an "activeq" class to the current link to let the user know which page he/she is on: HomeNewsContactAbout Example .activeq {
+            background-color: #4CAF50;
+        }
+        
+        footer {
+            {
+                #margin-top: 100px;
+                #
+            }
+            background-color:;
+            font-family: "Segoe UI",
+            Arial,
+            sans-serif;
+            width: 100%;
+            height: 500px;
+            color: white;
+        }
+    }
+    @media only screen and (max-width: 425px) {
+        footer {
+            height: 600px;
+        }
+        
+        #gap a {
+            padding: 5px;
+        }
+    }
+    #myBtn {
+        display: none;
+        /* Hidden by default */
+        
+        position: fixed;
+        /* Fixed/sticky position */
+        
+        bottom: 20px;
+        /* Place the button at the bottom of the page */
+        
+        right: 30px;
+        /* Place the button 30px from the right */
+        
+        z-index: 99;
+        /* Make sure it does not overlap */
+        
+        border: none;
+        /* Remove borders */
+        
+        outline: none;
+        /* Remove outline */
+        
+        background-color: black;
+        /* Set a background color */
+        
+        color: white;
+        /* Text color */
+        
+        cursor: pointer;
+        /* Add a mouse pointer on hover */
+        
+        padding: 15px;
+        /* Some padding */
+        
+        border-radius: 10px;
+        /* Rounded corners */
+        
+        font-size: 18px;
+        /* Increase font size */
+    }
+    #myBtn:hover {
+        background-color: #555;
+        /* Add a dark-grey background on hover */
+    }
+    .videowrapper {
+        float: none;
+        clear: both;
+        width: 100%;
+        position: relative;
+        padding-bottom: 56.25%;
+        padding-top: 25px;
+        height: 0;
+    }
+    .videowrapper iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+    .logo-parent {
+        height: 150px;
+        width: 150px;
+        border-radius: 50%;
+        background-color: rgb(161, 138, 142);
+    }
+    .letter-logo {
+        background: #2b0321;
+        position: relative;
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+        font-weight: bold;
+        font-size: 100px;
+        font-family: arial, helvetica;
+        margin: 50px auto;
+        text-align: center;
+    }
+    </style>
+
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/all.js" integrity="sha384-xymdQtn1n3lH1wcu0qhcdaOpQwyoarkgLVxC/wZ5q7h9gHtxICrpcaSUfygqZGOe" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="{% static 'css/footer.css'%}">
+    <link rel="stylesheet" href="{% static 'css/header.css'%}">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+</head>
+
+<body style="font-family:Poppins">
+
+    <nav style=" background-color: #333" class="navbar sticky-top navbar-expand-xl navbar-dark ">
+        <a href="/home/" class="navbar-brand"> <img src="{% static 'images/logo/csealogo.png' %}" height="30px" width="100px" hspace="10px"></a>
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarMenu">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+        <div class="collapse navbar-collapse" id="navbarMenu">
+            <ul class="navbar-nav ml-auto" style="background-color: #333">
+                <li class="nav-item"><a href="{% url 'gallery' %}">Gallery</a></li>
+                <li class="nav-item"><a href="{% url 'events' %}">Events</a></li>
+                <li class="nav-item"><a href="{% url 'team' %}">Team</a></li>
+                <li class="nav-item"><a href="{% url 'alumni' %}">Alumni</a></li>
+                <!-- {#
+                <li class="nav-item"><a href="/feedback/">Feedback</a></li>#} -->
+                <li class="nav-item"><a href="{% url 'intoTheCSED' %}">Into The CSED</a></li>
+                <li class="nav-item"><a href="{% url 'talksWithCsea' %}">Talks With CSEA</a></li>
+                <li class="nav-item activeq"><a href="{% url 'talksWithCsea' %}/cpl/">CPL</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="wrapper" style="background-image: url(http://jmd.im/wp-content/uploads/2017/06/blacki_thumbnail.jpg); margin-top: 0px;">
+
+        <!-- Team Info  -->
+        <div class="container pt-5 pb-5">
+            <center class="">
+                <h1 class="m-3 text-light">Welcome to The Board of CPL - CSEA</h1>
+                <div class="logo-parent">
+                    <div class="letter-logo">{{letter|upper}}</div>
+                </div>
+
+                <h1 class="text-light mt-4">Team Code: {{name|title}}</h1>
+            </center>
+            <table class="table table-dark">
+                <tr>
+                    <th>Name</th>
+                    <th>Position</th>
+                    <th>Course</th>
+                    <!-- <th>Total Points</th> -->
+                    <th>Codechef ID</th>
+                    <th>Codeforces ID</th>
+                </tr>
+
+                {% for members in team %}
+                <tr>
+                    {% for key,value in members.items %} {% if forloop.counter == 4 and value != 'N/A' %} {% comment %} after adding total points column make forloop.counter == 5 {% endcomment %}
+
+                    <td>
+                        <a href="https://www.codechef.com/users/{{value}}" class="btn btn-success text-light" target="_blank">Click Here</a>
+                    </td>
+                    {% elif forloop.counter == 5 and value != 'N/A' %} {% comment %} after adding total points column make forloop.counter == 6 {% endcomment %}
+                    <td>
+                        <a href="https://codeforces.com/profile/{{value}}" class="btn btn-danger text-light" target="_blank"> Click Here</a>
+                    </td>
+                    {% else %}
+                    <td>{{value}}</td>
+                    {% endif %} {% endfor %}
+
+                </tr>
+                {% endfor %}
+
+            </table>
+        </div>
+
+
+    </div>
+
+    <footer text-align="center" class=" ftco-footer ftco-bg-dark ftco-section">
+        <div class="rounded-social-buttons">
+
+            <!-- <h2 class="ftco-heading-2 mb-0" style="color: white">Stay Connected With Us</h2>#} -->
+
+            <a class="social-button envelope" href="mailto:csea@student.nitw.ac.in" target="_blank"><i class="fas fa-envelope" style="font-size: 50px"></i></a>
+            <a class="social-button linkedin" href="https://www.linkedin.com/company/csea-nitw/" target="_blank"><i class="fab fa-linkedin" style="font-size: 50px"></i></a>
+            <a class="social-button facebook" href="https://www.facebook.com/cseanitw/" target="_blank"><i class="fab fa-facebook-f" style="font-size: 50px"></i></a>
+            <a class="social-button instagram" href="https://www.instagram.com/csea_nitw/?hl=en" target="_blank"><i class="fab fa-instagram" style="font-size: 50px"></i></a>
+            <a class="social-button youtube" href="https://www.youtube.com/channel/UCncaLmXj3WstjFut4w8vepQ" target="_blank"><i class="fab fa-youtube" style="font-size: 50px"></i></a>
+        </div>
+        <div style="text-align:center">
+            <span class="copyright">
+                    &copy; Copyright <a href="https://www.facebook.com/cseanitw/">CSEA, NIT Warangal</a>. All rights reserved.
+                    <p>Made with 💗 by CSEA Web Dev Team!</a>
+                </p></span>
+        </div>
+        <button onclick="topFunction()" id="myBtn" title="Go to top"><i class=" fa fa-angle-double-up"></i> </button>
+    </footer>
+
+
+
+    <script>
+        //Get the button:
+        mybutton = document.getElementById("myBtn");
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() {
+            scrollFunction()
+        };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0; // For Safari
+            document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+        }
+    </script>
+
+
+
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.5/js/swiper.min.js"></script>
+    <script src="{% static 'jav.js' %}"></script>
+
+</body>
+
+</html>
