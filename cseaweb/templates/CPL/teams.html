@@ -242,35 +242,37 @@
 
                 <h1 class="text-light mt-4">Team Code: {{name|title}}</h1>
             </center>
-            <table class="table table-dark">
-                <tr>
-                    <th>Name</th>
-                    <!-- <th>Position</th> -->
-                    <th>Course</th>
-                    <!-- <th>Total Points</th> -->
-                    <th>Codechef ID</th>
-                    <th>Codeforces ID</th>
-                </tr>
+            <div style="overflow-x: scroll;">
+                <table class="table table-dark">
+                    <tr>
+                        <th>Name</th>
+                        <!-- <th>Position</th> -->
+                        <th>Course</th>
+                        <!-- <th>Total Points</th> -->
+                        <th>Codechef ID</th>
+                        <th>Codeforces ID</th>
+                    </tr>
 
-                {% for members in team %}
-                <tr>
-                    {% for key,value in members.items %} {% if forloop.counter == 3 and value != 'N/A' %} {% comment %} after adding total points column make forloop.counter == 5 {% endcomment %}
+                    {% for members in team %}
+                    <tr>
+                        {% for key,value in members.items %} {% if forloop.counter == 3 and value != 'N/A' %} {% comment %} after adding total points column make forloop.counter == 5 {% endcomment %}
 
-                    <td>
-                        <a href="https://www.codechef.com/users/{{value}}" class="btn btn-success text-light" target="_blank">Click Here</a>
-                    </td>
-                    {% elif forloop.counter == 4 and value != 'N/A' %} {% comment %} after adding total points column make forloop.counter == 6 {% endcomment %}
-                    <td>
-                        <a href="https://codeforces.com/profile/{{value}}" class="btn btn-danger text-light" target="_blank"> Click Here</a>
-                    </td>
-                    {% else %}
-                    <td>{{value}}</td>
-                    {% endif %} {% endfor %}
+                        <td>
+                            <a href="https://www.codechef.com/users/{{value}}" class="btn btn-success text-light" target="_blank">Click Here</a>
+                        </td>
+                        {% elif forloop.counter == 4 and value != 'N/A' %} {% comment %} after adding total points column make forloop.counter == 6 {% endcomment %}
+                        <td>
+                            <a href="https://codeforces.com/profile/{{value}}" class="btn btn-danger text-light" target="_blank"> Click Here</a>
+                        </td>
+                        {% else %}
+                        <td>{{value}}</td>
+                        {% endif %} {% endfor %}
 
-                </tr>
-                {% endfor %}
+                    </tr>
+                    {% endfor %}
 
-            </table>
+                </table>
+            </div>
         </div>
 
 
