@@ -245,7 +245,7 @@
             <table class="table table-dark">
                 <tr>
                     <th>Name</th>
-                    <th>Position</th>
+                    <!-- <th>Position</th> -->
                     <th>Course</th>
                     <!-- <th>Total Points</th> -->
                     <th>Codechef ID</th>
@@ -254,12 +254,12 @@
 
                 {% for members in team %}
                 <tr>
-                    {% for key,value in members.items %} {% if forloop.counter == 4 and value != 'N/A' %} {% comment %} after adding total points column make forloop.counter == 5 {% endcomment %}
+                    {% for key,value in members.items %} {% if forloop.counter == 3 and value != 'N/A' %} {% comment %} after adding total points column make forloop.counter == 5 {% endcomment %}
 
                     <td>
                         <a href="https://www.codechef.com/users/{{value}}" class="btn btn-success text-light" target="_blank">Click Here</a>
                     </td>
-                    {% elif forloop.counter == 5 and value != 'N/A' %} {% comment %} after adding total points column make forloop.counter == 6 {% endcomment %}
+                    {% elif forloop.counter == 4 and value != 'N/A' %} {% comment %} after adding total points column make forloop.counter == 6 {% endcomment %}
                     <td>
                         <a href="https://codeforces.com/profile/{{value}}" class="btn btn-danger text-light" target="_blank"> Click Here</a>
                     </td>
@@ -277,15 +277,11 @@
     </div>
 
     <footer text-align="center" class=" ftco-footer ftco-bg-dark ftco-section">
-        <div class="rounded-social-buttons">
-
-            <!-- <h2 class="ftco-heading-2 mb-0" style="color: white">Stay Connected With Us</h2>#} -->
-
-            <a class="social-button envelope" href="mailto:csea@student.nitw.ac.in" target="_blank"><i class="fas fa-envelope" style="font-size: 50px"></i></a>
-            <a class="social-button linkedin" href="https://www.linkedin.com/company/csea-nitw/" target="_blank"><i class="fab fa-linkedin" style="font-size: 50px"></i></a>
-            <a class="social-button facebook" href="https://www.facebook.com/cseanitw/" target="_blank"><i class="fab fa-facebook-f" style="font-size: 50px"></i></a>
-            <a class="social-button instagram" href="https://www.instagram.com/csea_nitw/?hl=en" target="_blank"><i class="fab fa-instagram" style="font-size: 50px"></i></a>
-            <a class="social-button youtube" href="https://www.youtube.com/channel/UCncaLmXj3WstjFut4w8vepQ" target="_blank"><i class="fab fa-youtube" style="font-size: 50px"></i></a>
+        <div class=" fluid-container ftco-footer ftco-bg-dark ftco-section" align="center">
+            <h2 style="color: #ffffff; font-family: inherit; margin-bottom: 3%;">Title Sponsor</h2>
+            <section class="customer-logos slider">
+                <div class=""><img src="../../static/images/partners/scalarEdge.jpg" style="width: 25%;"></div>
+            </section>
         </div>
         <div style="text-align:center">
             <span class="copyright">
