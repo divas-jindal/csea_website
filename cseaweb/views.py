@@ -72,13 +72,11 @@ def card(request):
 	return render(request,'card.html')
 
 def cpl(request):
-	return render(request,'CPL/main.html',{'teams':td.TEAMS})
+	return render(request,'CPL/main.html',{'teams':dict(td.TEAMS)})
 
 def teams(request,code):
-    itr = int(code)
     itr_temp = 0
     for team in td.TEAMS:
-        itr_temp += 1
-        if(itr_temp == itr):
+        if(team == code):
             return render(request,'CPL/teams.html',{'team':td.TEAMS[team],'name':team,'letter':int(team,2)})
     raise Http404('Invalid Team ID')

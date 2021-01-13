@@ -331,9 +331,8 @@
             <div class="container row d-flex justify-content-center">
 
                 {% for team in teams %}
-
                 <div class="col-auto">
-                    <a class="text-light" style="font-size: 20px; text-decoration:none" href="{% url 'teams' forloop.counter %}"><button class="buttons raise">{{team}}</button></a>
+                    <a class="text-light" style="font-size: 20px; text-decoration:none" href="{% url 'teams' team %}"><button class="buttons raise">{{team}}</button></a>
                 </div>
                 {% endfor %}
 
