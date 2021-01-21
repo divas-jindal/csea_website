@@ -195,6 +195,15 @@
         margin: 50px auto;
         text-align: center;
     }
+    .cc {
+        border-radius: 1em 0 0 1em !important;
+        {% comment %} background-color:rgb(92,70,56); {% endcomment %}
+        background-color:red;
+    }
+    .cf {
+        border-radius: 0 1em 1em 0 !important;
+        background-color:rgb(64,94,157);
+    }
     </style>
 
     <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/all.js" integrity="sha384-xymdQtn1n3lH1wcu0qhcdaOpQwyoarkgLVxC/wZ5q7h9gHtxICrpcaSUfygqZGOe" crossorigin="anonymous"></script>
@@ -242,32 +251,24 @@
 
                 <h1 class="text-light mt-4">Team Code: {{name|title}}</h1>
             </center>
-            <div style="overflow-x: scroll;">
+            <div style="overflow-x: auto;">
                 <table class="table table-dark">
                     <tr>
-                        <th>Name</th>
+                        <th style="text-align: center">Name</th>
                         <!-- <th>Position</th> -->
-                        <th>Course</th>
+                        <th style="text-align: center">Course</th>
                         <!-- <th>Total Points</th> -->
-                        <th>Codechef ID</th>
-                        <th>Codeforces ID</th>
+                        <th style="text-align: center">IDs</th>
                     </tr>
 
                     {% for members in team %}
                     <tr>
-                        {% for key,value in members.items %} {% if forloop.counter == 3 and value != 'N/A' %} {% comment %} after adding total points column make forloop.counter == 5 {% endcomment %}
-
-                        <td>
-                            <a href="https://www.codechef.com/users/{{value}}" class="btn btn-success text-light" target="_blank">Click Here</a>
+                        <td style="text-align: center">{{members.Name}}{% if members.Position == "Team Leader" %}<span style="color:rgb(212,175,55);"> ♕</span>{% endif %}</td>
+                        <td style="text-align: center">{{members.CourseAndYear}}</td>
+                        <td style="text-align: center">
+                            <div> <a href="https://www.codechef.com/users/{{members.CodeChef}}" class="cc btn text-light" target="_blank">CC</a>
+                            <a href="https://codeforces.com/profile/{{members.CodeForces}}" class="cf btn text-light" target="_blank"> CF</a> </div>
                         </td>
-                        {% elif forloop.counter == 4 and value != 'N/A' %} {% comment %} after adding total points column make forloop.counter == 6 {% endcomment %}
-                        <td>
-                            <a href="https://codeforces.com/profile/{{value}}" class="btn btn-danger text-light" target="_blank"> Click Here</a>
-                        </td>
-                        {% else %}
-                        <td>{{value}}</td>
-                        {% endif %} {% endfor %}
-
                     </tr>
                     {% endfor %}
 
